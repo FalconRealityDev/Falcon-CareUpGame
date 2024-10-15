@@ -4,6 +4,7 @@ using UnityEngine;
 using CareUp.Actions;
 using UnityEngine.UI;
 using TMPro;
+using CareUp.Localize;
 
 public class ActionSubjectWindow : MonoBehaviour
 {
@@ -95,6 +96,8 @@ public class ActionSubjectWindow : MonoBehaviour
     {
         if (actionManager != null)
         {
+            InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+            
             foreach (Action a in actionManager.actionList)
             {   
                 List<GameObject> currentActionElements = new List<GameObject>();
@@ -108,8 +111,17 @@ public class ActionSubjectWindow : MonoBehaviour
                 }
                 GameObject actionStep = GameObject.Instantiate(Resources.Load<GameObject>(
                     "NecessaryPrefabs/UI/SubjectStep"), scrollContent);
+                //@
                 actionStep.transform.Find("Panel/Text").GetComponent<TextMeshProUGUI>().text =
-                    a.info.shortDescr;
+                    LocalizationManager.GetValueIfKey(a.info.shortDescr);
+
+                if (inGameLocalEditTool != null)
+                {
+                    //!
+                    inGameLocalEditTool.AddUILocalizationComponentToGO(
+                        actionStep.transform.Find("Panel/Text").gameObject, a.info.shortDescr);
+                }
+
                 currentActionElements.Add(actionStep);
                 ActionStepElements.Add(a.info.sequentialNumber, currentActionElements);
             }

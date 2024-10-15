@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[maak een schoon386]" 
+      type="use" 
+      comment="2. Create a clean work area and put the equipment within reach" 
+      points="2" 
+      messageTitle="[je het volgende]" 
+      messageContent="[strak opgerolde korterekzwachtels]" 
+      blockUnlock="TableCleaned" 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="[knip 46 repen]" 
+      type="useOn" 
+      item="Leikoplaster" 
+      points="2" 
+      buttonText="Knip pleister" 
+      messageTitle="[tijd]" 
+      blockUnlock="PlasterCut" 
+      messageContent="[het knippen van]" 
+      target=""/>
+  <Action 
+      index="3" 
+      description="[inspecteer de zwachtels]" 
+      type="examine" 
+      item="BandageRoll" 
+      points="2" 
+      audioHint="" 
+      expected="good"/>
+  <Action 
+      index="4" 
+      description="[inspecteer de zwachtels]" 
+      type="examine" 
+      item="BandageRoll2" 
+      points="2" 
+      audioHint="" 
+      expected="good"/>
+  <Action 
+      index="5" 
+      description="[zet de stoel]" 
+      type="use" 
+      comment="Take Chair" 
+      points="2" 
+      messageTitle="" 
+      messageContent="" 
+      blockUnlock="MovedChair" 
+      value="Chair_Interactible"/>
+  <Action 
+      index="6" 
+      description="[verplaats het werkveld]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Verplaats werkveld" 
+      blockUnlock="TableMoved" 
+      blockRequired="MovedChair" 
+      action="MoveTable"/>
+  <Action 
+      index="7" 
+      description="[vraag de cliënt409]" 
+      type="talk" 
+      points="1" 
+      topic="SitDown"/>
+  <Action 
+      index="8" 
+      description="[neem plaats op]" 
+      type="general" 
+      item="" 
+      points="1" 
+      blockRequired="MovedChair" 
+      buttonText="Ga zitten" 
+      action="SitOnChair"/>
+  <Action 
+      index="9" 
+      description="[vraag de cliënt274]" 
+      type="talk" 
+      points="1" 
+      blockRequired="MovedChair, TableMoved" 
+      blockUnlock="LegIsOnSupport" 
+      topic="LegOnSupport"/>
+  <Action 
+      index="10" 
+      description="[ontbloot het been]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Ontbloot been" 
+      messageTitle="[controleren been en]" 
+      messageContent="[controleer het been]" 
+      blockRequired="TableCleaned, LegIsOnSupport" 
+      action="Start_Bandage_SQ"/>
+  <action 
+      points="1" 
+      description="[meet het buisverband]" 
+      index="11" 
+      type="sequenceStep" 
+      value="MeetHeTricot" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[breng het buisverband]" 
+      index="12" 
+      type="sequenceStep" 
+      value="BrengHhetTricot" 
+      messageTitle="[overtollig buisverband]" 
+      messageContent="[laat het overtollige]" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[breng polsterwatten aan]" 
+      index="13" 
+      type="sequenceStep" 
+      value="ApplyPadding" 
+      messageTitle="[polsteren]" 
+      messageContent="[er is in]" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[vraag de cliënt25]" 
+      index="14" 
+      type="sequenceStep" 
+      value="PlaceFoot90" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[neem de eerste]" 
+      index="15" 
+      type="sequenceStep" 
+      value="NeemDeEerste" 
+      messageTitle="[kijk in de]" 
+      messageContent="[zorg dat je]" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak 1 of]" 
+      index="16" 
+      type="sequenceStep" 
+      value="12circular" 
+      messageTitle="[korterekzwachtels]" 
+      messageContent="[bij deze vorm]" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding]" 
+      index="17" 
+      type="sequenceStep" 
+      value="OverMidFoot" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding692]" 
+      index="18" 
+      type="sequenceStep" 
+      value="23Achilles" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding675]" 
+      index="19" 
+      type="sequenceStep" 
+      value="SpiralWound13" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een circulaire]" 
+      index="20" 
+      type="sequenceStep" 
+      value="TurnAroundNeckle" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[volg de vorm742]" 
+      index="21" 
+      type="sequenceStep" 
+      value="FollowTheShape" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[zwachtel door tot]" 
+      index="22" 
+      type="sequenceStep" 
+      value="WindingBelowKnee" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[zwachtel verder door]" 
+      index="23" 
+      type="sequenceStep" 
+      value="WrapFurther" 
+      extra="" 
+      quiz="2"/>
+  <action 
+      points="1" 
+      description="[fixeer de zwachtel]" 
+      index="24" 
+      type="sequenceStep" 
+      value="FixBandage" 
+      extra="" 
+      encounter="2"/>
+  <action 
+      points="1" 
+      description="[neem de volgende]" 
+      index="25" 
+      type="sequenceStep" 
+      value="SecondBandage" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak 1 of438]" 
+      index="26" 
+      type="sequenceStep" 
+      value="12circular2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding]" 
+      index="27" 
+      type="sequenceStep" 
+      value="OverMidFoot2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding692]" 
+      index="28" 
+      type="sequenceStep" 
+      value="23Achilles2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak een spiraalwinding675]" 
+      index="29" 
+      type="sequenceStep" 
+      value="SpiralWound132" 
+      extra="" 
+      quiz="2"/>
+  <action 
+      points="1" 
+      description="[maak een circulaire]" 
+      index="30" 
+      type="sequenceStep" 
+      value="TurnAroundNeckle2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[volg de vorm]" 
+      index="31" 
+      type="sequenceStep" 
+      value="FollowTheShape2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[zwachtel door tot]" 
+      index="32" 
+      type="sequenceStep" 
+      value="WindingBelowKnee2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[zwachtel vervolgens verder]" 
+      index="33" 
+      type="sequenceStep" 
+      value="WrapFurther2" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[fixeer de zwachtel]" 
+      index="34" 
+      type="sequenceStep" 
+      value="FixBandage2" 
+      extra="" 
+      encounter="2"/>
+  <action 
+      points="1" 
+      description="[knip eventueel uitstekend]" 
+      index="35" 
+      type="sequenceStep" 
+      value="FoldJersey2" 
+      extra="" 
+      encounter="3" 
+      blockUnlock="BandageOn"/>
+  <Action 
+      index="36" 
+      description="[controleer na het]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Controleer tenen" 
+      action="CheckToes" 
+      blockRequired="BandageOn" 
+      blockUnlock="ToesChecked" 
+      quiz="2"/>
+  <Action 
+      index="37" 
+      description="[help de cliënt607]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Doe schoenen aan" 
+      action="WearShoes" 
+      blockRequired="ToesChecked"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="38" 
+      type="use" 
+      value="WorkField"/>
+  <action 
+      comment=" Apply hand hygiene." 
+      index="39" 
+      points="1" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <Action 
+      index="40" 
+      description="[noteer de handeling974]" 
+      type="use" 
+      comment="last step" 
+      points="1" 
+      value="PaperAndPen"/>
+</ActionList>

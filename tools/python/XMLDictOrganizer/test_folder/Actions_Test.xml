@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst913]" 
+      commentUA="Зробити запис про проведену процедуру" 
+      audioHint="Injection/EAS4-2" 
+      index="0" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"/>
+</ActionList>

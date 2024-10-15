@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      audioHint="" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="[ondanks dat het68]" 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst navulbare insulinepen]"/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermdop]" 
+      index="2" 
+      type="combine" 
+      left="InsulinPenWithCap" 
+      quiz="2" 
+      right="" 
+      extra="[verwijder de beschermdop919]" 
+      messageTitle="[insulinepennen]" 
+      messageContent="[lees altijd de]"/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      index="3" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens918]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      index="3" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="[controleer de toedienlijst61]" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="2" 
+      description="[controleer of er]" 
+      index="4" 
+      type="examine" 
+      item="InsulinPen" 
+      expected="good" 
+      extra="[controleer het aantal]" 
+      messageTitle="[controle insuline]" 
+      messageContent="[controleer het aantal601]"/>
+  <action 
+      points="1" 
+      description="[meng troebele insuline]" 
+      index="5" 
+      type="useOn" 
+      item="InsulinPen" 
+      target="" 
+      buttonText="Zwenken" 
+      extra="[zwenk insulinepen met]"/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermlaag]" 
+      index="6" 
+      type="combine" 
+      left="InsulinNeedlePackage" 
+      right="" 
+      extra="[er zit een]"/>
+  <action 
+      points="1" 
+      description="[draai de naald]" 
+      index="7" 
+      type="combine" 
+      left="InsulinPen" 
+      right="InsulinOpenedNeedlePackage" 
+      extra="[draai de naald751]" 
+      messageTitle="[naalden]" 
+      messageContent="[gebruik voor elke]"/>
+  <action 
+      points="1" 
+      description="[verwijder de verpakking257]" 
+      index="8" 
+      type="combine" 
+      left="InsulinPenWithNeedlePackage" 
+      right="" 
+      extra="[haal de naaldverpakking]"/>
+  <action 
+      points="1" 
+      description="[draai de doseerknop]" 
+      index="9" 
+      type="sequenceStep" 
+      value="Set2IU" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[houd de insulinepen]" 
+      index="10" 
+      type="sequenceStep" 
+      value="HoldUntilDrop" 
+      extra="" 
+      messageTitle="[onluchten]" 
+      messageContent="[herhaal zo nodig]"/>
+  <action 
+      points="1" 
+      description="[houd de insulinepen397]" 
+      index="11" 
+      type="sequenceStep" 
+      value="SprayInGauze" 
+      extra=""/>
+  <action 
+      points="3" 
+      description="[stel het juiste]" 
+      index="12" 
+      type="useOn" 
+      item="InsulinPenWithNeedle" 
+      target="" 
+      buttonText="Instellen" 
+      messageTitle="[onderscheiden insuline]" 
+      messageContent="[soort: analoog (kunstmatige)]" 
+      extra="[stel het juiste670]"/>
+  <action 
+      points="3" 
+      description="[vraag aan je]" 
+      audioHint="" 
+      index="13" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="[voer dubbele controle]" 
+      messageTitle="[dubbele controle]" 
+      messageContent="[voer wanneer nodig]"/>
+  <action 
+      points="1" 
+      description="[vraag de cliënt779]" 
+      index="14" 
+      type="talk" 
+      blockUnlock="patient shirt up" 
+      topic="ShowBellyForInsulin" 
+      extra="[vraag de cliënt479]" 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[probeer rekening te]"/>
+  <action 
+      points="1" 
+      description="[start injecteren]" 
+      index="15" 
+      type="useOn" 
+      item="InsulinPenWithNeedle" 
+      target="" 
+      blockRequired="patient shirt up" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten." 
+      secondPlace="PatientPos" 
+      buttonText="Start injecteren" 
+      extra="[start met het731]"/>
+  <action 
+      points="1" 
+      description="[controleer of de439]" 
+      index="16" 
+      type="sequenceStep" 
+      value="CheckSkin" 
+      extra="[controleer of de927]"/>
+  <action 
+      points="1" 
+      description="[neem de insulinepen]" 
+      index="17" 
+      type="sequenceStep" 
+      value="takeoffcap" 
+      extra="[neem de insulinepen820]"/>
+  <action 
+      points="1" 
+      description="[steek de naald904]" 
+      index="18" 
+      type="sequenceStep" 
+      value="Stick needle in arm" 
+      extra="[steek de naald351]"/>
+  <action 
+      points="1" 
+      description="[fixeer de insulinepen]" 
+      index="19" 
+      type="sequenceStep" 
+      value="FixateInsulinPen" 
+      extra="[fixeer de spuit979]" 
+      messageTitle="[fixeren van de]" 
+      messageContent="[bij een cliënt]"/>
+  <action 
+      points="1" 
+      description="[druk met de]" 
+      index="20" 
+      type="sequenceStep" 
+      value="Inject medicine slow and steady" 
+      extra="[druk met duim]"/>
+  <action 
+      points="1" 
+      description="[houd de knop]" 
+      index="21" 
+      type="sequenceStep" 
+      value="WaitInsulinPen" 
+      extra="[houd de knop779]" 
+      messageTitle="[controleer insulinepen]" 
+      messageContent="[controleer of de698]"/>
+  <action 
+      points="1" 
+      description="[trek de naald675]" 
+      index="22" 
+      type="sequenceStep" 
+      value="PullInsulinPen" 
+      encounter="2" 
+      extra="[trek de naald185]"/>
+  <action 
+      points="1" 
+      description="[verwijder de naald950]" 
+      audioHint="InsulinInjection/Step 7" 
+      index="23" 
+      type="combine" 
+      left="InsulinPenWithNeedle" 
+      right="" 
+      extra="[verwijder de naald125]"/>
+  <action 
+      points="2" 
+      description="[doe de naald]" 
+      audioHint="InsulinInjection/Step 8" 
+      index="24" 
+      type="useOn" 
+      item="InsulinNeedle" 
+      target="" 
+      buttonText="Injectienaald weggooien" 
+      extra="[verwijder de naald587]"/>
+  <action 
+      points="1" 
+      description="[plaats de beschermdop]" 
+      audioHint="InsulinInjection/Step 7" 
+      index="25" 
+      type="combine" 
+      left="InsulinPen" 
+      right="InsulinPenCap" 
+      blockUnlock="TableCleaningAllowed" 
+      extra="[plaats de beschermdop914]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="26" 
+      type="use" 
+      value="WorkField" 
+      blockRequired="TableCleaningAllowed" 
+      extra="[ruim de materialen]" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[bewaar een in]"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="27" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst610]" 
+      audioHint="InsulinInjection/Step 11" 
+      index="28" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[teken de toedienlijst610]"/>
+</ActionList>

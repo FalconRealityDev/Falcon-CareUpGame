@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="(1)Apply handhygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      comment="(2)Create a clean workfield" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst voorgeschreven medicijn]" 
+      blockUnlock="WorkFieldCleanedAtStart" 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="[controleer het medicijn]" 
+      type="examine" 
+      item="MedicineBagParacetamol" 
+      points="2" 
+      expected="good"/>
+  <Action 
+      index="3" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      item="PatientRecords" 
+      points="3" 
+      blockUnlock="RecordsChecked" 
+      expected="good"/>
+  <Action 
+      index="4" 
+      description="[controleer de toedienlijst]" 
+      type="examine" 
+      item="PrescriptionForm" 
+      points="2" 
+      messageTitle="[pegsonde]" 
+      messageContent="[de percutane endoscopische]" 
+      expected="good"/>
+  <action 
+      comment="(3)Open syringe" 
+      points="1" 
+      description="[open de verpakking984]" 
+      index="5" 
+      type="combine" 
+      left="syringe_packed" 
+      right="" 
+      blockUnlock="Syringe20Unpacked" 
+      extra=""/>
+  <action 
+      comment="(3)Open syringe" 
+      points="1" 
+      description="[open de verpakking852]" 
+      index="6" 
+      type="combine" 
+      left="Syringe50ml_packed" 
+      right="" 
+      blockUnlock="Syringe50Unpacked" 
+      extra="[open de verpakking852]"/>
+  <Action 
+      index="7" 
+      description="[help de cliënt854]" 
+      type="talk" 
+      comment="Assist the client in a sitting or semi-sitting position" 
+      points="2" 
+      blockUnlock="PatIsLyingDown" 
+      blockRequired="WorkFieldCleanedAtStart, Syringe50Unpacked" 
+      topic="SitInBed"/>
+  <action 
+      points="1" 
+      description="[bescherm de kleding]" 
+      index="8" 
+      type="sequenceStep" 
+      value="PutPad" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[trek handschoenen aan]" 
+      index="9" 
+      type="sequenceStep" 
+      value="PutOnGloves" 
+      extra="" 
+      blockUnlock="GlovesTakenOn"/>
+  <action 
+      points="1" 
+      description="[neem de 50]" 
+      index="10" 
+      type="sequenceStep" 
+      value="TakeSyringe" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[maak het medicijn770]" 
+      index="11" 
+      type="sequenceStep" 
+      value="UnpackMedBag" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[doe de tablet]" 
+      index="12" 
+      type="sequenceStep" 
+      value="PutTablets" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[trek 2030 ml]" 
+      index="13" 
+      type="sequenceStep" 
+      value="FillWithWater" 
+      extra="" 
+      messageTitle="[gebruik kraanwater]" 
+      messageContent="[als in een]"/>
+  <action 
+      points="1" 
+      description="[zwenk de spuit]" 
+      index="14" 
+      type="sequenceStep" 
+      value="Shake" 
+      blockUnlock="EndOfSQ" 
+      extra=""/>
+  <Action 
+      comment="RemoveSealingCap" 
+      index="15" 
+      description="[verwijder het afsluitdopje]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Verwijder afsluitdopje" 
+      action="RemoveSealingCap" 
+      blockRequired="EndOfSQ"/>
+  <action 
+      comment="Fill the 20ml syringe with water" 
+      points="1" 
+      description="[vul de 20]" 
+      index="16" 
+      type="sequenceStep" 
+      value="Fill20mlSyringeWithWaterFirstTime" 
+      extra=""/>
+  <action 
+      comment="Place the 20 ml syringe of water on the connector/tube" 
+      points="1" 
+      description="[plaats de 20]" 
+      index="17" 
+      type="sequenceStep" 
+      value="Place20MlSyringeFirstTime" 
+      extra=""/>
+  <action 
+      comment="Remove the kocher and spray the water through the probe." 
+      points="1" 
+      description="[verwijder de kocher]" 
+      index="18" 
+      type="sequenceStep" 
+      value="Spray20mlSyringeFirstTime" 
+      extra=""/>
+  <action 
+      comment="Clamp the probe or extension tube with a kocher and remove the syringe." 
+      points="1" 
+      description="[klem de sonde]" 
+      index="19" 
+      type="sequenceStep" 
+      value="ClampProbe1" 
+      extra=""/>
+  <action 
+      comment="Remove the sealing cap and place the filled 50 ml syringe on the connector" 
+      points="1" 
+      description="[verwijder het afsluitdopje219]" 
+      index="20" 
+      type="sequenceStep" 
+      value="Place50ml" 
+      extra=""/>
+  <action 
+      comment="Let the medicine soak in or inject the liquid slowly." 
+      points="1" 
+      description="[laat het medicijn]" 
+      index="21" 
+      type="sequenceStep" 
+      value="InjectMedicineSlowly" 
+      extra=""/>
+  <action 
+      comment="Clamp the tube and remove syringe" 
+      points="1" 
+      description="[klem de sonde]" 
+      index="22" 
+      type="sequenceStep" 
+      value="ClampTubeAndRemoveSyringe" 
+      extra=""/>
+  <action 
+      comment="Fill the 20 ml syringe with water" 
+      points="1" 
+      description="[vul de 20]" 
+      index="23" 
+      type="sequenceStep" 
+      value="Fill20mlSyringeSecondTime" 
+      extra=""/>
+  <action 
+      comment="Place the 20 ml syringe of water on the connector/tube" 
+      points="1" 
+      description="[plaats de 20]" 
+      index="24" 
+      type="sequenceStep" 
+      value="Place-remove20MlSyringeSecondTime" 
+      extra=""/>
+  <action 
+      comment="Remove the kocher and spray the water through the probe." 
+      points="1" 
+      description="[verwijder de kocher]" 
+      index="25" 
+      type="sequenceStep" 
+      value="Spray20mlSyringeSecondTime" 
+      extra=""/>
+  <action 
+      comment="Clamp the probe or extension tube with a kocher and remove the syringe." 
+      points="1" 
+      description="[klem de sonde]" 
+      index="26" 
+      type="sequenceStep" 
+      value="ClampProbe2" 
+      extra=""/>
+  <action 
+      comment="Close the probe with the sealing cap" 
+      points="1" 
+      description="[sluit de sonde]" 
+      index="27" 
+      type="sequenceStep" 
+      value="CloseProbe" 
+      extra="" 
+      blockUnlock="SecondSequenceFinished"/>
+  <action 
+      comment="Create a clean workfield" 
+      points="1" 
+      description="[ruim de materialen746]" 
+      index="28" 
+      type="use" 
+      quiz="2" 
+      value="WorkField" 
+      blockRequired="SecondSequenceFinished" 
+      extra="[ruim de materialen384]" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen511]"/>
+  <Action 
+      index="29" 
+      description="[trek de handschoenen384]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockRequired="GlovesTakenOn, SecondSequenceFinished"/>
+  <action 
+      comment="Apply hand hygiene." 
+      points="1" 
+      description="[Pas handhygiëne]" 
+      fullDescription="" 
+      index="30" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      index="31" 
+      points="1" 
+      description="[Noteer de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra=""/>
+</ActionList>

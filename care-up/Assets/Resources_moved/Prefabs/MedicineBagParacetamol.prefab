@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.4}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2677849896795086937}
   m_RootOrder: 2
@@ -72,6 +73,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.6451279, w: 0.7640747}
   m_LocalPosition: {x: -0.0374941, y: 0.0107529, z: 0.0000331715}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2677849896795086937}
   m_RootOrder: 1
@@ -95,10 +97,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -123,6 +127,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3342360212324088547
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +161,7 @@ Transform:
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 9.59, y: 1.1071041, z: 12.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5318677216426113637}
   - {fileID: 676940892297379989}
@@ -182,10 +188,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -210,6 +218,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &2495868539029997503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: MedicineBag
   ObjectID: 0
-  description: medicijnzakje
+  description: '[i_medicijnzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -260,6 +269,7 @@ MonoBehaviour:
   prefabOutOfHands: 
   destroyOnDrop: 0
   customGhost: {fileID: 0}
+  noGhost: 0
 --- !u!65 &2495868539029997501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -349,6 +359,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0374941, y: 0.0282613, z: 0.0000331715}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2677849896795086937}
   m_RootOrder: 0
@@ -372,10 +383,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -400,3 +413,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

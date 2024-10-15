@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <action description="Volg de tips op je scherm" audioHint="" fullDescription="Volg de tips op je scherm."
-  index="0" type="combine" left="InsulinPen" right="InsulinOpenedNeedlePackage" extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  <action description="Volg de tips op je scherm" audioHint="" fullDescription="Volg de tips op je scherm."
-		index="1" type="combine" left="InsulinPenWithNeedlePackage" right="" extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  <action points="2" description="Volg de tips op je scherm" fullDescription="Volg de tips op je scherm" audioHint="InsulinInjection/Step 5"
-		index="2" type="useOn" item="InsulinPenWithNeedle" target="" buttonText="Ontluchten" extra ="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  <action description="Volg de tips op je scherm" audioHint="" fullDescription="Volg de tips op je scherm."
-  index="3" type="combine" left="InsulinPenWithNeedle" right="" extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  <action points="2" description="Volg de tips op je scherm" fullDescription="Volg de tips op je scherm" audioHint="InsulinInjection/Step 8"
-  index="4" type="useOn" item="InsulinNeedle" target="NeedleCup" extra ="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  
-  <action description="Gefeliciteerd!" fullDescription="" audioHint=""
-		index="5" type="use" value="__tutorialEnd" />
+  <action 
+    description="[volg de tips184]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="0" 
+    type="combine" 
+    left="InsulinPen" 
+    right="InsulinOpenedNeedlePackage" 
+    extra="[helaas dit is]"/>
+  <action 
+    description="[volg de tips184]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="1" 
+    type="combine" 
+    left="InsulinPenWithNeedlePackage" 
+    right="" 
+    extra="[helaas dit is]"/>
+  <action 
+    points="2" 
+    description="[volg de tips184]" 
+    fullDescription="[volg de tips184]" 
+    audioHint="InsulinInjection/Step 5" 
+    index="2" 
+    type="useOn" 
+    item="InsulinPenWithNeedle" 
+    target="" 
+    buttonText="Ontluchten" 
+    extra="[helaas dit is]"/>
+  <action 
+    description="[volg de tips184]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="3" 
+    type="combine" 
+    left="InsulinPenWithNeedle" 
+    right="" 
+    extra="[helaas dit is]"/>
+  <action 
+    points="2" 
+    description="[volg de tips184]" 
+    fullDescription="[volg de tips184]" 
+    audioHint="InsulinInjection/Step 8" 
+    index="4" 
+    type="useOn" 
+    item="InsulinNeedle" 
+    target="NeedleCup" 
+    extra="[helaas dit is]"/>
+  <action 
+    description="[ui_gefel579]" 
+    fullDescription="" 
+    audioHint="" 
+    index="5" 
+    type="use" 
+    value="__tutorialEnd"/>
 </ActionList>

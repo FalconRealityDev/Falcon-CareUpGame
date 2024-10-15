@@ -3,11 +3,13 @@ using System;
 using UnityEngine.UI;
 using BuildTimestampDisplay;
 using UnityEngine.EventSystems;
+using CareUp.Localize;
 
 namespace MBS
 {
     public class WUUGLoginGUI : WUUGLoginLocalisation
     {
+        public UILangSwitch uILangSwitch;
         double startTime;
         public Button passVisibilityToggle;
         public GameObject LoginGUIBackButton;
@@ -352,6 +354,16 @@ namespace MBS
 
             ErrorText.GetComponent<Text>();
             ErrorLoginText.GetComponent<Text>();
+
+            uILangSwitch.UpdateAllLangButtons();
+        }
+
+        private void UpdateTextComponents()
+        {
+            foreach(UILocalization uil in GameObject.FindObjectsOfType<UILocalization>(true))
+            {
+                uil.UpdateText();
+            }
         }
 
         //Debug options changed
@@ -455,8 +467,11 @@ namespace MBS
 
             // fuck this
             //if "Remember me" was selected during the last login, try to log in automatically...
+#if !UNITY_EDITOR
+
             if (attempt_auto_login && !WULogin.logged_in)
                 WULogin.AttemptAutoLogin();
+#endif
 
             //if (loginPasswordVisibility != null)
             //{

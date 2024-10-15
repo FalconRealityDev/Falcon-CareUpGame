@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CareUp.Localize;
 
 public class TheoryTab : MonoBehaviour
 {
@@ -39,8 +40,20 @@ public class TheoryTab : MonoBehaviour
     public void ShowTheory(string title_text, string descr_text, string buttonText = "")
     {
         Show(true);
-        Title.text = title_text;
-        Descr.text = descr_text;
+        //@
+        Title.text = LocalizationManager.GetValueIfKey(title_text);
+        //@
+        Descr.text = LocalizationManager.GetValueIfKey(descr_text);
+
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(Title.gameObject, title_text);
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(Descr.gameObject, descr_text);
+
+        }
     }
 
     void AutoContinue()

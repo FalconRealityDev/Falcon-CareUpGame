@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <action description="Praat met de patient door de tips op je scherm te volgen." audioHint="" fullDescription="Volg de tips op je scherm."
-		index="0" type="talk" topic="Hello" extra="Helaas dit is een verkeerde actie. Volg de tips om verder te gaan."></action>
-  
-  <action description="Gefeliciteerd!" fullDescription="" audioHint=""
-		index="2" type="use" value="__tutorialEnd" />
+  <action 
+    description="[praat met de]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="0" 
+    type="talk" 
+    topic="Hello" 
+    extra="[helaas dit is891]"/>
+  <action 
+    description="[ui_gefel579]" 
+    fullDescription="" 
+    audioHint="" 
+    index="2" 
+    type="use" 
+    value="__tutorialEnd"/>
 </ActionList>

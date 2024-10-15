@@ -348,6 +348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLights
       objectReference: {fileID: 0}
+    - target: {fileID: 3963604015467757386, guid: 3e2ceb451d6b14141b0437868fe1d21f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3963604015537646298, guid: 3e2ceb451d6b14141b0437868fe1d21f,
         type: 3}
       propertyPath: m_IsActive
@@ -1984,7 +1989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -2987,7 +2992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -3628,7 +3633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4226,7 +4231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4696,7 +4701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5381,7 +5386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6220,7 +6225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Scissors
   ObjectID: 0
-  description: Scissors
+  description: '[i_scissors]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7011,7 +7016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7242,6 +7247,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936422962131968639, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_handdoekdispenser]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936432486606857521, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_gootsteen]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936654716346491637, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_zeepdispenser]'
       objectReference: {fileID: 0}
     - target: {fileID: 9044219017613864257, guid: d9e3ef7d15292c440b23edfa0c285f67,
         type: 3}
@@ -8106,7 +8126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11155,7 +11175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11292,7 +11312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11544,7 +11564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BandageRoll
   ObjectID: 0
-  description: zwachtel
+  description: '[i_zwachtel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11574,7 +11594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BandageRoll
   ObjectID: 0
-  description: zwachtel
+  description: '[i_zwachtel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11941,7 +11961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BandagePack
   ObjectID: 0
-  description: Bandage Pack
+  description: '[i_bandage pack]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12071,7 +12091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Chair
   ObjectID: 0
-  description: chair
+  description: '[i_chair]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12276,7 +12296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Chair
   ObjectID: 0
-  description: stoel
+  description: '[i_stoel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12558,6 +12578,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7260651635430805932, guid: 5bdeb7c25ec4f3244b0e906fb5f572f9,
         type: 3}
+    - target: {fileID: 985518308868213706, guid: 91870bdae7e306d4fafebf0685fd7fba,
+        type: 3}
+      propertyPath: description
+      value: '[i_chair]'
+      objectReference: {fileID: 0}
     - target: {fileID: 985518309060082277, guid: 91870bdae7e306d4fafebf0685fd7fba,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12990,7 +13015,7 @@ PrefabInstance:
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
       propertyPath: description
-      value: Werkveld
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
@@ -13233,7 +13258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 'Plaster '
   ObjectID: 0
-  description: pleister
+  description: '[i_pleister]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13827,7 +13852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BandageRoll
   ObjectID: 0
-  description: zwachtel
+  description: '[i_zwachtel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13857,7 +13882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BandageRoll
   ObjectID: 0
-  description: zwachtel
+  description: '[i_zwachtel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14275,7 +14300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: _
   ObjectID: 0
-  description: _
+  description: '[i__]'
   nameArticle: _
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14686,6 +14711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7149124700170106294, guid: b4fc3b2b32051b948a99fa0455a9f575,
         type: 3}
+      propertyPath: description
+      value: '[i_bandage pack]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149124700170106294, guid: b4fc3b2b32051b948a99fa0455a9f575,
+        type: 3}
       propertyPath: useOriginalParent
       value: 1
       objectReference: {fileID: 0}
@@ -14806,6 +14836,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408157551092754515, guid: e2696b50ea95aae479801b6ed03d7ba0,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 2975412489189328425, guid: e2696b50ea95aae479801b6ed03d7ba0,
         type: 3}
@@ -15014,6 +15049,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7302496444826336619, guid: 9977d400b1562ce4598de4b64664eed8,
         type: 3}
+      propertyPath: description
+      value: '[i_pleister]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302496444826336619, guid: 9977d400b1562ce4598de4b64664eed8,
+        type: 3}
       propertyPath: useOriginalParent
       value: 1
       objectReference: {fileID: 0}
@@ -15090,6 +15130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: scissors_bandaging
+      objectReference: {fileID: 0}
+    - target: {fileID: 6762976308433716689, guid: 35be4d3db46db8e43a6db05a5a3878d3,
+        type: 3}
+      propertyPath: description
+      value: '[i_scissors]'
       objectReference: {fileID: 0}
     - target: {fileID: 6762976308433716691, guid: 35be4d3db46db8e43a6db05a5a3878d3,
         type: 3}
@@ -15199,9 +15244,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1926948926}
     m_Modifications:
+    - target: {fileID: 992424328, guid: b32a0c0d14cc63d419a5381d8aa3cafd, type: 3}
+      propertyPath: description
+      value: '[i_zwachtel]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1161667600, guid: b32a0c0d14cc63d419a5381d8aa3cafd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147437662315192182, guid: b32a0c0d14cc63d419a5381d8aa3cafd,
+        type: 3}
+      propertyPath: description
+      value: '[i_zwachtel]'
       objectReference: {fileID: 0}
     - target: {fileID: 3654990504318121813, guid: b32a0c0d14cc63d419a5381d8aa3cafd,
         type: 3}
@@ -15495,6 +15549,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838267209761699232, guid: 47295747d2817db4b9a60cdc0a69ca5e,
+        type: 3}
+      propertyPath: description
+      value: '[i_zwachtel]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452014237856279253, guid: 47295747d2817db4b9a60cdc0a69ca5e,
+        type: 3}
+      propertyPath: description
+      value: '[i_zwachtel]'
       objectReference: {fileID: 0}
     - target: {fileID: 8452014238181418017, guid: 47295747d2817db4b9a60cdc0a69ca5e,
         type: 3}

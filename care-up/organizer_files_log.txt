@@ -3551,6 +3551,7 @@
  0 kb	 0.0% Assets/Loading Screen/Content/Art/Audio/Confirm.mp3
  0 kb	 0.0% Packages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Outline.cs
  0 kb	 0.0% Assets/Loading Screen/Content/Art/UI/box.psd
+ 0 kb	 0.0% Assets/Scripts/CALocalization/UILocalization.cs
  0 kb	 0.0% Assets/Resources/Sprites/nUI/button_Off.png
  0 kb	 0.0% Assets/gui_flat_light/Font/Poppins-Medium.ttf
  0 kb	 0.0% Assets/gui_flat/Font/Lato-Bold.ttf
@@ -3770,6 +3771,7 @@
  0 kb	 0.0% Assets/Resources/Sprites/nUI/diamant_particle.png
  0 kb	 0.0% Assets/Resources/Sprites/nUI/button_Plus.png
  0 kb	 0.0% Assets/Loading Screen/Content/Art/Audio/Confirm.mp3
+ 0 kb	 0.0% Assets/Scripts/CALocalization/UILocalization.cs
  0 kb	 0.0% Assets/Resources/Sprites/nUI/medalGold.png
  0 kb	 0.0% Assets/GUI Kit Mono Round/_PNG/19_Function_Button/Button_Dig/btn_white_dig_info.png
  0 kb	 0.0% Assets/Resources_moved/Animations/UI/NoNameFound.anim
@@ -4253,6 +4255,7 @@
  0 kb	 0.0% Assets/gui_flat_light/Elements/panels/universal_panel_corner_20px.png
  0 kb	 0.0% Assets/Loading Screen/Content/Art/UI/box.psd
  0 kb	 0.0% Assets/Resources/Models/avatar/Armature_sad_idle.anim
+ 0 kb	 0.0% Assets/Scripts/CALocalization/UILocalization.cs
  0 kb	 0.0% Assets/Standard Assets/Hospital Room/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowOverSprite.png
  0 kb	 0.0% Assets/Resources/Audio/Menu/Button_Hover.wav
  0 kb	 0.0% Assets/Resources/NecessaryPrefabs/UI/SceneloaderCanvas.prefab
@@ -4409,12 +4412,12 @@
  0 kb	 0.0% Assets/Resources/Sprites/txt_field_ic_error.png
  0 kb	 0.0% Assets/Resources/Models/avatar/Armature_dance02.anim
  0 kb	 0.0% Assets/Scripts/Avatar/AvatarRightEye.cs
+ 0 kb	 0.0% Assets/GUI Kit Mono Round/_PNG/01_Login_Signup/txt_field_ic_error.png
  0 kb	 0.0% Assets/Resources/Audio/noI.ogg
  0 kb	 0.0% Assets/Resources_moved/Animations/avatar_w.controller
  0 kb	 0.0% Assets/Resources/Sprites/nUI/download_icon.png
  0 kb	 0.0% Assets/Scenes/EndScore_Test.unity
  0 kb	 0.0% Packages/com.unity.ugui/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs
- 0 kb	 0.0% Assets/GUI Kit Mono Round/_PNG/01_Login_Signup/txt_field_ic_error.png
  0 kb	 0.0% Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs
  0 kb	 0.0% Assets/Resources/Sprites/nUI/button_Back_press.png
  0 kb	 0.0% Assets/Resources/Sprites/nUI/scrollV_handle.png
@@ -4494,6 +4497,7 @@
  0 kb	 0.0% Assets/gui_flat_light/Elements/panels/universal_panel_corner_20px.png
  0 kb	 0.0% Assets/Loading Screen/Content/Art/UI/box.psd
  0 kb	 0.0% Assets/Resources/Models/avatar/Armature_sad_idle.anim
+ 0 kb	 0.0% Assets/Scripts/CALocalization/UILocalization.cs
  0 kb	 0.0% Assets/Scenes/EndScoreSettings.lighting
  0 kb	 0.0% Assets/Resources/Audio/Menu/Button_Hover.wav
  0 kb	 0.0% Assets/Resources/NecessaryPrefabs/UI/SceneloaderCanvas.prefab

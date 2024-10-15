@@ -1,59 +1,128 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
   <step>
-    <option text="Omvat met één hand de penis en schuif de voorhuid (wanneer aanwezig) terug met een gaasje" animation="shift foreskin" audio="Dialogue/Catheterisation Male/Cleaning and male response"/>
-    <option text="Omvat met twee handen de penis en schuif de voorhuid (wanneer aanwezig) terug met een gaasje" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de rand van de glanspenis" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de glanspenis" animation=""/>
+    <option 
+      text="[omvat met één]" 
+      animation="shift foreskin" 
+      audio="Dialogue/Catheterisation Male/Cleaning and male response"/>
+    <option 
+      text="[omvat met twee]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw146]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de rand van de glanspenis" animation="clean sides gloss penis"/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de glanspenis" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de meatus" animation=""/>
-    <option text="Spuit het glijmiddel langzaam in de urethra. Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" animation=""/>
+    <option 
+      text="[pak een nieuw]" 
+      animation="clean sides gloss penis"/>
+    <option 
+      text="[pak een nieuw146]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw779]" 
+      animation=""/>
+    <option 
+      text="[spuit het glijmiddel941]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de glanspenis" animation="clean gloss penis"/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de meatus" animation=""/>
-    <option text="Spuit het glijmiddel langzaam in de urethra. Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" animation=""/>
-    <option text="Plaats een steriel gaasje onder de penis en leg de penis hier op" animation=""/>
+    <option 
+      text="[pak een nieuw146]" 
+      animation="clean gloss penis"/>
+    <option 
+      text="[pak een nieuw779]" 
+      animation=""/>
+    <option 
+      text="[spuit het glijmiddel941]" 
+      animation=""/>
+    <option 
+      text="[plaats een steriel]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de urethra opening" animation="clean meatus"/>
-    <option text="Spuit het glijmiddel langzaam in de urethra. Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" animation=""/>
-    <option text="Plaats een steriel gaasje onder de penis en leg de penis hier op" animation=""/>
-    <option text="Trek de handschoenen uit en gooi ze in het afvalbakje" animation=""/>
-  </step>
-
-  <step>
-    <option text="Plaats een steriel gaasje onder de penis en leg de penis hier op" animation="lay sterile gauze"/>
-    <option text="Spuit het glijmiddel langzaam in de urethra. Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" animation=""/>
-    <option text="Trek de handschoenen uit en gooi ze in de afvalbak" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de glanspenis" animation=""/>
-  </step>
-  <step>
-    <option text="Spuit het glijmiddel langzaam in de urethra. Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" animation="insert lube" audio="Dialogue/Catheterisation Male/Lube and male response"/>
-    <option text="Trek de handschoenen uit en gooi ze in de afvalbak" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de glanspenis" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp deze uit en reinig de meatus" animation=""/>
-  </step>
-
-  <step>
-    <option text="Haal de conus van de spuit uit de urethra en houd de urethra dicht" animation="remove syringe"/>
-    <option text="Gooi de spuit in het afvalbakje" animation=""/>
-    <option text="Haal de conus van de spuit uit de urethra en houd de urethra niet dicht" animation=""/>
+    <option 
+      text="[pak een nieuw789]" 
+      animation="clean meatus"/>
+    <option 
+      text="[spuit het glijmiddel941]" 
+      animation=""/>
+    <option 
+      text="[plaats een steriel]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Gooi de spuit in de afvalbak" animation="trash syringe"/>
-    <option text="Trek de handschoenen uit en gooi ze in de afvalbak" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp het uit en reinig de glanspenis" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp het uit en reinig de meatus" animation=""/>
+    <option 
+      text="[plaats een steriel]" 
+      animation="lay sterile gauze"/>
+    <option 
+      text="[spuit het glijmiddel941]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen527]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw146]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Trek de handschoenen uit en gooi ze in de afvalbak" animation="remove gloves"/>
-    <option text="Houd de handschoenen aan" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp het uit en reinig de glanspenis" animation=""/>
-    <option text="Pak een nieuw gaasje, knijp het uit en reinig de meatus" animation=""/>
+    <option 
+      text="[spuit het glijmiddel941]" 
+      animation="insert lube" 
+      audio="Dialogue/Catheterisation Male/Lube and male response"/>
+    <option 
+      text="[trek de handschoenen527]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw146]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw779]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[haal de conus558]" 
+      animation="remove syringe"/>
+    <option 
+      text="[gooi de spuit671]" 
+      animation=""/>
+    <option 
+      text="[haal de conus243]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[gooi de spuit]" 
+      animation="trash syringe"/>
+    <option 
+      text="[trek de handschoenen527]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw764]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw537]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[trek de handschoenen527]" 
+      animation="remove gloves"/>
+    <option 
+      text="[houd de handschoenen]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw764]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw537]" 
+      animation=""/>
   </step>
 </AnimationSequence>

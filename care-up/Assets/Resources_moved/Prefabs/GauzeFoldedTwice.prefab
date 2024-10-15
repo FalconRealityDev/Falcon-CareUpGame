@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Gevouwen gaasje
   ObjectID: 0
-  description: Gevouwen gaasje
+  description: '[i_gevouwen gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}

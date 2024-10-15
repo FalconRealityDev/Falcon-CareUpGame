@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      description="[volg de tips]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Volg de tips om verder te gaan."/>
+  <action 
+      description="[volg de tips]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="1" 
+      type="use" 
+      value="HandCleaner" 
+      extra="Volg de tips om verder te gaan."/>
+  <action 
+      description="[volg de tips]" 
+      fullDescription="[volg de tips]" 
+      index="2" 
+      type="use" 
+      value="WorkField" 
+      extra="Volg de tips om verder te gaan."/>
+  <action 
+      description="[volg de tips]" 
+      fullDescription="" 
+      audioHint="" 
+      index="3" 
+      type="use" 
+      value="__tutorialEnd"/>
+</ActionList>

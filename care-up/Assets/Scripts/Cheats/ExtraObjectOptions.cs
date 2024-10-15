@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using CareUp.Localize;
 
 public class ExtraObjectOptions : MonoBehaviour
 {
@@ -26,7 +27,6 @@ public class ExtraObjectOptions : MonoBehaviour
                         neededObjectsData.Add(obj.name, obj.GetComponent<InteractableObject>().description);
                         neededObjectsArticle.Add(obj.name, obj.GetComponent<InteractableObject>().nameArticle);
                     }
-
                 }
             }
         }       

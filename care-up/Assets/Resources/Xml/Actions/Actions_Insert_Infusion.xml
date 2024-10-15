@@ -1,417 +1,367 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <Action
-    index="0"
-    description="[Begroet]"
-    type="talk"
-    points="1"
-    optional=""
-    audioHint=""
-    topic="Hello" />
-  <Action
-    index="0"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="1. Apply hand hygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner" />
-  <Action
-    index="1"
-    description="Maak een schoon werkveld en zet de benodigdheden binnen handbereik"
-    type="use"
-    points="1"
-    messageTitle="Je het volgende nodig hebt?"
-    messageContent="&#xD;
-- handschoenen&#xD;
-- desinfectans, chloorhexidine 0,5% in alcohol 70%&#xD;
-- gaasjes&#xD;
-- flushvloeistof: kant-en-klare NaCl spuit, OF: &#xD;
-  - steriele luerlock-10 ml-spuit&#xD;
-  - steriele opzuignaald&#xD;
-  - flacon NaCl 0,9% (fysiologisch zout)&#xD;
-- onderlegger&#xD;
-- stuwband&#xD;
-- zo nodig schone schaar of tondeuse&#xD;
-- steriele infuuscanule&#xD;
-- naaldloze connector (of steriel afsluitdopje)&#xD;
-- transparante infuuspleister&#xD;
-- naaldenbeker&#xD;
-- afvalbak&#xD;
-"
-    value="WorkField"
-    blockUnlock="CleanedWorkfield" />
-  <Action
-    index="2"
-    description="Overgiet een gaasje met alcohol"
-    type="combine"
-    points="1"
-    left="Cloth"
-    right="Alcohol"
-    audioHint="Injection/H4-2" />
-  <Action
-    index="3"
-    description="Controleer het medicijn"
-    type="examine"
-    item="Ampoule"
-    points="2"
-    messageTitle="Flexibele kunststof canule"
-    messageContent="Er bevindt zich een holle metalen naald in de flexibele kunststof canule die ongeveer een millimeter buiten de canule uitsteekt. Hiermee wordt de vene (ader) aangeprikt en vervolgens wordt de flexibele canule in de vene geschoven. De metalen naald wordt dan uit de canule verwijderd. De canule is latexvrij en gemaakt van polyurethaan."
-    audioHint="Injection/H3-2"
-    expected="good" />
-  <Action
-    index="4"
-    description="Controleer de toedienlijst"
-    type="examine"
-    item="PrescriptionForm"
-    points="2"
-    messageTitle="5x juist-regel"
-    messageContent="Er zijn 5 controles die je altijd moet doen voordat je medicijnen geeft. Alleen als alle 5 punten juist zijn, mag je het medicijn toedienen.&#xD;&#xD;&#xD;&#xD;&#xD;
-    &#xD;&#xD;&#xD;&#xD;&#xD;
-    De vijf regels zijn:&#xD;&#xD;&#xD;&#xD;&#xD;
-    &#xD;&#xD;&#xD;&#xD;&#xD;
-1.  Het juiste medicijn: &#xD;&#xD;&#xD;&#xD;&#xD;
-kijk op de toedienlijst en controleer of de informatie op de medicijnverpakking of het baxterzakje hiermee overeenkomen. Kijk hierbij ook naar de vervaldatum van het medicijn.&#xD;&#xD;&#xD;&#xD;&#xD;
-        &#xD;&#xD;&#xD;&#xD;&#xD;
-2.  De juiste cliënt: &#xD;&#xD;&#xD;&#xD;&#xD;
-controleer of je de juiste cliënt voor je hebt.&#xD;&#xD;&#xD;&#xD;&#xD;
-        &#xD;&#xD;&#xD;&#xD;&#xD;
-3.  Het juiste tijdstip: &#xD;&#xD;&#xD;&#xD;&#xD;
-kijk op de toedienlijst voor het tijdstip en vergelijk dit met het tijdstip waarop je de medicijnen geeft.&#xD;&#xD;&#xD;&#xD;&#xD;
-        &#xD;&#xD;&#xD;&#xD;&#xD;
-4.  De juiste manier van toedienen: &#xD;&#xD;&#xD;&#xD;&#xD;
-hanteer de instructies van de toedienlijst. Je moet bekend zijn met de toedieningsvorm. Ben je hier niet mee bekent, dien dan niet toe.&#xD;&#xD;&#xD;&#xD;&#xD;
-    &#xD;&#xD;&#xD;&#xD;&#xD;
-5.  De juiste dosis: &#xD;&#xD;&#xD;&#xD;&#xD;
-je mag niet afwijken van de de voorgeschreven dosis die vermeld staat op de toedienlijst. De verantwoordelijkheid van de juiste dosering ligt bij de arts en de apotheker."
-    audioHint="InjectionSubcutaneous/Step 5"
-    expected="good" />
-  <Action
-    index="5"
-    description="Controleer cliëntgegevens"
-    type="examine"
-    item="PatientRecords"
-    points="2"
-    quiz="2"
-    audioHint="Injection/H3-2"
-    expected="good" />
-  <Action
-    index="6"
-    description="Neem de opzuignaald uit de verpakking"
-    type="combine"
-    commentUA="Дістаньте голку для набирання з пакета"
-    points="1"
-    left=""
-    right="AbsorptionNeedlePacked"
-    audioHint="Injection/H4-2" />
-  <Action
-    index="7"
-    description="Haal de spuit uit de verpakking."
-    type="combine"
-    commentUA="Дістаньте шприц з пакета"
-    points="1"
-    messageTitle="Perifeer veneus infuus"
-    messageContent="Een perifeer infuus is voor het toedienen van infuusvloeistof, bloed(producten) of medicijnen. Een perifeer infuus zit in een ader (vene), hierdoor wordt de toegediende vloeistof verspreidt via de ader door het hele lichaam. "
-    left=""
-    right="syringe_packed"
-    audioHint="Injection/H4-2" />
-  <Action
-    index="8"
-    description="Desinfecteer de hals van de ampul"
-    type="combine"
-    points="3"
-    left="DesinfectionCloth"
-    right="Ampoule"
-    audioHint="Injection/H4-2" />
-  <Action
-    index="9"
-    description="Zet de opzuignaald op de spuit"
-    type="combine"
-    points="1"
-    left="Syringe"
-    right="AbsorptionNeedle"
-    audioHint="Injection/H6-3" />
-  <Action
-    index="10"
-    description="Breek het ampul NaCl 0,9%"
-    type="combine"
-    points="2"
-    left="DesinfectedAmpoule"
-    right="Cloth"
-    audioHint="InjectionSubcutaneous/Step 6.1" />
-  <Action
-    index="11"
-    description="Doe het gaasje met gebroken ampul in de naaldcontainer"
-    type="useOn"
-    item="ClothWithAmpouleTop"
-    points="2"
-    buttonText="Gebroken ampul weggooien"
-    audioHint=""
-    target="" />
-  <Action
-    index="12"
-    description="Verwijder de beschermhuls van de opzuignaald"
-    type="combine"
-    points="1"
-    left="SyringeWithAbsorptionNeedleCap"
-    right=""
-    audioHint="Injection/H6-3" />
-  <Action
-    index="13"
-    description="Zuig de voorgeschreven hoeveelheid NaCl 0,9% op"
-    type="combine"
-    points="3"
-    left="SyringeWithAbsorptionNeedle"
-    right="OpenedAmpoule"
-    audioHint="Injection/H7-2"
-    blockUnlock="UnAirSyringe, MedsInSyringe" />
-  <Action
-    index="14"
-    description="Ontlucht de spuit."
-    type="useOn"
-    item="SyringeWithAbsorptionNeedle"
-    points="2"
-    quiz="3"
-    buttonText="Ontluchten"
-    audioHint="Injection/H8-2"
-    target=""
-    blockUnlock="UnAirSyringeDone"
-    blockRequired="UnAirSyringe" />
-  <Action
-    index="15"
-    description="Verwijder de naald van de spuit"
-    type="combine"
-    points="1"
-    left="SyringeWithAbsorptionNeedle"
-    right=""
-    audioHint=""
-    blockRequired="MedsInSyringe" />
-  <Action
-    index="16"
-    description="Doe de opzuignaald in de naaldcontainer"
-    type="useOn"
-    item="AbsorptionNeedleNoCap"
-    points="1"
-    buttonText="Opzuignaald weggooien"
-    objectsAllowedInHands="SyringeWithAbsorptionNeedle"
-    audioHint="Injection/H10-2"
-    target="" />
-  <Action
-    index="17"
-    description="Leg de spuit terug in de geopende verpakking."
-    posID="0"
-    type="drop"
-    item="SyringeWithAbsorptionNeedle"
-    points="1"
-    blockUnlock="PreparationsDone" />
-  <Action
-    index="18"
-    description="Vraag de cliënt een comfortabele houding aan te nemen"
-    type="talk"
-    comment="Ask the client to lie or sit on the bed on his back."
-    points="2"
-    topic="SitOnBed"
-    blockUnlock="PatIsLyingDown"
-    blockRequired="CleanedWorkfield, PreparationsDone" />
-  <Action
-    index="19"
-    description="Leg de onderlegger onder de arm van de cliënt"
-    type="sequenceStep"
-    points="1"
-    messageTitle="Bepaal de voorkeursplaats voor inbrengen zo mogelijk samen met de cliënt."
-    messageContent="- Houd rekening met de voorkeur en ervaring van de cliënt bij het selecteren van de plaats voor de infuuskatheter.
-
-- Plaats deze bij voorkeur in de onderarm om risico op mechanische flebitis te verkleinen. Als dit niet mogelijk is, kies dan voor de hand. Houd er rekening mee dat de aderen in de hand beweeglijker zijn, wat de kans op irritatie van de bloedvatwand en daarmee op infuuskatheter gerelateerde infecties (flebitis) vergroot. Bovendien is het fixeren van een infuuskatheter op de hand lastiger.
-
-- In sommige gevallen wordt een perifeer infuus in het onderbeen of de voet geplaatst, meestal in acute situaties of als de arm of hand niet geschikt is.
-
-Weeg zorgvuldig af of een tweede poging om te prikken nodig is als de eerste poging mislukt. Voer niet meer dan twee pogingen uit."
-    value="PlacePad" />
-  <Action
-    index="20"
-    description="Verwijder zo nodig overmatige haargroei met een schone schaar of tondeuse"
-    type="sequenceStep"
-    points="1"
-    value="RemoveHair" />
-  <Action
-    index="21"
-    description="Breng de stuwband aan en vraag de cliënt een vuist te maken"
-    type="sequenceStep"
-    points="1"
-    messageTitle="Stuwband"
-    messageContent="Gebruik de stuwband om het bloed in de aders op te stuwen. Hierdoor worden de aders voelbaar en de ligging/verloop zichtbaar. Betast met de toppen van je vingers de aders. &#xD;
-De stuwband moet ongeveer een handbreedte boven de aan te prikken plaats aangelegd worden. Stuw daarbij niet te hard, de polsslag moet namelijk voelbaar blijven. Stuw daarnaast ook niet te lang, &#xD;
-dit kan een onaangenaam gevoel geven. Geeft de arm 2 minuten rust voordat eventueel opnieuw gestuwd wordt.&#xD;
-"
-    value="ApplyTourniquet" />
-  <Action
-    index="22"
-    description="Palpeer het aan te prikken bloedvat."
-    type="sequenceStep"
-    points="1"
-    value="PalpetVessel" />
-  <Action
-    index="23"
-    description="Desinfecteer de huid met het desinfectansgaasje en laat drogen"
-    type="sequenceStep"
-    points="1"
-    value="DisSkin" />
-  <Action
-    index="24"
-    description="[Trek de handschoenen aan]"
-    type="sequenceStep"
-    comment="Put on gloves."
-    points="1"
-    value="TakeOnGloves"
-    blockUnlock="GlovesTakenOn" />
-  <Action
-    index="25"
-    description="Neem de canule in de hand waarmee je gaat aanprikken"
-    type="sequenceStep"
-    points="1"
-    messageTitle="Indicaties perifeer infuus"
-    messageContent="Een perifeer infuus kan je in verschillende situaties gebruiken.&#xD;
-    &#xD;
-    - Toedieningen die minder dan een week duren, kortdurend.&#xD;
-    - Vloeistoffen die een niet of nauwelijks irriterende werking hebben op de bloedvatwand.&#xD;
-    - Wanneer drie of meer perifere aders geschikt en beschikbaar zijn om aan te prikken.&#xD;
-    &#xD;
-Een Midline katheter is ook een perifeer infuus, deze infuuskatheter wordt dieper ingebracht in de ader. Als de behandeling met infusie 1 tot 4 weken duurt, dan ligt de voorkeur bij deze katheter.&#xD;
-    "
-    value="TakeCannula" />
-  <Action
-    index="26"
-    description="Plaats de duim van de andere hand ongeveer 5 cm onder de aanprikplaats en trek de huid strak"
-    type="sequenceStep"
-    comment="Place the thumb of the other hand about 5 cm below the puncture site and pull the skin taut"
-    points="1"
-    value="PlaceThumb" />
-  <Action
-    index="27"
-    description="Steek de canule, onder een hoek van 15-30° ten opzichte van de huid, een paar mm in de vene"
-    type="sequenceStep"
-    comment="Insert the cannula a few mm into the vein at an angle of 15-30° to the skin"
-    points="1"
-    value="InsertCannula" />
-  <Action
-    index="28"
-    description="Trek de opvoernaald iets terug (het puntje van de naald zit nog door de huid)"
-    type="sequenceStep"
-    comment="Slightly retract the advance needle (the tip of the needle is still through the skin)"
-    points="1"
-    value="RetractNeedle" />
-  <Action
-    index="29"
-    description="Houd de opvoernaald vast en schuif met de andere hand de canule volledig op in het bloedvat"
-    type="sequenceStep"
-    comment="Hold the advancement needle and with the other hand slide the cannula completely into the vessel"
-    points="1"
-    value="HoldBackPart" />
-  <Action
-    index="30"
-    description="Maak de stuwband los en vraag de cliënt de hand te ontspannen (geen vuist meer)"
-    type="sequenceStep"
-    comment="Loosen the strap and ask the client to relax the hand (no more fist)"
-    points="1"
-    quiz="2"
-    value="ReleaseTourniquet" />
-  <Action
-    index="31"
-    description="Druk het bloedvat achter de canule af"
-    type="sequenceStep"
-    comment="Impress the vessel behind the cannula"
-    points="1"
-    value="DepressVessel" />
-  <Action
-    index="32"
-    description="Verwijder de opvoernaald en gooi deze in de naaldenbeker."
-    type="sequenceStep"
-    comment="Remove the raising needle and throw it into the needle cup."
-    points="1"
-    value="RemoveAdvNeedle" />
-  <Action
-    index="33"
-    description="Pak de gevulde spuit met NaCl 0,9% en koppel deze op de infuuscanule"
-    type="sequenceStep"
-    comment="Take the filled syringe with NaCl 0.9% and connect it to the infusion cannula"
-    points="1"
-    value="ConnectSyringe" />
-  <Action
-    index="34"
-    description="Stop met het afdrukken van het bloedvat"
-    type="sequenceStep"
-    comment="Stop pressing/holding the blood vessel."
-    points="1"
-    value="PullBack" />
-  <Action
-    index="35"
-    description="Spuit NaCl 0,9% in"
-    type="sequenceStep"
-    comment="Inject NaCl 0.9%"
-    points="1"
-    value="InjectNaCl" />
-  <Action
-    index="36"
-    description="Druk het bloedvat achter de canule af"
-    type="sequenceStep"
-    comment="Impress the vessel behind the cannula"
-    points="1"
-    value="DepressVessel2" />
-  <Action
-    index="37"
-    description="Verwijder de spuit en plaats het steriel afsluitdopje op de canule"
-    type="sequenceStep"
-    comment="If present, clamp off the cannula and remove the syringe."
-    points="1"
-    value="RemoveSyringe"
-    blockUnlock="CleanWorkfield" />
-  <Action
-    index="38"
-    description="Bevestig de vleugels van de infuuscanule op de huid met de bij de infuuscanule geleverde plakstrips"
-    type="sequenceStep"
-    comment="Attach the wings of the IV cannula to the skin with the adhesive strips supplied with the IV cannula"
-    points="1"
-    value="AttachSPlaster" />
-  <Action
-    index="39"
-    description="Fixeer de infuuscanule met de transparante infuuspleister."
-    type="sequenceStep"
-    comment="Fix the infusion cannula with the transparent infusion plaster."
-    points="1"
-    messageTitle="Infuuspleisters"
-    messageContent="Een transparante infuuspleister wordt gebruikt voor het afdekken van de insteekplaats van een perifere of centrale infuuskatheter. De insteekplaats wordt dan beschermt tegen micro-organismen en de pleister fixeert de infuuskatheter. &#xD;
-Bij het gebruik van een transparante infuuspleister blijft de insteekplaats zichtbaar. Daarom wordt bij voorkeur de transparante infuuspleister gebruikt. Je hebt daarnaast ook nog de 'Antimicrobiële infuuspleister'. "
-    value="FixBPlaster"
-    blockUnlock="SequenceFinished" />
-  <Action
-    index="40"
-    description="Trek de handschoenen uit."
-    type="general"
-    item=""
-    points="1"
-    buttonText="Trek handschoenen uit"
-    action="TakeOffGlovesWithoutThrowing"
-    blockRequired="GlovesTakenOn, SequenceFinished" />
-  <Action
-    index="41"
-    description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-    type="use"
-    points="1"
-    value="WorkField"
-    blockRequired="CleanWorkfield" />
-  <Action
-    index="42"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="1. Apply hand hygiene"
-    points="3"
-    value="HandCleaner" />
-  <Action
-    index="43"
-    description="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"
-    type="use"
-    points="3"
-    value="PaperAndPen"
-    audioHint="Injection/EAS4-2" />
+  <Action 
+    index="0" 
+    description="[Begroet]" 
+    type="talk" 
+    points="1" 
+    optional="" 
+    audioHint="" 
+    topic="Hello"/>
+  <Action 
+    index="0" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]" 
+    value="HandCleaner"/>
+  <Action 
+    index="1" 
+    description="[Maak een schoon werkveld]" 
+    type="use" 
+    points="1" 
+    messageTitle="[je het volgende]" 
+    messageContent="[handschoenen desinfectans chloorhexidine]" 
+    value="WorkField" 
+    blockUnlock="CleanedWorkfield"/>
+  <Action 
+    index="2" 
+    description="[overgiet een gaasje]" 
+    type="combine" 
+    points="1" 
+    left="Cloth" 
+    right="Alcohol" 
+    audioHint="Injection/H4-2"/>
+  <Action 
+    index="3" 
+    description="[controleer het medicijn]" 
+    type="examine" 
+    item="Ampoule" 
+    points="2" 
+    messageTitle="[flexibele kunststof canule]" 
+    messageContent="[er bevindt zich58]" 
+    audioHint="Injection/H3-2" 
+    expected="good"/>
+  <Action 
+    index="4" 
+    description="[controleer de toedienlijst]" 
+    type="examine" 
+    item="PrescriptionForm" 
+    points="2" 
+    messageTitle="[5x juistregel]" 
+    messageContent="[er zijn 5]" 
+    audioHint="InjectionSubcutaneous/Step 5" 
+    expected="good"/>
+  <Action 
+    index="5" 
+    description="[controleer cliëntgegevens]" 
+    type="examine" 
+    item="PatientRecords" 
+    points="2" 
+    quiz="2" 
+    audioHint="Injection/H3-2" 
+    expected="good"/>
+  <Action 
+    index="6" 
+    description="[neem de opzuignaald]" 
+    type="combine" 
+    commentUA="Дістаньте голку для набирання з пакета" 
+    points="1" 
+    left="" 
+    right="AbsorptionNeedlePacked" 
+    audioHint="Injection/H4-2"/>
+  <Action 
+    index="7" 
+    description="[haal de spuit5]" 
+    type="combine" 
+    commentUA="Дістаньте шприц з пакета" 
+    points="1" 
+    messageTitle="[perifeer veneus infuus]" 
+    messageContent="[een perifeer infuus]" 
+    left="" 
+    right="syringe_packed" 
+    audioHint="Injection/H4-2"/>
+  <Action 
+    index="8" 
+    description="[desinfecteer de hals]" 
+    type="combine" 
+    points="3" 
+    left="DesinfectionCloth" 
+    right="Ampoule" 
+    audioHint="Injection/H4-2"/>
+  <Action 
+    index="9" 
+    description="[zet de opzuignaald739]" 
+    type="combine" 
+    points="1" 
+    left="Syringe" 
+    right="AbsorptionNeedle" 
+    audioHint="Injection/H6-3"/>
+  <Action 
+    index="10" 
+    description="[breek het ampul]" 
+    type="combine" 
+    points="2" 
+    left="DesinfectedAmpoule" 
+    right="Cloth" 
+    audioHint="InjectionSubcutaneous/Step 6.1"/>
+  <Action 
+    index="11" 
+    description="[doe het gaasje603]" 
+    type="useOn" 
+    item="ClothWithAmpouleTop" 
+    points="2" 
+    buttonText="Gebroken ampul weggooien" 
+    audioHint="" 
+    target=""/>
+  <Action 
+    index="12" 
+    description="[verwijder de beschermhuls]" 
+    type="combine" 
+    points="1" 
+    left="SyringeWithAbsorptionNeedleCap" 
+    right="" 
+    audioHint="Injection/H6-3"/>
+  <Action 
+    index="13" 
+    description="[zuig de voorgeschreven]" 
+    type="combine" 
+    points="3" 
+    left="SyringeWithAbsorptionNeedle" 
+    right="OpenedAmpoule" 
+    audioHint="Injection/H7-2" 
+    blockUnlock="UnAirSyringe, MedsInSyringe"/>
+  <Action 
+    index="14" 
+    description="[ontlucht de spuit501]" 
+    type="useOn" 
+    item="SyringeWithAbsorptionNeedle" 
+    points="2" 
+    quiz="3" 
+    buttonText="Ontluchten" 
+    audioHint="Injection/H8-2" 
+    target="" 
+    blockUnlock="UnAirSyringeDone" 
+    blockRequired="UnAirSyringe"/>
+  <Action 
+    index="15" 
+    description="[verwijder de naald]" 
+    type="combine" 
+    points="1" 
+    left="SyringeWithAbsorptionNeedle" 
+    right="" 
+    audioHint="" 
+    blockRequired="MedsInSyringe"/>
+  <Action 
+    index="16" 
+    description="[doe de opzuignaald]" 
+    type="useOn" 
+    item="AbsorptionNeedleNoCap" 
+    points="1" 
+    buttonText="Opzuignaald weggooien" 
+    objectsAllowedInHands="SyringeWithAbsorptionNeedle" 
+    audioHint="Injection/H10-2" 
+    target=""/>
+  <Action 
+    index="17" 
+    description="[leg de spuit]" 
+    posID="0" 
+    type="drop" 
+    item="SyringeWithAbsorptionNeedle" 
+    points="1" 
+    blockUnlock="PreparationsDone"/>
+  <Action 
+    index="18" 
+    description="[vraag de cliënt551]" 
+    type="talk" 
+    comment="Ask the client to lie or sit on the bed on his back." 
+    points="2" 
+    topic="SitOnBed" 
+    blockUnlock="PatIsLyingDown" 
+    blockRequired="CleanedWorkfield, PreparationsDone"/>
+  <Action 
+    index="19" 
+    description="[leg de onderlegger6]" 
+    type="sequenceStep" 
+    points="1" 
+    messageTitle="[bepaal de voorkeursplaats]" 
+    messageContent="[houd rekening met]" 
+    value="PlacePad"/>
+  <Action 
+    index="20" 
+    description="[verwijder zo nodig]" 
+    type="sequenceStep" 
+    points="1" 
+    value="RemoveHair"/>
+  <Action 
+    index="21" 
+    description="[breng de stuwband]" 
+    type="sequenceStep" 
+    points="1" 
+    messageTitle="[stuwband]" 
+    messageContent="[gebruik de stuwband]" 
+    value="ApplyTourniquet"/>
+  <Action 
+    index="22" 
+    description="[palpeer het aan]" 
+    type="sequenceStep" 
+    points="1" 
+    value="PalpetVessel"/>
+  <Action 
+    index="23" 
+    description="[desinfecteer de huid]" 
+    type="sequenceStep" 
+    points="1" 
+    value="DisSkin"/>
+  <Action 
+    index="24" 
+    description="[Trek de handschoenen aan]" 
+    type="sequenceStep" 
+    comment="Put on gloves." 
+    points="1" 
+    value="TakeOnGloves" 
+    blockUnlock="GlovesTakenOn"/>
+  <Action 
+    index="25" 
+    description="[neem de canule]" 
+    type="sequenceStep" 
+    points="1" 
+    messageTitle="[indicaties perifeer infuus]" 
+    messageContent="[een perifeer infuus704]" 
+    value="TakeCannula"/>
+  <Action 
+    index="26" 
+    description="[plaats de duim]" 
+    type="sequenceStep" 
+    comment="Place the thumb of the other hand about 5 cm below the puncture site and pull the skin taut" 
+    points="1" 
+    value="PlaceThumb"/>
+  <Action 
+    index="27" 
+    description="[steek de canule]" 
+    type="sequenceStep" 
+    comment="Insert the cannula a few mm into the vein at an angle of 15-30° to the skin" 
+    points="1" 
+    value="InsertCannula"/>
+  <Action 
+    index="28" 
+    description="[trek de opvoernaald]" 
+    type="sequenceStep" 
+    comment="Slightly retract the advance needle (the tip of the needle is still through the skin)" 
+    points="1" 
+    value="RetractNeedle"/>
+  <Action 
+    index="29" 
+    description="[houd de opvoernaald]" 
+    type="sequenceStep" 
+    comment="Hold the advancement needle and with the other hand slide the cannula completely into the vessel" 
+    points="1" 
+    value="HoldBackPart"/>
+  <Action 
+    index="30" 
+    description="[maak de stuwband]" 
+    type="sequenceStep" 
+    comment="Loosen the strap and ask the client to relax the hand (no more fist)" 
+    points="1" 
+    quiz="2" 
+    value="ReleaseTourniquet"/>
+  <Action 
+    index="31" 
+    description="[druk het bloedvat]" 
+    type="sequenceStep" 
+    comment="Impress the vessel behind the cannula" 
+    points="1" 
+    value="DepressVessel"/>
+  <Action 
+    index="32" 
+    description="[verwijder de opvoernaald]" 
+    type="sequenceStep" 
+    comment="Remove the raising needle and throw it into the needle cup." 
+    points="1" 
+    value="RemoveAdvNeedle"/>
+  <Action 
+    index="33" 
+    description="[pak de gevulde]" 
+    type="sequenceStep" 
+    comment="Take the filled syringe with NaCl 0.9% and connect it to the infusion cannula" 
+    points="1" 
+    value="ConnectSyringe"/>
+  <Action 
+    index="34" 
+    description="[stop met het]" 
+    type="sequenceStep" 
+    comment="Stop pressing/holding the blood vessel." 
+    points="1" 
+    value="PullBack"/>
+  <Action 
+    index="35" 
+    description="[spuit nacl 09%]" 
+    type="sequenceStep" 
+    comment="Inject NaCl 0.9%" 
+    points="1" 
+    value="InjectNaCl"/>
+  <Action 
+    index="36" 
+    description="[druk het bloedvat]" 
+    type="sequenceStep" 
+    comment="Impress the vessel behind the cannula" 
+    points="1" 
+    value="DepressVessel2"/>
+  <Action 
+    index="37" 
+    description="[verwijder de spuit221]" 
+    type="sequenceStep" 
+    comment="If present, clamp off the cannula and remove the syringe." 
+    points="1" 
+    value="RemoveSyringe" 
+    blockUnlock="CleanWorkfield"/>
+  <Action 
+    index="38" 
+    description="[bevestig de vleugels]" 
+    type="sequenceStep" 
+    comment="Attach the wings of the IV cannula to the skin with the adhesive strips supplied with the IV cannula" 
+    points="1" 
+    value="AttachSPlaster"/>
+  <Action 
+    index="39" 
+    description="[fixeer de infuuscanule]" 
+    type="sequenceStep" 
+    comment="Fix the infusion cannula with the transparent infusion plaster." 
+    points="1" 
+    messageTitle="[infuuspleisters]" 
+    messageContent="[een transparante infuuspleister]" 
+    value="FixBPlaster" 
+    blockUnlock="SequenceFinished"/>
+  <Action 
+    index="40" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="GlovesTakenOn, SequenceFinished"/>
+  <Action 
+    index="41" 
+    description="[ruim de materialen]" 
+    type="use" 
+    points="1" 
+    value="WorkField" 
+    blockRequired="CleanWorkfield"/>
+  <Action 
+    index="42" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    value="HandCleaner"/>
+  <Action 
+    index="43" 
+    description="[teken de toedienlijst610]" 
+    type="use" 
+    points="3" 
+    value="PaperAndPen" 
+    audioHint="Injection/EAS4-2"/>
 </ActionList>

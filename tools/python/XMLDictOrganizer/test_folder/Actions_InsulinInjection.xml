@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      audioHint="" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Ondanks dat het begroeten niet in de werkwijze is vermeld, is het wel netjes om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik." 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst navulbare insulinepen]"/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermdop]" 
+      index="2" 
+      type="combine" 
+      left="InsulinPenWithCap" 
+      quiz="2" 
+      right="" 
+      extra="Verwijder de beschermdop van de insulinepen zodat je later de naald op de insulinepen kunt draaien." 
+      messageTitle="[insulinepennen]" 
+      messageContent="[lees altijd de]"/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      index="3" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt. "/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      index="3" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip " 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="2" 
+      description="[controleer of er]" 
+      index="4" 
+      type="examine" 
+      item="InsulinPen" 
+      expected="good" 
+      extra="Controleer het aantal insuline in de pen. Injecteer niet wanneer er minder dan 12 IE aanwezig is in de insulinepen. Dit geldt alleen voor troebele insulines die gemengd moeten worden. Het kan zijn dat de dosseerknop blokkeert bij het instellen van de Pen. Dit betekent dat er onvoldoende insuline in de pen zit. Neem een nieuwe pen." 
+      messageTitle="[controle insuline]" 
+      messageContent="[controleer het aantal]"/>
+  <action 
+      points="1" 
+      description="[meng troebele insuline]" 
+      index="5" 
+      type="useOn" 
+      item="InsulinPen" 
+      target="" 
+      buttonText="Zwenken" 
+      extra="Zwenk insulinepen met troebele insuline minstens 10 keer heen en weer, zo nodig vaker tot een volledig gemengd, egaal uitziende wittige substantie is bereikt. Dit is om afwijkingen in de samenstelling van de insuline te voorkomen. "/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermlaag]" 
+      index="6" 
+      type="combine" 
+      left="InsulinNeedlePackage" 
+      right="" 
+      extra="Er zit een beschermlaag op de naaldverpakking. Verwijder deze beschermlaag voordat je de naald op de insulinepen draait. Verwijder nog niet de beschermverpakking van de naald."/>
+  <action 
+      points="1" 
+      description="[draai de naald]" 
+      index="7" 
+      type="combine" 
+      left="InsulinPen" 
+      right="InsulinOpenedNeedlePackage" 
+      extra="Draai de naald met naaldverpakking op de insulinepen. Prikaccidenten worden vermeden doordat de naaldverpakking nog om de naald zit." 
+      messageTitle="[naalden]" 
+      messageContent="[gebruik voor elke]"/>
+  <action 
+      points="1" 
+      description="[verwijder de verpakking]" 
+      index="8" 
+      type="combine" 
+      left="InsulinPenWithNeedlePackage" 
+      right="" 
+      extra="Haal de naaldverpakking van de naald. Door dit te doen nadat je de naald hebt vastgedraaid op de pen, voorkom je prikaccidenten."/>
+  <action 
+      points="1" 
+      description="[draai de doseerknop]" 
+      index="9" 
+      type="sequenceStep" 
+      value="Set2IU" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[houd de insulinepen]" 
+      index="10" 
+      type="sequenceStep" 
+      value="HoldUntilDrop" 
+      extra="" 
+      messageTitle="[onluchten]" 
+      messageContent="[herhaal zo nodig]"/>
+  <action 
+      points="1" 
+      description="[houd de insulinepen20]" 
+      index="11" 
+      type="sequenceStep" 
+      value="SprayInGauze" 
+      extra=""/>
+  <action 
+      points="3" 
+      description="[stel het juiste]" 
+      index="12" 
+      type="useOn" 
+      item="InsulinPenWithNeedle" 
+      target="" 
+      buttonText="Instellen" 
+      messageTitle="[onderscheiden insuline]" 
+      messageContent="[soort: analoog (kunstmatige)]" 
+      extra="Stel het juiste aantal eenheden insuline in. Draai de doseerdop totdat de gewenste dosering in het afleesvenster staat. Draai de doseerknop terug tot het juiste aantal eenheden als je te veel aantal eenheden hebt ingesteld."/>
+  <action 
+      points="3" 
+      description="[vraag aan je]" 
+      audioHint="" 
+      index="13" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="Voer dubbele controle uit. Het verkeerd toedienen van medicijnen brengt risico’s met zich mee. Het risico op blijvend letsel bij verkeerde dosering of toediening verschilt, afhankelijk van het medicijn. Ook is de ene toedieningsweg risicovoller dan een andere. Dubbele controle van de medicatie is belangrijk voor de veiligheid, met name bij risicovolle medicatie. Laat ook je berekeningen die je hebt gemaakt checken." 
+      messageTitle="[dubbele controle]" 
+      messageContent="[voer wanneer nodig]"/>
+  <action 
+      points="1" 
+      description="[vraag de cliënt369]" 
+      index="14" 
+      type="talk" 
+      blockUnlock="patient shirt up" 
+      topic="ShowBellyForInsulin" 
+      extra="Vraag de cliënt de injectieplaats te ontbloten. Geschikte injectiegebieden zijn: buik, boven/buitenkant van bovenbeen (handbreedte boven de knie vrijlaten), billen (bovenste buitenste deel)." 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[probeer rekening te]"/>
+  <action 
+      points="1" 
+      description="[start injecteren]" 
+      index="15" 
+      type="useOn" 
+      item="InsulinPenWithNeedle" 
+      target="" 
+      blockRequired="patient shirt up" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten." 
+      secondPlace="PatientPos" 
+      buttonText="Start injecteren" 
+      extra="Start met het toedienen van de injectie. Alles is klaar voor gebruik en je kunt starten met injecteren."/>
+  <action 
+      points="1" 
+      description="[controleer of de310]" 
+      index="16" 
+      type="sequenceStep" 
+      value="CheckSkin" 
+      extra="Controleer of de injectieplaats schoon en droog is om besmetting van ziektekiemen te voorkomen. Desinfecteer de huid bij cliënten met verminderde weerstand."/>
+  <action 
+      points="1" 
+      description="[neem de insulinepen]" 
+      index="17" 
+      type="sequenceStep" 
+      value="takeoffcap" 
+      extra="Neem de insulinepen in je injecterende hand."/>
+  <action 
+      points="1" 
+      description="[steek de naald64]" 
+      index="18" 
+      type="sequenceStep" 
+      value="Stick needle in arm" 
+      extra="Steek de naald loodrecht in de huid in het onderhuidse weefsel. De loodrechttechniek heeft de voorkeur bij het subcutaan injecteren omdat deze techniek eenvoudig is. Bij kinderen en dunne mensen en bij injectieplaatsen waar weinig vetweefsel zit, kan het nuttig zijn om de dikte van de subcutane vetlaag te meten en indien nodig adviseren schuin en/of met huidplooi te injecteren."/>
+  <action 
+      points="1" 
+      description="[fixeer de insulinepen]" 
+      index="19" 
+      type="sequenceStep" 
+      value="FixateInsulinPen" 
+      extra="Fixeer de spuit en naald met de niet injecterende hand om onverwachte bewegingen op te vangen." 
+      messageTitle="[fixeren van de]" 
+      messageContent="[bij een cliënt]"/>
+  <action 
+      points="1" 
+      description="[druk met de]" 
+      index="20" 
+      type="sequenceStep" 
+      value="Inject medicine slow and steady" 
+      extra="Druk met duim van de injecterende hand de knop van de insulinepen in. Doe dit totdat de pen blokeert."/>
+  <action 
+      points="1" 
+      description="[houd de knop]" 
+      index="21" 
+      type="sequenceStep" 
+      value="WaitInsulinPen" 
+      extra="Houd de knop ingedrukt en laat de naald minstens 10 tellen in de huid om alle insuline goed in te laten stromen en om eventuele lekkage te voorkomen." 
+      messageTitle="[controleer insulinepen]" 
+      messageContent="[controleer of de277]"/>
+  <action 
+      points="1" 
+      description="[trek de naald37]" 
+      index="22" 
+      type="sequenceStep" 
+      value="PullInsulinPen" 
+      encounter="2" 
+      extra="Trek de naald uit de huid. Masseer de huid niet. Massage kan het werkingsprofiel van insuline onvoorspelbaar beïnvloeden."/>
+  <action 
+      points="1" 
+      description="[verwijder de naald15]" 
+      audioHint="InsulinInjection/Step 7" 
+      index="23" 
+      type="combine" 
+      left="InsulinPenWithNeedle" 
+      right="" 
+      extra="Verwijder de naald van de insulinepen. De pennaald wordt direct na de injectie van de insulinepen verwijderd. Dit voorkomt lekkage van insuline uit de penvulling en dat er lucht in de penvulling komt."/>
+  <action 
+      points="2" 
+      description="[doe de naald]" 
+      audioHint="InsulinInjection/Step 8" 
+      index="24" 
+      type="useOn" 
+      item="InsulinNeedle" 
+      target="" 
+      buttonText="Injectienaald weggooien" 
+      extra="Verwijder de naald en doe de naald in de naaldencontainer. Gebruik naalden eenmalig gebruik (disposable). Plaats een naald na gebruik nooit in de plastic beschermhuls terug. Werk met veilige injectienaalden. Gebruik de inkepingen op de deksel om naald en spuit te scheiden of gebruik een naaldverwijderaar."/>
+  <action 
+      points="1" 
+      description="[plaats de beschermdop]" 
+      audioHint="InsulinInjection/Step 7" 
+      index="25" 
+      type="combine" 
+      left="InsulinPen" 
+      right="InsulinPenCap" 
+      blockUnlock="TableCleaningAllowed" 
+      extra="Plaats de beschermdop op de insulinepen. Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen."/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="26" 
+      type="use" 
+      value="WorkField" 
+      blockRequired="TableCleaningAllowed" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[bewaar een in]"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="27" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst913]" 
+      audioHint="InsulinInjection/Step 11" 
+      index="28" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"/>
+</ActionList>

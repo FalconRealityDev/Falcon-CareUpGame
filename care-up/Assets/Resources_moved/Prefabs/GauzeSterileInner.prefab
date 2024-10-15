@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: Steriele gaasje
+  description: '[i_steriele gaasje]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}

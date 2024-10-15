@@ -1,29 +1,59 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
   <step>
-    <option text="Verwijder het gaasje van de stoma. Gooi het gaasje weg" animation="RemoveTheGauze"/>
-    <option text="Maak de huid rond de stoma schoon met vochtige gaasjes. Gooi de gaasjes weg" animation=""/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
+    <option 
+      text="[Verwijder het gaasje van de stoma]" 
+      animation="RemoveTheGauze"/>
+    <option 
+      text="[Maak de huid rond de stoma schoon met vochtige gaasjes.]" 
+      animation=""/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Maak de huid rond de stoma schoon met vochtige gaasjes. Gooi de gaasjes weg" animation="CleanTheSkin"/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid." animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
+    <option 
+      text="[Maak de huid rond de stoma schoon met vochtige gaasjes.]" 
+      animation="CleanTheSkin"/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
+    <option 
+      text="[leg de opening253]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation="PatTheSkin"/>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid." animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
-    <option text="Verwijder de papieren beschermlaag van de huidplaat" animation=""/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation="PatTheSkin"/>
+    <option 
+      text="[leg de opening253]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
+    <option 
+      text="[Verwijder de papieren beschermlaag van de huidplaat]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation="CheckTheSkin"/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
-    <option text="Verwijder de papieren beschermlaag van de huidplaat" animation=""/>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid." animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation="CheckTheSkin"/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
+    <option 
+      text="[Verwijder de papieren beschermlaag van de huidplaat]" 
+      animation=""/>
+    <option 
+      text="[leg de opening253]" 
+      animation=""/>
   </step>
-  
-
 </AnimationSequence>

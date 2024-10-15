@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      description="[praat met de]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="[helaas dit is891]"/>
+  <action 
+      description="[ui_gefel579]" 
+      fullDescription="" 
+      audioHint="" 
+      index="2" 
+      type="use" 
+      value="__tutorialEnd"/>
+</ActionList>

@@ -31,6 +31,7 @@ Transform:
   m_LocalRotation: {x: -0.5000829, y: -0.4999171, z: -0.4999171, w: 0.5000829}
   m_LocalPosition: {x: -3.795, y: 1.0979, z: 1.557}
   m_LocalScale: {x: 0.8000006, y: 0.8000004, z: 0.8000004}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4495326486719876}
   - {fileID: 4028156955284738}
@@ -56,10 +57,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -84,6 +87,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &65913876622693246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: PlasticTrashbucket
   ObjectID: 0
-  description: plastic afvalbakje
+  description: '[i_plastic afvalbakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -147,6 +151,7 @@ MonoBehaviour:
   prefabOutOfHands: 
   destroyOnDrop: 0
   customGhost: {fileID: 0}
+  noGhost: 0
 --- !u!1 &1830454637122460
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +178,7 @@ Transform:
   m_LocalRotation: {x: -0.0073057413, y: 0.70706904, z: 0.70706904, w: 0.0073057413}
   m_LocalPosition: {x: 0.004, y: -0.779, z: -0.33}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4072285504284212}
   m_RootOrder: 0
@@ -204,6 +210,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.006, y: -0.005, z: 0.048}
   m_LocalScale: {x: 1.9717965, y: 1.1800879, z: 0.74086756}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4072285504284212}
   m_RootOrder: 1

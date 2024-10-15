@@ -1,234 +1,194 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <Action
-    index="0"
-    description="[Begroet]"
-    type="talk"
-    points="1"
-    optional=""
-    audioHint=""
-    topic="Hello" />
-  <Action
-    index="0"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="1. Apply hand hygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner" />
-  <Action
-    index="1"
-    description="[Maak een schoon werkveld]"
-    type="use"
-    points="1"
-    messageTitle="Je het volgende nodig hebt?"
-    messageContent="
-- Bijsluiter
-- Toedieningslijst
-- Spuit met injectienaald (Wanneer er geen injectiespuit met voorgeschreven medicijn aanwezig is)
-- Afvalbak
-- Naaldenbeker en naaldverwijderaar
-- Desinfectans: chloorhexidine 0.5% in alcohol 70%, als de huid gedesinfecteerd moet worden"
-    value="WorkField"
-    audioHint="Injection/H2-2" />
-  <Action
-    index="2"
-    description="[Controleer cliëntgegevens]"
-    type="examine"
-    item="PatientRecords"
-    points="2"
-    quiz="2"
-    messageTitle="Controle cliëntgegevens."
-    messageContent="Controleer de naam en geboortedatum van cliënt"
-    audioHint="Injection/H3-2"
-    expected="good" />
-  <Action
-    index="3"
-    description="Controleer de spuit met medicijn"
-    type="examine"
-    item="SyringeWithInjectionNeedleCap"
-    points="2"
-    messageTitle="Controle medicijn"
-    messageContent="
-Controleer het medicijn op:
-- De uiterste houdbaarheidsdatum;
-- kleur en substantie
-- Toedieningswijze
-- Beschadigingen op de spuit."
-    audioHint="Injection/H3-2"
-    expected="good" />
-  <Action
-    index="4"
-    description="Controleer de toedienlijst"
-    type="examine"
-    item="PrescriptionForm"
-    points="2"
-    messageTitle="5x juist-regel"
-    messageContent="Er zijn 5 controles die je altijd moet doen voordat je medicijnen geeft. Alleen als alle 5 punten juist zijn, mag je het medicijn toedienen.
-    
-    De vijf regels zijn:
-    
-1.  Het juiste medicijn: 
-kijk op de toedienlijst en controleer of de informatie op de medicijnverpakking of het baxterzakje hiermee overeenkomen. Kijk hierbij ook naar de vervaldatum van het medicijn.
-        
-2.  De juiste cliënt: 
-controleer of je de juiste cliënt voor je hebt.
-        
-3.  Het juiste tijdstip: 
-kijk op de toedienlijst voor het tijdstip en vergelijk dit met het tijdstip waarop je de medicijnen geeft.
-        
-4.  De juiste manier van toedienen: 
-hanteer de instructies van de toedienlijst. Je moet bekend zijn met de toedieningsvorm. Ben je hier niet mee bekent, dien dan niet toe.
-    
-5.  De juiste dosis: 
-je mag niet afwijken van de de voorgeschreven dosis die vermeld staat op de toedienlijst. De verantwoordelijkheid van de juiste dosering ligt bij de arts en de apotheker."
-    audioHint="InjectionSubcutaneous/Step 5"
-    expected="good" />
-  <Action
-    index="5"
-    description="Vraag aan je collega of ze een dubbele controle wil doen"
-    type="talk"
-    points="4"
-    messageTitle="Dubbele controle bij injecties en bij medicijntoediening via infuus"
-    messageContent="Het verkeerd toedienen van medicijnen brengt risico’s met zich mee. Het risico op blijvend letsel bij verkeerde dosering of toediening verschilt, afhankelijk van het medicijn. Ook is de ene toedieningsweg risicovoller dan een andere. Dubbele controle van de medicatie is belangrijk voor de veiligheid, met name bij risicovolle medicatie. Laat ook je berekeningen die je hebt gemaakt checken.
-Het maken van oplossingen die worden toegediend via injectie of infuus is foutgevoelig. Daarnaast geeft deze manier van toedienen sneller resultaten, maar ook grotere problemen bij verkeerde toediening.
-Het ontbreken van een dubbele controle bij deze handelingen wordt gezien als hoog-risico.
-Of en hoe controle plaatsvindt van deze voorbehouden handelingen, is een afspraak die een zorgorganisatie maakt met haar zorgmedewerkers. Als de afspraak is om een tweede controle te doen en deze vast te leggen, dan wordt daarvoor een ander formulier gebruikt dan de toedieningslijst."
-    audioHint=""
-    topic="DoubleCheck" />
-  <Action
-    index="6"
-    description="Vraag de cliënt de injectieplaats te ontbloten en zich te ontspannen"
-    type="talk"
-    points="1"
-    messageTitle="Geschikte injectiegebieden"
-    messageContent="
-Geschikte injectiegebieden voor subcutane injecties zijn:
-
-- Het gebied naast en onder de navel (ongeveer 2 cm rond de navel vrijlaten)
-- Boven/buitenkant het bovenbeen (handbreedte boven de knie vrijlaten)
-- Billen (bovenste buitenste deel)
-- Bovenarm (buitenste deel)
-
-Desinfecteer de huid bij cliënten met verminderde weerstand.
-    "
-    audioHint="Injection/H12-2"
-    topic="ShowBellyForInsulin"
-    blockUnlock="patient show spot" />
-  <Action
-    index="7"
-    description="Start injecteren"
-    type="useOn"
-    secondPlace="PatientPos"
-    item="SyringeWithInjectionNeedleCap"
-    points="1"
-    quiz="3"
-    buttonText="Start injecteren"
-    audioHint="Injection/H13-2"
-    target=""
-    blockRequired="patient show spot"
-    blockTitle="Deze handeling is nog niet mogelijk"
-    blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten." />
-  <Action
-    index="8"
-    description="Palpeer de injectieplaats en controleer of de injectieplaats schoon en droog is"
-    type="sequenceStep"
-    points="1"
-    value="Check"
-    audioHint="Injection/AS1-2" />
-  <Action
-    index="9"
-    description="Neem de spuit in de injecterende hand en verwijder de naaldhuls"
-    type="sequenceStep"
-    points="1"
-    value="Remove Cap"
-    audioHint="Injection/AS1-2" />
-  <Action
-    index="10"
-    description="Pak met de niet-injecterende hand een brede huidplooi op"
-    type="sequenceStep"
-    points="2"
-    messageTitle="Huidplooi vastpakken"
-    messageContent="Pak met de vrije hand een brede huidplooi op. De helft van de opgepakte huidplooi is de dikte van het onderhuidse bindweefsel. Door de naald boven de huidplooi te houden, kan de dikte van de onderhuidse bindweefsellaag (de injectiediepte) afgemeten worden. De huidplooi wordt opgepakt met twee of drie vingers; bij het oppakken van een huidplooi met vijf vingers wordt vaak spierweefsel meegenomen en is de huidplooi te dik."
-    value="Grab crease"
-    audioHint="Injection/AS1-2" />
-  <Action
-    index="11"
-    description="Steek de naald onder een hoek van 45° à 60° halverwege tussen het hoogste en laagste punt van de huidplooi"
-    type="sequenceStep"
-    points="3"
-    value="Stick needle in arm"
-    audioHint="Injection/AS1-2" />
-  <Action
-    index="12"
-    description="Laat de huidplooi los"
-    type="sequenceStep"
-    points="1"
-    encounter="1"
-    value="Release crease"
-    audioHint="Injection/AS1-2" />
-  <Action
-    index="13"
-    description="Fixeer de spuit en naald met de niet-injecterende hand om onverwachte bewegingen op te vangen"
-    type="sequenceStep"
-    points="1"
-    messageTitle="Fixeren van de spuit"
-    messageContent="Bij een cliënt die onrustig is of plotselinge bewegingen maakt, is het van belang dat de injectienaald en de spuit goed gefixeerd worden tijdens de injectie. Houd de naald tussen duim en wijsvinger van de vrije hand op de plaats waar de naald op de spuit zit. Zorg dat de rest van deze hand stevig op de huid rust. Als de cliënt beweegt, beweegt de hand met daarin de naald en de spuit, mee."
-    value="Fixate needle"
-    audioHint="Injection/AS5-2" />
-  <Action
-    index="14"
-    description="Spuit de vloeistof langzaam en regelmatig in (ongeveer 10 sec/ml)"
-    type="sequenceStep"
-    points="2"
-    value="Inject medicine slow and steady"
-    audioHint="Injection/AS7-2" />
-  <Action
-    index="15"
-    description="Trek de naald uit de huid en activeer het veiligheidssysteem van de naald met de duim of vinger van de injecterende hand"
-    type="sequenceStep"
-    points="1"
-    value="Pull needle"
-    audioHint="Injection/AS8-2" />
-  <Action
-    index="16"
-    description="Verwijder de naald van de spuit"
-    type="combine"
-    secondPlace="WorkFieldPos"
-    points="1"
-    left="Syringe10ml_InjectionSQs"
-    right=""
-    audioHint=""
-    ignorePosition="true" />
-  <Action
-    index="17"
-    description="Doe de injectienaald in de naaldencontainer"
-    type="useOn"
-    item="InjectionNeedleNoCap"
-    points="2"
-    buttonText="Injectienaald weggooien"
-    audioHint="Injection/EAS2-2"
-    target=""
-    ignorePosition="true" />
-  <Action
-    index="18"
-    description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-    type="use"
-    points="1"
-    value="WorkField" />
-  <Action
-    index="19"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="1. Apply hand hygiene"
-    points="3"
-    value="HandCleaner" />
-  <Action
-    index="20"
-    description="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"
-    type="use"
-    points="3"
-    value="PaperAndPen"
-    audioHint="Injection/EAS4-2" />
+  <Action 
+    index="0" 
+    description="[Begroet]" 
+    type="talk" 
+    points="1" 
+    optional="" 
+    audioHint="" 
+    topic="Hello"/>
+  <Action 
+    index="0" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]" 
+    value="HandCleaner"/>
+  <Action 
+    index="1" 
+    description="[Maak een schoon werkveld]" 
+    type="use" 
+    points="1" 
+    messageTitle="[je het volgende]" 
+    messageContent="[bijsluiter toedieningslijst spuit905]" 
+    value="WorkField" 
+    audioHint="Injection/H2-2"/>
+  <Action 
+    index="2" 
+    description="[Controleer cliëntgegevens]" 
+    type="examine" 
+    item="PatientRecords" 
+    points="2" 
+    quiz="2" 
+    messageTitle="[controle cliëntgegevens]" 
+    messageContent="[controleer de naam]" 
+    audioHint="Injection/H3-2" 
+    expected="good"/>
+  <Action 
+    index="3" 
+    description="[controleer de spuit]" 
+    type="examine" 
+    item="SyringeWithInjectionNeedleCap" 
+    points="2" 
+    messageTitle="[controle medicijn]" 
+    messageContent="[controleer het medicijn120]" 
+    audioHint="Injection/H3-2" 
+    expected="good"/>
+  <Action 
+    index="4" 
+    description="[controleer de toedienlijst]" 
+    type="examine" 
+    item="PrescriptionForm" 
+    points="2" 
+    messageTitle="[5x juistregel]" 
+    messageContent="[er zijn 5]" 
+    audioHint="InjectionSubcutaneous/Step 5" 
+    expected="good"/>
+  <Action 
+    index="5" 
+    description="[vraag aan je62]" 
+    type="talk" 
+    points="4" 
+    messageTitle="[dubbele controle bij]" 
+    messageContent="[het verkeerd toedienen]" 
+    audioHint="" 
+    topic="DoubleCheck"/>
+  <Action 
+    index="6" 
+    description="[vraag de cliënt779]" 
+    type="talk" 
+    points="1" 
+    messageTitle="[geschikte injectiegebieden]" 
+    messageContent="[geschikte injectiegebieden voor28]" 
+    audioHint="Injection/H12-2" 
+    topic="ShowBellyForInsulin" 
+    blockUnlock="patient show spot"/>
+  <Action 
+    index="7" 
+    description="[start injecteren]" 
+    type="useOn" 
+    secondPlace="PatientPos" 
+    item="SyringeWithInjectionNeedleCap" 
+    points="1" 
+    quiz="3" 
+    buttonText="Start injecteren" 
+    audioHint="Injection/H13-2" 
+    target="" 
+    blockRequired="patient show spot" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[treft de juiste]"/>
+  <Action 
+    index="8" 
+    description="[palpeer de injectieplaats]" 
+    type="sequenceStep" 
+    points="1" 
+    value="Check" 
+    audioHint="Injection/AS1-2"/>
+  <Action 
+    index="9" 
+    description="[neem de spuit]" 
+    type="sequenceStep" 
+    points="1" 
+    value="Remove Cap" 
+    audioHint="Injection/AS1-2"/>
+  <Action 
+    index="10" 
+    description="[pak met de]" 
+    type="sequenceStep" 
+    points="2" 
+    messageTitle="[huidplooi vastpakken]" 
+    messageContent="[pak met de175]" 
+    value="Grab crease" 
+    audioHint="Injection/AS1-2"/>
+  <Action 
+    index="11" 
+    description="[steek de naald464]" 
+    type="sequenceStep" 
+    points="3" 
+    value="Stick needle in arm" 
+    audioHint="Injection/AS1-2"/>
+  <Action 
+    index="12" 
+    description="[laat de huidplooi]" 
+    type="sequenceStep" 
+    points="1" 
+    encounter="1" 
+    value="Release crease" 
+    audioHint="Injection/AS1-2"/>
+  <Action 
+    index="13" 
+    description="[fixeer de spuit501]" 
+    type="sequenceStep" 
+    points="1" 
+    messageTitle="[fixeren van de]" 
+    messageContent="[bij een cliënt]" 
+    value="Fixate needle" 
+    audioHint="Injection/AS5-2"/>
+  <Action 
+    index="14" 
+    description="[spuit de vloeistof622]" 
+    type="sequenceStep" 
+    points="2" 
+    value="Inject medicine slow and steady" 
+    audioHint="Injection/AS7-2"/>
+  <Action 
+    index="15" 
+    description="[trek de naald335]" 
+    type="sequenceStep" 
+    points="1" 
+    value="Pull needle" 
+    audioHint="Injection/AS8-2"/>
+  <Action 
+    index="16" 
+    description="[verwijder de naald]" 
+    type="combine" 
+    secondPlace="WorkFieldPos" 
+    points="1" 
+    left="Syringe10ml_InjectionSQs" 
+    right="" 
+    audioHint="" 
+    ignorePosition="true"/>
+  <Action 
+    index="17" 
+    description="[doe de injectienaald]" 
+    type="useOn" 
+    item="InjectionNeedleNoCap" 
+    points="2" 
+    buttonText="Injectienaald weggooien" 
+    audioHint="Injection/EAS2-2" 
+    target="" 
+    ignorePosition="true"/>
+  <Action 
+    index="18" 
+    description="[ruim de materialen]" 
+    type="use" 
+    points="1" 
+    value="WorkField"/>
+  <Action 
+    index="19" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    value="HandCleaner"/>
+  <Action 
+    index="20" 
+    description="[teken de toedienlijst610]" 
+    type="use" 
+    points="3" 
+    value="PaperAndPen" 
+    audioHint="Injection/EAS4-2"/>
 </ActionList>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="20">
+  <action 
+      description="[step 1: preform]" 
+      audioHint="ThroughSubcutaneNeedle/Step 1" 
+      index="0" 
+      type="use" 
+      value="HandCleaner"/>
+  <action 
+      description="[step 2: cleaning]" 
+      audioHint="ThroughSubcutaneNeedle/Step 2" 
+      index="1" 
+      type="use" 
+      value="WorkField"/>
+  <action 
+      description="[step 3: checking]" 
+      audioHint="ThroughSubcutaneNeedle/Step 3" 
+      index="2" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good"/>
+  <action 
+      description="[step 4: checking]" 
+      audioHint="ThroughSubcutaneNeedle/Step 4" 
+      index="2" 
+      type="examine" 
+      item="Ampoule" 
+      expected="good"/>
+  <action 
+      description="[step 5: check]" 
+      audioHint="ThroughSubcutaneNeedle/Step 5" 
+      index="2" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good"/>
+  <action 
+      description="[step 6: ask]" 
+      audioHint="ThroughSubcutaneNeedle/Step 6" 
+      index="3" 
+      type="talk" 
+      topic="AccessUnderCollarbone"/>
+  <action 
+      description="[step 71: break]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.1" 
+      index="4" 
+      type="combine" 
+      left="Ampoule" 
+      right="Cloth"/>
+  <action 
+      description="[step 72: place]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.2" 
+      index="5" 
+      type="combine" 
+      left="AbsorptionNeedle" 
+      right="Syringe"/>
+  <action 
+      description="[step 73: absorb]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.3" 
+      index="6" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="OpenedAmpoule"/>
+  <action 
+      description="[step 74: vent]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.4" 
+      index="7" 
+      type="useOn" 
+      item="SyringeWithAbsorptionNeedle" 
+      target=""/>
+  <action 
+      description="[step 75: remove]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.5" 
+      index="8" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right=""/>
+  <action 
+      description="[step 76: throw]" 
+      audioHint="ThroughSubcutaneNeedle/Step 7.6" 
+      index="9" 
+      type="useOn" 
+      item="AbsorptionNeedle" 
+      target="NeedleCup"/>
+  <action 
+      description="[step 8: connect]" 
+      audioHint="ThroughSubcutaneNeedle/Step 8" 
+      index="10" 
+      type="useOn" 
+      item="Syringe" 
+      target="Person"/>
+  <action 
+      description="[step 9: clean]" 
+      audioHint="ThroughSubcutaneNeedle/Step 9" 
+      index="11" 
+      type="use" 
+      value="WorkField"/>
+  <action 
+      description="[step 10: preform]" 
+      audioHint="ThroughSubcutaneNeedle/Step 10" 
+      index="12" 
+      type="use" 
+      value="HandCleaner"/>
+  <action 
+      description="[step 11: note]" 
+      audioHint="ThroughSubcutaneNeedle/Step 11" 
+      index="13" 
+      type="use" 
+      value="PaperAndPen"/>
+</ActionList>

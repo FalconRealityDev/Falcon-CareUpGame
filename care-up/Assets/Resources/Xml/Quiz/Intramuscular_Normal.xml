@@ -1,126 +1,215 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
   <step>
-    <question text="Naalden voor volwassenen moeten .... zijn" answer="1" points="10">
-      <answer text="25 mm of 38 mm"
-        descr="Uit onderzoek blijkt dat onvoldoende diep intramusculair injecteren vooral bij vrouwen voorkomt, omdat ze een dikkere onderhuidse bindweefsellaag (vetlaag) hebben." />
-      <answer text="20 mm of 33 mm" descr="" />
-      <answer text="18 mm of 31 mm" descr="" />
-      <answer text="27 mm of 40 mm" descr="" />
-
+    <question 
+      text="[naalden voor volwassenen]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[25 mm of]" 
+      descr="[uit onderzoek blijkt]"/>
+      <answer 
+      text="[20 mm of]" 
+      descr=""/>
+      <answer 
+      text="[18 mm of]" 
+      descr=""/>
+      <answer 
+      text="[27 mm of]" 
+      descr=""/>
     </question>
-    <question
-      text="De vloeistof bij een intramusculaire injectie worden binnen .... in de bloedsomloop opgenomen"
+    <question 
+      text="[de vloeistof bij]" 
       answer="3">
-      <answer text="10 - 15 minuten" descr="" />
-      <answer text="5 - 10 minuten" descr="" />
-      <answer text="15 - 20 minuten"
-        descr="De vloeistof wordt sneller in de bloedsomloop opgenomen dan na een subcutane injectie. Injecteren in de spier kan pijnlijk zijn. Help de cliënt de spier te ontspannen." />
-      <answer text="20 - 30 minuten" descr="" />
+      <answer 
+      text="[10 15 minuten]" 
+      descr=""/>
+      <answer 
+      text="[5 10 minuten]" 
+      descr=""/>
+      <answer 
+      text="[15 20 minuten]" 
+      descr="[de vloeistof wordt]"/>
+      <answer 
+      text="[20 30 minuten]" 
+      descr=""/>
     </question>
-    <question
-      text="Een van de indicaties voor een injectie kan zijn dat orale inname van het medicijn niet mogelijk is"
+    <question 
+      text="[een van de854]" 
       answer="1">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
     </question>
-    <question
-      text="Wat ontstaat er vaak tijdens overgevoeligheidsreacties na het toediening van een medicijn?"
+    <question 
+      text="[wat ontstaat er]" 
       answer="2">
-      <answer text="Vaatvernauwing" descr="" />
-      <answer text="Vaatverwijding" descr="" />
+      <answer 
+      text="[vaatvernauwing]" 
+      descr=""/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr=""/>
     </question>
   </step>
   <step>
-    <question
-      text="De intramusculaire injectie dien je bij voorkeur toe in een aangespannen spier. "
-      answer="2" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
-    </question>
-    <question text="Welk antwoord is niet goed. Indicaties voor intramusculair injecteren zijn:"
-      answer="3">
-      <answer text="Medicijn kan niet via het maag-darmkanaal worden opgenomen" descr="" />
-      <answer text="Medicijn wordt goed opgenomen in de spier" descr="" />
-      <answer text="Medicijn hoeft niet snel te werken" descr="Het medicijn moet wel snel werken." />
-    </question>
-    <question text="De opperhuid is gemiddeld ... dik. " answer="2">
-      <answer text="1 millimeter" descr="" />
-      <answer text="0,1 millimeter" descr="" />
-      <answer text="10 millimeter" descr="" />
-    </question>
-    <question
-      text="Intramusculaire injecties kunnen ook toegediend worden bij cliënten die antistollingsmiddelen gebruiken "
-      answer="2">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="Vermijd intramusculaire injecties bij deze cliënten." />
-    </question>
-
-    <question text="Het plaatsen van een injectie in een moedervlek is geen probleem" answer="2"
+    <question 
+      text="[de intramusculaire injectie]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist"
-        descr="Injecteren in afwijkend weefsel (moedervlekken, littekens, blauwe plekken en dergelijke) kan de werking van het medicijn beïnvloeden." />
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
     </question>
-    <question text="Parenterale toediening betekent toediening via de volgende route(s) ..."
+    <question 
+      text="[welk antwoord is794]" 
       answer="3">
-      <answer text="...intraveneus, intracutaan en intramusculair" descr="" />
-      <answer text="...intramusculair en subcutaan" descr="" />
-      <answer text="...intraveneus, intramusculair, intracutaan en subcutaan" descr="" />
+      <answer 
+      text="[medicijn kan niet]" 
+      descr=""/>
+      <answer 
+      text="[medicijn wordt goed]" 
+      descr=""/>
+      <answer 
+      text="[medicijn hoeft niet]" 
+      descr="[het medicijn moet]"/>
+    </question>
+    <question 
+      text="[de opperhuid is414]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[01 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[10 millimeter]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[intramusculaire injecties kunnen]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[vermijd intramusculaire injecties]"/>
+    </question>
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[injecteren in afwijkend]"/>
+    </question>
+    <question 
+      text="[parenterale toediening betekent]" 
+      answer="3">
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr=""/>
     </question>
   </step>
   <step>
-    <question text="Het plaatsen van een injectie in een trombosebeen is geen probleem" answer="2"
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
     </question>
-    <question
-      text="Een injectie is een goede optie wanneer maagsappen de werking van het medicijn aantasten."
-      answer="1" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+    <question 
+      text="[een injectie is865]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
     </question>
-    <question text="Moet je de huid desinfecteren bij cliënten met een verminderde weerstand?"
-      answer="2" points="10">
-      <answer text="Nee"
-        descr="Desinfecteer de huid WEL bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken." />
-      <answer text="Ja"
-        descr="Desinfecteer altijd de huid bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken. " />
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[desinfecteer de huid383]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[desinfecteer altijd de]"/>
     </question>
-    <question text="Wanneer is aspireren zinvol?" answer="1">
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de musculus gluteus ‘bovenste buitenste bilkwadrant’, de rugzijde."
-        descr="Wanneer de injectieplaats onjuist wordt bepaald bestaat het risico op het aanprikken van het bloedvat wat daar loopt." />
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de musculus deltoïdeus 'zijkant van de bovenarm'. "
-        descr="Het terugtrekken van de zuiger van de injectiespuit na injecteren (aspireren) wordt gedaan om te controleren of de injectienaald per ongeluk in een bloedvat zit. Echter, er is geen bewijs dat dit fouten bij injecteren voorkomt. Aspiratie bevestigt niet een goede plaatsbepaling van de injectie. Aspireren bij de bovenarm is niet zinvol." />
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de m. rectus femoris 'rechte dijbeenspier'."
-        descr="Het terugtrekken van de zuiger van de injectiespuit na injecteren (aspireren) wordt gedaan om te controleren of de injectienaald per ongeluk in een bloedvat zit. Echter, er is geen bewijs dat dit fouten bij injecteren voorkomt. Aspiratie bevestigt niet een goede plaatsbepaling van de injectie. Apireren bij de rechte dijbeenspier is niet zinvol." />
-    </question>
-    <question
-      text="Bij intramusculair injecteren breng je de naald snel in, spuit je de vloeistof snel in en trekt dan de naald er weer snel uit. Zo wordt het ongemak voor de cliënt zoveel mogelijk beperkt. "
-      answer="2" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="Door te snel te injecteren kan de cliënt misselijk worden" />
-    </question>
-    <question
-      text="Het kan pijnlijk zijn als er meer dan 5 ml intramusculair ingespoten wordt op een plek."
+    <question 
+      text="[wanneer is aspireren]" 
       answer="1">
-      <answer text="Juist" descr="Verdeel de totale hoeveelheid zo nodig over twee injectieplaatsen" />
-      <answer text="Onjuist " descr="" />
+      <answer 
+      text="[bij het intramusculair]" 
+      descr="[wanneer de injectieplaats]"/>
+      <answer 
+      text="[bij het intramusculair233]" 
+      descr="[het terugtrekken van]"/>
+      <answer 
+      text="[bij het intramusculair831]" 
+      descr="[het terugtrekken van397]"/>
+    </question>
+    <question 
+      text="[bij intramusculair injecteren]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[door te snel]"/>
+    </question>
+    <question 
+      text="[het kan pijnlijk]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[verdeel de totale]"/>
+      <answer 
+      text="[onjuist186]" 
+      descr=""/>
     </question>
   </step>
-
   <random>
-    <question
-      text="Wat doe je als er tijdens het terugtrekken van de zuiger bloed wordt opgetrokken?"
+    <question 
+      text="[wat doe je485]" 
       answer="3">
-      <answer text="Let op of er heftige lokale reacties ontstaan" descr="" />
-      <answer text="Ga rustig door met de handeling. Injecteer langzaam en voorzichtig" descr="" />
-      <answer text="Raadpleeg de behandelaar."
-        descr="Trek de naald eruit en druk de injectieplaats af met een gaasje. Overleg met de behandelaar over het toedienen van een nieuwe injectie" />
+      <answer 
+      text="[let op of]" 
+      descr=""/>
+      <answer 
+      text="[ga rustig door]" 
+      descr=""/>
+      <answer 
+      text="[raadpleeg de behandelaar]" 
+      descr="[trek de naald443]"/>
     </question>
   </random>
 </quiz>

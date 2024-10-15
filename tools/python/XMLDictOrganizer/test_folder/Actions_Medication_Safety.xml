@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="22">
+  <action 
+      index="0" 
+      points="1" 
+      description="[Begroet]" 
+      type="talk" 
+      topic="Hello" 
+      extra="Het begroeten van de client en je voorstellen is niet in de werkwijze is vermeld. Het is wel netjes en logisch om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      index="1" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt. "/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      index="2" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip " 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5766]" 
+      encounter="1"/>
+  <action 
+      points="3" 
+      description="[noteer de handeling]" 
+      audioHint="Injection/EAS4-2" 
+      index="3" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Noteer de handeling, de gemeten waarde, de prikstand van de prikpen of vingerprikker. Noteer ook eventuele andere bevindingen."/>
+</ActionList>

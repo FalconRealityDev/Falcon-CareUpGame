@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Ondanks dat het begroeten niet in de werkwijze staat, is het wel netjes om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[handhygiëne is het]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik." 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst medicijn (spray]"/>
+  <action 
+      points="1" 
+      description="[neem een medicijn]" 
+      index="2" 
+      type="use" 
+      value="BaxterRoll" 
+      extra="Neem een medicijn zakje van de baxterrol.">
+  </action>
+  <action 
+      points="2" 
+      description="[controleer het medicijn]" 
+      index="3" 
+      type="examine" 
+      item="MedicineBag" 
+      expected="good" 
+      extra="Controleer het medicijn." 
+      messageTitle="[dubbele controle van]" 
+      messageContent="[dubbele controle is616]"/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      index="4" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt." 
+      messageTitle="[doses geven]" 
+      messageContent="[ga na hoeveel]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      index="4" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip " 
+      messageTitle="[kennis en voorschriften]" 
+      messageContent="[controleer de toedienlijst356]"/>
+  <action 
+      comment="Open MedicineBag" 
+      points="1" 
+      description="[maak het medicijn534]" 
+      index="5" 
+      type="combine" 
+      left="MedicineBag" 
+      right="" 
+      extra="Maak het medicijn gereed voor toediening door het medicijn zakje te openen." 
+      messageTitle="[tabletvorm of spray]" 
+      messageContent="[medicijnen voor onder]"/>
+  <action 
+      comment="Asking patient to sit up straight" 
+      points="1" 
+      description="[vraag de cliënt194]" 
+      index="6" 
+      type="talk" 
+      topic="Sitstraight" 
+      extra="Vraag de cliënt te gaan zitten." 
+      blockUnlock="patient sit"/>
+  <action 
+      comment="Asking patient not to directly swallow memdicine" 
+      points="1" 
+      description="[instrueer de cliënt]" 
+      index="7" 
+      type="talk" 
+      topic="NoSwallow" 
+      extra="Instrueer de cliënt de medicijnen niet door te slikken."/>
+  <action 
+      comment="Start sequence by using the pill on the patient" 
+      index="8" 
+      points="1" 
+      description="[neem het medicijn]" 
+      type="useOn" 
+      item="TabletRound1" 
+      secondPlace="PatientPos" 
+      target="" 
+      buttonText="Medicijn toedienen" 
+      extra="Neem het medicijn in de hand en geef het aan de cliënt." 
+      blockRequired="patient sit" 
+      blockTitle="Handeling nog niet mogelijk" 
+      blockMessage="Vraag de cliënt eerst om rechtop te gaan zitten."/>
+  <action 
+      comment="Patient opens mouth and bring the tip of the tongue against the palate" 
+      index="9" 
+      value="open mouth" 
+      description="[vraag de cliënt894]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="Vraag de cliënt de punt van de tong tegen het verhemelte te brengen."/>
+  <action 
+      comment="Player places the pill under the tongue of the patient" 
+      index="10" 
+      value="place pill under tongue" 
+      description="[leg het medicijn]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="Leg het medicijn onder de tong van de cliënt."/>
+  <action 
+      comment="Client closes his mouth to swallow pill" 
+      index="11" 
+      value="close mouth" 
+      description="[vraag de cliënt529]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="Vraag de cliënt onmiddellijk de mond dicht te doen." 
+      messageTitle="[controleren verkeerd of]" 
+      messageContent="[maak melding van]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="12" 
+      type="use" 
+      value="WorkField" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen446]"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="13" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="Pas handhygiëne toe." 
+      messageTitle="[voorraad checken]" 
+      messageContent="[controleer de voorraad]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst]" 
+      index="14" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Teken de toedienlijst af en noteer tijdstip, soort medicijn, concentratie, hoeveelheid, wijze van toediening. Noteer tot slot je bevindingen."/>
+</ActionList>

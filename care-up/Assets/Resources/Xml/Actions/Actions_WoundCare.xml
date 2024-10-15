@@ -1,364 +1,330 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <Action
-    index="0"
-    description="[Begroet]"
-    type="talk"
-    points="1"
-    optional=""
-    topic="Hello" />
-  <Action
-    index="0"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="(1)Apply handhygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het allerbelangrijkste als het gaat om voorkomen van besmetting met ziektekiemen. Dit betekent je handen reinigen op de juiste manier en op de juiste momenten. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner" />
-  <Action
-    index="1"
-    description="[Maak een schoon werkveld]"
-    type="use"
-    comment="(2)Create a clean workfield"
-    points="1"
-    messageTitle="Je het volgende nodig hebt."
-    messageContent="Tijdens deze handeling wordt er een gele vochtige wond behandeld. 
-    
-Benodigdheden:
-    
-- 3 paar handschoenen
-- onderlegger
-- bij kans op spatten: plastic schort, bril
-- 4 gazen voor reinigen wondomgeving
-- verbandmateriaal passend bij soort wond
-- zo nodig zalf of crème om wondrand mee te beschermen
-- zo nodig een spatel om zalf of crème aan te brengen
-- afvalbak
-
-bij gebruik schaar en pincet:
-
-- schaar
-- pincet
-- 6 gaasjes
-- alcohol 70%"
-    value="WorkField" />
-  <Action
-    index="2"
-    description="[Trek de handschoenen aan]"
-    type="use"
-    comment="Put on gloves."
-    points="1"
-    value="gloveBox"
-    blockUnlock="GlovesTakenOn" />
-  <Action
-    index="3"
-    description="Overgiet drie gaasjes met alcohol 70%"
-    type="sequenceStep"
-    comment="Cover three gauze pads with 70% alcohol."
-    points="1"
-    messageTitle="Overgieten gaasjes"
-    messageContent="De handeling voor het overgieten van de gaasjes is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle drie de gaasjes overgiet met alcohol 70%."
-    value="Cover3Gauzes" />
-  <Action
-    index="4"
-    description="Houd de schaar bij een oog vast en desinfecteer de beide bladen met een alcoholgaasje."
-    type="sequenceStep"
-    comment="Hold the scissors by one eye and disinfect both blades with an alcohol swab."
-    points="1"
-    value="HoldScissors" />
-  <Action
-    index="5"
-    description="Houd de schaar met het gebruikte gaasje bij een blad vast. Desinfecteer de rest van de schaar met een tweede alcoholgaasje."
-    type="sequenceStep"
-    comment="Hold the scissors with the used gauze by a blade. Disinfect the rest of the scissors with a second alcohol swab"
-    points="1"
-    value="CleanScissorsWithSecondGauze" />
-  <Action
-    index="6"
-    description="Leg de schaar op het werkveld op een derde alcoholgaasje"
-    type="sequenceStep"
-    comment="Place the scissors on the work field on a third alcohol gauze"
-    points="1"
-    value="PlaceScissorsOnTable" />
-  <Action
-    index="7"
-    description="Overgiet drie gaasjes met alcohol 70%"
-    type="sequenceStep"
-    comment="Cover three gauze pads with 70% alcohol"
-    points="1"
-    messageTitle="Overgieten gaasjes"
-    messageContent="De handeling voor het overgieten van de gaasjes is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle drie de gaasjes overgiet met alcohol 70%."
-    value="Cover3Gauzes2Time" />
-  <Action
-    index="8"
-    description="Houd het pincet bij het handvat vast en desinfecteer beide bladen met een alcoholgaasje"
-    type="sequenceStep"
-    comment="Hold the tweezers by the handle and disinfect both blades with an alcohol swab"
-    points="1"
-    value="DesinfectTweezersBlades" />
-  <Action
-    index="9"
-    description="Houd het pincet met het gebruikte gaasje bij een blad vast. Desinfecteer de rest van het pincet met een tweede alcoholgaasje"
-    type="sequenceStep"
-    comment="Hold the tweezers with the used gauze by a leaf. Disinfect the rest of the tweezers with a second alcohol swab"
-    points="1"
-    value="DesinfectRestOfTweezers" />
-  <Action
-    index="10"
-    description="Leg het pincet op het werkveld op een derde alcoholgaasje"
-    type="sequenceStep"
-    comment="Place the tweezers on the work area on a third alcohol gauze"
-    points="1"
-    value="PlaceTweezersOnTable"
-    blockUnlock="EndOfSq1" />
-  <Action
-    index="11"
-    description="Vraag de cliënt een comfortabele houding aan te nemen, waarbij de wond goed bereikbaar is"
-    type="talk"
-    comment="Ask the client to lay on side"
-    points="2"
-    topic="LayOnSide"
+  <Action 
+    index="0" 
+    description="[Begroet]" 
+    type="talk" 
+    points="1" 
+    optional="" 
+    topic="Hello"/>
+  <Action 
+    index="0" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="(1)Apply handhygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[de handeling voor28]" 
+    value="HandCleaner"/>
+  <Action 
+    index="1" 
+    description="[Maak een schoon werkveld]" 
+    type="use" 
+    comment="(2)Create a clean workfield" 
+    points="1" 
+    messageTitle="[je het volgende807]" 
+    messageContent="[tijdens deze handeling713]" 
+    value="WorkField"/>
+  <Action 
+    index="2" 
+    description="[Trek de handschoenen aan]" 
+    type="use" 
+    comment="Put on gloves." 
+    points="1" 
+    value="gloveBox" 
+    blockUnlock="GlovesTakenOn"/>
+  <Action 
+    index="3" 
+    description="[overgiet drie gaasjes]" 
+    type="sequenceStep" 
+    comment="Cover three gauze pads with 70% alcohol." 
+    points="1" 
+    messageTitle="[overgieten gaasjes]" 
+    messageContent="[de handeling voor865]" 
+    value="Cover3Gauzes"/>
+  <Action 
+    index="4" 
+    description="[houd de schaar]" 
+    type="sequenceStep" 
+    comment="Hold the scissors by one eye and disinfect both blades with an alcohol swab." 
+    points="1" 
+    value="HoldScissors"/>
+  <Action 
+    index="5" 
+    description="[houd de schaar791]" 
+    type="sequenceStep" 
+    comment="Hold the scissors with the used gauze by a blade. Disinfect the rest of the scissors with a second alcohol swab" 
+    points="1" 
+    value="CleanScissorsWithSecondGauze"/>
+  <Action 
+    index="6" 
+    description="[leg de schaar]" 
+    type="sequenceStep" 
+    comment="Place the scissors on the work field on a third alcohol gauze" 
+    points="1" 
+    value="PlaceScissorsOnTable"/>
+  <Action 
+    index="7" 
+    description="[overgiet drie gaasjes]" 
+    type="sequenceStep" 
+    comment="Cover three gauze pads with 70% alcohol" 
+    points="1" 
+    messageTitle="[overgieten gaasjes]" 
+    messageContent="[de handeling voor865]" 
+    value="Cover3Gauzes2Time"/>
+  <Action 
+    index="8" 
+    description="[houd het pincet]" 
+    type="sequenceStep" 
+    comment="Hold the tweezers by the handle and disinfect both blades with an alcohol swab" 
+    points="1" 
+    value="DesinfectTweezersBlades"/>
+  <Action 
+    index="9" 
+    description="[houd het pincet124]" 
+    type="sequenceStep" 
+    comment="Hold the tweezers with the used gauze by a leaf. Disinfect the rest of the tweezers with a second alcohol swab" 
+    points="1" 
+    value="DesinfectRestOfTweezers"/>
+  <Action 
+    index="10" 
+    description="[leg het pincet]" 
+    type="sequenceStep" 
+    comment="Place the tweezers on the work area on a third alcohol gauze" 
+    points="1" 
+    value="PlaceTweezersOnTable" 
+    blockUnlock="EndOfSq1"/>
+  <Action 
+    index="11" 
+    description="[vraag de cliënt440]" 
+    type="talk" 
+    comment="Ask the client to lay on side" 
+    points="2" 
+    topic="LayOnSide" 
     blockUnlock="HorClient">
     <ui_timeout>2</ui_timeout>
   </Action>
-  <Action
-    index="12"
-    description="Zorg dat  er geen andere activiteiten in de omgeving plaatsvinden, om stofvorming te voorkomen"
-    type="general"
-    item=""
-    points="1"
-    buttonText="Controleer de omgeving"
-    action="EnsureSafety"
-    blockUnlock="SafeArea"
-    blockRequired="HorClient" />
-  <Action
-    index="13"
-    description="Help de cliënt met het uittrekken van de onderbroek"
-    type="general"
-    item=""
-    points="1"
-    buttonText="Onderbroek uittrekken"
-    action="HelpPatientToRemoveUnderwear"
-    blockUnlock="UnderwearIsOff"
-    blockRequired="SafeArea" />
-  <Action
-    index="14"
-    description="[Leg een onderlegger rond het werkterrein]"
-    type="useOn"
-    comment="Place a mat around the work area."
-    item="cloth_02_folded"
-    points="1"
-    buttonText="Onderlegger plaatsen"
-    target=""
-    blockUnlock="PadOnPatient"
-    blockRequired="HorClient, UnderwearIsOff"
-    blockTitle=""
-    blockMessage="" />
-  <Action
-    index="15"
-    description="Verwijder het verbandmateriaal en gooi het in de afvalbak"
-    type="sequenceStep"
-    comment="Remove old plaster"
-    points="1"
-    messageTitle="Verbandmateriaal inspecteren"
-    messageContent="Bekijk het verbandmateriaal aandachtig. Let op de kleur, geur, beoordeel de hoeveelheid exsudaat en controleer of het juiste absorberende materiaal wordt gebruikt"
-    value="RemoveOldPlaster" />
-  <Action
-    index="16"
-    description="Inspecteer de wond op grootte, diepte, geur, kleur, wondranden en exsudaat"
-    type="sequenceStep"
-    comment="Inspect the wound"
-    points="1"
-    messageTitle="Let bij het inspecteren van de wond op:"
-    messageContent="Grootte en diepte: Meet een wond steeds op dezelfde manier, zodat je de gegevens goed kunt vergelijken. Gebruik bijvoorbeeld foto's of een rastervel. Zorg dat de cliënt steeds in dezelfde houding ligt bij het meten.
-
-Geur: Een sterke geur kan een infectie aangeven
-
-Kleur: Het WCS-Classificatiemodel (rood – geel – zwart) laat zien in welke fase van genezing de wond zit en wat je moet doen. De slechtste fase bepaalt het wondproduct.
-
-Wondranden: Zorg dat de wondranden niet week worden door vocht, en verwijder eelt om genezing te bevorderen.
-
-Wondvocht (exudaat): Een wond kan veel of weinig vocht produceren. Gebruik verband, een drain of opvangzak om het vocht op te vangen en bij te houden.
-
-Pijn: Pijn kan komen door infectie, verkeerde verzorging of een ongeschikt verband. Noteer de pijn en kijk of pijnstilling nodig is voordat je het verband verwisselt.
-
-Ontstekingsverschijnselen: Let op roodheid, zwelling, warmte, pijn en verminderde functie, want dit kan wijzen op een infectie."
-    value="InspectTheWound" />
-  <Action
-    index="17"
-    description="Trek de handschoenen uit en gooi ze in de afvalbak"
-    type="sequenceStep"
-    comment="Remove gloves"
-    points="1"
-    value="TakeGlovesOff"
-    blockUnlock="EndOf2SQ" />
-  <Action
-    index="18"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="(1)Apply handhygiene"
-    points="3"
-    messageTitle="Gele wond"
-    messageContent="Bij een gele wond is het wondbed bedekt met gelige, halfvloeibare of taaie laag. Hierin bevinden zich celresten en samengeklonterde eiwitten. Deze laag moet verwijderd worden.
-   
-  De wond bevindt zich nu nog in de reactiefase. Het wondbed is nog niet geschikt voor de vorming van granulatieweefsel. 
-  
-  Vaak produceren deze wonden veel vocht (exsudaat). Het doel van de behandeling is reinigen van het wondbed en absorptie van de overmaat aan exsudaat. Een vochtig milieu is gunstig voor de wond, maar voorkom dat er te veel wondvocht aanwezig is."
-    value="HandCleaner"
-    blockRequired="EndOf2SQ" />
-  <Action
-    index="19"
-    description="[Trek de handschoenen aan]"
-    type="use"
-    comment="Put on gloves."
-    points="1"
-    value="gloveBox"
-    blockUnlock="SecondPairOfGlovesOn"
-    blockRequired="EndOf2SQ" />
-  <Action
-    index="20"
-    description="Maak de gaasjes nat"
-    type="useOn"
-    comment="Make gauzes wet"
-    secondPlace="SinkPos"
-    item="TrayOfGauzes"
-    points="1"
-    buttonText="Gaasjes nat maken"
-    target=""
-    blockRequired="EndOf2SQ" />
-  <Action
-    index="21"
-    description="Neem een nat gaasje en maak de wond met de klok mee schoon"
-    type="sequenceStep"
-    comment="Clean the wound with a wet gauze in a clockwise direction"
-    points="1"
-    value="CleanClocjwise" />
-  <Action
-    index="22"
-    description="Neem een nat gaasje en maak de wond tegen de klok in schoon"
-    type="sequenceStep"
-    comment="Clean the wound with a wet gauze in a counter clockwise direction"
-    points="1"
-    value="CleanCounterClockwise" />
-  <Action
-    index="23"
-    description="Neem een nat gaasje en maak de wond door het midden schoon"
-    type="sequenceStep"
-    comment="Clean the wound with a wet gauze through the middle part of the wound"
-    points="1"
-    value="CleanMiddle" />
-  <Action
-    index="24"
-    description="Droog de wond met een droog gaasje"
-    type="sequenceStep"
-    comment="Dry wound with dry gauze"
-    points="1"
-    value="DryWound"
-    blockUnlock="WoudIsCleaned" />
-  <Action
-    index="25"
-    description="Trek de handschoenen uit."
-    type="general"
-    item=""
-    points="1"
-    buttonText="Trek handschoenen uit"
-    action="TakeOffGlovesWithoutThrowing"
-    blockUnlock="glovesRemoved2"
-    blockRequired="WoudIsCleaned" />
-  <Action
-    index="26"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="(1)Apply handhygiene"
-    points="3"
-    messageTitle=""
-    messageContent=""
-    value="HandCleaner" />
-  <Action
-    index="27"
-    description="[Trek de handschoenen aan]"
-    type="use"
-    comment="Put on gloves."
-    points="1"
-    value="gloveBox"
-    blockUnlock="GlovesTakenOn2" />
-  <Action
-    index="28"
-    description="Breng nieuw verbandmateriaal aan volgens afspraak"
-    type="useOn"
-    comment="Apply new dressing material as agreed"
-    item="BedsorePlaster_OnTable"
-    points="1"
-    buttonText="Breng wondverband aan"
-    target=""
-    blockRequired="GlovesTakenOn2" />
-  <Action
-    index="29"
-    description="Knip de pleister"
-    type="sequenceStep"
-    comment="Cut the plaster"
-    points="1"
-    value="CutPlaster" />
-  <Action
-    index="30"
-    description="Verwijder de middelste beschermstrip"
-    type="sequenceStep"
-    comment="Remove middle cover"
-    points="1"
-    value="RemoveMidCover" />
-  <Action
-    index="31"
-    description="Plak de pleister over het midden van de wond"
-    type="sequenceStep"
-    comment="Attach plaster to patient"
-    points="1"
-    value="AttachPlaster" />
-  <Action
-    index="32"
-    description="Verwijder de linker beschermstrip"
-    type="sequenceStep"
-    comment="Remove left side cover"
-    points="1"
-    value="RemoveLeftCover" />
-  <Action
-    index="33"
-    description="Verwijder de rechter beschermstrip"
-    type="sequenceStep"
-    comment="Remove right side cover"
-    points="1"
-    value="RemoveRightCover"
-    blockUnlock="EndOfSq4" />
-  <Action
-    index="34"
-    description="[Maak een schoon werkveld end]"
-    type="use"
-    comment="Create a clean workfield"
-    points="1"
-    value="WorkField"
-    blockUnlock="TableCleaned"
-    blockRequired="EndOfSq4" />
-  <Action
-    index="35"
-    description="Trek de handschoenen uit."
-    type="general"
-    item=""
-    points="1"
-    buttonText="Trek handschoenen uit"
-    action="TakeOffGlovesWithoutThrowing"
-    blockRequired="TableCleaned" />
-  <Action
-    index="36"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="(1)Apply handhygiene"
-    points="3"
-    value="HandCleaner" />
-  <Action
-    index="37"
-    description="Noteer de handeling en eventuele bevindingen. Stel zo nodig het behandelplan bij"
-    type="use"
-    comment="Record the action and any findings and adjust the wound treatment plan if necessary"
-    points="1"
-    value="PaperAndPen" />
+  <Action 
+    index="12" 
+    description="[zorg dat er838]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Controleer de omgeving" 
+    action="EnsureSafety" 
+    blockUnlock="SafeArea" 
+    blockRequired="HorClient"/>
+  <Action 
+    index="13" 
+    description="[help de cliënt255]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Onderbroek uittrekken" 
+    action="HelpPatientToRemoveUnderwear" 
+    blockUnlock="UnderwearIsOff" 
+    blockRequired="SafeArea"/>
+  <Action 
+    index="14" 
+    description="[Leg een onderlegger rond het werkterrein]" 
+    type="useOn" 
+    comment="Place a mat around the work area." 
+    item="cloth_02_folded" 
+    points="1" 
+    buttonText="Onderlegger plaatsen" 
+    target="" 
+    blockUnlock="PadOnPatient" 
+    blockRequired="HorClient, UnderwearIsOff" 
+    blockTitle="" 
+    blockMessage=""/>
+  <Action 
+    index="15" 
+    description="[verwijder het verbandmateriaal]" 
+    type="sequenceStep" 
+    comment="Remove old plaster" 
+    points="1" 
+    messageTitle="[verbandmateriaal inspecteren]" 
+    messageContent="[bekijk het verbandmateriaal]" 
+    value="RemoveOldPlaster"/>
+  <Action 
+    index="16" 
+    description="[inspecteer de wond505]" 
+    type="sequenceStep" 
+    comment="Inspect the wound" 
+    points="1" 
+    messageTitle="[let bij het]" 
+    messageContent="[grootte en diepte:]" 
+    value="InspectTheWound"/>
+  <Action 
+    index="17" 
+    description="[trek de handschoenen527]" 
+    type="sequenceStep" 
+    comment="Remove gloves" 
+    points="1" 
+    value="TakeGlovesOff" 
+    blockUnlock="EndOf2SQ"/>
+  <Action 
+    index="18" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="(1)Apply handhygiene" 
+    points="3" 
+    messageTitle="[gele wond]" 
+    messageContent="[bij een gele]" 
+    value="HandCleaner" 
+    blockRequired="EndOf2SQ"/>
+  <Action 
+    index="19" 
+    description="[Trek de handschoenen aan]" 
+    type="use" 
+    comment="Put on gloves." 
+    points="1" 
+    value="gloveBox" 
+    blockUnlock="SecondPairOfGlovesOn" 
+    blockRequired="EndOf2SQ"/>
+  <Action 
+    index="20" 
+    description="[maak de gaasjes]" 
+    type="useOn" 
+    comment="Make gauzes wet" 
+    secondPlace="SinkPos" 
+    item="TrayOfGauzes" 
+    points="1" 
+    buttonText="Gaasjes nat maken" 
+    target="" 
+    blockRequired="EndOf2SQ"/>
+  <Action 
+    index="21" 
+    description="[neem een nat]" 
+    type="sequenceStep" 
+    comment="Clean the wound with a wet gauze in a clockwise direction" 
+    points="1" 
+    value="CleanClocjwise"/>
+  <Action 
+    index="22" 
+    description="[neem een nat7]" 
+    type="sequenceStep" 
+    comment="Clean the wound with a wet gauze in a counter clockwise direction" 
+    points="1" 
+    value="CleanCounterClockwise"/>
+  <Action 
+    index="23" 
+    description="[neem een nat197]" 
+    type="sequenceStep" 
+    comment="Clean the wound with a wet gauze through the middle part of the wound" 
+    points="1" 
+    value="CleanMiddle"/>
+  <Action 
+    index="24" 
+    description="[droog de wond]" 
+    type="sequenceStep" 
+    comment="Dry wound with dry gauze" 
+    points="1" 
+    value="DryWound" 
+    blockUnlock="WoudIsCleaned"/>
+  <Action 
+    index="25" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockUnlock="glovesRemoved2" 
+    blockRequired="WoudIsCleaned"/>
+  <Action 
+    index="26" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="(1)Apply handhygiene" 
+    points="3" 
+    messageTitle="" 
+    messageContent="" 
+    value="HandCleaner"/>
+  <Action 
+    index="27" 
+    description="[Trek de handschoenen aan]" 
+    type="use" 
+    comment="Put on gloves." 
+    points="1" 
+    value="gloveBox" 
+    blockUnlock="GlovesTakenOn2"/>
+  <Action 
+    index="28" 
+    description="[breng nieuw verbandmateriaal]" 
+    type="useOn" 
+    comment="Apply new dressing material as agreed" 
+    item="BedsorePlaster_OnTable" 
+    points="1" 
+    buttonText="Breng wondverband aan" 
+    target="" 
+    blockRequired="GlovesTakenOn2"/>
+  <Action 
+    index="29" 
+    description="[knip de pleister]" 
+    type="sequenceStep" 
+    comment="Cut the plaster" 
+    points="1" 
+    value="CutPlaster"/>
+  <Action 
+    index="30" 
+    description="[verwijder de middelste]" 
+    type="sequenceStep" 
+    comment="Remove middle cover" 
+    points="1" 
+    value="RemoveMidCover"/>
+  <Action 
+    index="31" 
+    description="[plak de pleister]" 
+    type="sequenceStep" 
+    comment="Attach plaster to patient" 
+    points="1" 
+    value="AttachPlaster"/>
+  <Action 
+    index="32" 
+    description="[verwijder de linker]" 
+    type="sequenceStep" 
+    comment="Remove left side cover" 
+    points="1" 
+    value="RemoveLeftCover"/>
+  <Action 
+    index="33" 
+    description="[verwijder de rechter]" 
+    type="sequenceStep" 
+    comment="Remove right side cover" 
+    points="1" 
+    value="RemoveRightCover" 
+    blockUnlock="EndOfSq4"/>
+  <Action 
+    index="34" 
+    description="[Maak een schoon werkveld end]" 
+    type="use" 
+    comment="Create a clean workfield" 
+    points="1" 
+    value="WorkField" 
+    blockUnlock="TableCleaned" 
+    blockRequired="EndOfSq4"/>
+  <Action 
+    index="35" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="TableCleaned"/>
+  <Action 
+    index="36" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="(1)Apply handhygiene" 
+    points="3" 
+    value="HandCleaner"/>
+  <Action 
+    index="37" 
+    description="[noteer de handeling384]" 
+    type="use" 
+    comment="Record the action and any findings and adjust the wound treatment plan if necessary" 
+    points="1" 
+    value="PaperAndPen"/>
 </ActionList>

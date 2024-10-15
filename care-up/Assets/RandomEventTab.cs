@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Xml;
+using CareUp.Localize;
 
 public class RandomEventTab : MonoBehaviour
 {
@@ -225,8 +226,24 @@ public class RandomEventTab : MonoBehaviour
 
     public void CorrectAnswer(int value)
     {
-        wrongAnswerPanelTitle.text = "Heel goed!";
-        wrongAnswerPanelText.text = randomEventsData[currentRandomEventIndex].quastions[currentQuastionIndex].answers[shuffledIndexes[value]].descr;
+        //@
+        wrongAnswerPanelTitle.text = LocalizationManager.GetValueIfKey("[heel goed!]");
+        //@
+        wrongAnswerPanelText.text = LocalizationManager.GetValueIfKey(
+            randomEventsData[currentRandomEventIndex].quastions[
+                currentQuastionIndex].answers[shuffledIndexes[value]].descr);
+        
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(wrongAnswerPanelTitle.gameObject, "[heel goed!]");
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(wrongAnswerPanelText.gameObject, 
+                randomEventsData[currentRandomEventIndex].quastions[
+                    currentQuastionIndex].answers[shuffledIndexes[value]].descr);
+        }
+
         ActionManager.CorrectAction();
         SwitchScreen(2);
         greenPop.Play();
@@ -255,8 +272,22 @@ public class RandomEventTab : MonoBehaviour
                 Debug.LogWarning("No EndScoreManager found. Start from 1st scene.");
             }
         }
-        wrongAnswerPanelTitle.text = "Helaas, dit antwoord is niet goed";
-        wrongAnswerPanelText.text = randomEventsData[currentRandomEventIndex].quastions[currentQuastionIndex].answers[shuffledIndexes[value]].descr;
+        //@
+        wrongAnswerPanelTitle.text = LocalizationManager.GetValueIfKey("[helaas dit antwoord323]");
+        //@
+        wrongAnswerPanelText.text = LocalizationManager.GetValueIfKey(
+            randomEventsData[currentRandomEventIndex].quastions[
+                currentQuastionIndex].answers[shuffledIndexes[value]].descr);
+
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(wrongAnswerPanelTitle.gameObject, "[helaas dit antwoord323]");
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(wrongAnswerPanelText.gameObject, 
+                randomEventsData[currentRandomEventIndex].quastions[currentQuastionIndex].answers[shuffledIndexes[value]].descr);
+        }
         ActionManager.WrongAction(false);
         madeWrongAnswer = true;
         SwitchScreen(2);
@@ -307,7 +338,7 @@ public class RandomEventTab : MonoBehaviour
     public void Init(List<string> eventFileNames)
     {
         List<string> _names = new List<string>();
-        _names.Add("RandomEvent");
+        // _names.Add("RandomEvent");
         for (int i = 0; i < eventFileNames.Count; i++)
         {
             if (eventFileNames[i] != "")

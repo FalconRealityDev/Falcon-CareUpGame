@@ -1,60 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
-	<step>
-		<option text="Richt het hielstuk van de steunkous naar de grond" animation="PointHeel"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-		<option text="Rol de cuff voorbij de enkel en controleer of teen- en hielstuk goed zitten. Rol terug wanneer nodig en probeer het opnieuw"/>
-		<option text="Vraag de cliënt om zijn voet op de stoel te zetten"/>
-	</step>
-	<step>
-		<option text="Plaats het teenstuk tegen de tenen" animation="PlaceInFrontOfToes"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-		<option text="Rol de cuff helemaal af"/>
-		<option text="Rol de cuff voorbij de enkel en controleer of teen- en hielstuk goed zitten. Rol terug wanneer nodig en probeer het opnieuw"/>
-	</step>
-	<step>
-		<option text="Rol de cuff voorbij de enkel en controleer of teen- en hielstuk goed zitten. Rol terug wanneer nodig en probeer het opnieuw" animation="RollCuffPastAnkle"/>
-		<option text="Rol de cuff helemaal af"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-	</step>
-	<step>
-		<option text="Rol de cuff helemaal af" animation="RollWayOff"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-		<option text="Plaats de boord van de steunkous 2 cm onder de knie. Bij lange steunkousen kan dit tot over de knie"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-	</step>
-	<step>
-		<option text="Plaats de boord van de steunkous 2 cm onder de knie. Bij lange steunkousen kan dit tot over de knie" animation="Place2cm"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-		<option text="Pak met beide handen de cuff vast en rol deze van het been af. Zo worden  plooien in de kous glad gestreken"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-	</step>
-	<step>
-		<option text="Pak met beide handen de cuff vast en rol deze van het been af. Zo worden  plooien in de kous glad gestreken" animation="GragCuffOff"/>
-		<option text="Ga tegenover de cliënt zitten"/>
-		<option text="Vraag de cliënt om zijn voet op de stoel te zetten"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-	</step>
-	
-	<step>
-		<option text="Verdeel de kous goed over het been door met vlakke handen over de kous te wrijven" animation="FlatHands"/>
-		<option text="Zorg dat de naad van de hiel aan de achterkant zit. Pas mogelijke verdraaiingen van de steunkous aan met vlakke handen. Sla de boord niet om"/>
-		<option text="Vraag de cliënt om zijn voet op de stoel te zetten"/>
-	</step>
-	<step>
-		<option text="Zorg dat de naad van de hiel aan de achterkant zit. Pas mogelijke verdraaiingen van de steunkous aan met vlakke handen. Sla de boord niet om" animation="CheckHeel"/>
-		<option text="Zorg dat de tenen van de cliënt te zien blijven"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-	</step>
-	<step>
-		<option text="Zorg dat de tenen van de cliënt te zien blijven" animation="CheckToes"/>
-		<option text="Plaats het teenstuk tegen de tenen"/>
-		<option text="Vraag de cliënt om zijn voet op de stoel te zetten"/>
-		<option text="Richt het hielstuk van de steunkous naar de grond"/>
-	</step>
+  <step>
+    <option 
+      text="[richt het hielstuk]" 
+      animation="PointHeel"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+    <option 
+      text="[rol de cuff160]"/>
+    <option 
+      text="[vraag de cliënt114]"/>
+  </step>
+  <step>
+    <option 
+      text="[plaats het teenstuk]" 
+      animation="PlaceInFrontOfToes"/>
+    <option 
+      text="[richt het hielstuk]"/>
+    <option 
+      text="[rol de cuff300]"/>
+    <option 
+      text="[rol de cuff160]"/>
+  </step>
+  <step>
+    <option 
+      text="[rol de cuff160]" 
+      animation="RollCuffPastAnkle"/>
+    <option 
+      text="[rol de cuff300]"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+    <option 
+      text="[richt het hielstuk]"/>
+  </step>
+  <step>
+    <option 
+      text="[rol de cuff300]" 
+      animation="RollWayOff"/>
+    <option 
+      text="[richt het hielstuk]"/>
+    <option 
+      text="[plaats de boord]"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+  </step>
+  <step>
+    <option 
+      text="[plaats de boord]" 
+      animation="Place2cm"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+    <option 
+      text="[pak met beide]"/>
+    <option 
+      text="[richt het hielstuk]"/>
+  </step>
+  <step>
+    <option 
+      text="[pak met beide]" 
+      animation="GragCuffOff"/>
+    <option 
+      text="[ga tegenover de]"/>
+    <option 
+      text="[vraag de cliënt114]"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+  </step>
+  <step>
+    <option 
+      text="[verdeel de kous]" 
+      animation="FlatHands"/>
+    <option 
+      text="[zorg dat de90]"/>
+    <option 
+      text="[vraag de cliënt114]"/>
+  </step>
+  <step>
+    <option 
+      text="[zorg dat de90]" 
+      animation="CheckHeel"/>
+    <option 
+      text="[zorg dat de981]"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+    <option 
+      text="[richt het hielstuk]"/>
+  </step>
+  <step>
+    <option 
+      text="[zorg dat de981]" 
+      animation="CheckToes"/>
+    <option 
+      text="[plaats het teenstuk]"/>
+    <option 
+      text="[vraag de cliënt114]"/>
+    <option 
+      text="[richt het hielstuk]"/>
+  </step>
 
 
-	​
+  ​
 </AnimationSequence>

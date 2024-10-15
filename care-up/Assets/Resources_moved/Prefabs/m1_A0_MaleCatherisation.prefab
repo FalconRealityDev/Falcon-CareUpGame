@@ -6271,7 +6271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: "Cli\xEBnt"
+  description: "[i_cli\xEBnt859]"
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9638,6 +9638,11 @@ PrefabInstance:
     - target: {fileID: 4858272075698534, guid: 8d24012b4585fd143b8e1145b0f4caf1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.9840282
+      objectReference: {fileID: 0}
+    - target: {fileID: 114610910621688842, guid: 8d24012b4585fd143b8e1145b0f4caf1,
+        type: 3}
+      propertyPath: assetSource
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d24012b4585fd143b8e1145b0f4caf1, type: 3}

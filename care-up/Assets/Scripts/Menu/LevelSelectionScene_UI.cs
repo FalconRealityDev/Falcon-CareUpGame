@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Linq;
 using MBS;
 using CareUpAvatar;
+using CareUp.Localize;
 
 
 public class SceneInfo
@@ -454,8 +455,7 @@ public class LevelSelectionScene_UI : MonoBehaviour
             sceneUnit.url = sceneInfo.url;
 
             // setting scene title
-            sceneUnit.transform.Find("Title").GetComponent<Text>().text
-                = sceneUnit.displayName = sceneInfo.displayName;
+            sceneUnit.displayName = sceneInfo.displayName;
 
             ppManager.currentSceneVisualName = sceneUnit.displayName;
             // setting id next to manager visual name
@@ -479,8 +479,22 @@ public class LevelSelectionScene_UI : MonoBehaviour
                 //sceneUnit.transform.Find("LevelPreview").GetComponent<Image>().sprite = sceneUnit.image;
             }
             sceneUnit.validated = sceneInfo.validated;
-            sceneUnit.transform.Find("Validation").GetComponent<Text>().text =
-                sceneUnit.validated ? "Geaccrediteerd" : "";
+            sceneUnit.transform.Find("Validation").GetComponent<Text>().text = "";
+            if (sceneUnit.validated)
+            {
+                //@
+                sceneUnit.transform.Find("Validation").GetComponent<Text>().text = 
+                    LocalizationManager.GetValueIfKey("[Geaccrediteerd]");
+                
+                InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+                if (inGameLocalEditTool != null)
+                {
+                    //!
+                    inGameLocalEditTool.AddUILocalizationComponentToGO(
+                        sceneUnit.transform.Find("Validation").gameObject, "[Geaccrediteerd]"
+                    );
+                }
+            }
 
             sceneUnit.totalPoints = sceneInfo.totalPoints;
             sceneUnit.xPoints = sceneInfo.xPoints;

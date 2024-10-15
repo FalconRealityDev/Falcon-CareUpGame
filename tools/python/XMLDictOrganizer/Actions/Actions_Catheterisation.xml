@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="1" 
+      description="[Begroet]" 
+      type="talk" 
+      topic="Hello" 
+      extra="[het begroeten van]" 
+      optional=""/>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      comment="2. Create a clean work area and put the equipment within reach" 
+      index="1" 
+      points="2" 
+      description="[maak een schoon386]" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[voorgeschreven steriele katheter]"/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      index="2" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens]"/>
+  <action 
+      points="1" 
+      description="[open de katheterset]" 
+      fullDescription="[klik op de]" 
+      index="3" 
+      type="use" 
+      value="catheterisation" 
+      extra="[maak een steriel]" 
+      messageTitle="[katheterset]" 
+      messageContent="[Katheterset]"/>
+  <action 
+      comment="4. Pour tap water from a large tap (or sterile water) over the gauze." 
+      points="1" 
+      description="[giet kraanwater uit]" 
+      index="4" 
+      type="useOn" 
+      item="TrayOfGauzes" 
+      secondPlace="SinkPos" 
+      target="" 
+      buttonText="Gaasjes nat maken" 
+      extra="[giet kraanwater uit376]" 
+      messageTitle="[gebruik kraanwater]" 
+      messageContent="[TapWaterTheory]"/>
+  <action 
+      comment="8. Open the packaging of the syringe with lubricant, leave the syringe in the packaging." 
+      points="1" 
+      description="[open de verpakking]" 
+      index="5" 
+      type="combine" 
+      left="lube_syringe_pack" 
+      right="" 
+      extra="[open de verpakking]" 
+      blockUnlock="block3"/>
+  <action 
+      comment="3. Open package of the syringe with 10 ml of sterile water. Leave the syringe in the package " 
+      points="1" 
+      description="[open de verpakking585]" 
+      index="6" 
+      type="combine" 
+      left="water_syringe_pack" 
+      right="" 
+      extra="[open de verpakking585]"/>
+  <action 
+      comment="9. Put on gloves." 
+      points="2" 
+      description="[trek handschoenen aan]" 
+      index="7" 
+      type="use" 
+      value="gloveBox" 
+      extra="[trek handschoenen aan]" 
+      quiz="2" 
+      blockRequired="block3" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de materialen op de juiste plek staan en de nodige verpakkingen geopent zijn." 
+      messageTitle="[gebruik handschoenen]" 
+      messageContent="[GebruikHandschoenen]"/>
+  <action 
+      comment="5. Ask the client to uncover the lower body and lie on the back with the legs spread apart and the knees raised." 
+      index="8" 
+      points="1" 
+      description="[vraag de cliënt183]" 
+      type="talk" 
+      topic="LayOnBed" 
+      extra="[vraag de cliënt183]" 
+      fullDescription="[beweeg naar de]" 
+      blockUnlock="patient lay down"/>
+  <action 
+      comment="6. Place a pad under the buttocks and thighs of the cliënt." 
+      points="2" 
+      description="[leg een onderlegger]" 
+      index="9" 
+      type="useOn" 
+      target="" 
+      item="cloth_02_folded" 
+      secondPlace="PatientPos" 
+      buttonText="Onderlegger plaatsen" 
+      extra="[leg een onderlegger]" 
+      messageTitle="[privacy van de]" 
+      messageContent="[Privacy]" 
+      blockRequired="patient lay down" 
+      blockUnlock="block1, block3"/>
+  <action 
+      comment="7. Place the tray with gauze on the underpad." 
+      points="1" 
+      description="[zet het bakje]" 
+      index="10" 
+      type="drop" 
+      item="TrayOfWetGauzes" 
+      secondPlace="PatientPos" 
+      posID="2" 
+      blockRequired="block1,block3" 
+      extra="[zet het bakje]"/>
+  <action 
+      comment="" 
+      points="1" 
+      description="[leg het plastic]" 
+      index="11" 
+      type="drop" 
+      item="PlasticTrashbucket" 
+      secondPlace="PatientPos" 
+      posID="2" 
+      blockRequired="block1, block3" 
+      extra="[leg het plastic]" 
+      blockUnlock="tray placed"/>
+  <action 
+      comment="" 
+      points="3" 
+      description="[reinig de labia]" 
+      index="12" 
+      type="useOn" 
+      item="GauzeFoldedTwice" 
+      target="" 
+      buttonText="Schoonmaken" 
+      extra="[reinig de labia197]" 
+      messageTitle="[reiniging genitaliën]" 
+      messageContent="[ReinigGenitalien]" 
+      blockRequired="patient lay down, tray placed" 
+      blockTitle="Handeling nog niet mogelijk." 
+      blockMessage="Communiceer met de cliënt en zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie"/>
+  <action 
+      points="2" 
+      description="[gebruik een gaasje]" 
+      index="13" 
+      type="sequenceStep" 
+      value="cleanMStraight" 
+      extra=""/>
+  <action 
+      points="2" 
+      description="[reinig de labia336]" 
+      index="14" 
+      type="sequenceStep" 
+      value="clean majora" 
+      extra="[reinig de labia595]"/>
+  <action 
+      points="1" 
+      description="[spreid met één]" 
+      index="15" 
+      type="sequenceStep" 
+      value="spread majora" 
+      extra="[spreid met één]"/>
+  <action 
+      points="2" 
+      description="[reinig de labia505]" 
+      index="16" 
+      type="sequenceStep" 
+      value="clean minora" 
+      extra="[reinig de labia505]"/>
+  <action 
+      points="1" 
+      description="[spreid met één145]" 
+      index="17" 
+      type="sequenceStep" 
+      value="spread minora" 
+      extra="[spreid met één145]"/>
+  <action 
+      points="3" 
+      description="[neem een nieuw]" 
+      index="18" 
+      type="sequenceStep" 
+      value="clean meatus" 
+      extra="[neem een nieuw]"/>
+  <action 
+      comment="Keep the labia minora (labia minora) spread apart. Spray lubricant on the urethral opening" 
+      points="1" 
+      description="[houd de labia]" 
+      index="19" 
+      type="sequenceStep" 
+      value="LubInfo" 
+      extra="[gooi de gebruikte]"/>
+  <action 
+      comment="Then insert the cone of the syringe into the urethral opening. Slowly inject approximately 6 ml of lubricant into the urethral opening" 
+      points="2" 
+      description="[breng daarna de]" 
+      index="20" 
+      type="sequenceStep" 
+      value="apply lube" 
+      extra="[houd de labia247]" 
+      messegeTitle="Glijmiddel met verdovend middel" 
+      messegeContent="Wanneer het glijmiddel een verdovend middel bevat: laat voor een verdovend effect het glijmiddel inwerken gedurende de in de bijsluiter vermelde tijd (minimaal 5 minuten). Gooi de spuit in de afvalbak."/>
+  <action 
+      comment="Discard the syringe in the waste bin" 
+      points="3" 
+      description="[gooi de spuit]" 
+      index="21" 
+      type="sequenceStep" 
+      value="DiscardSyringe" 
+      extra="[neem een nieuw]"/>
+  <action 
+      points="3" 
+      description="[houd de labia985]" 
+      index="22" 
+      type="sequenceStep" 
+      value="place gauze in labia" 
+      extra="[houd de labia985]"/>
+  <action 
+      points="1" 
+      description="[trek de handschoenen]" 
+      index="23" 
+      type="sequenceStep" 
+      value="take off gloves" 
+      extra="[trek de handschoenen]" 
+      blockUnlock="GenitalsCleaned"/>
+  <action 
+      comment="20. Apply hand hygiene." 
+      index="24" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      fullDescription="[klik op het]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      comment="??" 
+      index="25" 
+      points="3" 
+      description="[open de verpakking646]" 
+      type="combine" 
+      left="catheter_bag_packed" 
+      right="" 
+      extra="[open de verpakking646]" 
+      messageTitle="[dubbelverpakte katheter]" 
+      blockUnlock="CathBagOpened" 
+      messageContent="[DubbelKatheter]"/>
+  <action 
+      comment="22. Open the outer package of the catheter a few centimeters, fold the ends. Leave the inner package in the outer package and hold the outer package with the non-dominant hand on the folded ends." 
+      index="26" 
+      points="3" 
+      description="[open de buitenverpakking]" 
+      type="combine" 
+      place="WorkFieldPos" 
+      left="catheter_x" 
+      right="" 
+      extra="[open de buitenverpakking]" 
+      blockRequired="block1,GenitalsCleaned,block3,CathBagOpened" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de materialen op de juiste plek staan en de nodige verpakkingen geopent zijn."/>
+  <action 
+      comment="29. Apply hand hygiene." 
+      index="27" 
+      points="3" 
+      description="[pas handhygiëne toe]" 
+      fullDescription="[klik op het]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      comment="30. Put on sterile gloves." 
+      index="28" 
+      points="3" 
+      description="[trek de steriele]" 
+      type="use" 
+      value="SterileGloves" 
+      extra="[trek de steriele]" 
+      quiz="2" 
+      messageTitle="[aantrekken steriele handschoenen]" 
+      messageContent="[SterieleHandschoenen]"/>
+  <Action 
+      index="29" 
+      description="[open de binnenverpakking]" 
+      type="combine" 
+      comment="24. Remove the end of the inner package from the catheter so that the connection point for the urine collection bag is accessible. The catheter remains in the inner package." 
+      points="2" 
+      left="catheter_inner" 
+      blockUnlock="InnerBagRemoved" 
+      right=""/>
+  <Action 
+      comment="Check catheter for flaws" 
+      index="30" 
+      description="[controleer de katheter]" 
+      type="examine" 
+      item="CWB_open" 
+      points="2" 
+      blockRequired="InnerBagRemoved" 
+      expected="good"/>
+  <Action 
+      index="31" 
+      description="[verwijder de afsluitdop]" 
+      type="combine" 
+      comment="24. With the dominant hand, grasp the tube of the urine collection bag just behind the connection point and attach it to the catheter. Continue to hold the hose." 
+      points="1" 
+      messageTitle="[desinfecteren aansluitpunt]" 
+      messageContent="[DesinfectAansluitpunt]" 
+      left="" 
+      right="catheter_bag_twisted" 
+      blockRequired="patient lay down, GenitalsCleaned" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Praat met de cliënt en zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie"/>
+  <action 
+      index="32" 
+      value="hold catheter loop" 
+      description="[houd de katheter]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="[houd de katheter]"/>
+  <action 
+      index="33" 
+      value="remove labia gauze" 
+      description="[verwijder met de]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[verwijder met de]"/>
+  <action 
+      index="34" 
+      value="open labia minora" 
+      description="[houd de labia380]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[houd de labia380]"/>
+  <action 
+      index="35" 
+      value="insert catheter" 
+      description="[breng de katheterpunt]" 
+      points="3" 
+      type="sequenceStep" 
+      extra="[breng de katheterpunt]"/>
+  <action 
+      index="36" 
+      value="slide catheter" 
+      description="[schuif de katheter]" 
+      points="3" 
+      type="sequenceStep" 
+      extra="[schuif de katheter]" 
+      encounter="1" 
+      messageTitle="[voorzichtig inbrengen]" 
+      messageContent="[VoorzichtigInbrengen]"/>
+  <action 
+      index="37" 
+      value="empty blather" 
+      description="[de blaas loopt]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[de blaas loopt]"/>
+  <action 
+      index="38" 
+      value="hold catheter" 
+      description="[houd de katheter113]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="[houd de katheter113]"/>
+  <action 
+      index="39" 
+      value="place syringe" 
+      description="[plaats de spuit]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="[plaats de spuit]"/>
+  <action 
+      index="40" 
+      value="inject liquid" 
+      description="[spuit de voorgeschreven]" 
+      points="3" 
+      type="sequenceStep" 
+      extra="[spuit de voorgeschreven]" 
+      messageTitle="[ballon vullen]" 
+      messageContent="[BallonVullen]"/>
+  <action 
+      index="41" 
+      value="remove syringe" 
+      description="[verwijder de spuit]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[verwijder de spuit]"/>
+  <action 
+      index="42" 
+      value="pull back" 
+      description="[trek de katheter]" 
+      points="2" 
+      type="sequenceStep" 
+      extra="[trek de katheter]"/>
+  <action 
+      index="43" 
+      value="wash clean" 
+      description="[was en droog]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[was en droog]"/>
+  <action 
+      index="44" 
+      value="pull off gloves" 
+      description="[trek de steriele139]" 
+      points="1" 
+      type="sequenceStep" 
+      extra="[trek de steriele139]" 
+      fullDescription="[kies de juiste]" 
+      blockUnlock="pull off gloves"/>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="45" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      index="46" 
+      comment="" 
+      points="3" 
+      description="[fixeer de katheter]" 
+      type="useOn" 
+      item="fixator_folded" 
+      target="" 
+      buttonText="Fixeer de katheter" 
+      extra="[fixeer de katheter599]" 
+      secondPlace="PatientPos" 
+      blockUnlock="fixate catheter" 
+      blockRequired="pull off gloves" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt"/>
+  <action 
+      comment="help patient to get up" 
+      index="47" 
+      point="1" 
+      description="[help de cliënt]" 
+      type="talk" 
+      topic="HelpGetUp" 
+      extra="[help de cliënt]" 
+      blockRequired="fixate catheter" 
+      blockUnlock="patient get up" 
+      blockLock="patient lay down" 
+      blockTitle="Deze handeling is niet mogelijk" 
+      blockMessage="De katheter is ingebracht bij de cliënt !!!NEWLINE!!!!!!NEWLINE!!!De cliënt hoeft niet opnieuw te gaan liggen"/>
+  <action 
+      comment="Check the cloth pad" 
+      index="48" 
+      points="1" 
+      description="[controleer of de]" 
+      type="use" 
+      value="cloth_02" 
+      extra="[controleer of de]" 
+      blockRequired="patient get up" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Help eerst de cliënt in een comfortabele positie zodat je goed het bed kunt controleren"/>
+  <action 
+      index="49" 
+      comment="" 
+      points="3" 
+      description="[bevestig de urineopvangzak]" 
+      type="useOn" 
+      target="" 
+      item="fixation_folded_buttons" 
+      buttonText="Bevestig urineopvangzak" 
+      extra="[bevestig de urineopvangzak152]" 
+      blockRequired="patient get up" 
+      secondPlace="PatientPos" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt en help de cliënt in een comfortabele positie" 
+      blockUnlock="catheter fixed"/>
+  <action 
+      comment="Check the catheter bag" 
+      index="50" 
+      points="3" 
+      description="[controleer of de311]" 
+      fullDescription="[klik op de777]" 
+      type="use" 
+      value="CWB_inner_open_in2" 
+      extra="[controleer of de646]">
+  </action>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="51" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="52" 
+      type="use" 
+      value="WorkField" 
+      extra="[ruim de materialen]" 
+      blockRequired="catheter fixed" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt en bevestig de urineopvangzak aan het been of ophangrekje" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[MaterialenOpruimen]"/>
+  <action 
+      comment="last step" 
+      index="53" 
+      points="1" 
+      description="[noteer datum en]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[noteer datum en604]"/>
+</ActionList>

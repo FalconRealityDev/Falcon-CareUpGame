@@ -1,46 +1,101 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
   <step>
-    <option text="Verwijder de papieren beschermlaag van de huidplaat" animation="RemoveThePaper"/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid" animation=""/>
+    <option 
+      text="[Verwijder de papieren beschermlaag van de huidplaat]" 
+      animation="RemoveThePaper"/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
+    <option 
+      text="[leg de opening688]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Vouw het systeem ongeveer over het midden van de huidplaat dubbel met de plakrand van de huidplaat naar buiten" animation="FoldTheSystem"/>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid" animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
+    <option 
+      text="[Vouw het systeem]" 
+      animation="FoldTheSystem"/>
+    <option 
+      text="[leg de opening688]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Leg de opening van de huidplaat langs de onderkant van de stoma en bevestig het systeem van beneden naar boven op de huid" animation="LayTheOpening"/>
-    <option text="Verwijder de papieren beschermlaag van de huidplaat" animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
-    <option text="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg" animation=""/>
+    <option 
+      text="[leg de opening688]" 
+      animation="LayTheOpening"/>
+    <option 
+      text="[Verwijder de papieren beschermlaag van de huidplaat]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
+    <option 
+      text="[Dep de huid goed droog met een droog gaasje.]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Druk de huidplaat rondom de stoma gedurende 30 seconden aan" animation="PressTheSkinPlate"/>
-    <option text="Druk de huidplaat rondom de stoma gedurende 5 seconden aan" animation=""/>
-    <option text="Vraag de cliënt 10 secondende de hand op de huidplaat te leggen, zodat deze goed plakt" animation=""/>
-    <option text="Bevestig het opvang-/stomazakje van beneden naar boven volgens de gebruiksaanwijzing" animation=""/>
+    <option 
+      text="[Druk de huidplaat rondom de stoma gedurende 30 seconden aan]" 
+      animation="PressTheSkinPlate"/>
+    <option 
+      text="[druk de huidplaat]" 
+      animation=""/>
+    <option 
+      text="[vraag de cliënt920]" 
+      animation=""/>
+    <option 
+      text="[bevestig het opvang/stomazakje]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Vraag de cliënt nog één minuut de hand op de huidplaat te leggen, zodat deze goed plakt" animation="AskTheClient"/>
-    <option text="Bevestig het opvang-/stomazakje van beneden naar boven volgens de gebruiksaanwijzing" animation=""/>
-    <option text="Vraag de cliënt nog 10 seconden de hand op de huidplaat te leggen, zodat deze goed plakt" animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
+    <option 
+      text="[Vraag de cliënt nog één minuut]" 
+      animation="AskTheClient"/>
+    <option 
+      text="[bevestig het opvang/stomazakje]" 
+      animation=""/>
+    <option 
+      text="[vraag de cliënt573]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Bevestig het opvang-/stomazakje van beneden naar boven. Vraag de cliënt de buikspieren te spannen en druk stevig aan" animation="AttachTheCollection"/>
-    <option text="Bevestig het opvang-/stomazakje van boven naar beneden. Vraag de cliënt de buikspieren te spannen en druk stevig aan" animation=""/>
-    <option text="Bevestig het opvang-/stomazakje van beneden naar boven. Vraag de cliënt de buikspieren te ontspannen en druk stevig aan" animation=""/>
-    <option text="Bevestig het opvang-/stomazakje van beneden naar boven. Vraag de cliënt de buikspieren te spannen en druk zachtjes aan" animation=""/>
+    <option 
+      text="[bevestig het opvang/stomazakje164]" 
+      animation="AttachTheCollection"/>
+    <option 
+      text="[bevestig het opvang/stomazakje635]" 
+      animation=""/>
+    <option 
+      text="[bevestig het opvang/stomazakje341]" 
+      animation=""/>
+    <option 
+      text="[bevestig het opvang/stomazakje101]" 
+      animation=""/>
   </step>
   <step>
-    <option text="Controleer de bevestiging van het opvang-/stomazakje door er voorzichtig aan te trekken" animation="CheckTheAttachment"/>
-    <option text="Controleer de bevestiging van het opvang-/stomazakje door ernaar te kijken" animation=""/>
-    <option text="Controleer de bevestiging van het opvang-/stomazakje door er hard aan te trekken" animation=""/>
-    <option text="Controleer de huid op roodheid, zwelling en irritatie" animation=""/>
-  </step>  
-
+    <option 
+      text="[Controleer de bevestiging]" 
+      animation="CheckTheAttachment"/>
+    <option 
+      text="[controleer de bevestiging803]" 
+      animation=""/>
+    <option 
+      text="[controleer de bevestiging811]" 
+      animation=""/>
+    <option 
+      text="[Controleer de huid op roodheid, zwelling en irritatie]" 
+      animation=""/>
+  </step>
 </AnimationSequence>

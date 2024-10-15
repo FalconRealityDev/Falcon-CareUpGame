@@ -1,374 +1,295 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-    <action
-        points="1"
-        description="[Begroet]"
-        fullDescription="Begroet de cliënt door op hem te klikken. Daarna klik je nogmaals op de cliënt om een gesprek aan te gaan. Klik vervolgens op de juiste optie"
-        index="0"
-        type="talk"
-        topic="Hello"
-        extra="Ondanks dat het begroeten niet in de werkwijze is vermeld, is het wel netjes om contact te leggen met de cliënt."
-        optional=""
-    ></action>
-
-    <action
-        comment="(1)Apply handhygiene"
-        points="3"
-        description="[Pas handhygiëne]"
-        fullDescription="Klik op het werkveld om in te zoomen. Klik daarna op de handhygiënepomp."
-        index="0"
-        type="use"
-        value="HandCleaner"
-        messageTitle="Handhygiëne"
-        messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het allerbelangrijkste als het gaat om voorkomen van besmetting met ziektekiemen. Dit betekent je handen reinigen op de juiste manier en op de juiste momenten. Begin een handeling altijd met handhygiëne."
-        extra="Pas handhygiëne toe. "
-    ></action>
-
-    <action
-        comment="(2)Create a clean workfield"
-        points="1"
-        description="[Maak een schoon werkveld]"
-        fullDescription="Klik op het werkveld om deze schoon te maken."
-        index="1"
-        type="use"
-        value="WorkField"
-        extra="Maak een schoon werkveld. "
-        messageTitle="Je het volgende nodig hebt."
-        messageContent="
-- 2 paar handschoenen
-- Schort
-- Toilet, zo nodig po
-- Onderlegger
-- Warm water
-- Zacht toiletpapier
-- 5-10 gaasjes
-- Stoma-opvangmateriaal
-- Afvalbak
-zo nodig:
-- Wegwerpscheermesje
-- Schaar met licht gebogen punt (nagelschaar) of stomastans
-- huidbeschermingsmiddelen
-- Opvulmateriaal
-- Stomamaatkaart     
-    "
-    ></action>
-
-
-    <action
-        points="2"
-        description="[Controleer cliëntgegevens]"
-        index="2"
-        type="examine"
-        item="PatientRecords"
-        expected="good"
-        extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt."
-    ></action>
-
-    <action
-        points="2"
-        description="[Breng het nieuwe]"
-        index="3"
-        type="useOn"
-        item="OstomyBagSingleSystem"
-        target=""
-        buttonText="Geef het systeem"
-        extra="Breng het nieuwe systeem op kamertemperatuur door het tegen de huid van de cliënt te leggen (niet onder de oksel)"
-        quiz="11"
-        blockUnlock="SystemInClient"
-    ></action>
-
-    <action
-        comment="Put on gloves."
-        points="1"
-        description="[Trek de handschoenen aan]"
-        index="4"
-        type="use"
-        value="gloveBox"
-        extra="Trek de handschoenen aan."
-		></action>
-
-
-    <action
-        comment="Ask the client to take a half sitting position."
-        points="2"
-        description="[Laat de cliënt een comfortabele houding aannemen]"
-        fullDescription="Klik op de cliënt en kies de juiste optie."
-        index="5"
-        type="talk"
-        topic="LayInHalfPosOnBed"
-        extra="Laat de cliënt een comfortabele houding aannemen, zodat je makkelijk bij de stoma kunt."
-        blockUnlock="HorClient"
-        blockRequired="SystemInClient"
-    ></action>
-
-    <action
-        comment="Leg de onderlegger onder de plaats van de subcutane canule. "
-        points="1"
-        description="[Leg een onderlegger rond het werkterrein]"
-        index="6"
-        type="useOn"
-        item="cloth_02_folded"
-        target=""
-        buttonText="Onderlegger plaatsen"
-        extra="Leg een onderlegger rond het werkterrein"
-        blockRequired="HorClient"
-        blockTitle="Houding cliënt"
-        blockMessage="Laat de cliënt eerst een comfortabele houding aannemen, zodat je makkelijk bij de stoma kunt en een onderlegger kunt plaatsen rond het werkterrein."
-        messageTitle="Lichamelijke verzorging"
-        messageContent="Verwijder eventuele haargroei rondom de stoma met een schaartje of mesje. Scheer altijd van de stoma af. Werk hygiënisch om wondjes te voorkomen. Gebruik in geen geval ontharingscrème, vanwege kans op huidirritatie. Verzorg de huid na het scheren met een barrièrecrème."
-    ></action>
-
-    <action
-        comment=""
-        points="2"
-        description="[Trek met de ene hand de huid rondom de stoma/fistel strak]"
-        index="7"
-        type="sequenceStep"
-        value="TightenTheSkin"
-        extra="Trek met de ene hand de huid rondom de stoma/fistel strak"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Pel met de andere hand de huidplaat voorzichtig]"
-        index="8"
-        type="sequenceStep"
-        value="PeelTheSkinPlate"
-        extra="Pel met je andere hand de huidplaat voorzichtig van de huid. Dit doe je door de huid tegen te houden met een gaasje en de plaat eraf te duwen (niet trekken)"
-        encounter="1"
-        messageTitle="Droog of nat?"
-        messageContent="Overleg met de cliënt of hij/zij een droog gaasje of nat gaasje wil bij het verwijderen van de huidplaat."
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Werp het oude systeem en gaasje weg]"
-        index="9"
-        type="sequenceStep"
-        value="DiscardOldSystem"
-        extra="Gooi het gebruikte systeem en het gaasje weg"
-        messageTitle="Gebruik toiletpapier"
-        messageContent="Veeg eventueel de nog aanwezige ontlasting, slijm of urine weg met toiletpapier. Gooi het toiletpapier weg."
-    ></action>
-
-
-    <action
-        comment=""
-        points="1"
-        description="[Dek de stoma af met een gaasje]"
-        index="10"
-        type="sequenceStep"
-        value="CoverTheStoma"
-        extra="Dek de stoma af met een gaasje om eventuele afscheiding op te vangen"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Maak de gaasjes nat met warm kraanwater]"
-        index="11"
-        type="sequenceStep"
-        value="WetTheGauze"
-        extra="Maak de gaasjes nat met warm kraanwater"
-        messageTitle="Gebruik kraanwater"
-        messageContent="Als in een werkinstructie kraanwater wordt gebruikt, gebruik dan water uit een flink stromende kraan. Laat de kraan eerst 30 seconden goed doorstromen voordat je het water opvangt voor gebruik. Hiermee voorkom je dat je water gebruikt dat heeft stil gestaan in de leiding, en waar pseudomonas in kan zitten."
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Verwijder het gaasje van de stoma]"
-        index="12"
-        type="sequenceStep"
-        value="RemoveTheGauze"
-        extra="Verwijder het gaasje van de stoma. Gooi het gaasje weg"
-        messageTitle="Ontlasting, slijm en urine tijdens de verzorging"
-        messageContent="Tijdens de verzorging kan steeds opnieuw ontlasting, slijm of urine uit de stoma vloeien. Je kunt ervoor kiezen om het gaasje in de hand te houden om eventuele ontlasting, slijm of urine uit de stoma op te vangen. "
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Maak de huid rond de stoma schoon met vochtige gaasjes.]"
-        index="13"
-        type="sequenceStep"
-        value="CleanTheSkin"
-        extra="Maak de huid rond de stoma schoon met vochtige gaasjes. Gooi de gaasjes weg"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Dep de huid goed droog met een droog gaasje.]"
-        index="14"
-        type="sequenceStep"
-        value="PatTheSkin"
-        extra="Dep de huid goed droog met een droog gaasje. Gooi het gaasje weg"
-        messageTitle="Drogen"
-        messageContent="Na het wassen van de stoma wordt de huid goed gedroogd met niet-steriele gazen. Gebruik beslist geen alcohol of andere desinfectans. Dit maakt de huid droog en daardoor kwetsbaar."
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Controleer de huid op roodheid, zwelling en irritatie]"
-        index="15"
-        type="sequenceStep"
-        value="CheckTheSkin"
-        extra=""
-		blockUnlock="SkinIsChecked"
-        messageTitle="Beschermingsmiddelen en opvulmateriaal"
-        messageContent="Breng zo nodig huidbeschermingsmiddelen en/of opvulmateriaal aan. Wanneer de niet goed aan huidplaat sluit op de huid vanwege huidplooien, vul je de huidplooien op met opvulmateriaal (ring, pasta, strip) op voorschrift van de stomaverpleegkundige."
-    ></action>
-
-
-	<Action
-            index="16"
-            description="Trek de handschoenen uit."
-            type="general"
-            item=""
-            points="1"
-            buttonText="Trek handschoenen uit"
-            action="TakeOffGlovesWithoutThrowing"
-		    blockUnlock="GlovesTakenOff1"
-            blockRequired="SkinIsChecked" />
-
-	<Action
-        index="17"
-        description="[Pas handhygiëne]"
-        type="use"
-        comment="1. Apply hand hygiene"
-        points="3"
-		blockRequired="GlovesTakenOff1"
-		blockUnlock="HandsWashed2time"
-        value="HandCleaner" />
-
-	<action
-	   comment="Put on gloves."
-	   points="1"
-	   description="[Trek de handschoenen aan]"
-	   index="18"
-	   type="use"
-	   value="gloveBox"
-	   blockRequired="HandsWashed2time"
-	   extra="Trek de handschoenen aan."></action>
-
-
-
-	<action
-        comment=""
-        points="1"
-        description="[Verwijder de papieren beschermlaag van de huidplaat]"
-        index="19"
-        type="sequenceStep"
-        value="RemoveThePaper"
-        extra="Verwijder de papieren beschermlaag van de huidplaat"
-		messageTitle="Let op"
-		messageContent="Zorg ervoor dat de onderkant van het opvang- of stomazakje volledig gesloten is voordat je de papieren beschermingslaag verwijdert. Dit is bij bepaalde systemen een belangrijke stap"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Vouw het systeem]"
-        index="20"
-        type="sequenceStep"
-        value="FoldTheSystem"
-        extra="Vouw de huidplaat dubbel met de plakrand naar buiten"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Leg de opening van de huidplaat langs de onderkant]"
-        index="21"
-        type="sequenceStep"
-        value="LayTheOpening"
-        extra="Leg de opening van de huidplaat langs de onderkant van de stoma. Plak de huidplaat van beneden naar boven op de huid rondom de stoma. Houd ondertussen de huid rondom de stoma strak"
-        messageTitle="Juiste maat huidplaat"
-        messegaContent="De huidplaat moet nauwkeurig aansluiten op de stoma. Houd 1 tot 2 mm vrij rond de stoma. Voor het meten van de juiste maat huidplaat is het belangrijk de huid goed strak te trekken. Dit doe je door je wijsvinger boven de stoma op de huid te leggen en de duim onder de stoma. Trek de huid strak door met de wijsvinger de huid naar boven te duwen en tegelijkertijd met de duim de huid naar beneden te duwen. Meet dan de stoma. Gebruik bij voorkeur een schaar met gebogen punt om de huidplaat op maat te knippen. Dit kan ook met behulp van een stomastans."
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Druk de huidplaat rondom de stoma gedurende 30 seconden aan]"
-        index="22"
-        type="sequenceStep"
-        value="PressTheSkinPlate"
-        extra="Druk de huidplaat rondom de stoma gedurende 30 seconden aan"
-        messageTitle="Tijd"
-        messageContent="Het aandrukken van de huidplaat rondom de stoma is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je de huidplaat 30 seconden aan drukt."
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="[Vraag de cliënt nog één minuut]"
-        index="23"
-        type="sequenceStep"
-        value="AskTheClient"
-        extra="Vraag de cliënt nog één minuut de hand op de huidplaat te leggen, zodat deze goed plakt"
-        messageTitle="Tijd"
-        messageContent="Het aandrukken van de huidplaat rondom de stoma is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat de cliënt zijn of haar hand nog één minuut op de huidplaat houdt."
-    ></action>
-
-
-    <action
-        comment=""
-        points="1"
-        description="[Controleer de bevestiging]"
-        index="24"
-        type="sequenceStep"
-        value="CheckTheAttachment"
-        extra="Controleer de bevestiging van het opvang- of stomazakje door er voorzichtig aan te trekken"
-		blockUnlock="Sq4Done"
-    ></action>
-
-	<action
-	   comment="Create a clean workfield"
-	   points="1"
-	   description="[Maak een schoon werkveld end]"
-	   index="25"
-	   type="use"
-	   value="WorkField"
-	   extra="[Maak een schoon werkveld end]"
-	   blockRequired="Sq4Done"
-	   messegeTitle="Materialen opruimen"
-	   MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen."
-    />
-
-	<Action
-            index="26"
-            description="Trek de handschoenen uit."
-            type="general"
-            item=""
-            points="1"
-            buttonText="Trek handschoenen uit"
-            action="TakeOffGlovesWithoutThrowing"
-            blockRequired="Sq4Done" />
-
-    <action
-        comment="Apply hand hygiene."
-        points="1"
-        description="[Pas handhygiëne]"
-        fullDescription=""
-        index="27"
-        type="use"
-        value="HandCleaner"
-        extra="[Pas handhygiëne]" />
-
-   
-
-    <action
-        comment="Write down the size and length of the inserted probe, pH determination, date of inserting the probe and any findings on the ipad."
-        index="28"
-        points="1"
-        description="[Noteer de handeling]"
-        type="use"
-        value="PaperAndPen"
-        extra=""></action>
-
+  <action 
+    points="1" 
+    description="[Begroet]" 
+    fullDescription="[begroet de cliënt]" 
+    index="0" 
+    type="talk" 
+    topic="Hello" 
+    extra="[ondanks dat het68]" 
+    optional=""/>
+  <action 
+    comment="(1)Apply handhygiene" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    fullDescription="[klik op het]" 
+    index="0" 
+    type="use" 
+    value="HandCleaner" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[de handeling voor28]" 
+    extra="[pas handhygiëne toe307]"/>
+  <action 
+    comment="(2)Create a clean workfield" 
+    points="1" 
+    description="[Maak een schoon werkveld]" 
+    fullDescription="[klik op het934]" 
+    index="1" 
+    type="use" 
+    value="WorkField" 
+    extra="[maak een schoon378]" 
+    messageTitle="[je het volgende807]" 
+    messageContent="[2 paar handschoenen]"/>
+  <action 
+    points="2" 
+    description="[Controleer cliëntgegevens]" 
+    index="2" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good" 
+    extra="[controleer de cliëntgegevens]"/>
+  <action 
+    points="2" 
+    description="[Breng het nieuwe]" 
+    index="3" 
+    type="useOn" 
+    item="OstomyBagSingleSystem" 
+    target="" 
+    buttonText="Geef het systeem" 
+    extra="[breng het nieuwe]" 
+    quiz="11" 
+    blockUnlock="SystemInClient"/>
+  <action 
+    comment="Put on gloves." 
+    points="1" 
+    description="[Trek de handschoenen aan]" 
+    index="4" 
+    type="use" 
+    value="gloveBox" 
+    extra="[trek de handschoenen216]"/>
+  <action 
+    comment="Ask the client to take a half sitting position." 
+    points="2" 
+    description="[Laat de cliënt een comfortabele houding aannemen]" 
+    fullDescription="[klik op de268]" 
+    index="5" 
+    type="talk" 
+    topic="LayInHalfPosOnBed" 
+    extra="[laat de cliënt]" 
+    blockUnlock="HorClient" 
+    blockRequired="SystemInClient"/>
+  <action 
+    comment="Leg de onderlegger onder de plaats van de subcutane canule. " 
+    points="1" 
+    description="[Leg een onderlegger rond het werkterrein]" 
+    index="6" 
+    type="useOn" 
+    item="cloth_02_folded" 
+    target="" 
+    buttonText="Onderlegger plaatsen" 
+    extra="[leg een onderlegger155]" 
+    blockRequired="HorClient" 
+    blockTitle="Houding cliënt" 
+    blockMessage="[laat de cliënt251]" 
+    messageTitle="[lichamelijke verzorging]" 
+    messageContent="[verwijder eventuele haargroei]"/>
+  <action 
+    comment="" 
+    points="2" 
+    description="[Trek met de ene hand de huid rondom de stoma/fistel strak]" 
+    index="7" 
+    type="sequenceStep" 
+    value="TightenTheSkin" 
+    extra="[Trek met de ene hand de huid rondom de stoma/fistel strak]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Pel met de andere hand de huidplaat voorzichtig]" 
+    index="8" 
+    type="sequenceStep" 
+    value="PeelTheSkinPlate" 
+    extra="[pel met je]" 
+    encounter="1" 
+    messageTitle="[droog of nat?]" 
+    messageContent="[overleg met de]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Werp het oude systeem en gaasje weg]" 
+    index="9" 
+    type="sequenceStep" 
+    value="DiscardOldSystem" 
+    extra="[gooi het gebruikte]" 
+    messageTitle="[gebruik toiletpapier]" 
+    messageContent="[veeg eventueel de]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Dek de stoma af met een gaasje]" 
+    index="10" 
+    type="sequenceStep" 
+    value="CoverTheStoma" 
+    extra="[Dek de stoma af met een gaasje]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Maak de gaasjes nat met warm kraanwater]" 
+    index="11" 
+    type="sequenceStep" 
+    value="WetTheGauze" 
+    extra="[Maak de gaasjes nat met warm kraanwater]" 
+    messageTitle="[gebruik kraanwater]" 
+    messageContent="[als in een]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Verwijder het gaasje van de stoma]" 
+    index="12" 
+    type="sequenceStep" 
+    value="RemoveTheGauze" 
+    extra="[Verwijder het gaasje van de stoma]" 
+    messageTitle="[ontlasting slijm en]" 
+    messageContent="[tijdens de verzorging]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Maak de huid rond de stoma schoon met vochtige gaasjes.]" 
+    index="13" 
+    type="sequenceStep" 
+    value="CleanTheSkin" 
+    extra="[Maak de huid rond de stoma schoon met vochtige gaasjes.]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Dep de huid goed droog met een droog gaasje.]" 
+    index="14" 
+    type="sequenceStep" 
+    value="PatTheSkin" 
+    extra="[Dep de huid goed droog met een droog gaasje.]" 
+    messageTitle="[drogen]" 
+    messageContent="[na het wassen]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Controleer de huid op roodheid, zwelling en irritatie]" 
+    index="15" 
+    type="sequenceStep" 
+    value="CheckTheSkin" 
+    extra="" 
+    blockUnlock="SkinIsChecked" 
+    messageTitle="[beschermingsmiddelen en opvulmateriaal]" 
+    messageContent="[breng zo nodig]"/>
+  <Action 
+    index="16" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockUnlock="GlovesTakenOff1" 
+    blockRequired="SkinIsChecked"/>
+  <Action 
+    index="17" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    blockRequired="GlovesTakenOff1" 
+    blockUnlock="HandsWashed2time" 
+    value="HandCleaner"/>
+  <action 
+    comment="Put on gloves." 
+    points="1" 
+    description="[Trek de handschoenen aan]" 
+    index="18" 
+    type="use" 
+    value="gloveBox" 
+    blockRequired="HandsWashed2time" 
+    extra="[trek de handschoenen216]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Verwijder de papieren beschermlaag van de huidplaat]" 
+    index="19" 
+    type="sequenceStep" 
+    value="RemoveThePaper" 
+    extra="[Verwijder de papieren beschermlaag van de huidplaat]" 
+    messageTitle="[let op]" 
+    messageContent="[zorg ervoor dat153]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Vouw het systeem]" 
+    index="20" 
+    type="sequenceStep" 
+    value="FoldTheSystem" 
+    extra="[vouw de huidplaat]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Leg de opening van de huidplaat langs de onderkant]" 
+    index="21" 
+    type="sequenceStep" 
+    value="LayTheOpening" 
+    extra="[leg de opening]" 
+    messageTitle="[juiste maat huidplaat]" 
+    messegaContent="De huidplaat moet nauwkeurig aansluiten op de stoma. Houd 1 tot 2 mm vrij rond de stoma. Voor het meten van de juiste maat huidplaat is het belangrijk de huid goed strak te trekken. Dit doe je door je wijsvinger boven de stoma op de huid te leggen en de duim onder de stoma. Trek de huid strak door met de wijsvinger de huid naar boven te duwen en tegelijkertijd met de duim de huid naar beneden te duwen. Meet dan de stoma. Gebruik bij voorkeur een schaar met gebogen punt om de huidplaat op maat te knippen. Dit kan ook met behulp van een stomastans."/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Druk de huidplaat rondom de stoma gedurende 30 seconden aan]" 
+    index="22" 
+    type="sequenceStep" 
+    value="PressTheSkinPlate" 
+    extra="[Druk de huidplaat rondom de stoma gedurende 30 seconden aan]" 
+    messageTitle="[tijd]" 
+    messageContent="[het aandrukken van]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Vraag de cliënt nog één minuut]" 
+    index="23" 
+    type="sequenceStep" 
+    value="AskTheClient" 
+    extra="[Vraag de cliënt nog één minuut]" 
+    messageTitle="[tijd]" 
+    messageContent="[het aandrukken van542]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[Controleer de bevestiging]" 
+    index="24" 
+    type="sequenceStep" 
+    value="CheckTheAttachment" 
+    extra="[controleer de bevestiging]" 
+    blockUnlock="Sq4Done"/>
+  <action 
+    comment="Create a clean workfield" 
+    points="1" 
+    description="[Maak een schoon werkveld end]" 
+    index="25" 
+    type="use" 
+    value="WorkField" 
+    extra="[Maak een schoon werkveld end]" 
+    blockRequired="Sq4Done" 
+    messegeTitle="Materialen opruimen" 
+    MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen."/>
+  <Action 
+    index="26" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="Sq4Done"/>
+  <action 
+    comment="Apply hand hygiene." 
+    points="1" 
+    description="[Pas handhygiëne]" 
+    fullDescription="" 
+    index="27" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]"/>
+  <action 
+    comment="Write down the size and length of the inserted probe, pH determination, date of inserting the probe and any findings on the ipad." 
+    index="28" 
+    points="1" 
+    description="[Noteer de handeling]" 
+    type="use" 
+    value="PaperAndPen" 
+    extra=""/>
 </ActionList>

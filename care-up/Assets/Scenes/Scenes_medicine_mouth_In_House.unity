@@ -196,6 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
       propertyPath: objects.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -340,6 +345,11 @@ PrefabInstance:
     - target: {fileID: 4261596833019812, guid: 33b0a266564784c479d6acc190ddddaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761534974427206, guid: 33b0a266564784c479d6acc190ddddaf,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijn zakje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33b0a266564784c479d6acc190ddddaf, type: 3}
@@ -1081,6 +1091,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.053
       objectReference: {fileID: 0}
+    - target: {fileID: 114311253489601890, guid: 2b64947891097704bb0a7d5d3edf8104,
+        type: 3}
+      propertyPath: description
+      value: '[i_baxterrol]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b64947891097704bb0a7d5d3edf8104, type: 3}
 --- !u!1 &500814320 stripped
@@ -1133,6 +1148,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8143450990303838031, guid: 0f692119923544d4c9f1bbceea70d513,
+        type: 3}
+      propertyPath: description
+      value: "[i_cli\xEBnt859]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143450991650150217, guid: 0f692119923544d4c9f1bbceea70d513,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143450991650150222, guid: 0f692119923544d4c9f1bbceea70d513,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
     - target: {fileID: 7013620899125354535, guid: 0f692119923544d4c9f1bbceea70d513,
         type: 3}
       propertyPath: m_RootOrder
@@ -1724,6 +1753,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 9c6d23be308844a469ae5f48018dcc8a,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
@@ -2756,6 +2790,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114394592873869098, guid: bca5bdcafbaf87f4092b7cb61ee21944,
+        type: 3}
+      propertyPath: description
+      value: '[i_gedesinfecteerd gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bca5bdcafbaf87f4092b7cb61ee21944, type: 3}
 --- !u!4 &1063115877 stripped
@@ -2935,6 +2974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MedicationSafetyInterior
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680471433131930782, guid: 32dbb8719d846534aa13dc7c612ac0eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32dbb8719d846534aa13dc7c612ac0eb, type: 3}
@@ -3308,6 +3352,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -4056,6 +4105,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114373342302446342, guid: 6b655bb686d2eb843994100d9c1e632d,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114512636177625134, guid: 6b655bb686d2eb843994100d9c1e632d,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b655bb686d2eb843994100d9c1e632d, type: 3}
 --- !u!4 &1659234356 stripped
@@ -4512,6 +4571,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114933360549576228, guid: 3a2fd9588ad65b342befa073ca228109,
+        type: 3}
+      propertyPath: description
+      value: '[i_hydrocortison 5mg]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a2fd9588ad65b342befa073ca228109, type: 3}
 --- !u!4 &1780288573 stripped
@@ -4663,6 +4727,11 @@ PrefabInstance:
     - target: {fileID: 4024304949179862, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114509813824253062, guid: 50dcd8b790fb24ee4bc79e0604137a0f,
+        type: 3}
+      propertyPath: description
+      value: '[i_handschoenen]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}

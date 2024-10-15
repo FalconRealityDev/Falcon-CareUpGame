@@ -245,6 +245,14 @@ public class ActionManager : MonoBehaviour
         General
     };
 
+    static string MergeArticleWithName(string art, string descr)
+    {
+        if (descr[0] != '[')
+            return art + " " + descr;
+        
+        return "[" + art + " " + descr.Replace("[", "");
+    }
+
     // Will be refactored, someday
     public static void UpdateRequirements(float showDelay = 0f)
     {
@@ -307,7 +315,8 @@ public class ActionManager : MonoBehaviour
                 if (playerScript.currentWalkPosition != null)
                     completed = playerScript.currentWalkPosition.name == a.info.placeRequirement;
 
-                placeData = new StepData(completed, $"- Ga naar {placeName}.", i);
+
+                placeData = new StepData(completed, "[-Ga naar] " + placeName + ".", i);
                 if (completed)
                     anyCorrectPlace = true;
 
@@ -322,9 +331,9 @@ public class ActionManager : MonoBehaviour
                     }
 
                     if (personClicked)
-                        objectsData.Add(new StepData(false, $"- Kies wat je gaat doen.", i));
+                        objectsData.Add(new StepData(false, "[-Kies wat je gaat doen.]", i));
                     else
-                        objectsData.Add(new StepData(false, $"- Klik op {placeName}.", i));
+                        objectsData.Add(new StepData(false,"[-Klik op] " + placeName + ".", i));
                 }
             }
 
@@ -339,7 +348,7 @@ public class ActionManager : MonoBehaviour
                 if (playerScript.currentWalkPosition != null)
                     completed = playerScript.currentWalkPosition.name == a.info.secondPlaceRequirement;
 
-                secondPlaceData = new StepData(completed, $"- Ga naar {placeName}.", i);
+                secondPlaceData = new StepData(completed, "[-Ga naar] " + placeName + ".", i);
 
                 if (a.Type == ActionType.PersonTalk && dialog)
                 {
@@ -351,15 +360,17 @@ public class ActionManager : MonoBehaviour
                         }
                     }
                     if (personClicked)
-                        objectsData.Add(new StepData(false, $"- Kies wat je gaat doen.", i));
+                        objectsData.Add(new StepData(false, "[-Kies wat je gaat doen.]", i));
                     else
-                        objectsData.Add(new StepData(false, $"- Klik op {placeName}.", i));
+                        objectsData.Add(new StepData(false, "[-Klik op] " + placeName + ".", i));
                 }
             }
 
             if (a.Type == ActionType.General)
             {
-                objectsData.Add(new StepData(false, $"- Klik op de '{actManager.CurrentButtonText()}' knop.", i));
+                objectsData.Add(new StepData(false, "[-Klik op de] " + "'" + actManager.CurrentButtonText() + 
+                    "'" + "[knop.]", i));
+
                 actManager.NotTriggeredAction();
                 gameUI.buttonToBlink = GameUI.ItemControlButtonType.NoTargetRight;
                 foundComplitedAction = true;
@@ -377,7 +388,7 @@ public class ActionManager : MonoBehaviour
 
             if (iPad)
             {
-                objectsData.Add(new StepData(false, $"- Klik op het informatie icoon.", i));
+                objectsData.Add(new StepData(false, "[-Klik op het informatie]", i));
 
                 if (a.info.leftHandRequirement == "PatientRecords")
                 {
@@ -412,6 +423,7 @@ public class ActionManager : MonoBehaviour
                                 if (GameObject.Find(hand).GetComponent<InteractableObject>().description != "")
                                 {
                                     handValue = GameObject.Find(hand).GetComponent<InteractableObject>().description;
+
                                     article = GameObject.Find(hand).GetComponent<InteractableObject>().nameArticle;
                                     found = true;
                                     foundDescr = true;
@@ -501,8 +513,9 @@ public class ActionManager : MonoBehaviour
 
                         if (!inventory.LeftHandEmpty())
                         {
-                            if (!string.IsNullOrEmpty(inventory.leftHandObject.description))
-                                currentLeftObject = System.Char.ToLowerInvariant(inventory.leftHandObject.description[0]) + inventory.leftHandObject.description.Substring(1);
+                            string localizeDescr = LocalizationManager.GetValueIfKey(inventory.leftHandObject.description);
+                            if (!string.IsNullOrEmpty(localizeDescr))
+                                currentLeftObject = localizeDescr.ToLower();
 
                             if (inventory.leftHandObject.name == hand || (a.info.objectsAllowedInHands != null &&
                                 a.info.objectsAllowedInHands.Contains(inventory.leftHandObject.name)))
@@ -515,8 +528,10 @@ public class ActionManager : MonoBehaviour
 
                         if (!inventory.RightHandEmpty())
                         {
-                            if (!string.IsNullOrEmpty(inventory.rightHandObject.description))
-                                currentRightObject = System.Char.ToLowerInvariant(inventory.rightHandObject.description[0]) + inventory.rightHandObject.description.Substring(1);
+                            string localizeDescr = LocalizationManager.GetValueIfKey(inventory.rightHandObject.description);
+
+                            if (!string.IsNullOrEmpty(localizeDescr))
+                                currentRightObject = localizeDescr.ToLower();
 
                             if (inventory.rightHandObject.name == hand || (a.info.objectsAllowedInHands != null &&
                                 a.info.objectsAllowedInHands.Contains(inventory.rightHandObject.name)))
@@ -540,7 +555,7 @@ public class ActionManager : MonoBehaviour
                         {
                             if (handValue != "")
                             {
-                                handValue = System.Char.ToLowerInvariant(handValue[0]) + handValue.Substring(1);
+                                handValue = handValue.ToLower();
                             }
                         }
                         string keyWords = null;
@@ -552,7 +567,7 @@ public class ActionManager : MonoBehaviour
 
                         if (objectCombinationCheck && a.Type == ActionType.ObjectCombine)
                         {
-                            objectsData.Add(new StepData(false, "- Klik op de 'Combineer' knop.", i));
+                            objectsData.Add(new StepData(false, "[-Klik op de Combineer]", i));
                             if (!foundComplitedAction)
                             {
                                 foundComplitedAction = true;
@@ -566,7 +581,9 @@ public class ActionManager : MonoBehaviour
                             {
                                 keyWords = actManager.CurrentButtonText(inventory.leftHandObject.name);
 
-                                objectsData.Add(new StepData(false, $"- Klik op de '{keyWords}' knop.", i));
+                                objectsData.Add(new StepData(false, "[-Klik op de] " + "'" + keyWords + "'" +
+                                    "[knop.]", i));
+
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -585,19 +602,21 @@ public class ActionManager : MonoBehaviour
                                     if (secondPlaceData.completed)
                                     {
                                         gameUI.DropLeftBlink = true;
-
-                                        objectsData.Add(new StepData(false, $"- Leg {article} {handValue} neer.", i));
+                                        string __newDescr = MergeArticleWithName(article, handValue);
+                                        objectsData.Add(new StepData(false, "[-Leg] " + __newDescr + 
+                                            "[neer.]", i));
                                     }
                                 }
                                 else
                                 {
                                     gameUI.DropLeftBlink = true;
-                                    objectsData.Add(new StepData(false, $"- Leg {article} {handValue} neer.", i));
+                                    string __newDescr = MergeArticleWithName(article, handValue);
+                                    objectsData.Add(new StepData(false, "[-Leg] " + __newDescr + "[neer.]", i));
                                 }
                             }
                             else if (a.Type == ActionType.ObjectExamine && inventory.leftHandObject.name == a.info.leftHandRequirement)
                             {
-                                objectsData.Add(new StepData(false, $"- Klik op de 'Controleren' knop.", i));
+                                objectsData.Add(new StepData(false, "[-Klik op de Controleren]", i));
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -608,7 +627,9 @@ public class ActionManager : MonoBehaviour
                             else if (!string.IsNullOrEmpty(actManager.CurrentDecombineButtonText(inventory.leftHandObject.name)))
                             {
                                 keyWords = actManager.CurrentDecombineButtonText(inventory.leftHandObject.name);
-                                objectsData.Add(new StepData(false, $"- Klik op de '{actManager.CurrentDecombineButtonText(inventory.leftHandObject.name)}' knop.", i));
+                                objectsData.Add(new StepData(false, "[-Klik op de] " + "'" + 
+                                    actManager.CurrentDecombineButtonText(inventory.leftHandObject.name) + "'" + 
+                                    "[knop.]", i));
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -625,7 +646,7 @@ public class ActionManager : MonoBehaviour
                             {
                                 keyWords = actManager.CurrentButtonText(inventory.rightHandObject.name);
 
-                                objectsData.Add(new StepData(false, $"- Klik op de '{keyWords}' knop.", i));
+                                objectsData.Add(new StepData(false,"[-Klik op de] " + "'" + keyWords + "[knop.]", i));
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -644,18 +665,25 @@ public class ActionManager : MonoBehaviour
                                     if (secondPlaceData.completed)
                                     {
                                         gameUI.DropRightBlink = true;
-                                        objectsData.Add(new StepData(false, $"- Leg {article} {handValue} neer.", i));
+
+                                        string __newDescr = MergeArticleWithName(article, handValue);
+                                        
+                                        objectsData.Add(new StepData(false, "[-Leg] " + __newDescr + 
+                                            "[neer.]", i));
                                     }
                                 }
                                 else
                                 {
                                     gameUI.DropRightBlink = true;
-                                    objectsData.Add(new StepData(false, $"- Leg {article} {handValue} neer.", i));
+                                    string __newDescr = MergeArticleWithName(article, handValue);
+
+                                    objectsData.Add(new StepData(false, "[-Leg] " + __newDescr + 
+                                        "[neer.]", i));
                                 }    
                             }
                             else if (a.Type == ActionType.ObjectExamine && inventory.rightHandObject.name == a.info.leftHandRequirement)
                             {
-                                objectsData.Add(new StepData(false, $"- Klik op de 'Controleren' knop.", i));
+                                objectsData.Add(new StepData(false, "[-Klik op de Controleren]", i));
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -672,7 +700,9 @@ public class ActionManager : MonoBehaviour
                             else if (!string.IsNullOrEmpty(actManager.CurrentDecombineButtonText(inventory.RightHandObject.name)))
                             {
                                 keyWords = actManager.CurrentDecombineButtonText(inventory.rightHandObject.name);
-                                objectsData.Add(new StepData(false, $"- Klik op de '{actManager.CurrentDecombineButtonText(inventory.rightHandObject.name)}' knop.", i));
+                                objectsData.Add(new StepData(false, "[-Klik op de] " + "'" + 
+                                    actManager.CurrentDecombineButtonText(inventory.rightHandObject.name) + "'" +
+                                    "[knop.]", i));
                                 if (!foundComplitedAction)
                                 {
                                     foundComplitedAction = true;
@@ -689,14 +719,16 @@ public class ActionManager : MonoBehaviour
                         if (!completed)
                             correctObjectsInHands = false;
 
-                        keyWords = "- Pak";
+                        keyWords = "[-Pak] ";
 
                         if (a.Type == ActionType.ObjectUse)
                         {
-                            keyWords = "- Klik op";
+                            keyWords = "[-Klik op] ";
                         }
-
-                        objectsData.Add(new StepData(completed, $"{keyWords} {article} {handValue}.", i));
+                        
+                        string newDescr = MergeArticleWithName(article, handValue);
+                        objectsData.Add(new StepData(completed, 
+                            keyWords + newDescr + ".", i));
                     }
                 }
             }
@@ -1074,7 +1106,10 @@ public class ActionManager : MonoBehaviour
             int.TryParse(action.Attributes["index"].Value, out info.subindex);
             string type = action.Attributes["type"].Value;
 
-            info.shortDescr = LocalizationManager.GetValueIfKey(action.Attributes["description"].Value);
+            // info.shortDescr = LocalizationManager.GetValueIfKey(action.Attributes["description"].Value);
+            //@
+            info.shortDescr = action.Attributes["description"].Value;
+
 
             info.comment = "";
             if (action.Attributes["comment"] != null)
@@ -1172,13 +1207,13 @@ public class ActionManager : MonoBehaviour
             info.messageTitle = "";
             if (action.Attributes["messageTitle"] != null)
             {
-                info.messageTitle = LocalizationManager.GetValueIfKey(action.Attributes["messageTitle"].Value);
+                info.messageTitle = action.Attributes["messageTitle"].Value;
             }
 
             info.messageContent = "";
             if (action.Attributes["messageContent"] != null)
             {
-                info.messageContent = LocalizationManager.GetValueIfKey(action.Attributes["messageContent"].Value);
+                info.messageContent = action.Attributes["messageContent"].Value;
             }
 
             info.messageDelay = 0f;
@@ -1708,7 +1743,7 @@ public class ActionManager : MonoBehaviour
                     RobotUIMessageTab messageCenter = GameObject.FindObjectOfType<RobotUIMessageTab>();
 
                     if (type != ActionType.SequenceStep)
-                        GameObject.FindObjectOfType<GameUI>().ShowBlockMessage("Verkeerde handeling!", IncompletedActions[0].info.shortDescr);
+                        GameObject.FindObjectOfType<GameUI>().ShowBlockMessage("[Verkeerde handeling]", IncompletedActions[0].info.shortDescr);
                 }
             }
 

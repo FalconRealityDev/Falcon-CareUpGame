@@ -4148,7 +4148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fraxiPackageTop
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4427,7 +4427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Frexi_with_needle_cap
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4641,6 +4641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Patient_male_v3_Injection
+      objectReference: {fileID: 0}
+    - target: {fileID: 3138010224484504390, guid: 3cd70b35b67dfa3409193f4b639c8115,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
       objectReference: {fileID: 0}
     - target: {fileID: 3172445987151819947, guid: 3cd70b35b67dfa3409193f4b639c8115,
         type: 3}
@@ -5341,6 +5346,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114004141582991228, guid: e8cf0e54f21424257a6f687e12868075,
+        type: 3}
+      propertyPath: description
+      value: '[i_fraxiparine spuit]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114965641743949958, guid: e8cf0e54f21424257a6f687e12868075,
+        type: 3}
+      propertyPath: description
+      value: '[i_fraxiparine spuit]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8cf0e54f21424257a6f687e12868075, type: 3}
@@ -6410,7 +6425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fraxiPackageSyringeBottom
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7341,7 +7356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Frexi
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7932,6 +7947,11 @@ PrefabInstance:
     - target: {fileID: 4841796907253400, guid: 91e61c6ad5982e9469bc3627f6edc56b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782791326121822, guid: 91e61c6ad5982e9469bc3627f6edc56b,
+        type: 3}
+      propertyPath: description
+      value: '[i_beschermhuls injectienaald]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e61c6ad5982e9469bc3627f6edc56b, type: 3}
@@ -9116,7 +9136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: "Cli\xEBnt"
+  description: "[i_cli\xEBnt859]"
   nameArticle: 
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0.5, z: 0}
@@ -10974,6 +10994,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -6.5909996
       objectReference: {fileID: 0}
+    - target: {fileID: 8936422962131968639, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_handdoekdispenser]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936432486606857521, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_gootsteen]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936654716346491637, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_zeepdispenser]'
+      objectReference: {fileID: 0}
     - target: {fileID: 9048832941134129944, guid: d9e3ef7d15292c440b23edfa0c285f67,
         type: 3}
       propertyPath: m_Name
@@ -11541,7 +11576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fraxi_pakage
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11571,7 +11606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fraxi_pakage
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12483,7 +12518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeInjectionCap
   ObjectID: 0
-  description: beschermhuls injectienaald
+  description: '[i_beschermhuls injectienaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12577,6 +12612,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 254356909}
     m_Modifications:
+    - target: {fileID: 8303546191005696707, guid: 209f4dd2e0000e242bd530209b2768bd,
+        type: 3}
+      propertyPath: description
+      value: '[i_fraxiparine spuit]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8410092118915949845, guid: 209f4dd2e0000e242bd530209b2768bd,
         type: 3}
       propertyPath: m_RootOrder
@@ -13154,7 +13194,7 @@ PrefabInstance:
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
       propertyPath: description
-      value: Werkveld
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
@@ -13862,7 +13902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14453,6 +14493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FraxiperineCap
       objectReference: {fileID: 0}
+    - target: {fileID: 7497882361337838255, guid: 69ad0b321b6feb84f9b439a96bc22d28,
+        type: 3}
+      propertyPath: description
+      value: '[i_fraxiparine spuit]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8036512135633182073, guid: 69ad0b321b6feb84f9b439a96bc22d28,
         type: 3}
       propertyPath: m_RootOrder
@@ -14591,6 +14636,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8303546191005696707, guid: 209f4dd2e0000e242bd530209b2768bd,
+        type: 3}
+      propertyPath: description
+      value: '[i_fraxiparine spuit]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8410092118915949845, guid: 209f4dd2e0000e242bd530209b2768bd,
         type: 3}
       propertyPath: m_RootOrder

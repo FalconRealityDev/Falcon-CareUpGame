@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      audioHint="" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="[ondanks dat het677]" 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      audioHint="Injection/H2-2" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst spuit905]"/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      audioHint="Injection/H3-2" 
+      index="2" 
+      type="examine" 
+      quiz="2" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens918]" 
+      messageTitle="[controle cliëntgegevens]" 
+      messageContent="[controleer de naam]"/>
+  <action 
+      points="2" 
+      description="[controleer de spuit]" 
+      audioHint="Injection/H3-2" 
+      index="2" 
+      type="examine" 
+      item="SyringeWithInjectionNeedleCap" 
+      expected="good" 
+      extra="[controleer de spuit]" 
+      messageTitle="[controle medicijn]" 
+      messageContent="[controleer het medicijn120]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      index="2" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="[controleer de toedienlijst]" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="4" 
+      description="[vraag aan je62]" 
+      audioHint="" 
+      index="3" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="[vraag aan je62]" 
+      messageTitle="[dubbele controle bij]" 
+      messageContent="[het verkeerd toedienen]"/>
+  <action 
+      points="1" 
+      description="[vraag de cliënt779]" 
+      audioHint="Injection/H12-2" 
+      index="4" 
+      type="talk" 
+      topic="ShowBellyForInsulin" 
+      extra="[vraag de cliënt353]" 
+      blockUnlock="patient show spot" 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[geschikte injectiegebieden voor28]"/>
+  <action 
+      points="1" 
+      description="[start injecteren]" 
+      audioHint="Injection/H13-2" 
+      index="5" 
+      type="useOn" 
+      item="SyringeWithInjectionNeedleCap" 
+      target="" 
+      buttonText="Start injecteren" 
+      quiz="3" 
+      secondPlace="PatientPos" 
+      extra="[start injecteren]" 
+      blockRequired="patient show spot" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten."/>
+  <action 
+      points="1" 
+      description="[palpeer de injectieplaats]" 
+      audioHint="Injection/AS1-2" 
+      index="6" 
+      type="sequenceStep" 
+      value="Check" 
+      extra="[controleer of de857]"/>
+  <action 
+      points="1" 
+      description="[neem de spuit]" 
+      audioHint="Injection/AS1-2" 
+      index="7" 
+      type="sequenceStep" 
+      value="Remove Cap" 
+      extra="[de beschermdop zit394]"/>
+  <action 
+      points="2" 
+      description="[pak met de]" 
+      audioHint="Injection/AS1-2" 
+      index="8" 
+      type="sequenceStep" 
+      value="Grab crease" 
+      extra="" 
+      messageTitle="[huidplooi vastpakken]" 
+      messageContent="[pak met de175]"/>
+  <action 
+      points="3" 
+      description="[steek de naald464]" 
+      audioHint="Injection/AS1-2" 
+      index="9" 
+      type="sequenceStep" 
+      value="Stick needle in arm" 
+      extra="[de naald wordt]"/>
+  <action 
+      points="1" 
+      description="[laat de huidplooi]" 
+      audioHint="Injection/AS1-2" 
+      index="10" 
+      type="sequenceStep" 
+      value="Release crease" 
+      extra="[laat de huidplooi49]" 
+      encounter="1"/>
+  <action 
+      points="1" 
+      description="[fixeer de spuit501]" 
+      audioHint="Injection/AS5-2" 
+      index="11" 
+      type="sequenceStep" 
+      value="Fixate needle" 
+      extra="[fixeer de spuit979]" 
+      messageTitle="[fixeren van de]" 
+      messageContent="[bij een cliënt]"/>
+  <action 
+      points="2" 
+      description="[spuit de vloeistof622]" 
+      audioHint="Injection/AS7-2" 
+      index="12" 
+      type="sequenceStep" 
+      value="Inject medicine slow and steady" 
+      extra="[spuit het medicijn]"/>
+  <action 
+      points="1" 
+      description="[trek de naald335]" 
+      audioHint="Injection/AS8-2" 
+      index="13" 
+      type="sequenceStep" 
+      value="Pull needle" 
+      extra="[trek de naald829]"/>
+  <action 
+      points="1" 
+      description="[verwijder de naald]" 
+      audioHint="" 
+      index="14" 
+      type="combine" 
+      left="Syringe10ml_InjectionSQs" 
+      secondPlace="WorkFieldPos" 
+      ignorePosition="true" 
+      right="" 
+      extra="[klik het beschermkapje158]"/>
+  <action 
+      points="2" 
+      description="[doe de injectienaald]" 
+      audioHint="Injection/EAS2-2" 
+      index="15" 
+      type="useOn" 
+      item="InjectionNeedleNoCap" 
+      target="" 
+      ignorePosition="true" 
+      buttonText="Injectienaald weggooien" 
+      extra="[verwijder de opzuignaald226]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="17" 
+      type="use" 
+      value="WorkField" 
+      extra="[ruim de materialen]" 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="18" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst610]" 
+      audioHint="Injection/EAS4-2" 
+      index="19" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[teken de toedienlijst610]"/>
+</ActionList>

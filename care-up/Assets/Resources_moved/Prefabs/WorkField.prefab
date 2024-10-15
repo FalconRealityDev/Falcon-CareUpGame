@@ -30,6 +30,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7236592, z: -0, w: 0.6901575}
   m_LocalPosition: {x: 9.41, y: 0.56, z: 12.082}
   m_LocalScale: {x: 1.2808356, y: 1.0247941, z: 1.44}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4546293884779344}
   - {fileID: 4609679643415022}
@@ -55,9 +56,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 2
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -69,6 +73,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -81,6 +86,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &65000010837359776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,11 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: WorkField
   ObjectID: 0
-  description: werkveld
+  description: '[i_werkveld]'
   nameArticle: het
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0.5, z: 0}
-  assetSource: 0
+  assetSource: 1
   transparencyFix: 0
   tutorial_used: 0
   handsCleaned: 0
@@ -155,6 +161,7 @@ Transform:
   m_LocalRotation: {x: -0.08250377, y: -0.023407402, z: 0.009709378, w: -0.9962685}
   m_LocalPosition: {x: -0.051, y: 0.196, z: -0.431}
   m_LocalScale: {x: 0.9756532, y: 0.97579825, z: 0.9756622}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000010661730444}
   m_RootOrder: 0
@@ -186,6 +193,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.707106, z: -0, w: 0.7071076}
   m_LocalPosition: {x: 0.087, y: 0.588, z: 0}
   m_LocalScale: {x: 7.679661, y: 0.99583125, z: 3.697395}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000010661730444}
   m_RootOrder: 1

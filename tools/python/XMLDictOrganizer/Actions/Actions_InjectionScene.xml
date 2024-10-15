@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      commentUA="Привітатись з пацієнтом" 
+      points="1" 
+      optional="" 
+      audioHint="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      commentUA="Очистити та приготувати робочий стіл" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst spuit284]" 
+      value="WorkField" 
+      audioHint="Injection/H2-2"/>
+  <Action 
+      index="2" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      commentUA="Перевірити медичні записи пацієнта" 
+      item="PatientRecords" 
+      points="2" 
+      messageTitle="[controle cliëntgegevens]" 
+      messageContent="[controleer de naam]" 
+      expected="good" 
+      quiz="2"/>
+  <Action 
+      index="2" 
+      description="[controleer de spuit]" 
+      type="examine" 
+      commentUA="Перевірити назначене лікування" 
+      item="SyringeWithInjectionNeedleCap" 
+      points="2" 
+      messageTitle="[controle medicijn]" 
+      messageContent="[controleer het medicijn415]" 
+      audioHint="Injection/H3-2" 
+      expected="good"/>
+  <Action 
+      index="2" 
+      description="[controleer de toedienlijst]" 
+      type="examine" 
+      commentUA="Перевірити відповідність медикаментів" 
+      item="PrescriptionForm" 
+      points="2" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      expected="good"/>
+  <Action 
+      index="3" 
+      description="[vraag aan je62]" 
+      type="talk" 
+      commentUA="Запитати лікара про додадкову перевірку" 
+      points="3" 
+      messageTitle="[dubbele controle bij]" 
+      messageContent="[het verkeerd toedienen416]" 
+      audioHint="" 
+      topic="DoubleCheck"/>
+  <Action 
+      index="4" 
+      description="[vraag de cliënt779]" 
+      type="talk" 
+      commentUA="Попросити пацієнта розкрити місце для інєкції" 
+      points="1" 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[geschikte injectiegebieden voor980]" 
+      audioHint="Injection/H12-2" 
+      topic="RollUpSleeves" 
+      blockUnlock="patient show spot"/>
+  <Action 
+      index="5" 
+      description="[start injecteren]" 
+      type="useOn" 
+      commentUA="Розпочати інєкцію" 
+      secondPlace="PatientPos" 
+      item="SyringeWithInjectionNeedleCap" 
+      points="1" 
+      buttonText="Start injecteren" 
+      audioHint="Injection/H13-2" 
+      target="" 
+      blockRequired="patient show spot" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten."/>
+  <Action 
+      index="6" 
+      description="[palpeer de injectieplaats]" 
+      type="sequenceStep" 
+      points="1" 
+      value="clean skin" 
+      audioHint="Injection/AS1-2"/>
+  <Action 
+      index="7" 
+      description="[neem de spuit]" 
+      type="sequenceStep" 
+      points="1" 
+      value="take off cap"/>
+  <Action 
+      index="8" 
+      description="[span de huid783]" 
+      type="sequenceStep" 
+      points="2" 
+      messageTitle="[huid spannen]" 
+      messageContent="[neem de spier]" 
+      value="Hold skin"/>
+  <Action 
+      index="9" 
+      description="[steek de naald842]" 
+      type="sequenceStep" 
+      points="3" 
+      value="Stick needle in arm" 
+      audioHint="Injection/AS3-2"/>
+  <Action 
+      index="10" 
+      description="[laat de huid340]" 
+      type="sequenceStep" 
+      points="1" 
+      value="Release skin with left hand" 
+      audioHint="Injection/AS4-2"/>
+  <Action 
+      index="11" 
+      description="[fixeer de spuit501]" 
+      type="sequenceStep" 
+      points="1" 
+      messageTitle="[fixeren van de]" 
+      messageContent="[bij een cliënt]" 
+      value="Secure the needle"/>
+  <Action 
+      index="12" 
+      description="[spuit de vloeistof622]" 
+      type="sequenceStep" 
+      points="2" 
+      messageTitle="[injecteren bovenarmspier]" 
+      messageContent="[de bovenarmspier is11]" 
+      value="Inject medicine slow and steady"/>
+  <Action 
+      index="13" 
+      description="[laat de naald]" 
+      type="sequenceStep" 
+      points="1" 
+      value="LeaveTheNeedle"/>
+  <Action 
+      index="14" 
+      description="[trek na het67]" 
+      type="sequenceStep" 
+      points="1" 
+      value="pull needle out of skin"/>
+  <Action 
+      index="15" 
+      description="[verwijder de naald]" 
+      type="combine" 
+      commentUA="Зняти гоку зі шприця" 
+      points="1" 
+      left="SyringeWithInjectionNeedle" 
+      right="" 
+      ignorePosition="" 
+      quiz="3"/>
+  <Action 
+      index="16" 
+      description="[doe de injectienaald]" 
+      type="useOn" 
+      commentUA="Помістити голку в контейнер" 
+      item="InjectionNeedleNoCap" 
+      points="2" 
+      buttonText="Injectienaald weggooien" 
+      messageTitle="[injecteren bilspieren]" 
+      messageContent="[er zijn twee]" 
+      target=""/>
+  <Action 
+      index="17" 
+      description="[ruim de materialen]" 
+      type="use" 
+      points="1" 
+      value="WorkField"/>
+  <Action 
+      index="18" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      value="HandCleaner"/>
+  <Action 
+      index="19" 
+      description="[teken de toedienlijst610]" 
+      type="use" 
+      commentUA="Зробити запис про проведену процедуру" 
+      points="3" 
+      value="PaperAndPen" 
+      audioHint="Injection/EAS4-2"/>
+</ActionList>

@@ -1,46 +1,108 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quiz>
-	<step>
-		<question text="Wat is de eerste stap bij het voorbereiden van het aanbrengen van steunkousen?" answer="1" points="10">
-			<answer text=" Plaats de cone op een stevige ondergrond." descr="Deze stap is correct omdat het plaatsen van de cone op een vlakke en stevige ondergrond stabiliteit biedt en de basis legt voor een succesvolle procedure. Het is belangrijk om te beginnen met een goede voorbereiding."/>
-			<answer text=" Laat de cliënt opstaan en rondlopen." descr="Dit antwoord is fout omdat het laten opstaan en rondlopen van de cliënt niet de eerste stap is bij het aanbrengen van steunkousen. De focus ligt eerst op het gereedmaken van de apparatuur en het zorgen voor een geschikte werkplek."/>
-		</question>
-		<question text="Hoe bevestig je de cone aan het oppervlak voordat je de steunkous aanbrengt?" answer="1" points="10">
-			<answer text="Door op de hendel te drukken." descr="Dit antwoord is correct omdat de hendel wordt gebruikt om de cone met zuignap stevig aan het oppervlak te bevestigen. Dit zorgt ervoor dat de cone stabiel blijft en niet beweegt tijdens het aanbrengen van de steunkousen."/>
-			<answer text="Door de cone naar beneden te duwen met je hand." descr="Dit antwoord is fout omdat de juiste manier om de cone te bevestigen de hendel is. Het naar beneden duwen met je hand is niet de juiste handeling om de cone stevig vast te zetten."/>
-		</question>
-		<question text="Wat moet je doen voordat je de cuff over de cone en de steunkous rolt?" answer="2" points="10">
-			<answer text="De cuff met zeepwater inweken." descr="Dit antwoord is fout omdat het inweken van de cuff met zeepwater geen standaardstap is in het protocol voor het aanbrengen van steunkousen. Het schudden van de cuff is de juiste handeling om luchtbellen te verwijderen."/>
-			<answer text="De cone lichtjes schudden." descr="Dit antwoord is correct omdat het schudden van de cuff na het aanbrengen van de steunkous over de cone helpt om eventuele luchtbellen onder de steunkous te verwijderen. Dit verbetert het draagcomfort en de pasvorm."/>
-		</question>
-	</step>
-	<step>
-		<question text="Hoe moet je de steunkous over de cone schuiven tijdens het aanbrengen?" answer="1" points="10">
-			<answer text="Zorg ervoor dat de binnenkant van de steunkous over de cone gaat." descr="Dit antwoord is correct omdat de buitenkant van de steunkous over de cone moet worden geschoven. Hierdoor komt de steunkous op de juiste plaats terecht en zit deze goed."/>
-			<answer text="Zorg ervoor dat de buitenkant van de steunkous over de cone gaat." descr="Dit antwoord is fout omdat de binnenkant van de steunkous over de cone schuiven niet de juiste stap is. De buitenkant van de steunkous moet over de cone worden geschoven."/>
-		</question>
-		<question text="Wat moet je controleren voordat je de steunkous over het been rolt?" answer="2" points="10">
-			<answer text="De temperatuur van de kamer." descr="Dit antwoord is fout omdat het controleren van de temperatuur van de kamer niet direct relevant is voor het aanbrengen van steunkousen."/>
-			<answer text="Of het teenstuk goed zit." descr="Dit antwoord is correct omdat je voordat je verdergaat met het aanbrengen van de steunkous, moet controleren of het teenstuk goed is geplaatst. Dit is vooral belangrijk bij een gesloten teenstuk om het draagcomfort te waarborgen."/>
-		</question>
-		<question text="Wat is het doel van het schudden van de cuff nadat de steunkous is opgerold?" answer="1" points="10">
-			<answer text="Om luchtbellen onder de steunkous te verwijderen." descr="Dit antwoord is correct omdat het schudden van de cuff na het rollen van de steunkous helpt om eventuele luchtbellen onder de steunkous te verwijderen. Dit verbetert het comfort en de pasvorm."/>
-			<answer text="Om de steunkous sneller te laten drogen." descr="Dit antwoord is fout omdat het schudden van de cuff niet gericht is op het versnellen van het droogproces van de steunkous."/>
-		</question>
-	</step>
-	<step>
-		<question text="Wat moet je vermijden tijdens het verdelen van de steunkous over het been?" answer="2" points="10">
-			<answer text="Zorgen dat de naad van de hiel aan de achterkant zit." descr="Dit antwoord is fout omdat het plaatsen van de naad van de hiel aan de achterkant van de steunkous juist is om een correcte pasvorm te bereiken."/>
-			<answer text="De steunkous tot boven de knie omslaan." descr="Dit antwoord is correct omdat je moet vermijden om de steunkous overmatig op te rollen tot boven de knie. Dit kan de pasvorm en effectiviteit van de steunkous verminderen."/>
-		</question>
-		<question text="Wat moet je doen nadat je de steunkous over de cone hebt geschoven?" answer="1" points="10">
-			<answer text="Rol de cuff over de steunkous." descr="Dit antwoord is correct omdat na het schuiven van de steunkous over de cone, de volgende stap het rollen van de cuff over de steunkous is. Dit voltooit het aanbrengen van de steunkousen en zorgt voor een goede pasvorm."/>
-			<answer text="De kous in de lengte rekken." descr="Dit antwoord is fout omdat het rekken van de kous in de lengte niet de juiste handeling is na het schuiven van de steunkous over de cone. Het doel van de cuff is om de steunkous glad en gelijkmatig over het been te rollen. Het rekken van de kous kan oncomfortabel zijn voor de cliënt en de pasvorm beïnvloeden. Het is belangrijk om de cuff te gebruiken volgens de aanbevolen procedure om de steunkous correct aan te brengen."/>
-		</question>
-		<question text="Wat is het doel van het controleren van het been en de voet van de cliënt voordat je de steunkous aanbrengt?" answer="1" points="10">
-			<answer text="Om mogelijke huidbeschadigingen en hygiëne te beoordelen." descr="Dit antwoord is correct omdat het controleren van het been en de voet van de cliënt voor mogelijke huidbeschadigingen, droogheid, oedeem, temperatuur, kleur, jeuk, pijn en hygiëne van cruciaal belang is voordat je de steunkous aanbrengt. Dit helpt om eventuele problemen te identificeren en de juiste zorg te bieden."/>
-			<answer text="Om de temperatuur van het been te meten" descr="Dit antwoord is fout omdat het meten van de temperatuur van het been niet relevant is voor het aanbrengen van steunkousen en niet tot de doelstelling van deze stap behoort."/>
-		</question>
-	</step>
-
+  <step>
+    <question 
+      text="[wat is de589]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[plaats de cone716]" 
+      descr="[deze stap is]"/>
+      <answer 
+      text="[laat de cliënt760]" 
+      descr="[dit antwoord is68]"/>
+    </question>
+    <question 
+      text="[hoe bevestig je]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[door op de]" 
+      descr="[dit antwoord is588]"/>
+      <answer 
+      text="[door de cone]" 
+      descr="[dit antwoord is423]"/>
+    </question>
+    <question 
+      text="[wat moet je579]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[de cuff met]" 
+      descr="[dit antwoord is754]"/>
+      <answer 
+      text="[de cone lichtjes]" 
+      descr="[dit antwoord is219]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[hoe moet je]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[zorg ervoor dat980]" 
+      descr="[dit antwoord is218]"/>
+      <answer 
+      text="[zorg ervoor dat896]" 
+      descr="[dit antwoord is297]"/>
+    </question>
+    <question 
+      text="[wat moet je187]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[de temperatuur van]" 
+      descr="[dit antwoord is327]"/>
+      <answer 
+      text="[of het teenstuk]" 
+      descr="[dit antwoord is500]"/>
+    </question>
+    <question 
+      text="[wat is het248]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[om luchtbellen onder]" 
+      descr="[dit antwoord is296]"/>
+      <answer 
+      text="[om de steunkous]" 
+      descr="[dit antwoord is589]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[wat moet je264]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[zorgen dat de]" 
+      descr="[dit antwoord is678]"/>
+      <answer 
+      text="[de steunkous tot]" 
+      descr="[dit antwoord is407]"/>
+    </question>
+    <question 
+      text="[wat moet je218]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[rol de cuff891]" 
+      descr="[dit antwoord is895]"/>
+      <answer 
+      text="[de kous in]" 
+      descr="[dit antwoord is654]"/>
+    </question>
+    <question 
+      text="[wat is het359]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[om mogelijke huidbeschadigingen]" 
+      descr="[dit antwoord is460]"/>
+      <answer 
+      text="[om de temperatuur]" 
+      descr="[dit antwoord is622]"/>
+    </question>
+  </step>
 </quiz>

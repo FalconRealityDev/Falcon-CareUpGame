@@ -1,117 +1,212 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
   <step>
-    <question
-      text="De arts schrijft een verkeerde dosering voor, je dient dit toe. Degene die de injectie toedient is aansprakelijk voor de verkeerde dosering"
-      answer="1" points="10">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[de arts schrijft]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Om verantwoord te injecteren moet je de werking van het toegediende medicijn te kennen"
+    <question 
+      text="[om verantwoord te361]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Een van de indicaties voor een injectie kan zijn dat orale inname van het medicijn niet mogelijk is"
+    <question 
+      text="[een van de960]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Wat ontstaat er vaak tijdens overgevoeligheidsreacties na het toediening van een medicijn?"
+    <question 
+      text="[wat ontstaat er]" 
       answer="2">
-      <answer text="Vaatvernauwing" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Vaatverwijding" descr="Heel goed!" />
+      <answer 
+      text="[vaatvernauwing]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Om verantwoord te injecteren dient alleen de arts de werking van het toegediende medicijn te kennen"
+    <question 
+      text="[om verantwoord te]" 
       answer="2">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="Een indicatie voor een subcutane injectie is het vormen van een depot"
+    <question 
+      text="[een indicatie voor]" 
       answer="2">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
   </step>
-
   <step>
-    <question text="Het plaatsen van een injectie in een moedervlek is geen probleem" answer="2"
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Middels de intramusculaire of subcutane injectie wordt het geneesmiddel via de ... opgenomen in de bloedbaan"
+    <question 
+      text="[middels de intramusculaire]" 
       answer="2">
-      <answer text="venen" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="capillairen" descr="Heel goed! " />
-      <answer text="arterien" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[venen]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[capillairen]" 
+      descr="[heel goed!532]"/>
+      <answer 
+      text="[arterien]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question text="Parenterale toediening betekent toediening via de volgende route(s) ..."
+    <question 
+      text="[parenterale toediening betekent]" 
       answer="3">
-      <answer text="...intraveneus, intracutaan en intramusculair"
-        descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...intramusculair en subcutaan" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...intraveneus, intramusculair, intracutaan en subcutaan" descr="Heel goed!" />
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="Het plaatsen van een injectie in een trombosebeen is geen probleem" answer="2"
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Een injectie is een goede optie wanneer maagsappen de werking van het medicijn aantasten"
-      answer="1" points="10">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[een injectie is]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question text="De subcutus wordt gelijk gevolgd door spier of kraakbeen" answer="2">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+    <question 
+      text="[de subcutus wordt]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
   </step>
-
   <step>
-    <question text="Moet je de huid desinfecteren bij cliënten met een verminderde weerstand?"
-      answer="2" points="10">
-      <answer text="Nee"
-        descr="Helaas, dit antwoord is niet goed! Desinfecteer de huid WEL bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken." />
-      <answer text="Ja"
-        descr="Heel goed! Desinfecteer altijd de huid bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken." />
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[helaas dit antwoord778]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[heel goed! desinfecteer]"/>
     </question>
-    <question text="Subcutaan injecteren betekent injecteren in ..." answer="3">
-      <answer text="...de lederhuid" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...de opperhuid" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...het onderhuidsbindweefsel" descr="Heel goed!" />
+    <question 
+      text="[subcutaan injecteren betekent]" 
+      answer="3">
+      <answer 
+      text="[de lederhuid]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[de opperhuid]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[het onderhuidsbindweefsel]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="Bij een subcutane injectie rondom de navel moet je minimaal … cm afstand nemen"
+    <question 
+      text="[bij een subcutane765]" 
       answer="2">
-      <answer text="1" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="2" descr="Heel goed!" />
-      <answer text="3" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="4" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[1]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[2]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[3]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[4]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="In de regel dient men voor de loodrechttechniek bij een subcutane injectie een kortere naald te gebruiken"
+    <question 
+      text="[in de regel]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question text="De opperhuid is gemiddeld ... dik" answer="2">
-      <answer text="1 millimeter" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="0,1 millimeter" descr="Heel goed!" />
-      <answer text="10 millimeter" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[de opperhuid is]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[01 millimeter]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[10 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Bij een subcutane injectie (huidplooitechniek) wordt onder een hoek van 45 a 60 graden geïnjecteerd"
+    <question 
+      text="[bij een subcutane311]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-
   </step>
 </quiz>

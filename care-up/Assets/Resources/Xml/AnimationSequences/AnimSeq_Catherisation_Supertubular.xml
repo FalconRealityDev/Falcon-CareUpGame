@@ -1,176 +1,252 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
   <step>
-    <option text="Verwijder het fixatiemateriaal op de buik"
-      animation="VerwijderHetFixatiemateriaal" />
-    <option text="Plaats de lege spuit op het ventiel van het ballonvulkanaal" animation="" />
-    <option text="Trek voorzichtig aan de katheter om te zien of deze los zit" animation="" />
-    <option text="Trek handschoenen uit en gooi ze in de afvalbak" animation="" />
+    <option 
+      text="[verwijder het fixatiemateriaal]" 
+      animation="VerwijderHetFixatiemateriaal"/>
+    <option 
+      text="[plaats de lege791]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
+    <option 
+      text="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Observeer de insteekplaats van de katheter op roodheid en irritatie"
-      animation="ObserveCatheter" />
-    <option
-      text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid met een gaasje"
-      animation="" />
-    <option text="Plaats de lege spuit op het ventiel van het ballonvulkanaal" animation="" />
-    <option text="Verwijder de katheter en dek de insteekopening af" animation="" />
+    <option 
+      text="[observeer de insteekplaats]" 
+      animation="ObserveCatheter"/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[plaats de lege791]" 
+      animation=""/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Plaats de lege spuit op het ventiel van het ballonvulkanaal"
-      animation="PlaceSyringe" />
-    <option
-      text="Verwijder de katheter tijdens de uitademing met een draaiende beweging in verticale richting"
-      animation="" />
-    <option
-      text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid met een gaasje"
-      animation="" />
-    <option text="Trek voorzichtig aan de katheter om te zien of deze los zit" animation="" />
+    <option 
+      text="[plaats de lege791]" 
+      animation="PlaceSyringe"/>
+    <option 
+      text="[verwijder de katheter815]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Oefen geen zuigkracht uit maar laat de spuit zichzelf vullen"
-      animation="AllowSyringe" />
-    <option text="Zuig de ingespoten vloeistof voorzichtig op" animation="" />
-    <option text="Spuit de voorgeschreven vloeistof langzaam in" animation="" />
-    <option text="Zuig de ingespoten vloeistof snel op" animation="" />
+    <option 
+      text="[oefen geen zuigkracht517]" 
+      animation="AllowSyringe"/>
+    <option 
+      text="[zuig de ingespoten]" 
+      animation=""/>
+    <option 
+      text="[spuit de voorgeschreven114]" 
+      animation=""/>
+    <option 
+      text="[zuig de ingespoten107]" 
+      animation=""/>
   </step>
-
   <step>
-    <option
-      text="Controleer of de hoeveelheid opgezogen vloeistof overeenkomt met de ingespoten hoeveelheid"
-      animation="CheckAmount" />
-    <option text="Verwijder de katheter en dek de insteekopening af" animation="" />
-    <option text="Trek voorzichtig aan de katheter om te zien of deze los zit" animation="" />
-    <option text="Gooi de spuit weg in de afvalbak" animation="" />
+    <option 
+      text="[controleer of de896]" 
+      animation="CheckAmount"/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
+    <option 
+      text="[gooi de spuit815]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Trek voorzichtig aan de katheter om te zien of deze los zit"
-      animation="PullGently" />
-    <option text="Verwijder de katheter en dek de insteekopening af" animation="" />
-    <option text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes" animation="" />
-    <option text="Duw voorzichtig aan de katheter om te zien of deze los zit" animation="" />
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation="PullGently"/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats789]" 
+      animation=""/>
+    <option 
+      text="[duw voorzichtig aan]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Verwijder de katheter en dek de insteekopening af" animation="RemoveCatheter" />
-    <option text="Trek handschoenen uit en pas handhygiëne toe" animation="" />
-    <option text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes" animation="" />
-    <option text="Desinfecteer de huid rondom de insteekplaats met een alcoholgaasje, laat drogen"
-      animation="" />
+    <option 
+      text="[verwijder de katheter]" 
+      animation="RemoveCatheter"/>
+    <option 
+      text="[trek handschoenen uit151]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats789]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
   </step>
-
   <step>
-    <option
-      text="Verwijder de katheter tijdens de uitademing met een draaiende beweging in verticale richting"
-      animation="AskClient" />
-    <option
-      text="Verwijder de katheter tijdens de uitademing met een draaiende beweging in diagonale richting"
-      animation="" />
-    <option
-      text="Verwijder de katheter tijdens de uitademing met een draaiende beweging in horizontale richting"
-      animation="" />
+    <option 
+      text="[verwijder de katheter815]" 
+      animation="AskClient"/>
+    <option 
+      text="[verwijder de katheter971]" 
+      animation=""/>
+    <option 
+      text="[verwijder de katheter636]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Dek de insteekopening af met een gaasje. Enige lekkage is normaal"
-      animation="CoverInsertion" />
-    <option
-      text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid met een gaasje"
-      animation="" />
-    <option text="Gooi de katheter in de afvalbak" animation="" />
-    <option text="Controleer de katheterpunt op aanslag/korstvorming" animation="" />
+    <option 
+      text="[dek de insteekopening]" 
+      animation="CoverInsertion"/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[gooi de katheter]" 
+      animation=""/>
+    <option 
+      text="[controleer de katheterpunt]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Controleer de katheterpunt op aanslag/korstvorming" animation="CheckCatheter" />
-    <option text="Gooi de katheter in de afvalbak" animation="" />
-    <option text="Breng nieuwe katheter in" animation="" />
-    <option text="Controleer de katheterballon" animation="" />
+    <option 
+      text="[controleer de katheterpunt]" 
+      animation="CheckCatheter"/>
+    <option 
+      text="[gooi de katheter]" 
+      animation=""/>
+    <option 
+      text="[breng nieuwe katheter]" 
+      animation=""/>
+    <option 
+      text="[controleer de katheterballon]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Gooi de katheter in de afvalbak" animation="DiscardCatheter" />
-    <option text="Trek handschoenen uit" animation="" />
-    <option text="Leg de katheter op het steriele werkveld" animation="" />
-    <option text="Reinig de insteekplaats en omgeving" animation="" />
+    <option 
+      text="[gooi de katheter]" 
+      animation="DiscardCatheter"/>
+    <option 
+      text="[trek handschoenen uit391]" 
+      animation=""/>
+    <option 
+      text="[leg de katheter253]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats937]" 
+      animation=""/>
   </step>
-
   <step>
-    <option
-      text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid met een gaasje"
-      animation="CleanInsertation" />
-    <option text="Ga naar het werkveld en pak de nieuwe katheter" animation="" />
-    <option
-      text="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid niet"
-      animation="" />
-    <option text="Reinig de insteekplaats en de omgeving met natte gaasjes. Droog de huid niet"
-      animation="" />
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation="CleanInsertation"/>
+    <option 
+      text="[ga naar het]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats905]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats765]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Knijp ieder gaasje eerst uit boven het bakje" animation="SqueezeGauze" />
-    <option text="Desinfecteer de huid rondom de insteekplaats met een alcoholgaasje, laat drogen"
-      animation="" />
-    <option text="Knijp de gaasjes niet uit boven het bakje" animation="" />
-    <option text="Desinfecteer de huid rondom de insteekplaats met een nat gaasje, laat drogen"
-      animation="" />
+    <option 
+      text="[knijp ieder gaasje]" 
+      animation="SqueezeGauze"/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
+    <option 
+      text="[knijp de gaasjes]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid551]" 
+      animation=""/>
   </step>
-
   <step>
-    <option
-      text="Reinig vanaf het midden (de fistelopening) naar buiten. Maak steeds één streek per gaasje"
-      animation="CleanBody" />
-    <option
-      text="Reinig vanaf het midden (de fistelopening) naar buiten. Maak steeds twee streken per gaasje"
-      animation="" />
-    <option
-      text="Reinig vanaf buiten naar het midden (de fistelopening). Maak steeds één streek per gaasje"
-      animation="" />
-    <option
-      text="Reinig vanaf buiten naar het midden (de fistelopening). Maak steeds twee streken per gaasje"
-      animation="" />
+    <option 
+      text="[reinig vanaf het530]" 
+      animation="CleanBody"/>
+    <option 
+      text="[reinig vanaf het847]" 
+      animation=""/>
+    <option 
+      text="[reinig vanaf buiten]" 
+      animation=""/>
+    <option 
+      text="[reinig vanaf buiten634]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Droog de huid met een nieuw, droog gaasje" animation="DryTheSkin" />
-    <option text="Droog de huid niet" animation="" />
-    <option text="Desinfecteer de huid rondom de insteekplaats met een alcoholgaasje" animation="" />
-    <option text="Desinfecteer de huid rondom de insteekplaats met een alcoholgaasje, laat drogen"
-      animation="" />
+    <option 
+      text="[droog de huid61]" 
+      animation="DryTheSkin"/>
+    <option 
+      text="[droog de huid740]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid412]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Gooi de gebruikte gaasjes in de afvalbak" animation="ThrowGauzes" />
-    <option text="Trek handschoenen uit en pas handhygiëne toe" animation="" />
-    <option text="Pak de spuit met glijmiddel, spuit 5-10 ml glijmiddel in de fistelopening"
-      animation="" />
-    <option text="Dek de insteekopening af met een gaasje" animation="" />
+    <option 
+      text="[gooi de gebruikte745]" 
+      animation="ThrowGauzes"/>
+    <option 
+      text="[trek handschoenen uit151]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit368]" 
+      animation=""/>
+    <option 
+      text="[dek de insteekopening280]" 
+      animation=""/>
   </step>
-
   <step>
-    <option
-      text="Pak de spuit met glijmiddel, spuit 5-10 ml glijmiddel in de fistelopening. Dek de fistelopnening af met een steriel gaasje"
-      animation="RemoveLubSyringe" />
-    <option
-      text="Pak de spuit met glijmiddel, spuit 5-10 ml glijmiddel in de fistelopening. Dek de fistelopnening af met een nat gaasje"
-      animation="" />
-    <option
-      text="Pak de spuit met glijmiddel, spuit 10-20 ml glijmiddel in de fistelopening. Dek de fistelopnening af met een steriel gaasje"
-      animation="" />
-    <option
-      text="Pak de spuit met glijmiddel, spuit 10-15 ml glijmiddel in de fistelopening. Dek de fistelopnening af met een steriel gaasje"
-      animation="" />
+    <option 
+      text="[pak de spuit728]" 
+      animation="RemoveLubSyringe"/>
+    <option 
+      text="[pak de spuit68]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit244]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit57]" 
+      animation=""/>
   </step>
-
   <step>
-    <option text="Trek handschoenen uit en gooi ze in de afvalbak" animation="TakeOffGloves" />
-    <option text="Begin met het inbrengen van de nieuwe katheter" animation="" />
-    <option text="Droog de huid met een steriel gaasje" animation="" />
-    <option text="Droog de huid met een gaasje" animation="" />
+    <option 
+      text="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      animation="TakeOffGloves"/>
+    <option 
+      text="[begin met het318]" 
+      animation=""/>
+    <option 
+      text="[droog de huid396]" 
+      animation=""/>
+    <option 
+      text="[droog de huid952]" 
+      animation=""/>
   </step>
-
 </AnimationSequence>

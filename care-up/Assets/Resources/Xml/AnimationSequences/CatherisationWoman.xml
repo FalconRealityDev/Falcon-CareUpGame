@@ -1,74 +1,159 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
-
-	<step>
-		<option text="Gebruik een gaasje één keer en veeg richting het perineum" animation="cleanMStraight" audio="Dialogue/Catheterisation Woman/Cleaning and woman response"/>
-		<option text="Maak de labia minora schoon: Links en rechts apart, ieder met een nieuw, uitgekenepen gaasje" animation=""/>
-		<option text="Pak een nieuw uitgeknepen gaasje" animation="" />
-		<option text="Spreid met één hand de labia majora" animation="" />
-	</step>
-
-	<step>
-		<option text="Maak de labia majora schoon: links en rechts apart, steeds met een nieuw, uitgeknepen gaasje" animation="clean majora"/>
-		<option text="Spreid met één hand de labia majora" animation="" />
-		<option text="Pak een nieuw gaasje, knijp deze uit en maak de meatus schoon" animation="" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-	</step>
   <step>
-    <option text="Spreid met één hand de labia majora" animation="spread majora" />
-    <option text="Maak de labia minora schoon: links en rechts apart, steeds met een nieuw, uitgeknepen gaasje" animation="" />
-    <option text="Houd de labia minora nog gespreid en spuit glijmiddel op en in de meatus" animation="" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-    
+    <option 
+      text="[gebruik een gaasje]" 
+      animation="cleanMStraight" 
+      audio="Dialogue/Catheterisation Woman/Cleaning and woman response"/>
+    <option 
+      text="[maak de labia]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw624]" 
+      animation=""/>
+    <option 
+      text="[spreid met één]" 
+      animation=""/>
   </step>
-	<step>
-		<option text="Maak de labia minora schoon: links en rechts apart, steeds met een nieuw, uitgeknepen gaasje" animation="clean minora" />
-    <option text="Neem een nieuw gaasje, knijp deze uit en maak de meatus schoon" animation="" />
-    <option text="Houd de labia nog gespreid en plaats het steriele gaasje tussen de labia minora" animation="" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-	</step>
-	<step>
-		<option text="Spreid met één hand de labia minora" animation="spread minora" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-    <option text="Houd de labia minora nog gespreid en spuit glijmiddel op en in de meatus" animation="" />
-    <option text="Maak de labia majora schoon: links en rechts apart, steeds met een nieuw, uitgeknepen gaasje" animation="" />
-	</step>
-	<step>
-		<option text="Neem een nieuw gaasje, knijp deze uit en maak de urethra opening schoon" animation="clean meatus" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-    <option text="Houd de labia minora nog gespreid en spuit glijmiddel op en in de meatus" animation="" />
-    <option text="Maak de labia majora schoon: links en rechts apart, steeds met een nieuwe, schoon uitgeknepen gaasje" animation="" />
-	</step>
-	<step>
-	<option text="Houd de labia minora (kleine schaamlippen) gespreid. Spuit glijmiddel op de urethra openin" animation="LubInfo" />
-    <option text="Spuit glijmiddel op de urethra opening" animation="" />
-    <option text="Breng de conus van de spuit in de urethra opening" animation="" />
-    <option text="Spuit ongeveer 6 ml glijmiddel langzaam in de urethra opening" animation="" />
-	</step>
-	<step>
-	<option text="Breng de conus van de spuit in de urethra opening. Spuit ongeveer 6 ml glijmiddel langzaam in de urethra opening" animation="apply lube" audio="Dialogue/Catheterisation Woman/Lube and woman response"/>
-    <option text="Spuit ongeveer 8 ml glijmiddel langzaam in de urethra opening" animation="" />
-    <option text="Gooi de spuit in de afvalbak" animation="" />
-    <option text="Houd de labia nog gespreid en plaats een nieuw en schoon uitgeknepen gaasje tussen de labia minora" animation="" />
-	</step>
-	
-	<step>
-	<option text="Gooi de spuit in de afvalbak" animation="DiscardSyringe"/>
-    <option text="Houd de labia nog gespreid en plaats een nieuw en schoon uitgeknepen gaasje tussen de labia minora" animation="" />
-    <option text="Trek de handschoenen uit en gooi ze in het afvalbakje" animation="" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-	</step>
-		
-	<step>
-		<option text="Houd de labia nog gespreid en plaats het steriele gaasje tussen de labia minora" animation="place gauze in labia" />
-    <option text="Maak de labia majora schoon: links en rechts apart, steeds met een nieuw, schoon uitgeknepen gaasje" animation="" />
-    <option text="Trek de handschoenen uit en gooi ze in het afvalbakje" animation="" />
-    <option text="Gooi de gebruikte gaasjes in het afvalbakje" animation="" />
-	</step>
   <step>
-    <option text="Trek de handschoenen uit en gooi ze in het afvalbakje" animation="take off gloves" />
-    <option text="Maak de labia majora schoon: links en rechts apart, steeds met een nieuw, schoon uitgeknepen gaasje" animation="" />
-    <option text="Neem een nieuw gaasje, knijp deze uit en reinig de meatus" animation="" />
-    <option text="Houd de labia minora nog gespreid en spuit glijmiddel op en in de meatus" animation="" />
+    <option 
+      text="[maak de labia131]" 
+      animation="clean majora"/>
+    <option 
+      text="[spreid met één]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw167]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[spreid met één]" 
+      animation="spread majora"/>
+    <option 
+      text="[maak de labia486]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[maak de labia486]" 
+      animation="clean minora"/>
+    <option 
+      text="[neem een nieuw917]" 
+      animation=""/>
+    <option 
+      text="[houd de labia939]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[spreid met één145]" 
+      animation="spread minora"/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[maak de labia131]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[neem een nieuw310]" 
+      animation="clean meatus"/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[maak de labia153]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[houd de labia]" 
+      animation="LubInfo"/>
+    <option 
+      text="[spuit glijmiddel op]" 
+      animation=""/>
+    <option 
+      text="[breng de conus]" 
+      animation=""/>
+    <option 
+      text="[spuit ongeveer 6]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[breng de conus317]" 
+      animation="apply lube" 
+      audio="Dialogue/Catheterisation Woman/Lube and woman response"/>
+    <option 
+      text="[spuit ongeveer 8]" 
+      animation=""/>
+    <option 
+      text="[gooi de spuit]" 
+      animation=""/>
+    <option 
+      text="[houd de labia93]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[gooi de spuit]" 
+      animation="DiscardSyringe"/>
+    <option 
+      text="[houd de labia93]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[houd de labia939]" 
+      animation="place gauze in labia"/>
+    <option 
+      text="[maak de labia489]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation="take off gloves"/>
+    <option 
+      text="[maak de labia489]" 
+      animation=""/>
+    <option 
+      text="[neem een nieuw522]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
   </step>
 </AnimationSequence>

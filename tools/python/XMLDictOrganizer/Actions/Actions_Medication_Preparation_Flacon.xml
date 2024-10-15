@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      commentUA="Очистити та приготувати робочий стіл" 
+      audioHint="Injection/H2-2" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst spuit109]"/>
+  <action 
+      points="1" 
+      description="[overgiet een gaasje]" 
+      commentUA="Нанести спирт на гарчірку" 
+      audioHint="Injection/H4-2" 
+      index="2" 
+      type="combine" 
+      left="Cloth" 
+      right="Alcohol" 
+      extra="[overgiet een gaasje588]"/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      commentUA="Перевірити медичні записи пацієнта" 
+      audioHint="Injection/H3-2" 
+      index="3" 
+      quiz="2" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens]"/>
+  <action 
+      points="2" 
+      description="[controleer het medicijn]" 
+      commentUA="Перевірити назначене лікування" 
+      audioHint="Injection/H3-2" 
+      index="3" 
+      type="examine" 
+      item="Medicine" 
+      expected="good" 
+      extra="[controleer het medicijn751]" 
+      messageTitle="[kennis en veiligheid]" 
+      messageContent="[neem kennis van796]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      commentUA="Перевірити відповідність медикаментів" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      index="3" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="[controleer de toedienlijst13]" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="3" 
+      description="[vraag aan je62]" 
+      commentUA="Запитати лікара про додадкову перевірку" 
+      audioHint="" 
+      index="4" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="[voer een dubbele]" 
+      messageTitle="[vul het toedieningsetiket]" 
+      messageContent="[vul onderstaande punten]"/>
+  <action 
+      comment="Put on gloves." 
+      points="1" 
+      description="[Trek de handschoenen aan]" 
+      index="5" 
+      type="use" 
+      value="gloveBox" 
+      extra="[trek de handschoenen216]" 
+      blockUnlock="GlovesTakenOn"/>
+  <action 
+      points="1" 
+      description="[neem de opzuignaald]" 
+      commentUA="Дістаньте голку для набирання з пакета" 
+      audioHint="Injection/H4-2" 
+      index="6" 
+      quiz="2" 
+      type="combine" 
+      left="" 
+      right="AbsorptionNeedlePacked" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[neem de injectienaald]" 
+      commentUA="Дістаньте голку для ін'єкції з пакета" 
+      audioHint="Injection/H4-2" 
+      index="7" 
+      quiz="2" 
+      type="combine" 
+      left="" 
+      right="InjectionNeedlePacked" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[haal de spuit]" 
+      commentUA="Дістаньте шприц з пакета" 
+      audioHint="Injection/H4-2" 
+      index="8" 
+      type="combine" 
+      left="" 
+      right="syringe_packed" 
+      extra="">
+  </action>
+  <action 
+      points="3" 
+      description="[desinfecteer het rubber]" 
+      commentUA="Провести дизінфекцію кришки баночки з медикаментами" 
+      audioHint="Injection/H5-3" 
+      index="9" 
+      type="combine" 
+      left="DesinfectionCloth" 
+      right="Medicine" 
+      extra="[desinfecteer de rubberen467]"/>
+  <action 
+      points="1" 
+      description="[zet de opzuignaald739]" 
+      commentUA="Встановити на шприц голку для набирання" 
+      audioHint="Injection/H6-3" 
+      index="10" 
+      type="combine" 
+      left="Syringe" 
+      right="AbsorptionNeedle" 
+      extra="[zet de opzuignaald]"/>
+  <action 
+      comment="Draw an amount of air into the syringe that corresponds to the prescribed dose" 
+      points="1" 
+      description="[zuig een hoeveelheid]" 
+      index="11" 
+      type="sequenceStep" 
+      value="DrawAirFirst" 
+      extra="[sluit de maagsonde934]"/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermhuls]" 
+      index="12" 
+      type="sequenceStep" 
+      value="RemoveCap" 
+      extra="[de opzuignaald dop]"/>
+  <action 
+      comment="Insert the needle into the vial and inject air" 
+      points="1" 
+      description="[steek de naald75]" 
+      index="13" 
+      type="sequenceStep" 
+      value="InsertNeedle" 
+      extra=""/>
+  <action 
+      comment="Turn the vial upside down and draw the prescribed amount of medicine into the syringe" 
+      points="1" 
+      description="[keer de flacon]" 
+      index="14" 
+      type="sequenceStep" 
+      value="TurnUpside" 
+      extra=""/>
+  <action 
+      comment="Draw some additional air into the syringe and remove the withdrawal needle and syringe from the vial. Aspirating some extra air prevents tampering with the drug" 
+      points="1" 
+      description="[zuig nog wat]" 
+      index="15" 
+      type="sequenceStep" 
+      value="DrawMoreAir" 
+      extra="" 
+      messageTitle="[extra lucht]" 
+      messageContect="Wat extra lucht opzuigen voorkomt knoeien met het medicijn"/>
+  <action 
+      comment="Unair the syringe and check if you have the right amount" 
+      points="1" 
+      description="[ontlucht de spuit]" 
+      index="16" 
+      type="sequenceStep" 
+      value="Unair" 
+      extra="" 
+      blockUnlock="EndOfSQ"/>
+  <action 
+      points="1" 
+      description="[verwijder de naald]" 
+      commentUA="Зняти голку" 
+      audioHint="" 
+      index="17" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="" 
+      blockRequired="EndOfSQ" 
+      blockUnlock="PlaceInjectionNeedle" 
+      extra="[klik het beschermkapje495]"/>
+  <action 
+      points="2" 
+      description="[doe de opzuignaald]" 
+      commentUA="Помістити голку в контейнер" 
+      audioHint="Injection/H10-2" 
+      index="18" 
+      type="useOn" 
+      item="AbsorptionNeedleNoCap" 
+      target="" 
+      buttonText="Opzuignaald weggooien" 
+      extra="[verwijder de opzuignaald446]"/>
+  <action 
+      points="1" 
+      description="[plaats de injectienaald]" 
+      commentUA="Встановити на шприц голку для інєкцій" 
+      audioHint="Injection/H11-2" 
+      index="19" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="InjectionNeedle" 
+      blockRequired="PlaceInjectionNeedle" 
+      extra="[plaats de injectienaald256]" 
+      messageTitle="[handschoenen]" 
+      messageContent="[als tijdens de157]" 
+      blockUnlock="AllowTakeOffGloves"/>
+  <action 
+      index="20" 
+      points="1" 
+      description="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      type="general" 
+      item="" 
+      action="TakeOffGloves" 
+      buttonText="Trek handschoenen uit " 
+      blockRequired="AllowTakeOffGloves, GlovesTakenOn" 
+      blockUnlock="CleanWorkfield" 
+      messageTitle="[toedieningsetiket]" 
+      messageContent="[plak het ingevulde]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="21" 
+      type="use" 
+      value="WorkField" 
+      extra="[ruim de materialen]" 
+      blockRequired="CleanWorkfield" 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen."/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="22" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst610]" 
+      commentUA="Зробити запис про проведену процедуру" 
+      audioHint="Injection/EAS4-2" 
+      index="23" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[teken de toedienlijst610]"/>
+</ActionList>

@@ -1,0 +1,19 @@
+{
+  "SafeEnv": "Provide a safe environment for the client, yourself and others present",
+  "graspShoulders": "Gently grab the client by the shoulders with your hands",
+  "ShakeShoulders": "Gently shake the shoulders and check whether the client responds. For example, ask loudly: Are you okay?",
+  "Call112": "Ask for help from a colleague or bystander. Have 911 or (if applicable) the resuscitation team call. If you are alone, make the call yourself",
+  "CheckBreathing": "Open the airway",
+  "CheckBreathingByEar": "Monitor the client&#39;s breathing for up to 10 seconds",
+  "StartCPR": "Initiate CPR if there is no or no normal breathing",
+  "TurnOnAED": "Turn on the AED and expose the client&#39;s chest",
+  "RemoveElectrodes": "Follow the AED instructions. Remove the electrodes from the packaging",
+  "AttachElectrodes": "Look at the picture on the electrodes and attach them to the correct location on the chest",
+  "NoOneTouch": "Ensure that no one touches the client while the AED is analyzing the heart rhythm",
+  "PressShockButton": "Press the shock button when the AED tells you to. The AED delivers a shock",
+  "StartAgainCompressions": "Start with 30 chest compressions, immediately followed by 2 rescue breaths. Continue to follow the AED instructions",
+  "KeepDoing": "Continue CPR until help arrives",
+  "Ruim de materialen op": "Clean up the materials",
+  "Pas handhygiene toe": "Practice hand hygiene",
+  "recordActions": "Record the actions, time, duration and findings"
+}

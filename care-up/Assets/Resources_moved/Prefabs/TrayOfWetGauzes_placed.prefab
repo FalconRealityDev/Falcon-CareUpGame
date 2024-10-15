@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775507553994599866}
   m_RootOrder: 1
@@ -51,10 +52,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5264094973925177088
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +113,7 @@ Transform:
   m_LocalRotation: {x: -0.500519, y: -0.4994805, z: -0.4994805, w: 0.500519}
   m_LocalPosition: {x: 9.524, y: 1.085, z: 11.491}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 21540454235918941}
   - {fileID: 5497303243027940460}
@@ -127,10 +132,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -155,6 +162,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &5029601234347573801
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -198,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Bakje met gaasjes
   ObjectID: 0
-  description: Bakje met gaasjes
+  description: '[i_bakje met gaasjes]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -235,6 +243,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.0008715093, w: 0.99999964}
   m_LocalPosition: {x: 0, y: 0, z: 0.022}
   m_LocalScale: {x: 1.5774381, y: 0.94407076, z: 0.59269434}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775507553994599866}
   m_RootOrder: 2
@@ -280,6 +289,7 @@ Transform:
   m_LocalRotation: {x: -0.016492117, y: -0.080979116, z: 0.018814346, w: 0.9964018}
   m_LocalPosition: {x: 0.0031093122, y: -0.0014494632, z: 0.050364435}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4775507553994599866}
   m_RootOrder: 0
@@ -303,10 +313,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -331,3 +343,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

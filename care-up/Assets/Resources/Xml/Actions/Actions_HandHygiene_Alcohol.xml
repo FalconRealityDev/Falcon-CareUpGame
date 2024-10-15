@@ -1,109 +1,71 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-
-  <action
-   index="0"
-   points="1"
-   description="Breng handalcohol aan, raak het tuitje van de dispenser niet aan. Neem zoveel handalcohol dat het kuiltje van één hand met alcohol is gevuld"
-   type="use"
-   extra=" Breng handalcohol aan op de droge hand, zonder daarbij het tuitje van de dispenser aan te raken. Neem zoveel handalcohol dat het kuiltje van één hand met alcohol is gevuld."
-   value="AlcoholHandCleaner"
-   messageTitle="Handreiniging"
-   messageContent="Handreiniging met water en zeep óf desinfectie met handalcohol vindt altijd plaats na:
-
-- Hoesten, niezen of neussnuiten
-- Contact met voedsel
-- toiletbezoek
-- Roken
-- Voor het begin van de dienst en na pauzes
-- Bij (vermoeden van) contact met Noro-virus in het verpleeghuis, woonzorgcentra en centra voor kleinschalig wonen
-   " ></action>
-
-  <action
-  index="1"
-  points="3"
-  description="Wrijf de handpalmen op elkaar"
-  type="sequenceStep"
-  extra="Wrijf de handpalmen op elkaar."
-  value="rub hand palms alcohol"></action>
-
-  <action
-  index="2"
-  points="3"
-  description="Wrijf de rechter handpalm over de linker handrug met verstrengelde vingers en vice versa"
-  type="sequenceStep"
-  extra="Wrijf de rechter handpalm over de linker handrug met verstrengelde vingers en vice versa."
-  value="rub hand palms back alcohol"
- ></action>
-
-  <action
-  index="3"
-  points="3"
-  description="Wrijf de handpalmen tegen elkaar met verstrengelde vingers"
-  type="sequenceStep"
-  extra="Wrijf de handpalmen tegen elkaar met verstrengelde vingers."
-  value="rub hand palms entwined alcohol"
- ></action>
-
-  <action
-  index="4"
-  points="3"
-  description="Wrijf met ineen gehaakte vingers tegen de andere handpalm"
-  type="sequenceStep"
-  extra="Wrijf met ineen gehaakte vingers tegen de andere handpalm."
-  value="rub hands crocheted alcohol"
- ></action>
-
-  <action
-  index="5"
-  points="3"
-  description="Draai met de duim van de linkerhand in de rechter handpalm en vice versa"
-  type="sequenceStep"
-  extra="Draai met de duim van de linkerhand in de rechter handpalm en vice versa."
-  value="rub hand palms thumbs alcohol"
- ></action>
-
-  <action
-  index="6"
-  points="3"
-  description="Wrijf en draai met de samengeknepen vingers van de rechterhand in de linker handpalm en vice versa"
-  type="sequenceStep"
-  extra="Wrijf en draai met de samengeknepen vingers van de rechterhand in de linker handpalm en vice versa."
-  value="rub hand palms pinched together alcohol"
- ></action>
-
- <action
-  index="7"
-  points="3"
-  description="Reinig de linkerpols met de rechterhand en visa versa"
-  type="sequenceStep"
-  extra="Reinig de linkerpols met de rechterhand en visa versa."
-  value="cleaning wrists"
-  messageTitle="Contact met cliënten"
-  messageContent="
-Handreiniging óf handdesinfectie met handalcohol is nodig:
-
-- Voor en na direct contact met de cliënt. Als handhygiëne is toegepast net voor het contact met een cliënt (bijvoorbeeld na contact met een andere cliënt), dan hoeft niet weer handhygiëne toegepast te worden, mits de omgeving van de cliënt niet is aangeraakt. Handreiniging of -desinfectie na cliënt één en voor cliënt twee vallen dan samen.
-- Voor kleine ingrepen waarbij huid- en/of slijmvliesbarrière is of wordt doorbroken, zoals blaaskatheterisatie, het inbrengen van een infuus, het uitvoeren van een punctie.
-- Voor en na wondbehandeling of -verzorging.
-- Na contact met lichaamsvocht, secreta, excreta, slijmvliezen of niet-intacte huid.
-- Na het aanraken van de directe omgeving van de cliënt.
-- Na het uittrekken van handschoenen en schort en andere persoonlijke beschermingsmiddelen.
-- Na schoonmaakwerkzaamheden.
-- Na contact met huisdieren of hun uitwerpselen.
-- Voor en na voorbereiding en toediening voedsel.
--Na het gebruik van (mobiele) computers, telefoons en tablets.
-  "
- ></action>
-
- <action
-  comment="last step"
-  index="8"
-  points="1"
-  description="Sluit de handeling door de tablet te openen en op het afteken/afsluit icoon te drukken"
-  type="use"
-  value="PaperAndPen"
-  extra="Sluit de handeling door de tablet te openen en op het afteken/afsluit icoon te drukken."
- ></action>
-
+  <action 
+    index="0" 
+    points="1" 
+    description="[breng handalcohol aan85]" 
+    type="use" 
+    extra="[breng handalcohol aan826]" 
+    value="AlcoholHandCleaner" 
+    messageTitle="[sg_Handreiniging]" 
+    messageContent="[handreiniging met water]"/>
+  <action 
+    index="1" 
+    points="3" 
+    description="[wrijf de handpalmen105]" 
+    type="sequenceStep" 
+    extra="[wrijf de handpalmen]" 
+    value="rub hand palms alcohol"/>
+  <action 
+    index="2" 
+    points="3" 
+    description="[wrijf de rechter550]" 
+    type="sequenceStep" 
+    extra="[wrijf de rechter68]" 
+    value="rub hand palms back alcohol"/>
+  <action 
+    index="3" 
+    points="3" 
+    description="[wrijf de handpalmen127]" 
+    type="sequenceStep" 
+    extra="[wrijf de handpalmen870]" 
+    value="rub hand palms entwined alcohol"/>
+  <action 
+    index="4" 
+    points="3" 
+    description="[wrijf met ineen478]" 
+    type="sequenceStep" 
+    extra="[wrijf met ineen]" 
+    value="rub hands crocheted alcohol"/>
+  <action 
+    index="5" 
+    points="3" 
+    description="[draai met de326]" 
+    type="sequenceStep" 
+    extra="[draai met de]" 
+    value="rub hand palms thumbs alcohol"/>
+  <action 
+    index="6" 
+    points="3" 
+    description="[wrijf en draai616]" 
+    type="sequenceStep" 
+    extra="[wrijf en draai]" 
+    value="rub hand palms pinched together alcohol"/>
+  <action 
+    index="7" 
+    points="3" 
+    description="[reinig de linkerpols]" 
+    type="sequenceStep" 
+    extra="[reinig de linkerpols999]" 
+    value="cleaning wrists" 
+    messageTitle="[contact met cliënten]" 
+    messageContent="[handreiniging óf handdesinfectie99]"/>
+  <action 
+    comment="last step" 
+    index="8" 
+    points="1" 
+    description="[sluit de handeling]" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[sluit de handeling362]"/>
 </ActionList>

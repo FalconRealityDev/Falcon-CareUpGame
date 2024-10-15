@@ -1,332 +1,260 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-    <action
-        index="0"
-        points="1"
-        description="[Begroet]"
-        type="talk"
-        topic="Hello"
-        extra="Het begroeten van de client en je voorstellen is niet in de werkwijze is vermeld. Het is wel netjes en logisch om contact te leggen met de cliënt."
-        optional=""
-    ></action>
-
-    <action
-        comment="1. Apply hand hygiene"
-        index="0"
-        points="3"
-        description="[Pas handhygiëne]"
-        type="use"
-        value="HandCleaner"
-        extra="[Pas handhygiëne]"
-        messageTitle="Handhygiëne"
-        messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    ></action>
-
-    <action
-        comment="2. Create a clean work area and put the equipment within reach"
-        index="1"
-        points="2"
-        description="Maak een schoon werkveld en zet de benodigdheden binnen bereik"
-        type="use"
-        value="WorkField"
-        extra="Maak een schoon werkveld en zet de benodigdheden binnen bereik."
-        messageTitle="Je het volgende nodig hebt?"
-        messageContent="
-- Toedienlijst
-- Voorgeschreven steriele spoelzak(jes) met spoelvloeistof op lichaamstemperatuur
-- Onderlegger
-- Opvangbak
-- Niet-steriele handschoenen (bij passief spoelen: 2 paar)
-- Urineopvangzak
-- Zo nodig gaasje voor desinfectie aansluitpunt urineopvangzak
-- Zo nodig desinfectans, alcohol 70% voor desinfectie aansluitpunt urineopvangzak 
-- Afvalbak"
-    ></action>
-
-
-    <action
-        points="2"
-        description="Controleer het spoelzakje"
-        fullDescription=""
-        index="2"
-        type="examine"
-        item="BladderSpoolBagPacked"
-        expected="good"
-        extra="Controleer het spoelzakje"
-        messageTitle="Je op het volgende moet letten tijdens het controleren van het spoelzakje?"
-        messageContent="Controleer de spoelvloeistof op vervaldatum/houdbaarheid en temperatuur (lichaamstemperatuur). Het soort spoelvloeistof is op voorschrift van de arts. Raadpleeg de bijsluiter."
-    ></action>
-
-
-    <action
-        points="2"
-        description="Controleer de cliëntgegevens"
-        index="3"
-        type="examine"
-        item="PatientRecords"
-        expected="good"
-        extra="Controleer de cliëntgegevens. Controleer de naam en geboortedatum van de cliënt."
-    ></action>
-
-    <action
-        points="2"
-        description="Controleer de toedienlijst op soort, dosering en toedientijdstip"
-        index="3"
-        type="examine"
-        item="PrescriptionForm"
-        expected="good"
-        extra="Controleer de toedienlijst op soort, dosering en toedientijdstip"
-    ></action>
-
-    <action
-        comment="Open bladder spool bag"
-        points="1"
-        description="Open de verpakking van het spoelzakje"
-        index="4"
-        type="combine"
-        quiz="4.5"
-        left="BladderSpoolBagPacked"
-        right=""
-        extra="Open de verpakking van het spoelzakje"
-        blockUnlock="opened spoolbag"
-        messageTitle="Lichaamstemperatuur"
-        messageContent="Breng de spoelvloeistof op lichaamstemperatuur in om spasmen van de blaas zoveel mogelijk te voorkomen. Haal de spoelvloeistof tijdig uit de koelkast en verwarm de spoelvloeistof indien nodig, door de verpakte zak in lauwwarm water te dompelen."
-    ></action>
-
-    <action
-        points="2"
-        description="Controleer of de klem van het spoelzakje dicht is"
-        index="5"
-        type="examine"
-        item="BladderSpoolBag"
-        expected="good"
-        extra="Controleer of de klem van het spoelzakje dicht is"
-    ></action>
-
-    <action
-        comment=""
-        points="1"
-        description="Vraag de cliënt het onderlichaam te ontbloten en op de rug te gaan liggen"
-        audioHint=""
-        index="6"
-        type="talk"
-        topic="LayOnBed"
-        extra="Vraag de cliënt het onderlichaam te ontbloten en op de rug te gaan liggen"
-        blockUnlock="patient lay down"
-        blockRequired="opened spoolbag"
-        blockTitle="Deze handeling is nog niet mogelijk"
-        blockMessage="Zorg ervoor dat het spoelzakje klaar is voor gebruik."
-    ></action>
-
-    <action
-        comment="Place a pad under the buttocks and thighs of the cliënt."
-        points="2"
-        description="Leg een onderlegger onder de katheter"
-        index="7"
-        type="useOn"
-        item="cloth_02_folded"
-        target=""
-        buttonText="Onderlegger plaatsen"
-        extra="Leg een onderlegger onder de billen en dijen van de cliënt"
-        quiz="4"
-        messageTitle="Privacy van de cliënt"
-        messageContent="Denk tijdens het zorg verlenen altijd aan de privacy van de cliënt. Zorg ervoor dat de cliënt zich veilig en geborgen voelt door bijvoorbeeld de gordijnen dicht te trekken."
-    ></action>
-
-    <action
-        comment="Place TrahbucketPlastic under the connection point of catheter/urinebag and take the catheter off the leg."
-        points="1"
-        description="Plaats het opvangbakje op de onderlegger, onder het aansluitpunt van katheter en urineopvangzak"
-        fullDescription="Pak het plastic afvalbakje van het werkveld. Beweeg vervolgens naar de cliënt. Klik tot slot op het silhouet van het plastic afvalbakje."
-        index="8"
-        type="drop"
-        secondPlace="PatientPos"
-        item="PlasticTrashbucket"
-        posID="2"
-        extra="Leg het plastic afvalbakje op de onderlegger."
-    ></action>
-
-    <action
-        comment="9. Put on gloves."
-        points="2"
-        description="Trek handschoenen aan"
-        index="9"
-        type="use"
-        value="gloveBox"
-        extra="Trek handschoenen aan"
-        blockRequired="patient lay down"
-        blockUnlock="GlovesTakenOn"
-        blockTitle="Deze handeling is nog niet mogelijk"
-        blockMessage="Treft de juiste voorbereidingen en zorg ervoor dat de cliënt klaar is."
-        messageTitle="Gebruik handschoenen"
-        messageContent="Gebruik handschoenen eenmalig en bij steeds dezelfde cliënt. Vermijd tijdens het dragen van handschoenen contact met deurknoppen, telefoon, apparatuur, toetsenborden, enzovoort. Trek ze na gebruik direct uit. Bij het uittrekken van de handschoenen kunnen je handen besmet zijn geraakt. Was of desinfecteer daarom je handen altijd na het uittrekken van de handschoenen."
-    ></action>
-
-    <action
-        comment="Clamp off the catheter at the connection between the catheter and urinebag"
-        points="1"
-        description="Klem de katheter af"
-        index="10"
-        type="sequenceStep"
-        value="clamp katheter"
-        extra="Klem de katheter af."
-        messageTitle="Katheter afklemmen"
-        messageContent="Klem de katheter liever niet af met een kocher. Knijp de katheter dicht bij het aansluitpunt voor de urineopvangzak of maak een knik. Mocht een kocher wel nodig zijn, zorg dan dat je het ballonvulkanaal niet afklemt."
-    ></action>
-
-    <action
-        comment="Take off the urinebag (and empty it according to the rules within the institute)"
-        points="1"
-        description="Ontkoppel de urineopvangzak. Voer deze af volgens de regels van de organisatie"
-        index="11"
-        type="sequenceStep"
-        value="remove urinebag"
-        extra="Ontkoppel de urineopvangzak en voer deze af. Doe dit volgens de binnen de instelling geldende regels"
-        messageTitle="Ontkoppelen Urineopvangzak"
-        messageContent="Zorg dat een open verbinding met de blaas zo kort mogelijk duurt, in verband met infectiegevaar. Voorkom dat het aansluitpunt van de urineopvangzak in aanraking komt met de omgeving. Als dat wel gebeurt, moet het aansluitpunt worden gedesinfecteerd met alcohol 70%."
-    >
-        "</action>
-
-    <action
-        comment="Attach the bladder spool bag to the catheter."
-        points="1"
-        description="Sluit het spoelzakje aan op de katheter"
-        index="12"
-        type="sequenceStep"
-        value="attach bladder spool bag"
-        extra="Sluit het spoelzakje aan op de katheter"
-        messageTitle="Steriel spoelzakje"
-        messageContent="Omdat een spoelzakje steriel is, hoeft het aansluitpunt ervan niet gedesinfecteerd te worden. Als het aansluitpunt van het spoelzakje in aanraking komt met de omgeving, moet het aansluitpunt worden gedesinfecteerd met alcohol 70%."
-    >
-        "</action>
-
-    <action
-        comment="Open the clamp of the bladder spool bag"
-        points="1"
-        description="Open de klem van het spoelzakje"
-        index="13"
-        type="sequenceStep"
-        value="open clamp"
-        extra="Open de klem van het spoelzakje"
-    ></action>
-
-    <action
-        comment="Hold the bladder spool bag above bladder level and let the fluid run in the bladder. lightly squeeze the bladder spool bag if fluid does not run into the bladder by itself. "
-        points="1"
-        description="Houd het spoelzakje boven het niveau van de blaas en laat de spoelvloeistof inlopen. Knijp licht in het spoelzakje wanneer de vloeistof niet vanzelf inloopt"
-        index="14"
-        type="sequenceStep"
-        value="hold bladder spool bag"
-        extra="Houd het spoelzakje boven het niveau van de blaas en laat de spoelvloeistof inlopen. Knijp licht in het spoelzakje wanneer de vloeistof niet vanzelf inloopt."
-    ></action>
-
-    <action
-        comment="Let the fluid run back int the bladder spool bag. "
-        points="1"
-        description="Laat de spoelvloeistof direct teruglopen in het spoelzakje"
-        index="15"
-        type="sequenceStep"
-        value="fluid back"
-        extra="Laat de vloeistof teruglopen in het spoelzakje nadat de voorgeschreven tijd is verstreken."
-        encounter="1"
-        messageTitle="Voorgeschreven tijd"
-        messageContent="
-Direct:
-Laat de spoelvloeistof direct teruglopen in het spoelzakje.
-    
-Na afgesproken tijd:
-1. Sluit de klem van het spoelzakje en laat de vloeistof gedurende de voorgeschreven tijd in de blaas zitten.
-2. Trek handschoenen uit.
-3.Pas handhygiëne toe.
-4. Na voorgeschreven tijd: pas handhygiëne toe en trek handschoenen aan.
-5.Open de klem van het spoelzakje en laat de vloeistof teruglopen in het spoelzakje."
-    ></action>
-
-    <action
-        comment="Close the clamp of the bladder spool bag "
-        points="1"
-        description="Sluit de klem van het spoelzakje"
-        index="16"
-        type="sequenceStep"
-        value="close clamp"
-        extra="Sluit de klem van het spoelzakje"
-        messageTitle="Herhalingen"
-        messageContent="Herhaal, wanneer voorgeschreven, de voorgaande stappen met een nieuw spoelzakje. Als het systeem twee spoelzakjes bevat, kan de aansluit stap worden overgeslagen."
-    ></action>
-
-    <action
-        comment="Clamp off the catheter at the connection between the catheter and urinebag"
-        points="1"
-        description="Klem de katheter af"
-        index="17"
-        type="sequenceStep"
-        value="clamp katheter again"
-        extra="Klem de katheter af"
-    ></action>
-
-    <action
-        comment="Disconnect the bladder spool bag from the catheter (and throw away the bladder spool bag) "
-        points="1"
-        description="Ontkoppel het spoelzakje van de katheter en gooi het spoelzakje weg"
-        index="18"
-        type="sequenceStep"
-        value="remove bladder spool bag"
-        extra="Ontkoppel het spoelzakje van de katheter en gooi het spoelzakje weg"
-    ></action>
-
-    <action
-        comment="Reconnect the urine bag to the catheter"
-        points="1"
-        description="Sluit de urineopvangzak aan op de katheter"
-        index="19"
-        type="sequenceStep"
-        value="attach urinebag"
-        blockUnlock="SequenceFinished"
-        extra="Sluit de urineopvangzak aan op de katheter"
-    ></action>
-
-    <action
-        points="1"
-        description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-        index="20"
-        type="use"
-        value="WorkField"
-        blockRequired="SequenceFinished"
-        blockUnlock="AllowedToTakeOffGloves"
-        extra="Ruim de materialen op door met lege handen op het werkveld te klikken"
-        messegeTitle="Materialen opruimen"
-        MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"
-    ></action>
-
-    <Action
-        index="21"
-        description="Trek de handschoenen uit."
-        type="general"
-        item=""
-        points="1"
-        buttonText="Trek handschoenen uit"
-        action="TakeOffGlovesWithoutThrowing"
-        blockRequired="GlovesTakenOn, AllowedToTakeOffGloves" />
-
-    <action
-        comment="46. Apply hand hygiene."
-        index="22"
-        points="3"
-        description="[Pas handhygiëne]"
-        type="use"
-        value="HandCleaner"
-        extra="[Pas handhygiëne]"
-    ></action>
-
-
-    <action
-        comment="last step"
-        index="23"
-        points="1"
-        description="Teken de toedienlijst af of noteer het tijdstip, soort en hoeveelheid spoelvloeistof. Noteer tot slot je bevindingen"
-        type="use"
-        value="PaperAndPen"
-        extra="Teken de toedienlijst af of noteer het tijdstip, soort en hoeveelheid spoelvloeistof. Noteer tot slot je bevindingen"
-    ></action>
-
+  <action 
+    index="0" 
+    points="1" 
+    description="[Begroet]" 
+    type="talk" 
+    topic="Hello" 
+    extra="[het begroeten van]" 
+    optional=""/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="0" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]"/>
+  <action 
+    comment="2. Create a clean work area and put the equipment within reach" 
+    index="1" 
+    points="2" 
+    description="[maak een schoon386]" 
+    type="use" 
+    value="WorkField" 
+    extra="[maak een schoon676]" 
+    messageTitle="[je het volgende]" 
+    messageContent="[toedienlijst voorgeschreven steriele]"/>
+  <action 
+    points="2" 
+    description="[controleer het spoelzakje]" 
+    fullDescription="" 
+    index="2" 
+    type="examine" 
+    item="BladderSpoolBagPacked" 
+    expected="good" 
+    extra="[controleer het spoelzakje]" 
+    messageTitle="[je op het]" 
+    messageContent="[controleer de spoelvloeistof]"/>
+  <action 
+    points="2" 
+    description="[Controleer cliëntgegevens]" 
+    index="3" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good" 
+    extra="[controleer de cliëntgegevens176]"/>
+  <action 
+    points="2" 
+    description="[controleer de toedienlijst557]" 
+    index="3" 
+    type="examine" 
+    item="PrescriptionForm" 
+    expected="good" 
+    extra="[controleer de toedienlijst557]"/>
+  <action 
+    comment="Open bladder spool bag" 
+    points="1" 
+    description="[open de verpakking888]" 
+    index="4" 
+    type="combine" 
+    quiz="4.5" 
+    left="BladderSpoolBagPacked" 
+    right="" 
+    extra="[open de verpakking888]" 
+    blockUnlock="opened spoolbag" 
+    messageTitle="[lichaamstemperatuur]" 
+    messageContent="[breng de spoelvloeistof]"/>
+  <action 
+    points="2" 
+    description="[controleer of de979]" 
+    index="5" 
+    type="examine" 
+    item="BladderSpoolBag" 
+    expected="good" 
+    extra="[controleer of de979]"/>
+  <action 
+    comment="" 
+    points="1" 
+    description="[vraag de cliënt505]" 
+    audioHint="" 
+    index="6" 
+    type="talk" 
+    topic="LayOnBed" 
+    extra="[vraag de cliënt505]" 
+    blockUnlock="patient lay down" 
+    blockRequired="opened spoolbag" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[zorg ervoor dat354]"/>
+  <action 
+    comment="Place a pad under the buttocks and thighs of the cliënt." 
+    points="2" 
+    description="[leg een onderlegger326]" 
+    index="7" 
+    type="useOn" 
+    item="cloth_02_folded" 
+    target="" 
+    buttonText="Onderlegger plaatsen" 
+    extra="[leg een onderlegger]" 
+    quiz="4" 
+    messageTitle="[privacy van de]" 
+    messageContent="[denk tijdens het]"/>
+  <action 
+    comment="Place TrahbucketPlastic under the connection point of catheter/urinebag and take the catheter off the leg." 
+    points="1" 
+    description="[plaats het opvangbakje]" 
+    fullDescription="[pak het plastic]" 
+    index="8" 
+    type="drop" 
+    secondPlace="PatientPos" 
+    item="PlasticTrashbucket" 
+    posID="2" 
+    extra="[leg het plastic643]"/>
+  <action 
+    comment="9. Put on gloves." 
+    points="2" 
+    description="[trek handschoenen aan]" 
+    index="9" 
+    type="use" 
+    value="gloveBox" 
+    extra="[trek handschoenen aan]" 
+    blockRequired="patient lay down" 
+    blockUnlock="GlovesTakenOn" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[treft de juiste637]" 
+    messageTitle="[gebruik handschoenen]" 
+    messageContent="[gebruik handschoenen eenmalig163]"/>
+  <action 
+    comment="Clamp off the catheter at the connection between the catheter and urinebag" 
+    points="1" 
+    description="[klem de katheter932]" 
+    index="10" 
+    type="sequenceStep" 
+    value="clamp katheter" 
+    extra="[klem de katheter29]" 
+    messageTitle="[katheter afklemmen]" 
+    messageContent="[klem de katheter522]"/>
+  <action 
+    comment="Take off the urinebag (and empty it according to the rules within the institute)" 
+    description="[ontkoppel de urineopvangzak]" 
+    index="11" 
+    points="1" 
+    type="sequenceStep" 
+    value="remove urinebag" 
+    extra="[ontkoppel de urineopvangzak12]" 
+    messageTitle="[ontkoppelen urineopvangzak]" 
+    messageContent="[zorg dat een]">
+    </action>
+  <action 
+    comment="Attach the bladder spool bag to the catheter." 
+    points="1" 
+    description="[sluit het spoelzakje]" 
+    index="12" 
+    type="sequenceStep" 
+    value="attach bladder spool bag" 
+    extra="[sluit het spoelzakje]" 
+    messageTitle="[steriel spoelzakje]" 
+    messageContent="[omdat een spoelzakje]">
+    </action>
+  <action 
+    comment="Open the clamp of the bladder spool bag" 
+    points="1" 
+    description="[open de klem]" 
+    index="13" 
+    type="sequenceStep" 
+    value="open clamp" 
+    extra="[open de klem]"/>
+  <action 
+    comment="Hold the bladder spool bag above bladder level and let the fluid run in the bladder. lightly squeeze the bladder spool bag if fluid does not run into the bladder by itself. " 
+    points="1" 
+    description="[houd het spoelzakje]" 
+    index="14" 
+    type="sequenceStep" 
+    value="hold bladder spool bag" 
+    extra="[houd het spoelzakje122]"/>
+  <action 
+    comment="Let the fluid run back int the bladder spool bag. " 
+    points="1" 
+    description="[laat de spoelvloeistof]" 
+    index="15" 
+    type="sequenceStep" 
+    value="fluid back" 
+    extra="[laat de vloeistof]" 
+    encounter="1" 
+    messageTitle="[voorgeschreven tijd]" 
+    messageContent="[direct:laat de spoelvloeistof]"/>
+  <action 
+    comment="Close the clamp of the bladder spool bag " 
+    points="1" 
+    description="[sluit de klem]" 
+    index="16" 
+    type="sequenceStep" 
+    value="close clamp" 
+    extra="[sluit de klem]" 
+    messageTitle="[herhalingen]" 
+    messageContent="[herhaal wanneer voorgeschreven]"/>
+  <action 
+    comment="Clamp off the catheter at the connection between the catheter and urinebag" 
+    points="1" 
+    description="[klem de katheter932]" 
+    index="17" 
+    type="sequenceStep" 
+    value="clamp katheter again" 
+    extra="[klem de katheter932]"/>
+  <action 
+    comment="Disconnect the bladder spool bag from the catheter (and throw away the bladder spool bag) " 
+    points="1" 
+    description="[ontkoppel het spoelzakje]" 
+    index="18" 
+    type="sequenceStep" 
+    value="remove bladder spool bag" 
+    extra="[ontkoppel het spoelzakje]"/>
+  <action 
+    comment="Reconnect the urine bag to the catheter" 
+    points="1" 
+    description="[sluit de urineopvangzak]" 
+    index="19" 
+    type="sequenceStep" 
+    value="attach urinebag" 
+    blockUnlock="SequenceFinished" 
+    extra="[sluit de urineopvangzak]"/>
+  <action 
+    points="1" 
+    description="[ruim de materialen]" 
+    index="20" 
+    type="use" 
+    value="WorkField" 
+    blockRequired="SequenceFinished" 
+    blockUnlock="AllowedToTakeOffGloves" 
+    extra="[ruim de materialen]" 
+    messegeTitle="Materialen opruimen" 
+    messageContent="[ruim de materialen527]"/>
+  <Action 
+    index="21" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="GlovesTakenOn, AllowedToTakeOffGloves"/>
+  <action 
+    comment="46. Apply hand hygiene." 
+    index="22" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]"/>
+  <action 
+    comment="last step" 
+    index="23" 
+    points="1" 
+    description="[teken de toedienlijst556]" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[teken de toedienlijst556]"/>
 </ActionList>

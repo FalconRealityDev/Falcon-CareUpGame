@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="1" 
+      description="[breng handalcohol aan85]" 
+      type="use" 
+      extra="[breng handalcohol aan826]" 
+      value="AlcoholHandCleaner" 
+      messageTitle="[sg_Handreiniging]" 
+      messageContent="[handreiniging met water]"/>
+  <action 
+      index="1" 
+      points="3" 
+      description="[wrijf de handpalmen105]" 
+      type="sequenceStep" 
+      extra="[wrijf de handpalmen]" 
+      value="rub hand palms alcohol"/>
+  <action 
+      index="2" 
+      points="3" 
+      description="[wrijf de rechter550]" 
+      type="sequenceStep" 
+      extra="[wrijf de rechter68]" 
+      value="rub hand palms back alcohol"/>
+  <action 
+      index="3" 
+      points="3" 
+      description="[wrijf de handpalmen127]" 
+      type="sequenceStep" 
+      extra="[wrijf de handpalmen870]" 
+      value="rub hand palms entwined alcohol"/>
+  <action 
+      index="4" 
+      points="3" 
+      description="[wrijf met ineen478]" 
+      type="sequenceStep" 
+      extra="[wrijf met ineen]" 
+      value="rub hands crocheted alcohol"/>
+  <action 
+      index="5" 
+      points="3" 
+      description="[draai met de326]" 
+      type="sequenceStep" 
+      extra="[draai met de]" 
+      value="rub hand palms thumbs alcohol"/>
+  <action 
+      index="6" 
+      points="3" 
+      description="[wrijf en draai616]" 
+      type="sequenceStep" 
+      extra="[wrijf en draai]" 
+      value="rub hand palms pinched together alcohol"/>
+  <action 
+      index="7" 
+      points="3" 
+      description="[reinig de linkerpols]" 
+      type="sequenceStep" 
+      extra="[reinig de linkerpols999]" 
+      value="cleaning wrists" 
+      messageTitle="[contact met cliënten]" 
+      messageContent="[handreiniging óf handdesinfectie99]"/>
+  <action 
+      comment="last step" 
+      index="8" 
+      points="1" 
+      description="[sluit de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[sluit de handeling362]"/>
+</ActionList>

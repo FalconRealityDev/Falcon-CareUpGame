@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Xml;
+using CareUp.Localize;
 
 /// <summary>
 /// Player can perform Talk action to this object.
@@ -215,7 +216,8 @@ public virtual void Talk(string topic = "", string audio = "")
         }
 
         // for leave option
-        optionsList.Add(new SelectDialogue.DialogueOption("Verlaten", DialoqueTalk, "CM_Leave", ""));
+        optionsList.Add(new SelectDialogue.DialogueOption(("[Verlaten]"), 
+            DialoqueTalk, "CM_Leave", ""));
     }
 
     /// <summary>

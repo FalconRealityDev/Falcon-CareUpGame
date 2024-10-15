@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: asset-793837318
   m_Data:
     m_SerializedData: []
-  m_GUID: 5e3be752de37c9b47aa0e7695f5a5212
+  m_GUID: c24bee9b318a2654bb0022aa593ff3ea
   m_SerializeEntries:
   - m_GUID: 6c200d105efbec04ab1f339524db08af
     m_Address: assets/resources/animations/jaw_idle_m1_b.anim

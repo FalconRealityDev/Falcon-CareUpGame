@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      description="[praat met de]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Helaas dit is een verkeerde actie. Volg de tips om verder te gaan."/>
+  <action 
+      description="[gefeliciteerd!]" 
+      fullDescription="" 
+      audioHint="" 
+      index="2" 
+      type="use" 
+      value="__tutorialEnd"/>
+</ActionList>

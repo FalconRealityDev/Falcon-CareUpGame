@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-
+using CareUp.Localize;
 /// <summary>
 /// Instance of dialogue with up to 4 options.
 /// </summary>
@@ -92,8 +92,19 @@ public class SelectDialogue : MonoBehaviour
         }
         if (prevStepInfo != null)
         {
-            prevStepInfoElements.transform.Find("Buttons/b0/Text").GetComponent<Text>().text = prevStepInfo.text;
+            //@
+            prevStepInfoElements.transform.Find("Buttons/b0/Text").GetComponent<Text>().text = 
+                LocalizationManager.GetValueIfKey(prevStepInfo.text);
             prevStepInfoButton.gameObject.SetActive(true);
+
+            InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+            if (inGameLocalEditTool != null)
+            {
+                //!
+                inGameLocalEditTool.AddUILocalizationComponentToGO(
+                    prevStepInfoElements.transform.Find("Buttons/b0/Text").gameObject,
+                    prevStepInfo.text);
+            }
         }
         else
             prevStepInfoButton.gameObject.SetActive(false);
@@ -123,6 +134,8 @@ public class SelectDialogue : MonoBehaviour
             return;
         }
 
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+
         for (int i = 0; i < 4; i++)
         {
             if (i < options.Count)
@@ -139,8 +152,18 @@ public class SelectDialogue : MonoBehaviour
                             cheatSimbol = "@";
                     }
                 }
+                //@
+                sqButtons[i].transform.Find("Text").GetComponent<Text>().text = cheatSimbol + 
+                    LocalizationManager.GetValueIfKey(options[i].text);
 
-                sqButtons[i].transform.Find("Text").GetComponent<Text>().text = cheatSimbol + options[i].text;
+                if (inGameLocalEditTool != null)
+                {
+                    //!
+                    inGameLocalEditTool.AddUILocalizationComponentToGO(
+                        sqButtons[i].transform.Find("Text").gameObject,
+                        options[i].text);
+                }
+
                 if (gameUI.AllowAutoPlay(false))
                     if (options[i].attribute != "" && options[i].attribute != "CM_Leave")
                     {

@@ -1,50 +1,101 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
-
-	<step>
-		<option text="Koppel de zuurstofbril met behulp van de zuurstoftoevoerslang aan het uitstroompunt van de zuurstofcilinder" animation="ConnectTube"/>
-		<option text="Koppel de zuurstofbril met behulp van de zuurstoftoevoerslang aan het instroompunt van de zuurstofcilinder" animation=""/>
-		<option text="Controleer de doorgankelijkheid door de flowmeter open te draaien" animation=""/>
-		<option text="Stel de flowmeter of de regelknop in op de voorgeschreven hoeveelheid zuurstof" animation=""/>
-	</step>
-
-	<step>
-		<option text="Controleer de doorgankelijkheid door de flowmeter open te draaien" animation="CheckFlow"/>
-		<option text="Koppel de zuurstofbril met behulp van de zuurstoftoevoerslang aan het uitstroompunt van de zuurstofcilinder" animation=""/>
-		<option text="Stel de flowmeter of de regelknop in op de voorgeschreven hoeveelheid zuurstof" animation=""/>
-		<option text="Plaats het neusstukje in de neusgaten" animation=""/>
-	</step>
-	<step>
-		<option text="Stel de flowmeter of de regelknop in op de voorgeschreven hoeveelheid zuurstof" animation="SetValue"/>
-		<option text="Controleer de doorgankelijkheid door de flowmeter open te draaien" animation=""/>
-		<option text="Zet de zuurstoftoevoerslang in overleg met de cliënt met een stuk pleister en veiligheidsspeld vast op de kleding" animation=""/>
-		<option text="Plaats het neusstukje in de neusgaten" animation=""/>
-	</step>
-	<step>
-		<option text="Plaats het neusstukje in de neusgaten" animation="InsertProngs"/>
-		<option text="Stel de flowmeter of de regelknop in op de voorgeschreven hoeveelheid zuurstof" animation=""/>
-		<option text="Voer beide slangen van de zuurstofbril over het hoofd of leid beide slangen achter de oren langs naar de borst" animation=""/>
-		<option text="Verklein de lus door het ringetje aan te trekken" animation=""/>
-	</step>
-	<step>
-		<option text="Voer beide slangen van de zuurstofbril over het hoofd of leid beide slangen achter de oren langs naar de borst" animation="PassTubes"/>
-		<option text="Plaats het neusstukje in de neusgaten" animation=""/>
-		<option text="Controleer de doorgankelijkheid door de flowmeter open te draaien" animation=""/>
-		<option text="Verklein de lus door het ringetje aan te trekken" animation=""/>
-	</step>
-	<step>
-		<option text="Verklein de lus door het ringetje aan te trekken" animation="AdjustLoop"/>
-		<option text="Voer beide slangen van de zuurstofbril over het hoofd of leid beide slangen achter de oren langs naar de borst" animation=""/>
-		<option text="Plaats het neusstukje in de neusgaten" animation=""/>
-		<option text="Zet de zuurstoftoevoerslang in overleg met de cliënt met een stuk pleister en veiligheidsspeld vast op de kleding" animation=""/>
-	</step>
-	<step>
-		<option text="Zet de zuurstoftoevoerslang in overleg met de cliënt met een stuk pleister en veiligheidsspeld vast op de kleding" animation="ConnectToClothes"/>
-		<option text="Stel de flowmeter of de regelknop in op de voorgeschreven hoeveelheid zuurstof" animation=""/>
-		<option text="Voer beide slangen van de zuurstofbril over het hoofd of leid beide slangen achter de oren langs naar de borst" animation=""/>
-		<option text="Plaats het neusstukje in de neusgaten" animation=""/>
-	</step>
-
-
-
+  <step>
+    <option 
+      text="[koppel de zuurstofbril]" 
+      animation="ConnectTube"/>
+    <option 
+      text="[koppel de zuurstofbril786]" 
+      animation=""/>
+    <option 
+      text="[controleer de doorgankelijkheid625]" 
+      animation=""/>
+    <option 
+      text="[stel de flowmeter146]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[controleer de doorgankelijkheid625]" 
+      animation="CheckFlow"/>
+    <option 
+      text="[koppel de zuurstofbril]" 
+      animation=""/>
+    <option 
+      text="[stel de flowmeter146]" 
+      animation=""/>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[stel de flowmeter146]" 
+      animation="SetValue"/>
+    <option 
+      text="[controleer de doorgankelijkheid625]" 
+      animation=""/>
+    <option 
+      text="[zet de zuurstoftoevoerslang687]" 
+      animation=""/>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation="InsertProngs"/>
+    <option 
+      text="[stel de flowmeter146]" 
+      animation=""/>
+    <option 
+      text="[voer beide slangen]" 
+      animation=""/>
+    <option 
+      text="[verklein de lus]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[voer beide slangen]" 
+      animation="PassTubes"/>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation=""/>
+    <option 
+      text="[controleer de doorgankelijkheid625]" 
+      animation=""/>
+    <option 
+      text="[verklein de lus]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[verklein de lus]" 
+      animation="AdjustLoop"/>
+    <option 
+      text="[voer beide slangen]" 
+      animation=""/>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation=""/>
+    <option 
+      text="[zet de zuurstoftoevoerslang687]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[zet de zuurstoftoevoerslang687]" 
+      animation="ConnectToClothes"/>
+    <option 
+      text="[stel de flowmeter146]" 
+      animation=""/>
+    <option 
+      text="[voer beide slangen]" 
+      animation=""/>
+    <option 
+      text="[plaats het neusstukje330]" 
+      animation=""/>
+  </step>
 </AnimationSequence>

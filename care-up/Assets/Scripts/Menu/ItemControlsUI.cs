@@ -231,6 +231,7 @@ public class ItemControlsUI : MonoBehaviour
             }
             else
             {
+
                 transform.position = Input.mousePosition + new Vector3(cursorOffset.x, cursorOffset.y);
                 gameObject.SetActive(true);
 
@@ -257,7 +258,6 @@ public class ItemControlsUI : MonoBehaviour
                         descrGroup.transform.position += new Vector3(difference, 0.0f, 0.0f);
                     }
                 }
-
                 useOnNTButton.transform.GetChild(0).GetComponent<Text>().text =
                     (actionManager.CompareUseOnInfo(initedObject.name, "") ?
                     actionManager.CurrentButtonText(initedObject.name) : useOnNTtext);
@@ -426,8 +426,9 @@ public class ItemControlsUI : MonoBehaviour
             if (initedObject != null)
             {
                 initedObject.GetComponent<PersonObject>().CreateSelectionDialogue();
-                if (GameObject.Find("ItemDescription") != null)
-                    GameObject.Find("ItemDescription").SetActive(false);
+                GameObject _itemDescription = GameObject.Find("ItemDescription");
+                if (_itemDescription != null)
+                    _itemDescription.SetActive(false);
             }
         }
 

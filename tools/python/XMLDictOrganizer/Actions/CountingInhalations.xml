@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="3">
+  <action 
+      description="[step 1: ask]" 
+      audioHint="CountingInhalations/Step 1" 
+      index="0" 
+      type="talk" 
+      topic="ComfortablePosition"/>
+  <action 
+      description="[step 2: pick]" 
+      audioHint="CountingInhalations/Step 2" 
+      index="1" 
+      type="pickUp" 
+      item="Watch"/>
+  <action 
+      description="[step 3: write]" 
+      audioHint="CountingInhalations/Step 3" 
+      index="2" 
+      type="use" 
+      value="PaperAndPen"/>
+  <action 
+      description="[step 4: tell]" 
+      audioHint="CountingInhalations/Step 4" 
+      index="3" 
+      type="talk" 
+      topic="AllGood"/>
+</ActionList>

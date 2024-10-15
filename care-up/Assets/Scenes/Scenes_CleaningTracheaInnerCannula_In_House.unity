@@ -138,6 +138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplitedGauze
       objectReference: {fileID: 0}
+    - target: {fileID: 5199344253355690057, guid: 5d8798b8348ecc84489a48e640d35db0,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5741369827570839457, guid: 5d8798b8348ecc84489a48e640d35db0,
         type: 3}
       propertyPath: m_RootOrder
@@ -248,6 +253,10 @@ PrefabInstance:
     - target: {fileID: 1182731186734002, guid: 06b1feb50f4594300bfe26cc6d468fad, type: 3}
       propertyPath: m_Name
       value: cloth_02_inHands
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182731186734002, guid: 06b1feb50f4594300bfe26cc6d468fad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185387047266794, guid: 06b1feb50f4594300bfe26cc6d468fad, type: 3}
       propertyPath: m_RootOrder
@@ -993,6 +1002,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 2349094299736989687, guid: 694802e29534e1041915a656fb2f7f9c,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2815613625439008798, guid: 694802e29534e1041915a656fb2f7f9c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1052,6 +1066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CannulaTwoParts_Separate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195516142097195684, guid: 694802e29534e1041915a656fb2f7f9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694802e29534e1041915a656fb2f7f9c, type: 3}
@@ -1221,6 +1240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cannula_Packed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241791133606170699, guid: fae24a01bcdb43042a1c898f184dbb67,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannulapacked]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae24a01bcdb43042a1c898f184dbb67, type: 3}
@@ -1429,6 +1453,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
 --- !u!4 &399394224 stripped
@@ -1503,6 +1532,11 @@ PrefabInstance:
     - target: {fileID: 4024304949179862, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114509813824253062, guid: 50dcd8b790fb24ee4bc79e0604137a0f,
+        type: 3}
+      propertyPath: description
+      value: '[i_handschoenen]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}
@@ -1584,6 +1618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 13.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924792938560840319, guid: 8f4ec745312c2de43969ed24bc3fefb1,
+        type: 3}
+      propertyPath: description
+      value: '[i_wattenstokjes]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4ec745312c2de43969ed24bc3fefb1, type: 3}
@@ -2116,6 +2155,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8898260015176445469, guid: 2c9af6b6285932948ab3f6062ac57c73,
+        type: 3}
+      propertyPath: description
+      value: '[i_wattenstokje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c9af6b6285932948ab3f6062ac57c73, type: 3}
 --- !u!4 &657935284 stripped
@@ -2444,6 +2488,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 129834795013707222, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2108381353730885433, guid: 08f9d82480ff5284da043ccd59c5ee63,
         type: 3}
       propertyPath: m_RootOrder
@@ -2503,6 +2552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TrashBucket
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111590038025226922, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_afvalbakje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9d82480ff5284da043ccd59c5ee63, type: 3}
@@ -2598,6 +2652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
@@ -2780,6 +2839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
         type: 3}
+      propertyPath: description
+      value: '[i_gaasjes]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
+        type: 3}
       propertyPath: PrefabToAppear
       value: Cloth2
       objectReference: {fileID: 0}
@@ -2796,6 +2860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
       objectReference: {fileID: 0}
     - target: {fileID: 5962217624345325211, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
@@ -4046,7 +4115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: Client
+  description: '[i_client]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4699,6 +4768,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 9c6d23be308844a469ae5f48018dcc8a,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
@@ -5825,6 +5899,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 336679082198360413, guid: f505746c4ed338e4fa350d1d0276734e,
+        type: 3}
+      propertyPath: description
+      value: '[i_-]'
+      objectReference: {fileID: 0}
     - target: {fileID: 6738934223356835729, guid: f505746c4ed338e4fa350d1d0276734e,
         type: 3}
       propertyPath: m_Name
@@ -6394,6 +6473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862513804072970853, guid: ef48cede478e6c848b454b9b313bb950,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef48cede478e6c848b454b9b313bb950, type: 3}
@@ -7286,6 +7370,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
 --- !u!4 &1717338715 stripped
@@ -7581,6 +7670,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 17.607853
       objectReference: {fileID: 0}
+    - target: {fileID: 8702928392773898609, guid: 7e5b2d0953543ed408c08224e9f5bd69,
+        type: 3}
+      propertyPath: description
+      value: '[i_flashlight]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5b2d0953543ed408c08224e9f5bd69, type: 3}
 --- !u!4 &1844103816 stripped
@@ -7627,6 +7721,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
+      objectReference: {fileID: 0}
     - target: {fileID: 6139730286273907058, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
       propertyPath: m_RootOrder
@@ -7706,6 +7805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
       objectReference: {fileID: 0}
     - target: {fileID: 5962217624345325211, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
@@ -7849,6 +7953,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -8213,6 +8322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StomaPlaster
       objectReference: {fileID: 0}
+    - target: {fileID: 5454049722918841628, guid: 8f15f28632648e444bca5beabfa93651,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomaplaster]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5492724887616768753, guid: 8f15f28632648e444bca5beabfa93651,
         type: 3}
       propertyPath: m_RootOrder
@@ -8515,6 +8629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
       objectReference: {fileID: 0}
     - target: {fileID: 6139730286273907058, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
@@ -9813,6 +9932,11 @@ PrefabInstance:
       propertyPath: hidenObjects.Array.data[1]
       value: 
       objectReference: {fileID: 818204179}
+    - target: {fileID: 129834795013707222, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2108381353730885433, guid: 08f9d82480ff5284da043ccd59c5ee63,
         type: 3}
       propertyPath: m_RootOrder
@@ -9878,6 +10002,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2111590038025226922, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_afvalbakje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9d82480ff5284da043ccd59c5ee63, type: 3}
 --- !u!1001 &5199344254670188662
@@ -9891,6 +10020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SplitedGauze
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199344253355690057, guid: 5d8798b8348ecc84489a48e640d35db0,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 5741369827570839457, guid: 5d8798b8348ecc84489a48e640d35db0,
         type: 3}
@@ -10036,6 +10170,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008516184}
     m_Modifications:
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5962217624345325211, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
       propertyPath: m_Enabled

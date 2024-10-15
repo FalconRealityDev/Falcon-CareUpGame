@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quiz>
+  <step>
+    <question 
+      text="[de arts schrijft]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[de arts is]"/>
+    </question>
+    <question 
+      text="[de behandelingen voor]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[de behandelingen voor720]"/>
+    </question>
+    <question 
+      text="[een van de]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[het medicijn kan]"/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[wat ontstaat er]" 
+      answer="2">
+      <answer 
+      text="[vaatvernauwing]" 
+      descr=""/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[om verantwoord te]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[in principe geldt]"/>
+    </question>
+    <question 
+      text="[het roken van]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[dit komt door]"/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[bij een hyperglycemie]" 
+      answer="3">
+      <answer 
+      text="[7 of 8]" 
+      descr=""/>
+      <answer 
+      text="[11 of 12]" 
+      descr=""/>
+      <answer 
+      text="[9 of 10]" 
+      descr="[de bloedglucosewaarde is]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[injecteren in afwijkend]"/>
+    </question>
+    <question 
+      text="[middels de intramusculaire]" 
+      answer="2">
+      <answer 
+      text="[venen]" 
+      descr=""/>
+      <answer 
+      text="[capillairen]" 
+      descr=""/>
+      <answer 
+      text="[arterien]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[parenterale toediening betekent]" 
+      answer="3">
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[een injectie is]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[welk type diabetes]" 
+      answer="4">
+      <answer 
+      text="[type 1 ongeveer]" 
+      descr=""/>
+      <answer 
+      text="[type 1 ongeveer199]" 
+      descr=""/>
+      <answer 
+      text="[type 2 ongeveer]" 
+      descr=""/>
+      <answer 
+      text="[type 2 ongeveer36]" 
+      descr="[maar 10% van]"/>
+    </question>
+    <question 
+      text="[wanneer je een]" 
+      answer="2">
+      <answer 
+      text="[intramusculair injecteren]" 
+      descr=""/>
+      <answer 
+      text="[subcutaan injecteren]" 
+      descr=""/>
+      <answer 
+      text="[intracutaan injecteren]" 
+      descr=""/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[desinfecteer de huid830]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[desinfecteer altijd de805]"/>
+    </question>
+    <question 
+      text="[bij een hypoglycemie]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[hoog]" 
+      descr=""/>
+      <answer 
+      text="[laag]" 
+      descr="[de bloedglucosewaarde is744]"/>
+    </question>
+    <question 
+      text="[bij een subcutane]" 
+      answer="2">
+      <answer 
+      text="[1]" 
+      descr=""/>
+      <answer 
+      text="[2]" 
+      descr=""/>
+      <answer 
+      text="[3]" 
+      descr=""/>
+      <answer 
+      text="[4]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[in de regel]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[de opperhuid is]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[01 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[10 millimeter]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[insuline wordt in]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[op welke wijze]" 
+      answer="1">
+      <answer 
+      text="[subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intracutaan]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair]" 
+      descr=""/>
+    </question>
+  </step>
+  <encounter>
+    <question 
+      text="[wat doe je175]" 
+      answer="2">
+      <answer 
+      text="[neem een nieuwe]"/>
+      <answer 
+      text="[contact opnemen met]" 
+      descr="[te ondiep injecteren]"/>
+      <answer 
+      text="[nogmaals injecteren maar]"/>
+    </question>
+  </encounter>
+</quiz>

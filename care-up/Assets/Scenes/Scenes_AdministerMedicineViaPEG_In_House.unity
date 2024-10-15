@@ -134,6 +134,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 2495868539029997500, guid: e4181f3cd1a12104abb22afae9d58365,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495868539029997502, guid: e4181f3cd1a12104abb22afae9d58365,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2677849896795086937, guid: e4181f3cd1a12104abb22afae9d58365,
         type: 3}
       propertyPath: m_RootOrder
@@ -209,6 +219,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 8318984619941594803, guid: 41b03d0c0ae3062489956f1dfa9639f2,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8428558252034482522, guid: 41b03d0c0ae3062489956f1dfa9639f2,
         type: 3}
       propertyPath: m_RootOrder
@@ -650,6 +665,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 9c6d23be308844a469ae5f48018dcc8a,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
@@ -1576,6 +1596,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114319318937201700, guid: 669e3cb98b779914b8dc8e21afcc5e98,
+        type: 3}
+      propertyPath: description
+      value: '[i_band aid]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669e3cb98b779914b8dc8e21afcc5e98, type: 3}
 --- !u!4 &285620328 stripped
@@ -1797,10 +1822,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 272272026, guid: 7b135c810ea2c1a478b92cb6ce3559f5, type: 3}
+      propertyPath: description
+      value: '[i_pack]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5184331172433544753, guid: 7b135c810ea2c1a478b92cb6ce3559f5,
         type: 3}
       propertyPath: m_Name
       value: FoodPackBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418701622249515528, guid: 7b135c810ea2c1a478b92cb6ce3559f5,
+        type: 3}
+      propertyPath: description
+      value: '[i_pack]'
       objectReference: {fileID: 0}
     - target: {fileID: 5528627139077905547, guid: 7b135c810ea2c1a478b92cb6ce3559f5,
         type: 3}
@@ -1919,6 +1953,11 @@ PrefabInstance:
     - target: {fileID: 4861506520532660, guid: fc020741f84ddc04e99c39a065964f92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114774444770972902, guid: fc020741f84ddc04e99c39a065964f92,
+        type: 3}
+      propertyPath: description
+      value: '[i_50ml spuit]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc020741f84ddc04e99c39a065964f92, type: 3}
@@ -2296,6 +2335,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6173829292218397262, guid: ebb02a52c6f88ba48baa1fdee0da8137,
+        type: 3}
+      propertyPath: description
+      value: '[i_paracetamol]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb02a52c6f88ba48baa1fdee0da8137, type: 3}
 --- !u!4 &496925099 stripped
@@ -2632,6 +2676,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6204723176166589954, guid: c334ddcd1069b27408216b0c8a98a07f,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c334ddcd1069b27408216b0c8a98a07f, type: 3}
 --- !u!4 &580887786 stripped
@@ -2805,6 +2854,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 114675585404433850, guid: 285db639e8d6da242a022498741b6335,
+        type: 3}
+      propertyPath: description
+      value: '[i_spuit]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 285db639e8d6da242a022498741b6335, type: 3}
 --- !u!4 &665720151 stripped
@@ -2826,6 +2880,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 8145518317297511916, guid: 91e418d043ec65648a9652700cd1746c,
+        type: 3}
+      propertyPath: description
+      value: '[i_spuit]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8538834504746912259, guid: 91e418d043ec65648a9652700cd1746c,
         type: 3}
       propertyPath: m_RootOrder
@@ -3369,6 +3428,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2818863513845471938, guid: 2e126c0b7e8c1b84dbd037dd6f6c73c6,
+        type: 3}
+      propertyPath: description
+      value: '[i_voedingsslang]'
+      objectReference: {fileID: 0}
     - target: {fileID: 3161514567450535825, guid: 2e126c0b7e8c1b84dbd037dd6f6c73c6,
         type: 3}
       propertyPath: m_Name
@@ -3458,6 +3522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
@@ -3721,6 +3790,11 @@ PrefabInstance:
     - target: {fileID: 4072285504284212, guid: 37598b2fc395ed242b3226a942abf5eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.981
+      objectReference: {fileID: 0}
+    - target: {fileID: 114131229700381600, guid: 37598b2fc395ed242b3226a942abf5eb,
+        type: 3}
+      propertyPath: description
+      value: '[i_plastic afvalbakje008]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37598b2fc395ed242b3226a942abf5eb, type: 3}
@@ -4189,6 +4263,11 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6173829292218397262, guid: ebb02a52c6f88ba48baa1fdee0da8137,
+        type: 3}
+      propertyPath: description
+      value: '[i_paracetamol]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb02a52c6f88ba48baa1fdee0da8137, type: 3}
 --- !u!1 &841456097 stripped
@@ -4308,6 +4387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 2.8869622e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114774444770972902, guid: fc020741f84ddc04e99c39a065964f92,
+        type: 3}
+      propertyPath: description
+      value: '[i_50ml spuit]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc020741f84ddc04e99c39a065964f92, type: 3}
@@ -4714,6 +4798,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 2096202395, guid: 5bdeb7c25ec4f3244b0e906fb5f572f9, type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 827813192532441347, guid: 5bdeb7c25ec4f3244b0e906fb5f572f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -4789,6 +4877,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 8129740423883524983, guid: 6373a0c800bb72d49a1de7c9a06e9274,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8599652809652792474, guid: 6373a0c800bb72d49a1de7c9a06e9274,
         type: 3}
       propertyPath: m_RootOrder
@@ -5001,6 +5094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114131229700381600, guid: 37598b2fc395ed242b3226a942abf5eb,
+        type: 3}
+      propertyPath: description
+      value: '[i_plastic afvalbakje008]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37598b2fc395ed242b3226a942abf5eb, type: 3}
@@ -5240,6 +5338,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114394592873869098, guid: 8a3fee1bf46627a489f518ef7c5741e0,
+        type: 3}
+      propertyPath: description
+      value: '[i_nat gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3fee1bf46627a489f518ef7c5741e0, type: 3}
 --- !u!4 &1099597121 stripped
@@ -5330,6 +5433,11 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6173829292218397262, guid: ebb02a52c6f88ba48baa1fdee0da8137,
+        type: 3}
+      propertyPath: description
+      value: '[i_paracetamol]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb02a52c6f88ba48baa1fdee0da8137, type: 3}
 --- !u!1 &1155549879 stripped
@@ -5399,6 +5507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769132500398954973, guid: 79ab2b6052c0afd40b9e3b4a7dafbc75,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijn zakje]'
       objectReference: {fileID: 0}
     - target: {fileID: 3074980562286011522, guid: 79ab2b6052c0afd40b9e3b4a7dafbc75,
         type: 3}
@@ -5536,6 +5649,11 @@ PrefabInstance:
     - target: {fileID: 4000012333305106, guid: dae637b65e08a584288e47fe7d7af6c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114812298080428596, guid: dae637b65e08a584288e47fe7d7af6c2,
+        type: 3}
+      propertyPath: description
+      value: '[i_spuit]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae637b65e08a584288e47fe7d7af6c2, type: 3}
@@ -5686,6 +5804,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 1942961090060453715, guid: 5d25ff28670fd7449b9c16431fcef312,
+        type: 3}
+      propertyPath: description
+      value: '[i_glas water]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5542118874749500453, guid: 5d25ff28670fd7449b9c16431fcef312,
         type: 3}
       propertyPath: m_Name
@@ -5766,6 +5889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: syringe_50mm_plunger_separate
       objectReference: {fileID: 0}
+    - target: {fileID: 8666102075510962433, guid: 837b9726181bad4419a8b5bd00559983,
+        type: 3}
+      propertyPath: description
+      value: '[i_plunger]'
+      objectReference: {fileID: 0}
     - target: {fileID: 9209461639729274604, guid: 837b9726181bad4419a8b5bd00559983,
         type: 3}
       propertyPath: m_RootOrder
@@ -5836,6 +5964,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8129740423883524983, guid: 6373a0c800bb72d49a1de7c9a06e9274,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8599652809652792474, guid: 6373a0c800bb72d49a1de7c9a06e9274,
         type: 3}
       propertyPath: m_RootOrder
@@ -5915,6 +6048,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 580616141}
     m_Modifications:
+    - target: {fileID: 2565415417052847064, guid: 800dcf71d74545140a79e33ae4836691,
+        type: 3}
+      propertyPath: description
+      value: '[i_cap]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2598742769455578173, guid: 800dcf71d74545140a79e33ae4836691,
         type: 3}
       propertyPath: m_RootOrder
@@ -6256,6 +6394,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.881004
       objectReference: {fileID: 0}
+    - target: {fileID: 114509813824253062, guid: 50dcd8b790fb24ee4bc79e0604137a0f,
+        type: 3}
+      propertyPath: description
+      value: '[i_handschoenen]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}
 --- !u!4 &1560260674 stripped
@@ -6336,6 +6479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759636820522993635, guid: d2da1d28a1b66d54284dcd3f46e4fd60,
+        type: 3}
+      propertyPath: description
+      value: '[i_voedingsslang]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2da1d28a1b66d54284dcd3f46e4fd60, type: 3}
@@ -6610,6 +6758,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.82
       objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
 --- !u!4 &1734659297 stripped
@@ -6673,6 +6826,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114843539449165688, guid: 25b251df979c21640bf9bc138c8da7f1,
+        type: 3}
+      propertyPath: description
+      value: '[i_50ml spuit]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b251df979c21640bf9bc138c8da7f1, type: 3}
 --- !u!4 &1750158699 stripped
@@ -6723,6 +6881,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: m1_B_AdministerViaPEG
+      objectReference: {fileID: 0}
+    - target: {fileID: 655700706953468137, guid: 6aef7a3a0dd413f44beb21c89bbbc383,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 655700706953468141, guid: 6aef7a3a0dd413f44beb21c89bbbc383,
+        type: 3}
+      propertyPath: description
+      value: "[i_cli\xEBnt859]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 655700707911047380, guid: 6aef7a3a0dd413f44beb21c89bbbc383,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
       objectReference: {fileID: 0}
     - target: {fileID: 1050250400958152458, guid: 6aef7a3a0dd413f44beb21c89bbbc383,
         type: 3}
@@ -7130,6 +7303,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 114675585404433850, guid: 285db639e8d6da242a022498741b6335,
+        type: 3}
+      propertyPath: description
+      value: '[i_spuit]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 285db639e8d6da242a022498741b6335, type: 3}
 --- !u!4 &1910867782 stripped
@@ -7458,6 +7636,11 @@ PrefabInstance:
     - target: {fileID: 4121260112949130, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
@@ -7843,6 +8026,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 2495868539029997500, guid: e4181f3cd1a12104abb22afae9d58365,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495868539029997502, guid: e4181f3cd1a12104abb22afae9d58365,
+        type: 3}
+      propertyPath: description
+      value: '[i_medicijnzakje]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2677849896795086937, guid: e4181f3cd1a12104abb22afae9d58365,
         type: 3}
       propertyPath: m_RootOrder
@@ -7929,6 +8122,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1186954562}
     m_Modifications:
+    - target: {fileID: 8129740423883524983, guid: 6373a0c800bb72d49a1de7c9a06e9274,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8599652809652792474, guid: 6373a0c800bb72d49a1de7c9a06e9274,
         type: 3}
       propertyPath: m_RootOrder
@@ -8003,10 +8201,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1942961090060453715, guid: 5d25ff28670fd7449b9c16431fcef312,
+        type: 3}
+      propertyPath: description
+      value: '[i_glas water]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5542118874749500453, guid: 5d25ff28670fd7449b9c16431fcef312,
         type: 3}
       propertyPath: m_Name
       value: GlassOfWater_without_tube
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542118874749500453, guid: 5d25ff28670fd7449b9c16431fcef312,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5547865799956750769, guid: 5d25ff28670fd7449b9c16431fcef312,
         type: 3}
@@ -8132,6 +8340,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: f1e255091718138409397fa34664302a, type: 2}
     - target: {fileID: 114843539449165688, guid: 25b251df979c21640bf9bc138c8da7f1,
         type: 3}
+      propertyPath: description
+      value: '[i_50ml spuit]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114843539449165688, guid: 25b251df979c21640bf9bc138c8da7f1,
+        type: 3}
       propertyPath: holdAnimationID
       value: 830
       objectReference: {fileID: 0}
@@ -8148,6 +8361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: syringe_50mm_plunger_separate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666102075510962433, guid: 837b9726181bad4419a8b5bd00559983,
+        type: 3}
+      propertyPath: description
+      value: '[i_plunger]'
       objectReference: {fileID: 0}
     - target: {fileID: 9209461639729274604, guid: 837b9726181bad4419a8b5bd00559983,
         type: 3}

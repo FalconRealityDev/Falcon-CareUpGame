@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      description="[combineer de spuit]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="0" 
+      type="combine" 
+      left="Syringe" 
+      right="AbsorptionNeedle" 
+      extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."/>
+  <action 
+      description="[haal de beschermdop]" 
+      audioHint="" 
+      fullDescription="[volg de tips]" 
+      index="1" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedleCap" 
+      right="" 
+      extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."/>
+  <action 
+      description="[gefeliciteerd!]" 
+      fullDescription="" 
+      audioHint="" 
+      index="2" 
+      type="use" 
+      value="__tutorialEnd"/>
+</ActionList>

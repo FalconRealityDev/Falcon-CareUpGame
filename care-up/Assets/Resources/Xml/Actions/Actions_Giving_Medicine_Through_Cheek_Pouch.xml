@@ -1,258 +1,184 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <action
-    points="1"
-    description="[Begroet]"
-    index="0"
-    type="talk"
-    topic="Hello"
-    optional=""
-  ></action>
-
-  <action
-    comment="1. Apply hand hygiene"
-    index="0"
-    points="3"
-    description="[Pas handhygiëne]"
-    type="use"
-    value="HandCleaner"
-    extra="[Pas handhygiëne]"
-    messageTitle="Handhygiëne"
-    messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-  ></action>
-
-  <action
-    points="2"
-    description="[Maak een schoon werkveld]"
-    index="1"
-    type="use"
-    value="WorkField"
-    extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik."
-    messageTitle="Benodigdheden"
-    messageContent="
-    - Toedienlijst
-    - Medicijn in flacon
-    - 1 ml-spuitje
-    - gaasje
-    - handschoenen
-    - zo nodig wattenstokje of spatel
-    - Afvalbak"
-  ></action>
-
-  <action
-    points="3"
-    description="Controleer het medicijn"
-    index="2"
-    type="examine"
-    item="MedicineBottle"
-    expected="good"
-    extra="Controleer het medicijn."
-    messageTitle="Dubbele controle van medicijnen."
-    messageContent="Dubbele controle is nodig bij die medicijnen die naar het oordeel van de apotheker een onacceptabel risico vormen bij verkeerde dosering. Bij medicijnen op rol is de apotheker degene die de eerste controle uitvoert, en voert de zorgmedewerker de tweede controle uit. Bepaalde medicijnen die los geleverd worden, moeten bij toediening dubbel gecontroleerd en afgetekend worden met paraaf op de toedieningslijst.
-
-Ga altijd met de apotheker na of de medicijnen door de apotheker in een medicijnrol kunnen worden aangeboden. Hiermee voorkom je dat er een dubbele controle op de werkvloer / bij de cliënt plaats moet vinden.
-
-Wíe de dubbele controle mag uitvoeren, is beleid van de organisatie. Op basis van de afspraken in de organisatie spreekt de zorgmedewerker af per cliënt wie in die situatie de dubbele controle doet en legt dit vast"
-  ></action>
-
-  <action
-    points="3"
-    description="Controleer cliëntgegevens"
-    index="3"
-    type="examine"
-    item="PatientRecords"
-    expected="good"
-    extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt."
-  ></action>
-
-  <action
-    points="3"
-    description="Controleer de toedienlijst"
-    index="3"
-    type="examine"
-    item="PrescriptionForm"
-    expected="good"
-    messageTitle="5x juist-regel"
-    messageContent="Er zijn 5 controles die je altijd moet doen voordat je medicijnen geeft. Alleen als alle 5 punten juist zijn, mag je het medicijn toedienen.
-    
-    De vijf regels zijn:
-    
-1.  Het juiste medicijn: 
-kijk op de toedienlijst en controleer of de informatie op de medicijnverpakking of het baxterzakje hiermee overeenkomen. Kijk hierbij ook naar de vervaldatum van het medicijn.
-        
-2.  De juiste cliënt: 
-controleer of je de juiste cliënt voor je hebt.
-        
-3.  Het juiste tijdstip: 
-kijk op de toedienlijst voor het tijdstip en vergelijk dit met het tijdstip waarop je de medicijnen geeft.
-        
-4.  De juiste manier van toedienen: 
-hanteer de instructies van de toedienlijst. Je moet bekend zijn met de toedieningsvorm. Ben je hier niet mee bekent, dien dan niet toe.
-    
-5.  De juiste dosis: 
-je mag niet afwijken van de de voorgeschreven dosis die vermeld staat op de toedienlijst. De verantwoordelijkheid van de juiste dosering ligt bij de arts en de apotheker."
-
-  ></action>
-
-  <action
-comment="Put on gloves"
-points="3"
-description="Trek handschoenen aan"
-index="4"
-type="use"
-value="gloveBox"
-right=""
-blockUnlock="GlovesTakenOn"
-messageTitle="Voorkomen huidcontact"
-messageContent="Voorkom als zorgverlener direct huidcontact met het medicijn. Vooral bij antibiotica, cytostatica en hormoonpreparaten kan huidcontact schadelijk zijn voor de gezondheid van de zorgverlener. Draag zo nodig handschoenen."
-  ></action>
-  
-  <action
-    comment="Open syringe package and leave the syringe in the opened package "
-    points="1"
-    description="Maak de verpakking van de spuit open en laat de spuit in de geopende verpakking liggen"
-    index="5"
-    type="combine"
-    left="syringe_rigged_packed"
-    right=""
-    blockUnlock="block1"
-
-    ></action>
-
-  <action
-    comment="Open the flacon"
-    points="1"
-    description="Maak het medicijn klaar voor gebruik. Open de dop van de flacon."
-    index="6"
-    type="useOn"
-    item="MedicineBottle"
-    target=""
-    buttonText="Open de flacon"
-    blockRequired="block1"
-    blockTitle="Spuit klaarmaken voor gebruik"
-    blockMessage="Zorg ervoor dat de spuit klaar is voor gebruik. Maak de verpakking van de spuit open en laat de spuit in de geopende verpakking liggen."
-  ></action>
-
-
-  <action
-    comment="Hold opened flacon upside down"
-    index="7"
-    value="FlaconUpsideDown"
-    description="Houd de geopende flacon ondersteboven"
-    points="1"
-    type="sequenceStep"
-  ></action>
-
-  <action
-    comment="Place the opening of the syringe at the opening of the flacon"
-    index="8"
-    value="SyringeToFlacon"
-    description="Zet de opening van de spuit tegen de opening van de flacon"
-    points="1"
-    type="sequenceStep"
-  ></action>
-
-  <action
-    comment="Suck the needed amount of medicine out of the flacon"
-    index="9"
-    value="SuckMedicine"
-    description="Zuig de benodigde hoeveelheid medicijn op uit de flacon"
-    points="3"
-    type="sequenceStep"
-  ></action>
-
-  <action
-    comment="Remove air from the syringe and check if the right amount is sucked up"
-    index="10"
-    value="RemoveAir"
-    description="Verwijder lucht uit het spuitje en check of de juiste hoeveelheid is opgezogen"
-    points="3"
-    type="sequenceStep"
-    messageTitle="Hoeveelheid medicijn"
-    messageContent="Zuig zo nodig meer medicijn op of verwijder overtollig medicijn"
-  ></action>
-
-  <action
-    comment="Place the syringe back in the package"
-    index="11"
-    value="PlaceSyringeBack"
-    description="Leg het spuitje terug in de verpakking"
-    points="1"
-    type="sequenceStep"  
-  ></action>
-
-  <action
-    comment="Ask the cliënt to open mouth if possible"
-    index="12"
-    description="Vraag de cliënt de mond te openen indien mogelijk"
-    points="1"
-    type="talk"
-    topic="MouthOpen"
-    blockUnlock="block2"
-
-  ></action>
-
-  <action
-    comment="Wipe with a gauze the cheeck pouch dry"
-    index="13"
-    description="Veeg met een gaasje de wangzak droog"
-    points="2"
-    place="WorkFieldPos"
-    type="useOn"
-    item ="CottonSwabStick"
-    target=""
-    messegeTitle="Droog vegen wangzak"
-    MessegeContent="Gebruik hiervoor eventueel een met gaas of keukenpapier omwikkelde spatel of wattenstokje. Voorkom dat de cliënt kan bijten tijdens het drogen van de wangzak."
-    buttonText="Wangzak drogen"
-    blockRequired="block2"
-    blockTitle="Mond openen"
-    blockMessage="Vraag eerst de cliënt de mond te openen indien mogelijk"
-    ></action>
-
-  <action
-    comment="Insert the syringe in the mouth of the cliënt and squirt the liquid in the cheeck pouch"
-    index="14"
-    value="InsertSyringe"
-    description="Steek het spuitje in de mond van de cliënt en spuit de vloeistof in de wangzak."
-    points="3"
-    type="sequenceStep"
-  ></action>
-
-  <action
-    points="2"
-    description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-    index="15"
-    type="sequenceStep"
-	blockUnlock="SequenceFinished"
-    value="RuimMaterials"
-  ></action>
-
-	<Action
-    index="16"
-    description="Trek handschoenen uit en gooi ze in de afvalbak"
-    type="general"
-    item=""
-    points="1"
-    buttonText="Trek handschoenen uit"
-    action="TakeOffGlovesWithoutThrowing"
-    blockRequired="GlovesTakenOn, SequenceFinished" />
-	
-  <action
-    comment="1. Apply hand hygiene"
-    index="17"
-    points="3"
-    description="[Pas handhygiëne]"
-    type="use"
-    value="HandCleaner"
-    ></action>
-  
-
-  <action
-    points="3"
-    description="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen."
-    index="18"
-    type="use"
-    value="PaperAndPen"
-  ></action>
-
+  <action 
+    points="1" 
+    description="[Begroet]" 
+    index="0" 
+    type="talk" 
+    topic="Hello" 
+    optional=""/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="0" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]"/>
+  <action 
+    points="2" 
+    description="[Maak een schoon werkveld]" 
+    index="1" 
+    type="use" 
+    value="WorkField" 
+    extra="[maak een schoon]" 
+    messageTitle="[benodigdheden]" 
+    messageContent="[toedienlijst medicijn in]"/>
+  <action 
+    points="3" 
+    description="[controleer het medicijn]" 
+    index="2" 
+    type="examine" 
+    item="MedicineBottle" 
+    expected="good" 
+    extra="[controleer het medicijn727]" 
+    messageTitle="[dubbele controle van]" 
+    messageContent="[dubbele controle is]"/>
+  <action 
+    points="3" 
+    description="[controleer cliëntgegevens]" 
+    index="3" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good" 
+    extra="[controleer de cliëntgegevens]"/>
+  <action 
+    points="3" 
+    description="[controleer de toedienlijst]" 
+    index="3" 
+    type="examine" 
+    item="PrescriptionForm" 
+    expected="good" 
+    messageTitle="[5x juistregel]" 
+    messageContent="[er zijn 5]"/>
+  <action 
+    comment="Put on gloves" 
+    points="3" 
+    description="[trek handschoenen aan]" 
+    index="4" 
+    type="use" 
+    value="gloveBox" 
+    right="" 
+    blockUnlock="GlovesTakenOn" 
+    messageTitle="[voorkomen huidcontact]" 
+    messageContent="[voorkom als zorgverlener]"/>
+  <action 
+    comment="Open syringe package and leave the syringe in the opened package " 
+    points="1" 
+    description="[maak de verpakking]" 
+    index="5" 
+    type="combine" 
+    left="syringe_rigged_packed" 
+    right="" 
+    blockUnlock="block1"/>
+  <action 
+    comment="Open the flacon" 
+    points="1" 
+    description="[maak het medicijn]" 
+    index="6" 
+    type="useOn" 
+    item="MedicineBottle" 
+    target="" 
+    buttonText="Open de flacon" 
+    blockRequired="block1" 
+    blockTitle="Spuit klaarmaken voor gebruik" 
+    blockMessage="[zorg ervoor dat]"/>
+  <action 
+    comment="Hold opened flacon upside down" 
+    index="7" 
+    value="FlaconUpsideDown" 
+    description="[ui_houd de geopende257]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Place the opening of the syringe at the opening of the flacon" 
+    index="8" 
+    value="SyringeToFlacon" 
+    description="[ui_zet de opening]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Suck the needed amount of medicine out of the flacon" 
+    index="9" 
+    value="SuckMedicine" 
+    description="[zuig de benodigde]" 
+    points="3" 
+    type="sequenceStep"/>
+  <action 
+    comment="Remove air from the syringe and check if the right amount is sucked up" 
+    index="10" 
+    value="RemoveAir" 
+    description="[verwijder lucht uit]" 
+    points="3" 
+    type="sequenceStep" 
+    messageTitle="[hoeveelheid medicijn]" 
+    messageContent="[zuig zo nodig]"/>
+  <action 
+    comment="Place the syringe back in the package" 
+    index="11" 
+    value="PlaceSyringeBack" 
+    description="[leg het spuitje]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Ask the cliënt to open mouth if possible" 
+    index="12" 
+    description="[vraag de cliënt]" 
+    points="1" 
+    type="talk" 
+    topic="MouthOpen" 
+    blockUnlock="block2"/>
+  <action 
+    comment="Wipe with a gauze the cheeck pouch dry" 
+    index="13" 
+    description="[veeg met een]" 
+    points="2" 
+    place="WorkFieldPos" 
+    type="useOn" 
+    item="CottonSwabStick" 
+    target="" 
+    messegeTitle="Droog vegen wangzak" 
+    MessegeContent="Gebruik hiervoor eventueel een met gaas of keukenpapier omwikkelde spatel of wattenstokje. Voorkom dat de cliënt kan bijten tijdens het drogen van de wangzak." 
+    buttonText="Wangzak drogen" 
+    blockRequired="block2" 
+    blockTitle="Mond openen" 
+    blockMessage="[vraag eerst de]"/>
+  <action 
+    comment="Insert the syringe in the mouth of the cliënt and squirt the liquid in the cheeck pouch" 
+    index="14" 
+    value="InsertSyringe" 
+    description="[steek het spuitje]" 
+    points="3" 
+    type="sequenceStep"/>
+  <action 
+    points="2" 
+    description="[ruim de materialen]" 
+    index="15" 
+    type="sequenceStep" 
+    blockUnlock="SequenceFinished" 
+    value="RuimMaterials"/>
+  <Action 
+    index="16" 
+    description="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="GlovesTakenOn, SequenceFinished"/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="17" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner"/>
+  <action 
+    points="3" 
+    description="[teken de toedienlijst]" 
+    index="18" 
+    type="use" 
+    value="PaperAndPen"/>
 </ActionList>

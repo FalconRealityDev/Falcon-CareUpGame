@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CareUp.Localize;
 
 
 public class SceneGroupButton : MonoBehaviour
@@ -24,7 +25,15 @@ public class SceneGroupButton : MonoBehaviour
 
     public void SetButtonData(int _id, string _title, string _iconName, int _num)
     {
-        sceneGroupTitle.text = _title;
+        //@
+        sceneGroupTitle.text = LocalizationManager.GetValueIfKey(_title);
+
+        InGameLocalEditTool inGameLocalEditTool = GameObject.FindAnyObjectByType<InGameLocalEditTool>();
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(sceneGroupTitle.gameObject, _title);
+        }
         _numberOfScenes = _num;
         groupID = _id;
         string numStr = "";

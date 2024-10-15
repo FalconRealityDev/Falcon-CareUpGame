@@ -100,7 +100,7 @@ public class AnimationSequence
 
         SelectDialogue.DialogueOption GetOption(XmlNode xmlOption, List<SelectDialogue.DialogueOption> additionalOption = null, string question = null)
         {
-            string description = LocalizationManager.GetValueIfKey(xmlOption.Attributes["text"].Value);
+            string description = xmlOption.Attributes["text"].Value;
             string animation = xmlOption.Attributes["animation"] != null ? xmlOption.Attributes["animation"].Value : "";
             string audio = xmlOption.Attributes["audio"] != null ? xmlOption.Attributes["audio"].Value : "";
             SelectDialogue.DialogueOption option = new SelectDialogue.DialogueOption(description, PlayAnimation, animation, audio, additionalOption, question);

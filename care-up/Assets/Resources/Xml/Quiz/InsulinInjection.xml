@@ -1,191 +1,269 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
   <step>
-    <question
-      text="De arts schrijft een verkeerde dosering voor, je dient dit toe. Degene die de injectie toedient is aansprakelijk voor de verkeerde dosering"
-      answer="2" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist"
-        descr="De arts is verantwoordelijk voor het medicijnbeleid en de medicatieopdracht. Als de arts zich vergist en het verkeerde medicijn voorschrijft, dan is de arts daarvoor verantwoordelijk. De arts is verantwoordelijk voor het registreren van wijzigingen in het medicatie-overzicht. De zorgprofessional kan (mede-)verantwoordelijk zijn voor een fout als:
-
-- het de zorgprofessional duidelijk is dat de arts zich vergist en er niets mee doet
-- de zorgprofessional de instructies van de arts niet goed begreep en wel tot uitvoering overgaat
-- de zorgprofessional geen rekening houdt met een duidelijke verslechtering van de cliënt" />
-    </question>
-    <question
-      text="De behandelingen voor type 1 en type 2 diabetes zijn hetzelfde. Doel van de behandeling is dat de cliënt zo ‘normaal’ mogelijke bloedglucosewaarden heeft."
-      answer="2" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist"
-        descr="De behandelingen voor type 1 en type 2 verschillen van elkaar. Bij type 1 diabetes maakt de alvleesklier geen insuline meer aan. Het is daarom noodzakelijk de kunstmatige insuline toe te dienen. Dit gebeurt via een injectie in het onderhuidse bindweefsel (subcutane injectie).
-              
-Bij de behandeling van type 2 diabetes wordt gebruik gemaakt van een stapsgewijze behandeling:
-
-- Leefstijladvies zoals stoppen met roken, voldoende bewegen, gezonde voeding en afvallen (al of niet onder begeleiding van een diëtist). Het voedingsadvies bij diabetes mellitus dient een advies op maat te zijn, waarbij rekening wordt gehouden met de persoonlijke wensen, motivatie, omstandigheden en mogelijkheden.
-  Wanneer de bloedglucosewaarde onvoldoende daalt, behandeling met orale bloedglucosewaardeverlagende tabletten, zoals Metformine.
-- Combinatie van verschillende bloedglucosewaardeverlagende tabletten. Zoals Metformine en een sulfonylureumderivaat zoals Glicazide.
-- Wanneer het de orale combinatietherapie niet lukt om de bloedglucosewaarde onder controle te krijgen, kan naast de behandeling met tabletten insuline worden gespoten." />
-    </question>
-    <question
-      text="Een van de indicaties voor een injectie kan zijn dat orale inname van het medicijn niet mogelijk is"
-      answer="1">
-      <answer text="Juist"
-        descr="Het medicijn kan dan niet via het maag-darmkanaal worden opgenomen." />
-      <answer text="Onjuist" descr="" />
-    </question>
-    <question
-      text="Wat ontstaat er vaak tijdens overgevoeligheidsreacties na het toediening van een medicijn?"
-      answer="2">
-      <answer text="Vaatvernauwing" descr="" />
-      <answer text="Vaatverwijding" descr="" />
-    </question>
-    <question
-      text="Om verantwoord te injecteren dient alleen de arts de werking van het toegediende medicijn te kennen"
-      answer="2">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist"
-        descr="In principe geldt dat iemand bevoegd is voor het uitvoeren van een handeling als hij/zij daartoe bekwaam is. Van belang is dat, als je taken uitvoert met betrekking tot medicijnbeleid, je weet wat je doet, weet wat je geeft en weet waar je op moet letten." />
-    </question>
-    <question text="Het roken van een sigaret vertraagt de insulineopname" answer="1">
-      <answer text="Juist" descr="Dit komt door vasoconstrictie (vaatvernauwing)" />
-      <answer text="Onjuist" descr="" />
-    </question>
-    <question
-      text="Bij een hyperglycemie of ‘hyper’ is sprake van te veel glucose in het bloed. De bloedglucosewaarde is (vaak) hoger dan ...... met daarbij passende klachten/ verschijnselen."
-      answer="3">
-      <answer text="7 of 8 mmol/1" descr="" />
-      <answer text="11 of 12 mmol/l" descr="" />
-      <answer text="9 of 10 mmol/l"
-        descr="De bloedglucosewaarde is (vaak) hoger dan 9 of 10 mmol/l. 
-Tijdens een hyperglycemische ontregeling kunnen zich de volgende verschijnselen voordoen:
-
-- dorst
-- veel drinken
-- veel plassen
-- misselijkheid en braken
-- zware ademhaling
-- sufheid" />
-    </question>
-  </step>
-
-  <step>
-    <question text="Het plaatsen van een injectie in een moedervlek is geen probleem" answer="2"
+    <question 
+      text="[de arts schrijft]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist"
-        descr="Injecteren in afwijkend weefsel (moedervlekken, littekens, blauwe plekken en dergelijke) kan de werking van het medicijn beïnvloeden." />
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[de arts is]"/>
     </question>
-    <question
-      text="Middels de intramusculaire of subcutane injectie wordt het geneesmiddel via de ... opgenomen in de bloedbaan"
-      answer="2">
-      <answer text="venen" descr="" />
-      <answer text="capillairen" descr="" />
-      <answer text="arterien" descr="" />
-    </question>
-    <question text="Parenterale toediening betekent toediening via de volgende route(s) ..."
-      answer="3">
-      <answer text="...intraveneus, intracutaan en intramusculair" descr="" />
-      <answer text="...intramusculair en subcutaan" descr="" />
-      <answer text="...intraveneus, intramusculair, intracutaan en subcutaan" descr="" />
-    </question>
-    <question text="Het plaatsen van een injectie in een trombosebeen is geen probleem" answer="2"
+    <question 
+      text="[de behandelingen voor]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[de behandelingen voor720]"/>
     </question>
-    <question
-      text="Een injectie is een goede optie wanneer maagsappen de werking van het medicijn aantasten"
-      answer="1" points="10">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
-    </question>
-    <question text="Welk type diabetes komt het meeste voor?" answer="4">
-      <answer text="Type 1, ongeveer 70% van de personen met diabetes heeft type 1" descr="" />
-      <answer text="Type 1, ongeveer 90% van de personen met diabetes heeft type 1" descr="" />
-      <answer text="Type 2, ongeveer 70% van de personen met diabetes heeft type 2" descr="" />
-      <answer text="Type 2, ongeveer 90% van de personen met diabetes heeft type 2"
-        descr="Maar 10% van de personen met diabetes heeft type 1. De verwachting is dat het aantal mensen met diabetes mellitus in de periode 2011-2030 zal stijgen, met 35% voor mannen en 32% voor vrouwen. Diabetes mellitus komt vaker voor bij mensen met schizofrenie of een depressie." />
-    </question>
-    <question
-      text="Wanneer je een grotere hoeveelheid vloeistof moet injecteren, dan kies je bij voorkeur voor ..."
-      answer="2">
-      <answer text="...intramusculair injecteren" descr="" />
-      <answer text="...subcutaan injecteren" descr="" />
-      <answer text="...intracutaan injecteren" descr="" />
-    </question>
-  </step>
-
-  <step>
-    <question text="Moet je de huid desinfecteren bij cliënten met een verminderde weerstand?"
-      answer="2" points="10">
-      <answer text="Nee"
-        descr="Desinfecteer de huid WEL bij cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweeronderdrukkende medicijnen gebruiken." />
-      <answer text="Ja"
-        descr="Desinfecteer altijd de huid bij cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweeronderdrukkende medicijnen gebruiken." />
-    </question>
-    <question
-      text="Bij een hypoglycemie of 'hypo' is de bloedglucosewaarde te ...., met daarbij passende klachten/ verschijnselen."
-      answer="2" points="10">
-      <answer text="Hoog" descr="" />
-      <answer text="Laag"
-        descr="De bloedglucosewaarde is lager dan 3,5 mmol/l. De verschijnselen van een hypo kunnen per cliënt verschillen.
-De belangrijkste verschijnselen van een hypo zijn:
-
-- honger, beven, zweten
-- bleekheid
-- moeite met concentreren, duizeligheid, wazig zien
-- hartkloppingen
-- soms hoofdpijn
-- trillende handen, voeten, lippen of tong
- 
-Een ernstige hypoglycemie geeft verschijnselen als:
-
-- grofheid in gedrag, vreemd gedrag
-- verwardheid
-- sufheid en uiteindelijk bewusteloosheid
-- neurologische symptomen zoals dubbelzien, moeite met spreken, verwardheid, diepe slaap en coma" />
-    </question>
-    <question
-      text="Bij een subcutane injectie rondom de navel moet je minimaal ... cm afstand te nemen"
-      answer="2">
-      <answer text="1" descr="" />
-      <answer text="2" descr="" />
-      <answer text="3" descr="" />
-      <answer text="4" descr="" />
-    </question>
-    <question
-      text="In de regel dient men voor de loodrechttechniek bij een subcutane injectie een kortere naald te gebruiken"
+    <question 
+      text="[een van de960]" 
       answer="1">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+      <answer 
+      text="[juist]" 
+      descr="[het medicijn kan]"/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
     </question>
-    <question text="De opperhuid is gemiddeld ... dik" answer="2">
-      <answer text="1 millimeter" descr="" />
-      <answer text="0,1 millimeter" descr="" />
-      <answer text="10 millimeter" descr="" />
-    </question>
-    <question
-      text="Insuline wordt in de huid geïnjecteerd omdat deze langzaam moet worden opgenomen"
+    <question 
+      text="[wat ontstaat er]" 
       answer="2">
-      <answer text="Juist" descr="" />
-      <answer text="Onjuist" descr="" />
+      <answer 
+      text="[vaatvernauwing]" 
+      descr=""/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr=""/>
     </question>
-    <question text="Op welke wijze geef je een Insuline-injectie?" answer="1">
-      <answer text="Subcutaan" descr="" />
-      <answer text="Intracutaan" descr="" />
-      <answer text="Intramusculair" descr="" />
+    <question 
+      text="[om verantwoord te]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[in principe geldt]"/>
+    </question>
+    <question 
+      text="[het roken van]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[dit komt door]"/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[bij een hyperglycemie]" 
+      answer="3">
+      <answer 
+      text="[7 of 8]" 
+      descr=""/>
+      <answer 
+      text="[11 of 12]" 
+      descr=""/>
+      <answer 
+      text="[9 of 10]" 
+      descr="[de bloedglucosewaarde is]"/>
     </question>
   </step>
-
+  <step>
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[injecteren in afwijkend]"/>
+    </question>
+    <question 
+      text="[middels de intramusculaire]" 
+      answer="2">
+      <answer 
+      text="[venen]" 
+      descr=""/>
+      <answer 
+      text="[capillairen]" 
+      descr=""/>
+      <answer 
+      text="[arterien]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[parenterale toediening betekent]" 
+      answer="3">
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[een injectie is]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[welk type diabetes]" 
+      answer="4">
+      <answer 
+      text="[type 1 ongeveer]" 
+      descr=""/>
+      <answer 
+      text="[type 1 ongeveer199]" 
+      descr=""/>
+      <answer 
+      text="[type 2 ongeveer]" 
+      descr=""/>
+      <answer 
+      text="[type 2 ongeveer36]" 
+      descr="[maar 10% van]"/>
+    </question>
+    <question 
+      text="[wanneer je een]" 
+      answer="2">
+      <answer 
+      text="[intramusculair injecteren]" 
+      descr=""/>
+      <answer 
+      text="[subcutaan injecteren]" 
+      descr=""/>
+      <answer 
+      text="[intracutaan injecteren]" 
+      descr=""/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[desinfecteer de huid830]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[desinfecteer altijd de805]"/>
+    </question>
+    <question 
+      text="[bij een hypoglycemie]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[hoog]" 
+      descr=""/>
+      <answer 
+      text="[laag]" 
+      descr="[de bloedglucosewaarde is744]"/>
+    </question>
+    <question 
+      text="[bij een subcutane]" 
+      answer="2">
+      <answer 
+      text="[1]" 
+      descr=""/>
+      <answer 
+      text="[2]" 
+      descr=""/>
+      <answer 
+      text="[3]" 
+      descr=""/>
+      <answer 
+      text="[4]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[in de regel]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[de opperhuid is]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[01 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[10 millimeter]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[insuline wordt in]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[op welke wijze]" 
+      answer="1">
+      <answer 
+      text="[subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intracutaan]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair]" 
+      descr=""/>
+    </question>
+  </step>
   <encounter>
-    <question text="Wat doe je als je te ondiep injecteert?" answer="2">
-      <answer text="Neem een nieuwe pen en injecteer nogmaals" />
-      <answer text="Contact opnemen met de arts"
-        descr="Te ondiep injecteren kan leiden tot lekkage, onder dosering en huidschade. Bovendien is het pijnlijk.
-Bij een te diepe injectie kan insuline intramusculair terechtkomen. Dit geeft een minder goed voorspelbare werking. 
-Soms treden er hypo’s op. Bij heel magere cliënten bestaat dit risico. Pas in overleg met arts of diabetesverpleegkundige de naaldlengte en/of spuittechniek aan, of spuit in een ander lichaamsdeel dat meer onderhuids bindweefsel bevat
-" />
-      <answer text="Nogmaals injecteren maar op een andere plek" />
+    <question 
+      text="[wat doe je175]" 
+      answer="2">
+      <answer 
+      text="[neem een nieuwe]"/>
+      <answer 
+      text="[contact opnemen met]" 
+      descr="[te ondiep injecteren]"/>
+      <answer 
+      text="[nogmaals injecteren maar]"/>
     </question>
   </encounter>
 </quiz>

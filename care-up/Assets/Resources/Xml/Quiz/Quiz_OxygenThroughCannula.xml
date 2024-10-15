@@ -1,61 +1,141 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quiz>
-	<step>
-		<question text="Wat is de aanbevolen soort zalf of crème voor gebruik bij cliënten met huidirritatie door een zuurstofbril, -katheter of -masker?" answer="2" points="10">
-			<answer text="Huidzalf of crème op vet- of oliebasis" descr=""/>
-			<answer text="Huidzalf of crème op waterbasis" descr="Gebruik geen huidzalf of crème op vet- of oliebasis, vanwege brandgevaar!"/>
-			<answer text="Antibacteriële zalf" descr=""/>
-			<answer text="Steroïde crème" descr=""/>
-		</question>
-		<question text="Hoe moet de zuurstofkatheter worden onderhouden voor hergebruik? " answer="4" points="10">
-			<answer text="Laat de katheter drogen in open lucht voordat deze opnieuw wordt gebruik" descr=""/>
-			<answer text="De katheter moet elke dag worden vervangen" descr=""/>
-			<answer text="Desinfecteer de katheter dagelijks met alcohol" descr=""/>
-			<answer text="Spoel de katheter af onder de kraan met lauw water en breng hem in het andere neusgat in, tenzij deze te vuil of verhard is" descr=""/>
-		</question>
-		<question text="Bij een knik in de zuurstoftoevoerslang moet de slang vervangen worden door een nieuwe" answer="2" points="10">
-			<answer text="Juist" descr=""/>
-			<answer text="Onjuist" descr="Een draaikoppelstukje kan aangebracht worden of de slang kan anders gefixeerd worden"/>
-		</question>
-		<question text="Bij irritatie van de neus door de zuurstofkatheter moet de cliënt aangeraden worden vaker zijn of haar neus te snuiten. " answer="2" points="10">
-			<answer text="Juist" descr=""/>
-			<answer text="Onjuist" descr="Afwisselen van het neusgat bij het verschonen van de katheter is de juiste aanpak"/>
-		</question>
-	</step>
-
-	<step>
-		<question text="Welke factor beïnvloedt niet de hoeveelheid zuurstof die de cliënt binnen krijgt? " answer="3" points="10">
-			<answer text="Het aantal liters zuurstof dat toegediend wordt" descr=""/>
-			<answer text="Het ademhalingspatroon van de cliënt" descr=""/>
-			<answer text="De bloeddruk van de cliënt" descr=""/>
-			<answer text="De dode ruimte, zoals de mond- en keelholte" descr=""/>
-		</question>
-		<question text="Welke toedieningsvorm van zuurstof is specifiek bedoeld voor gebruik bij een patiënt met een tracheostomie? " answer="1" points="10">
-			<answer text="Tracheotomiemasker" descr=""/>
-			<answer text="Nasofaryngeale zuurstofkatheter" descr=""/>
-			<answer text="Zuurstofbril" descr=""/>
-			<answer text="Venturimasker" descr=""/>
-		</question>
-		<question text="Hoe moet de zuurstofbril worden ingebracht?" answer="2" points="10">
-			<answer text="Met de kromming van de stukjes naar boven" descr=""/>
-			<answer text="Met de kromming van de stukjes naar beneden" descr="Dit voor een betere pasvorm, de zuurstofstroom is goed gericht naar de luchtwegen en verminderd irritatie van de neus"/>
-			<answer text="Zonder kromming" descr=""/>
-			<answer text="Met de stukjes zijwaarts" descr=""/>
-		</question>
-		<question text="Een dosis hoger dan 6 liter per minuut via een zuurstofbril verhoogt de zuurstofconcentratie en veroorzaakt geen bijwerkingen" answer="2" points="10">
-			<answer text="juist" descr=""/>
-			<answer text="Onjuist" descr="Een zuurstofbril is geschikt voor zuurstoftoediening tot 6 liter per minuut. Een hogere dosis verhoogt de zuurstofconcentratie niet. Het kan wel irritatie van de slijmvliezen, oorsuizen, hoofdpijn en een slikgevoel veroorzaken"/>
-		</question>
-	</step>
-
-	<encounter>
-		<question text="Voor de effectiviteit van zuurstofbehandeling is het essentieel dat er een goede gasuitwisseling in de longen mogelijk is, dat er een adequate bloedsomloop aanwezig is, en dat het hemoglobinegehalte in het bloed op peil is" answer="1" points="10">
-			<answer text="Juist" descr="Zuurstofbehandeling is effectief bij goede longfunctie, adequate bloedsomloop en hemoglobinegehalte, en vereist juist gebruik "/>
-			<answer text="Onjuist" descr=""/>
-		</question>
-	</encounter>
-
-	<random>
-		
-	</random>
+  <step>
+    <question 
+      text="[wat is de460]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[huidzalf of crème]" 
+      descr=""/>
+      <answer 
+      text="[huidzalf of crème582]" 
+      descr="[gebruik geen huidzalf]"/>
+      <answer 
+      text="[antibacteriële zalf]" 
+      descr=""/>
+      <answer 
+      text="[steroïde crème]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[hoe moet de]" 
+      answer="4" 
+      points="10">
+      <answer 
+      text="[laat de katheter]" 
+      descr=""/>
+      <answer 
+      text="[de katheter moet]" 
+      descr=""/>
+      <answer 
+      text="[desinfecteer de katheter]" 
+      descr=""/>
+      <answer 
+      text="[spoel de katheter]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[bij een knik]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[een draaikoppelstukje kan]"/>
+    </question>
+    <question 
+      text="[bij irritatie van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[afwisselen van het]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[welke factor beïnvloedt]" 
+      answer="3" 
+      points="10">
+      <answer 
+      text="[het aantal liters]" 
+      descr=""/>
+      <answer 
+      text="[het ademhalingspatroon van]" 
+      descr=""/>
+      <answer 
+      text="[de bloeddruk van]" 
+      descr=""/>
+      <answer 
+      text="[de dode ruimte]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[welke toedieningsvorm van]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[tracheotomiemasker]" 
+      descr=""/>
+      <answer 
+      text="[nasofaryngeale zuurstofkatheter]" 
+      descr=""/>
+      <answer 
+      text="[zuurstofbril]" 
+      descr=""/>
+      <answer 
+      text="[venturimasker]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[hoe moet de894]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[met de kromming]" 
+      descr=""/>
+      <answer 
+      text="[met de kromming339]" 
+      descr="[dit voor een]"/>
+      <answer 
+      text="[zonder kromming]" 
+      descr=""/>
+      <answer 
+      text="[met de stukjes]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[een dosis hoger]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist994]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[een zuurstofbril is]"/>
+    </question>
+  </step>
+  <encounter>
+    <question 
+      text="[voor de effectiviteit]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[zuurstofbehandeling is effectief]"/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+  </encounter>
+  <random>
+    
+  </random>
 </quiz>

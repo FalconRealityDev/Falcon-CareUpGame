@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="Handhygiëne" 
+      messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het allerbelangrijkste als het gaat om voorkomen van besmetting met ziektekiemen. Dit betekent je handen reinigen op de juiste manier en op de juiste momenten. Begin een handeling altijd met handhygiëne. " 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="Maak een schoon werkveld en zet de benodigdheden binnen bereik" 
+      type="use" 
+      comment="2. Create a clean work area and put the equipment within reach" 
+      points="2" 
+      messageTitle="Je het volgende nodig hebt?" 
+      messageContent="&#13;!!!NEWLINE!!!- Strak opgerolde korte-rekzwachtels (8 of 10 cm)&#13;!!!NEWLINE!!!- Steun voor been (bijv. krukje, beensteun)&#13;!!!NEWLINE!!!- Pleister/schaar&#13;!!!NEWLINE!!!- Tricot buisverband&#13;!!!NEWLINE!!!- Zo nodig: polsterwatten&#13;!!!NEWLINE!!!- Zo nodig: pretape&#13;!!!NEWLINE!!!- Stoel of kruk voor hulpverlener&#13;!!!NEWLINE!!!" 
+      value="WorkField" 
+      blockUnlock="TableCleaned"/>
+  <Action 
+      index="2" 
+      description="Knip 4-6 repen pleister van ±10 cm af en hang ze binnen handbereik" 
+      type="useOn" 
+      item="Leikoplaster" 
+      points="2" 
+      buttonText="Knip pleister" 
+      messageTitle="Tijd" 
+      messageContent="Het knippen van de pleisters is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je wel 4 pleisters van ongeveer 10 cm afknipt." 
+      target="" 
+      blockUnlock="PlasterCut"/>
+  <Action 
+      index="3" 
+      description="Inspecteer de zwachtels op stevigheid, gladheid en of ze strak opgerold zijn" 
+      type="examine" 
+      item="BandageRoll" 
+      points="2" 
+      audioHint="" 
+      expected="good"/>
+  <Action 
+      index="4" 
+      description="Inspecteer de zwachtels op stevigheid, gladheid en of ze strak opgerold zijn" 
+      type="examine" 
+      item="BandageRoll2" 
+      points="2" 
+      audioHint="" 
+      expected="good"/>
+  <Action 
+      index="5" 
+      description="Zet de stoel voor jezelf klaar en stel deze, zo mogelijk, op de juiste hoogte in" 
+      type="use" 
+      comment="Take Chair" 
+      points="2" 
+      messageTitle="" 
+      messageContent="" 
+      value="Chair_Interactible" 
+      blockUnlock="MovedChair"/>
+  <Action 
+      index="6" 
+      description="Vraag de cliënt om te gaan zitten" 
+      type="talk" 
+      points="1" 
+      topic="SitDown"/>
+  <Action 
+      index="7" 
+      description="Neem plaats op de stoel" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Ga zitten" 
+      action="SitOnChair" 
+      blockRequired="MovedChair"/>
+  <Action 
+      index="8" 
+      description="Vraag de cliënt het te zwachtelen been op de leuning te leggen" 
+      type="talk" 
+      points="1" 
+      topic="LegOnSupport" 
+      blockRequired="MovedChair" 
+      blockUnlock="LegIsOnSupport"/>
+  <Action 
+      index="9" 
+      description="Ontbloot het been van de cliënt en controleer de huid van het been en de voet" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Ontbloot been" 
+      action="Start_Bandage_SQ" 
+      messageTitle="Controleren been en voet" 
+      messageContent="Controleer het been en de voet op:!!!NEWLINE!!!    - beschadiging van de huid!!!NEWLINE!!!    - droge huid!!!NEWLINE!!!    - oedeem!!!NEWLINE!!!    - temperatuur!!!NEWLINE!!!    - kleur!!!NEWLINE!!!    - jeuk of pijn!!!NEWLINE!!!    - hygiëne" 
+      blockRequired="TableCleaned, LegIsOnSupport"/>
+  <Action 
+      index="10" 
+      description="Meet het buisverband af: 1,5 tot 2 keer de lengte van onderbeen + voet" 
+      type="sequenceStep" 
+      points="1" 
+      value="MeetHeTricot"/>
+  <Action 
+      index="11" 
+      description="Breng het buisverband als een kous over het onderbeen tot enkele cm boven de knie aan. Laat het overtollige materiaal over de tenen afhangen naar beneden" 
+      type="sequenceStep" 
+      points="1" 
+      value="BrengHhetTricot"/>
+  <Action 
+      index="12" 
+      description="Breng polsterwatten aan" 
+      type="sequenceStep" 
+      points="1" 
+      messageTitle="Polsteren" 
+      messageContent="Er is in Nederland geen consensus over de wijze van polsteren. Het is wel belangrijk dat dit gebeurt waar nodig. Mocht dit namelijk niet het geval zijn dan word de druk niet gelijkmatig verdeelt. Door het polsteren maak je het been zo rond mogelijk voordat je de zwachtels aanbrengt. De holtes naast een uitstekend scheenbeen bijvoorbeeld. Als je deze niet zou opvullen zal de druk op het scheenbeen te hoog zijn, en in de holtes daarnaast is er dan geen sprake van compressie. Polstermateriaal plaats je op een buisverband. Dit voelt prettiger aan voor de cliënt en is beter voor de huid. Elk been is weer anders, kijk dus goed naar de vorm van het been en waar het polstermateriaal eventueel geplaatst moet worden." 
+      value="ApplyPadding"/>
+  <Action 
+      index="13" 
+      description="Vraag de cliënt de voet in een hoek van 90 graden ten opzichte van het onderbeen te houden, of help hierbij" 
+      type="sequenceStep" 
+      points="1" 
+      value="PlaceFoot90"/>
+  <Action 
+      index="14" 
+      description="Neem de eerste zwachtel en leg het begin van de zwachtel vanaf de kleine teen in de richting van de grote teen, langs de inplant van de tenen. Zorg dat je 'in de rol' kijkt" 
+      type="sequenceStep" 
+      points="1" 
+      value="NeemDeEerste"/>
+  <Action 
+      index="15" 
+      description="Maak 1 of 2 circulaire windingen om de voorvoet. Zorg dat de bal van de voet ingezwachteld is, maar de tenen niet in elkaar worden gedrukt" 
+      type="sequenceStep" 
+      points="1" 
+      messageTitle="Korte-rekzwachtels" 
+      messageContent="Bij deze vorm van zwachtelen is het belangrijk om te lopen, omdat bij het aanspannen van de (onder)beenspieren de druk het hoogst is. Tijdens het aanspannen van de (onder)beenspieren is de afvoer van de oedeem het sterkst." 
+      value="12circular"/>
+  <Action 
+      index="16" 
+      description="Maak een spiraalwinding midden over de voet" 
+      type="sequenceStep" 
+      points="1" 
+      value="OverMidFoot"/>
+  <Action 
+      index="17" 
+      description="Maak een spiraalwinding 2/3 op de achillespees, 1/3 om de hiel" 
+      type="sequenceStep" 
+      points="1" 
+      value="23Achilles"/>
+  <Action 
+      index="18" 
+      description="Maak een spiraalwinding 1/3 op de hiel, 2/3 onder de voet" 
+      type="sequenceStep" 
+      points="1" 
+      value="SpiralWound13"/>
+  <Action 
+      index="19" 
+      description="Maak een circulaire winding rond de enkel" 
+      type="sequenceStep" 
+      points="1" 
+      value="TurnAroundNeckle"/>
+  <Action 
+      index="20" 
+      description="Volg de vorm van het onderbeen met de zwachtel met constant dezelfde druk" 
+      type="sequenceStep" 
+      points="1" 
+      value="FollowTheShape"/>
+  <Action 
+      index="21" 
+      description="Zwachtel door tot onder de knie. In de knieholte moeten 1-2 vingerdiktes huid vrij blijven. Maak onder de knie een circulaire winding" 
+      type="sequenceStep" 
+      points="1" 
+      value="WindingBelowKnee"/>
+  <Action 
+      index="22" 
+      description="Zwachtel verder door het onderbeen naar beneden te volgen" 
+      type="sequenceStep" 
+      points="1" 
+      value="WrapFurther" 
+      quiz="2"/>
+  <Action 
+      index="23" 
+      description="Fixeer de zwachtel met enkele stroken pleister" 
+      type="sequenceStep" 
+      points="1" 
+      encounter="2" 
+      value="FixBandage"/>
+  <Action 
+      index="24" 
+      description="Neem de volgende (tweede) zwachtel en leg het begin van de zwachtel vanaf de grote teen in de richting van de kleine teen, langs de inplant van de tenen" 
+      type="sequenceStep" 
+      points="1" 
+      value="SecondBandage"/>
+  <Action 
+      index="25" 
+      description="Maak 1 of 2 circulaire windingen om de voorvoet" 
+      type="sequenceStep" 
+      points="1" 
+      value="12circular2"/>
+  <Action 
+      index="26" 
+      description="Maak een spiraalwinding midden over de voet" 
+      type="sequenceStep" 
+      points="1" 
+      value="OverMidFoot2"/>
+  <Action 
+      index="27" 
+      description="Maak een spiraalwinding 2/3 op de achillespees, 1/3 om de hiel" 
+      type="sequenceStep" 
+      points="1" 
+      value="23Achilles2"/>
+  <Action 
+      index="28" 
+      description="Maak een spiraalwinding 1/3 op de hiel, 2/3 onder de voet" 
+      type="sequenceStep" 
+      points="1" 
+      value="SpiralWound132" 
+      quiz="2"/>
+  <Action 
+      index="29" 
+      description="Maak een circulaire winding rond de enkel" 
+      type="sequenceStep" 
+      points="1" 
+      value="TurnAroundNeckle2"/>
+  <Action 
+      index="30" 
+      description="Volg de vorm van het onderbeen met de zwachtel met constant dezelfde druk" 
+      type="sequenceStep" 
+      points="1" 
+      value="FollowTheShape2"/>
+  <Action 
+      index="31" 
+      description="Zwachtel door tot onder de knie. In de knieholte moeten 1-2 vingerdiktes huid vrij blijven. Maak onder de knie een circulaire winding" 
+      type="sequenceStep" 
+      points="1" 
+      value="WindingBelowKnee2"/>
+  <Action 
+      index="32" 
+      description="Zwachtel vervolgens verder door het been te volgen" 
+      type="sequenceStep" 
+      points="1" 
+      value="WrapFurther2"/>
+  <Action 
+      index="33" 
+      description="Fixeer de zwachtel met enkele stroken pleister" 
+      type="sequenceStep" 
+      points="1" 
+      encounter="2" 
+      value="FixBandage2"/>
+  <Action 
+      index="34" 
+      description="Knip eventueel uitstekend polstermatriaal af en sla het buisverband aan weerszijde van de zwachtels terug over de zwachtels" 
+      type="sequenceStep" 
+      points="1" 
+      encounter="2" 
+      value="FoldJersey2" 
+      blockUnlock="BandageOn"/>
+  <Action 
+      index="35" 
+      description="Controleer na het zwachtelen de kleur van de tenen van de cliënt en ga na of de cliënt pijnvrij is" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Controleer tenen" 
+      action="CheckToes" 
+      blockUnlock="ToesChecked" 
+      blockRequired="BandageOn" 
+      quiz="2"/>
+  <Action 
+      index="36" 
+      description="Help de cliënt in zijn of haar schoenen." 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Doe schoenen aan" 
+      action="WearShoes" 
+      blockRequired="ToesChecked"/>
+  <Action 
+      index="37" 
+      description="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      type="use" 
+      points="1" 
+      value="WorkField"/>
+  <Action 
+      index="38" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment=" Apply hand hygiene." 
+      points="1" 
+      value="HandCleaner"/>
+  <Action 
+      index="39" 
+      description="Noteer de handeling en eventuele bevindingen." 
+      type="use" 
+      comment="last step" 
+      points="1" 
+      value="PaperAndPen"/>
+</ActionList>

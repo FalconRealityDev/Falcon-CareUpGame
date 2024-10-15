@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using CareUp.Actions;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using CareUp.Localize;
 
 public class GameUI : MonoBehaviour
 {
@@ -240,8 +241,19 @@ public class GameUI : MonoBehaviour
         }
         if (Message == "")
             return;
-        BlockTitle.text = Title;
-        BlockMessage.text = Message;
+        //@
+        BlockTitle.text = LocalizationManager.GetValueIfKey(Title);
+        //@
+        BlockMessage.text = LocalizationManager.GetValueIfKey(Message);
+
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(BlockTitle.gameObject, Title);
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(BlockMessage.gameObject, Message);
+        }
         BlockPopUp.GetComponent<Animator>().SetTrigger("pop");
     }
 
@@ -1221,10 +1233,9 @@ public class GameUI : MonoBehaviour
 
     void Update()
     {
-        if (itemDescriptionGroup != null)
-        {
+        if (itemDescriptionGroup != null && 
+                (PlayerPrefsManager.GetDevMode() && !Input.GetKey(KeyCode.LeftControl)))
             itemDescriptionGroup.position = Input.mousePosition;
-        }
         if (!PlayerPrefsManager.videoRecordingWithTextMode)
             DetailedHintPanel.SetActive(true);      //to remove
         
@@ -1606,6 +1617,7 @@ public class GameUI : MonoBehaviour
         ClearHintPanel();
         Text hintText;
         Text subTaskText;
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
 
         for (int i = 0; i < actionManager.CurrentDescription.Count; i++)
         {
@@ -1615,8 +1627,20 @@ public class GameUI : MonoBehaviour
                 DetailedHintPanel.transform.Find("HintContainer").transform);
             currentHintPanel.name = "HintPanel";
             hintText = currentHintPanel.transform.Find("Text").gameObject.GetComponent<Text>();
-            hintText.text = (actionManager.CurrentActionType == ActionManager.ActionType.SequenceStep) ?
-                "Wat ga je doen?" : actionManager.CurrentDescription[i];
+            string actionHintText = "[wat ga je426]";
+            if (actionManager.CurrentActionType == ActionManager.ActionType.SequenceStep)
+            {
+                actionHintText = actionManager.CurrentDescription[i];
+            }
+            //@
+            hintText.text = LocalizationManager.GetValueIfKey(actionHintText);
+
+            if (inGameLocalEditTool != null)
+            {
+                //!
+                inGameLocalEditTool.AddUILocalizationComponentToGO(hintText.gameObject, actionHintText);
+            }
+            
 
             for (int y = 0; y < subTasks.Count; y++)
             {
@@ -1630,7 +1654,14 @@ public class GameUI : MonoBehaviour
                         {
                             GameObject subtaskPanel = Instantiate<GameObject>(Resources.Load<GameObject>("NecessaryPrefabs/UI/SubtaskHints"), currentHintPanel.transform);
                             subTaskText = subtaskPanel.transform.Find("Text").GetComponent<Text>();
-                            subTaskText.text = subTasks[y].requirement;
+                            // string textText = subTasks[y].requirement;
+                            subTaskText.text = LocalizationManager.GetLocalizedWithMultiKey(subTasks[y].requirement);
+
+                            if (inGameLocalEditTool != null)
+                            {
+                                //!
+                                inGameLocalEditTool.AddUILocalizationComponentToGO(subTaskText.gameObject, subTasks[y].requirement);
+                            }
                         }
                     }
                 }

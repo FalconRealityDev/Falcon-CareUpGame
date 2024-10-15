@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CareUp.Localize;
 
 public class LevelButton : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class LevelButton : MonoBehaviour
     public string totalPoints;
     public string xPoints;
     bool started = false;
+    public Text titleText;
     [HideInInspector]
     public string[] isInProducts = new string[0];
     Image LevelPreview;
@@ -230,7 +232,21 @@ public class LevelButton : MonoBehaviour
             }
         }
 
-        descriptionText.text = sceneDescription;
+        //@
+        titleText.text = LocalizationManager.GetValueIfKey(displayName);
+        //@
+        descriptionText.text = LocalizationManager.GetValueIfKey(sceneDescription);
+
+        InGameLocalEditTool inGameLocalEditTool = GameObject.FindAnyObjectByType<InGameLocalEditTool>();
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(titleText.gameObject, displayName);
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(descriptionText.gameObject, sceneDescription);
+
+        }
+
         transform.Find("Points").GetComponent<Text>().text = xPoints;
         Text pointsLabel = transform.Find("PointsLabel").GetComponent<Text>();
         if (xPoints == "1")
@@ -326,8 +342,6 @@ public class LevelButton : MonoBehaviour
         }
         else
         {
-
-
             LevelButton mainBtn = GameObject.Find("UMenuProManager/MenuCanvas/Dialogs/DialogTestPractice/Panel_UI/Buttons/Start").GetComponent<LevelButton>();
 
             if (multiple)//??????????????????????????????????
@@ -336,7 +350,19 @@ public class LevelButton : MonoBehaviour
                 GameObject dialogue = GameObject.Find("UMenuProManager/MenuCanvas/Dialogs/Dialog 1");
 
                 // setting title i assume
-                dialogue.transform.Find("Content/Panel_UI/Top/Title").GetComponent<Text>().text = displayName;
+                //@
+                dialogue.transform.Find("Content/Panel_UI/Top/Title").GetComponent<Text>().text = 
+                    LocalizationManager.GetValueIfKey(displayName);
+                
+                
+                InGameLocalEditTool inGameLocalEditTool = GameObject.FindAnyObjectByType<InGameLocalEditTool>();
+                if (inGameLocalEditTool != null)
+                {
+                    //!
+                    inGameLocalEditTool.AddUILocalizationComponentToGO(
+                        dialogue.transform.Find("Content/Panel_UI/Top/Title").gameObject, displayName);
+                }
+
                 if (manager != null)
                 {
                     manager.currentSceneVisualName = displayName;
@@ -354,7 +380,13 @@ public class LevelButton : MonoBehaviour
                         dialogue.transform.Find("Content/Buttons/Option_" + (i + 1)).GetComponent<LevelSelectionScene_UI_Option>();
                     option.bundleName = variations[i].bundleName;
                     option.sceneName = variations[i].sceneName;
-                    option.transform.GetComponentInChildren<Text>().text = variations[i].displayName;
+                    option.transform.GetComponentInChildren<Text>().text = LocalizationManager.GetValueIfKey(variations[i].displayName);
+                    
+                    if (inGameLocalEditTool != null)
+                    {
+                        inGameLocalEditTool.AddUILocalizationComponentToGO(
+                            option.transform.GetComponentInChildren<Text>().gameObject, displayName);
+                    }
 
                     if (i == 0)
                     {

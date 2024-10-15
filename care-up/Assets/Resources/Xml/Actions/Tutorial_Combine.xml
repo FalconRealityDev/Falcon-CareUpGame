@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <action description="Combineer de spuit met de naald door de tips te volgen." audioHint="" fullDescription="Volg de tips op je scherm."
-		index="0" type="combine" left="Syringe" right="AbsorptionNeedle" extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  <action description="Haal de beschermdop van de naald door de tips te volgen." audioHint="" fullDescription="Volg de tips op je scherm."
-		index="1" type="combine" left="SyringeWithAbsorptionNeedleCap" right="" extra="Helaas dit is een verkeerde actie. Volg de bovenstaande tip om verder te gaan."></action>
-  
-  <action description="Gefeliciteerd!" fullDescription="" audioHint=""
-		index="2" type="use" value="__tutorialEnd" />
+  <action 
+    description="[combineer de spuit]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="0" 
+    type="combine" 
+    left="Syringe" 
+    right="AbsorptionNeedle" 
+    extra="[helaas dit is]"/>
+  <action 
+    description="[haal de beschermdop]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="1" 
+    type="combine" 
+    left="SyringeWithAbsorptionNeedleCap" 
+    right="" 
+    extra="[helaas dit is]"/>
+  <action 
+    description="[ui_gefel579]" 
+    fullDescription="" 
+    audioHint="" 
+    index="2" 
+    type="use" 
+    value="__tutorialEnd"/>
 </ActionList>

@@ -1,271 +1,216 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ActionList points="22">
-  <action
-      index="0"
-      points="1"
-      description="[Begroet]"
-      type="talk"
-      topic="Hello"
-      extra="Het begroeten van de client en je voorstellen is niet in de werkwijze is vermeld. Het is wel netjes en logisch om contact te leggen met de cliënt."
-      optional=""
-></action>
-
-  <action
-      comment="1. Apply hand hygiene"
-      index="0"
-      points="3"
-      description="[Pas handhygiëne]"
-      type="use"
-      value="HandCleaner"
-      extra="[Pas handhygiëne]"
-      messageTitle="Handhygiëne"
-      messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-></action>
-
-  <action
-    points="1"
-    description="[Maak een schoon werkveld]"
-    index="1"
-    type="use"
-    value="WorkField"
-    extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik."
-    messageTitle="Je het volgende nodig hebt?"
-    messageContent="
-- Zeep en schone handdoek voor de cliënt
-- Prikpen of vingerprikker + gebruiksinstructie
-- Lancet (bij prikpen of herbruikbare vingerprikker)
-- Teststrip
-- Bloedglucosemeter + gebruiksinstructie
-- Handschoenen
-- 2 gaasjes
-- Naaldenbeker
-- Afvalbak
-    "></action>
-
+<ActionList 
+    points="22">
+  <action 
+    index="0" 
+    points="1" 
+    description="[Begroet]" 
+    type="talk" 
+    topic="Hello" 
+    extra="[het begroeten van]" 
+    optional=""/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="0" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]"/>
+  <action 
+    points="1" 
+    description="[Maak een schoon werkveld]" 
+    index="1" 
+    type="use" 
+    value="WorkField" 
+    extra="[maak een schoon]" 
+    messageTitle="[je het volgende]" 
+    messageContent="[zeep en schone]"/>
   <action 
     comment="(3)Ask client to wash his hand with soap." 
     points="3" 
-    description="Laat je cliënt zijn of haar handen wassen met warm water en zeep. Droog daarna de handen goed af" 
+    description="[laat je cliënt]" 
     index="2" 
     type="talk" 
     topic="WashHands" 
-    extra="Laat je cliënt zijn of haar handen wassen met warm water en zeep. Droog daarna de handen goed af."
-    messageTitle="Gebruiksinstructie"
-    messageContent="Lees altijd de gebruiksinstructie van de bloedglucosemeter en van de prikpen of vingerprikker. "
-    ></action>
-
-  <action
-    comment="Step 4: Check expiration date of the teststrips."
-    points="3"
-    description="Controleer de vervaldatum en de houdbaarheidsdatum van de teststrips"
-    index="3"
-    type="examine"
-    item="TeststripsPackage"
-    expected="good"
-    extra="Controleer de vervaldatum en de houdbaarheidsdatum van de teststrips."
-    messageTitle="Nieuwe koker openen."
-    messageContent="Open je een nieuwe koker? Noteer dan altijd de datum van openen."
-  ></action>
-
-  <action
-    comment="Step 4: Remove cap from the lancet."
-    points="3"
-    description="Maak de prikpen of vingerprikker klaar voor gebruik door het beschermdopje te verwijderen. Stel de laagst mogelijke prikdiepte in"
-    index="4"
-    type="combine"
-    left="Scarifier"
-    right=""
-    extra="Maak de prikpen of vingerprikker klaar voor gebruik. Stel de laagst mogelijke prikdiepte in."
-    blockUnlock="toolsReady"
-    messageTitle="Prikpennen en vingerprikkers"
-    messageContent="Gebruik een veilige prikpen of vingerprikker. Plaats bij elke vingerprik een nieuw lancet (naaldje) als gebruik wordt gemaakt van een prikpen of herbruikbare vingerprikker. Vingerprikkers voor eenmalig gebruik zijn kant-en-klaar voor gebruik. De meeste prikpennen en vingerprikkers zijn instelbaar op prikdiepte. Stel de laagst mogelijke stand in."
-    />
-    
-
+    extra="[laat je cliënt205]" 
+    messageTitle="[gebruiksinstructie]" 
+    messageContent="[lees altijd de64]"/>
+  <action 
+    comment="Step 4: Check expiration date of the teststrips." 
+    points="3" 
+    description="[controleer de vervaldatum]" 
+    index="3" 
+    type="examine" 
+    item="TeststripsPackage" 
+    expected="good" 
+    extra="[controleer de vervaldatum533]" 
+    messageTitle="[nieuwe koker openen]" 
+    messageContent="[open je een]"/>
+  <action 
+    comment="Step 4: Remove cap from the lancet." 
+    points="3" 
+    description="[maak de prikpen]" 
+    index="4" 
+    type="combine" 
+    left="Scarifier" 
+    right="" 
+    extra="[maak de prikpen189]" 
+    blockUnlock="toolsReady" 
+    messageTitle="[prikpennen en vingerprikkers]" 
+    messageContent="[gebruik een veilige]"/>
   <action 
     points="2" 
-    description="Zet de bloedglucosemeter aan"  
+    description="[zet de bloedglucosemeter]" 
     index="5" 
     type="useOn" 
     item="BloodGlucoseMeter" 
     target="" 
     extra="" 
     buttonText="Aanzetten" 
-    messageTitle="Automatisch inschakelen." 
-    messegeContent="De meeste meters gaan bij het plaatsen van de teststrip vanzelf aan. Zet de bloedglucose meter aan volgens de gebruiksaanwijzing wanneer dit niet het geval is. "></action>
-
-  <action
-    comment="Step 5: Take test strip from pack."
-    points="3"
-    description="Pak een teststrip uit de koker"
-    index="6"
-    type="combine"
-    left="TeststripsPackage"
-    right=""
-    extra="Pak een teststrip uit de koker."
-    messageTitle="testmateriaal"
-    messageContent="Gebruik het bij de bloedglucosemeter behorende testmateriaal (strips in koker of in schijf, cassette). Bewaar de teststrips in de oorspronkelijke verpakking. Codeer, indien nodig, de bloedglucosemeter volgens gebruiksinstructie wanneer een nieuwe verpakking met teststrips in gebruik wordt genomen."
-    />
-
-  <action
-    comment="Step 7: Place teststrip in the blood glucose meter"
-    points="3"
-    description="Plaats de teststrip in de bloedglucosemeter en/of maak de strip gebruiksklaar volgens de gebruiksinstructie"
-    index="7"
-    quiz="2"
-    type="combine"
-    left="BloodGlucoseMeter"
-    right="Teststrip"
-    extra="Plaats de teststrip in de bloedglucosemeter en/of maak de strip gebruiksklaar volgens de gebruiksinstructie."
-    blockUnlock="prepare meter"
-   />
-
+    messageTitle="[automatisch inschakelen]" 
+    messegeContent="De meeste meters gaan bij het plaatsen van de teststrip vanzelf aan. Zet de bloedglucose meter aan volgens de gebruiksaanwijzing wanneer dit niet het geval is. "/>
+  <action 
+    comment="Step 5: Take test strip from pack." 
+    points="3" 
+    description="[pak een teststrip]" 
+    index="6" 
+    type="combine" 
+    left="TeststripsPackage" 
+    right="" 
+    extra="[pak een teststrip990]" 
+    messageTitle="[testmateriaal]" 
+    messageContent="[gebruik het bij]"/>
+  <action 
+    comment="Step 7: Place teststrip in the blood glucose meter" 
+    points="3" 
+    description="[plaats de teststrip]" 
+    index="7" 
+    quiz="2" 
+    type="combine" 
+    left="BloodGlucoseMeter" 
+    right="Teststrip" 
+    extra="[plaats de teststrip973]" 
+    blockUnlock="prepare meter"/>
   <action 
     comment="Put on gloves." 
     points="3" 
-    description="Trek handschoenen aan"  
+    description="[trek handschoenen aan]" 
     index="8" 
     type="use" 
     value="gloveBox" 
-    extra="Trek handschoenen aan."
-    blockRequired="prepare meter,toolsReady"
-	blockUnlock="GlovesTakenOn"
-    blockTitle="Deze handeling is nog niet mogelijk"
-    blockMessage="Maak eerst de vingerprikker en bloedglucosemeter klaar voor gebruik. Zet de meter aan en plaats een teststrip."
-  ></action>
-
+    extra="[trek handschoenen aan296]" 
+    blockRequired="prepare meter,toolsReady" 
+    blockUnlock="GlovesTakenOn" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[maak eerst de]"/>
   <action 
     points="1" 
-    description="Plaats de prikpen of vingerprikker aan de zijkant van de vingertop. Stuw hierbij de vinger niet" 
+    description="[plaats de prikpen]" 
     index="9" 
     type="sequenceStep" 
     value="place finger" 
-    extra="Plaats de prikpen of vingerprikker aan de zijkant van de vingertop. Stuw hierbij de vinger niet."
-    messageTitle="Geschikte prik plaatsen"
-    messageContent="Geschikte plaatsen om te prikken zijn de zijkant van de top van de ring-, middelvinger of pink. Wissel de prikplaats af. Bij baby’s tot ongeveer 6 maanden oud is zijkant van de hiel een geschikte plek."
-  ></action>
-
+    extra="[plaats de prikpen925]" 
+    messageTitle="[geschikte prik plaatsen]" 
+    messageContent="[geschikte plaatsen om]"/>
   <action 
     points="1" 
-    description="Prik in de vinger. Stuw ook hierbij de vinger niet" 
+    description="[prik in de]" 
     index="10" 
     type="sequenceStep" 
     value="puncture" 
-    extra="Prik in de vinger. Stuw ook hierbij de vinger niet." 
-  ></action>
-
+    extra="[prik in de277]"/>
   <action 
     points="1" 
-    description="Veeg de eerste bloeddruppel weg met een gaasje" 
+    description="[veeg de eerste]" 
     index="11" 
     type="sequenceStep" 
     value="whipe blood" 
-    extra="Veeg de eerste bloeddruppel weg met een gaasje."
-    messageTitle="wegvegen van eerste bloeddruppel"
-    messageContent="Als jij als zorgmedewerker de meting uitvoert, gebruik dan de tweede druppel bloed, om er zeker van te zijn dat de druppel niet verontreinigd is. Als de cliënt de meting uitvoert kan de eerste bloeddruppel gebruikt worden, op voorwaarde dat de cliënt de handen wast met bij voorkeur warm water en zeep en goed afdroogt. Dit protocol gaat ervan uit dat de zorgmedewerker de meting uitvoert."
-  ></action>
-
+    extra="[veeg de eerste847]" 
+    messageTitle="[wegvegen van eerste]" 
+    messageContent="[als jij als]"/>
   <action 
     points="1" 
-    description="Vul het testveld van de teststrip met een bloeddruppel. Zorg ervoor dat de bloeddruppel het hele testveld bedekt. Smeer het bloed niet uit" 
+    description="[vul het testveld]" 
     index="12" 
     type="sequenceStep" 
     value="fill in teststrip" 
-    encounter="1"
-    extra="Vul het testveld van de teststrip met een bloeddruppel. Zorg ervoor dat de bloeddruppel het hele testveld bedekt. Smeer het bloed niet uit."
-  ></action>
-
+    encounter="1" 
+    extra="[vul het testveld701]"/>
   <action 
     points="1" 
-    description="Breng een gaasje aan voor de opvang van eventuele bloeddruppels. Masseer de vinger niet" 
+    description="[breng een gaasje]" 
     index="13" 
     type="sequenceStep" 
     value="apply gauze" 
-    extra="Breng een gaasje aan voor de opvang van eventuele bloeddruppels. Masseer de huid niet."
-  ></action>
-
+    extra="[breng een gaasje805]"/>
   <action 
     points="1" 
-    description="Lees en noteer de bloedglucosewaarde af van de bloedglucosemeter" 
+    description="[lees en noteer]" 
     index="14" 
     type="sequenceStep" 
     value="read values" 
-    extra="Lees en noteer de bloedglucosewaarde af van de bloedglucosemeter."
-   ></action>
-
+    extra="[lees en noteer858]"/>
   <action 
     points="1" 
-    description="Verwijder de teststrip uit de bloedglucosemeters volgens de gebruiksaanwijzing. Gooi deze vervolgens in de afvalbak" 
+    description="[verwijder de teststrip]" 
     index="15" 
     type="sequenceStep" 
     value="remove strip" 
-    extra="Verwijder de teststrip uit de bloedglucosemeters volgens de gebruiksaanwijzing. Gooi deze vervolgens in de afvalbak." 
-  ></action>
-
+    extra="[verwijder de teststrip671]"/>
   <action 
     points="1" 
-    description="Schakel de bloedglucosemeter handmatig uit. Let op; Sommige meters schakelen automatisch uit" 
+    description="[schakel de bloedglucosemeter]" 
     index="16" 
     type="sequenceStep" 
     value="turn off" 
-    extra="Schakel de bloedglucosemeter handmatig uit. Let op; Sommige meters schakelen automatisch uit. " 
-  ></action>
-
+    extra="[schakel de bloedglucosemeter206]"/>
   <action 
     points="1" 
-    description="Gooi de vingerprikker voor eenmalig gebruik geheel in de naaldenbeker"
+    description="[gooi de vingerprikker]" 
     index="17" 
     type="sequenceStep" 
     value="throw finger pin" 
-	blockUnlock="SequenceFinished"
-    extra="Gooi de vingerprikker voor eenmalig gebruik geheel in de naaldenbeker." 
-  ></action>
-
-	<action
-	points="1"
-	description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-	index="18"
-	type="use"
-	value="WorkField"
-	blockRequired="SequenceFinished"
-	blockUnlock="AllowedToTakeOffGloves"
-	extra="Ruim de materialen op door met lege handen op het werkveld te klikken"
-	messegeTitle="Materialen opruimen"
-	MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"
-></action>
-
-	<Action
-	  index="19"
-	  description="Trek de handschoenen uit."
-	  type="general"
-	  item=""
-	  points="1"
-	  buttonText="Trek handschoenen uit"
-	  action="TakeOffGlovesWithoutThrowing"
-	  blockRequired="GlovesTakenOn, AllowedToTakeOffGloves" />
-
-  <action
-    comment="1. Apply hand hygiene"
-    index="20"
-    points="3"
-    description="[Pas handhygiëne]"
-    type="use"
-    value="HandCleaner"
-    extra="[Pas handhygiëne]"
-    messageTitle="Handhygiëne"
-    messageContent="Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-   ></action>
-
- 
-  
-  <action
-    points="3"
-    description="Noteer de handeling, de gemeten waarde, de prikstand van de prikpen of vingerprikker. Noteer ook eventuele andere bevindingen"
-    audioHint="Injection/EAS4-2"
-    index="21"
-    type="use"
-    value="PaperAndPen"
-    extra="Noteer de handeling, de gemeten waarde, de prikstand van de prikpen of vingerprikker. Noteer ook eventuele andere bevindingen."
-   ></action>
-
+    blockUnlock="SequenceFinished" 
+    extra="[gooi de vingerprikker363]"/>
+  <action 
+    points="1" 
+    description="[ruim de materialen]" 
+    index="18" 
+    type="use" 
+    value="WorkField" 
+    blockRequired="SequenceFinished" 
+    blockUnlock="AllowedToTakeOffGloves" 
+    extra="[ruim de materialen]" 
+    messegeTitle="Materialen opruimen" 
+    MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"/>
+  <Action 
+    index="19" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="GlovesTakenOn, AllowedToTakeOffGloves"/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="20" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[handhygiëne is het]"/>
+  <action 
+    points="3" 
+    description="[noteer de handeling]" 
+    audioHint="Injection/EAS4-2" 
+    index="21" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[noteer de handeling669]"/>
 </ActionList>

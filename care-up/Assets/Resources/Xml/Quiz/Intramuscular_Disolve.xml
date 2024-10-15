@@ -1,117 +1,204 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <quiz>
   <step>
-    <question
-      text="De arts schrijft een verkeerde dosering voor, je dient dit toe. Degene die de injectie toedient is aansprakelijk voor de verkeerde dosering"
-      answer="1" points="10">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[de arts schrijft]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Om verantwoord te injecteren moet je de werking van het toegediende medicijn te kennen"
+    <question 
+      text="[om verantwoord te361]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Een van de indicaties voor een injectie kan zijn dat orale inname van het medicijn niet mogelijk is"
+    <question 
+      text="[een van de960]" 
       answer="1">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Wat ontstaat er vaak tijdens overgevoeligheidsreacties na het toediening van een medicijn?"
+    <question 
+      text="[wat ontstaat er]" 
       answer="2">
-      <answer text="Vaatvernauwing" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Vaatverwijding" descr="Heel goed!" />
+      <answer 
+      text="[vaatvernauwing]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Om verantwoord te injecteren dient alleen de arts de werking van het toegediende medicijn te kennen"
+    <question 
+      text="[om verantwoord te]" 
       answer="2">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
   </step>
-
   <step>
-    <question text="Het plaatsen van een injectie in een moedervlek is geen probleem" answer="2"
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Middels de intramusculaire of subcutane injectie wordt het geneesmiddel via de ... opgenomen in de bloedbaan"
+    <question 
+      text="[middels de intramusculaire]" 
       answer="2">
-      <answer text="venen" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="capillairen" descr="Heel goed! " />
-      <answer text="arterien" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[venen]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[capillairen]" 
+      descr="[heel goed!532]"/>
+      <answer 
+      text="[arterien]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question text="Parenterale toediening betekent toediening via de volgende route(s) ..."
+    <question 
+      text="[parenterale toediening betekent]" 
       answer="3">
-      <answer text="...intraveneus, intracutaan en intramusculair"
-        descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...intramusculair en subcutaan" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="...intraveneus, intramusculair, intracutaan en subcutaan" descr="Heel goed!" />
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="Het plaatsen van een injectie in een trombosebeen is geen probleem" answer="2"
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
       points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Een injectie is een goede optie wanneer maagsappen de werking van het medicijn aantasten"
-      answer="1" points="10">
-      <answer text="Juist" descr="Heel goed!" />
-      <answer text="Onjuist" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[een injectie is]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
-    <question
-      text="Als een intramusculaire injectie in de bilspier niet mogelijk is, wat is dan de volgende voorkeursplaats?"
+    <question 
+      text="[als een intramusculaire]" 
       answer="1">
-      <answer text="Dijspier" descr="Heel goed!" />
-      <answer text="Kuitspier" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onderarmspier" descr="Helaas, dit antwoord is niet goed" />
+      <answer 
+      text="[dijspier]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[kuitspier]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onderarmspier]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
   </step>
-
   <step>
-    <question text="Moet je de huid desinfecteren bij cliënten met een verminderde weerstand?"
-      answer="2" points="10">
-      <answer text="Nee"
-        descr="Helaas, dit antwoord is niet goed! Desinfecteer de huid WEL bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken." />
-      <answer text="Ja"
-        descr="Heel goed! Desinfecteer altijd de huid bij Cliënten met een verminderde weerstand tegen infecties, vooral bij granulocytopenie (granulopathie), zoals cliënten die chemotherapie krijgen of andere afweerondrukkende medicijnen gebruiken." />
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[helaas dit antwoord778]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[heel goed! desinfecteer]"/>
     </question>
-    <question text="Wanneer is aspireren zinvol?" answer="1">
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de musculus gluteus ‘bovenste buitenste bilkwadrant’, de rugzijde"
-        descr="Heel goed! Wanneer de injectieplaats onjuist wordt bepaald bestaat het risico op het aanprikken van het bloedvat wat daar loopt." />
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de musculus deltoïdeus 'zijkant van de bovenarm'"
-        descr="Helaas, niet goed. Het terugtrekken van de zuiger van de injectiespuit na injecteren (aspireren) wordt gedaan om te controleren of de injectienaald per ongeluk in een bloedvat zit. Echter, er is geen bewijs dat dit fouten bij injecteren voorkomt. Aspiratie bevestigt niet een goede plaatsbepaling van de injectie. Aspireren bij de bovenarm is niet zinvol." />
-      <answer
-        text="Bij het intramusculair injecteren met als injectieplaats de m. rectus femoris 'rechte dijbeenspier'"
-        descr="Helaas, niet goed. Het terugtrekken van de zuiger van de injectiespuit na injecteren (aspireren) wordt gedaan om te controleren of de injectienaald per ongeluk in een bloedvat zit. Echter, er is geen bewijs dat dit fouten bij injecteren voorkomt. Aspiratie bevestigt niet een goede plaatsbepaling van de injectie. Apireren bij de rechte dijbeenspier is niet zinvol." />
+    <question 
+      text="[wanneer is aspireren]" 
+      answer="1">
+      <answer 
+      text="[bij het intramusculair981]" 
+      descr="[heel goed! wanneer]"/>
+      <answer 
+      text="[bij het intramusculair138]" 
+      descr="[helaas niet goed]"/>
+      <answer 
+      text="[bij het intramusculair262]" 
+      descr="[helaas niet goed5]"/>
     </question>
-    <question text="De intramusculaire injectie dien je bij voorkeur toe in een aangespannen spier"
-      answer="2" points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+    <question 
+      text="[de intramusculaire injectie940]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="Waar plaats je de intramusculaire injectie in de bil?" answer="3">
-      <answer text="Beide kwadranten zijn geschikt" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="De bovenste binnenste bilkwadrant" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="De bovenste buitenste bilkwadrant" descr="Heel goed!" />
+    <question 
+      text="[waar plaats je]" 
+      answer="3">
+      <answer 
+      text="[beide kwadranten zijn]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[de bovenste binnenste]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[de bovenste buitenste]" 
+      descr="[heel goed!]"/>
     </question>
-    <question
-      text="Bij intramusculair injecteren breng je de naald snel in, spuit je de vloeistof snel in en trekt dan de naald er weer snel uit. Zo wordt het ongemak voor de cliënt zoveel mogelijk beperkt"
-      answer="2" points="10">
-      <answer text="Juist" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="Onjuist" descr="Heel goed!" />
+    <question 
+      text="[bij intramusculair injecteren918]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
     </question>
-    <question text="De opperhuid is gemiddeld ... dik" answer="2">
-      <answer text="1 millimeter" descr="Helaas, dit antwoord is niet goed" />
-      <answer text="0,1 millimeter" descr="Heel goed!" />
-      <answer text="10 millimeter" descr="Helaas, dit antwoord is niet goed" />
+    <question 
+      text="[de opperhuid is]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[01 millimeter]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[10 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
     </question>
   </step>
 </quiz>

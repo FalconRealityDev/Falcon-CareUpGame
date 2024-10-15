@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Xml;
 using UnityEngine.UI;
-
+using CareUp.Localize;
 public class QuizTab : MonoBehaviour
 {
     GameUI gameUI;
@@ -171,6 +171,8 @@ public class QuizTab : MonoBehaviour
             b.onClick.RemoveAllListeners();
         randomIndexList = RandomEventTab.BuildShuffledList(current.answers.Count);
 
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+
         for (int i = 0; i < current.answers.Count; i++)
         {
             string cheatSimbol = "";
@@ -183,7 +185,18 @@ public class QuizTab : MonoBehaviour
                             cheatSimbol = "@";
                 }
             }
-            buttons[i].transform.GetChild(0).GetComponent<Text>().text = cheatSimbol + current.answers[randomIndexList[i]].text;
+
+            //@
+            buttons[i].transform.GetChild(0).GetComponent<Text>().text = cheatSimbol + 
+                LocalizationManager.GetValueIfKey(current.answers[randomIndexList[i]].text);
+
+            if (inGameLocalEditTool != null)
+            {
+                //!
+                inGameLocalEditTool.AddUILocalizationComponentToGO(
+                    buttons[i].transform.GetChild(0).gameObject, current.answers[randomIndexList[i]].text);
+            }
+
             if (gameUI.AllowAutoPlay(false))
             if (current.answers[randomIndexList[i]].isCorrect)
             {
@@ -263,7 +276,19 @@ public class QuizTab : MonoBehaviour
             current = questionList[currentStep][currentQuestionID];
         }
 
-        quastionTitle.text = current.text;
+    
+        //@
+        quastionTitle.text = LocalizationManager.GetValueIfKey(current.text);
+
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(
+                quastionTitle.gameObject, current.text);
+        }
+
         OrganizeButtons();
 
         if (random)
@@ -308,10 +333,25 @@ public class QuizTab : MonoBehaviour
         }
 
         ActionManager.CorrectAction();
-
-        answeredTitleText.text = "Heel goed!";
+        //@
+        answeredTitleText.text = LocalizationManager.GetValueIfKey("[heel goed!]");
         w_descriptionPanel.SetActive(description != "");
-        descriptionText.text = description;
+        //@
+        descriptionText.text = LocalizationManager.GetValueIfKey(description);
+
+
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(
+                answeredTitleText.gameObject, "[heel goed!]");
+
+            inGameLocalEditTool.AddUILocalizationComponentToGO(
+                descriptionText.gameObject, description);
+        }
+
 
         if (random == false)
         {
@@ -363,9 +403,23 @@ public class QuizTab : MonoBehaviour
         {
             GameObject.Find("GameLogic").GetComponent<ActionManager>().ActivatePenalty();
         }
+        //@
+        answeredTitleText.text = LocalizationManager.GetValueIfKey("[helaas dit antwoord323]");
+        //@
+        descriptionText.text = LocalizationManager.GetValueIfKey(description);
 
-        answeredTitleText.text = "Helaas, dit antwoord is niet goed";
-        descriptionText.text = description;
+        InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+        if (inGameLocalEditTool != null)
+        {
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(
+                answeredTitleText.gameObject, "[helaas dit antwoord323]");
+            //!
+            inGameLocalEditTool.AddUILocalizationComponentToGO(
+                descriptionText.gameObject, description);
+        }
+
+
         w_descriptionPanel.SetActive(description != "");
         continueBtn = false;
         continueButton.gameObject.SetActive(false);

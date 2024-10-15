@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quiz>
+  <step>
+    <question 
+      text="[de arts schrijft]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+    <question 
+      text="[om verantwoord te361]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+    <question 
+      text="[om verantwoord te]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[een van de]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+    <question 
+      text="[wat ontstaat er]" 
+      answer="2">
+      <answer 
+      text="[vaatvernauwing]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[om verantwoord te]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[middels de intramusculaire]" 
+      answer="2">
+      <answer 
+      text="[venen]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[capillairen]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[arterien]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+    <question 
+      text="[parenterale toediening betekent]" 
+      answer="3">
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[een injectie is]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+    <question 
+      text="[als een intramusculaire]" 
+      answer="1">
+      <answer 
+      text="[dijspier]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[kuitspier]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onderarmspier]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[helaas dit antwoord778]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[heel goed! desinfecteer840]"/>
+    </question>
+    <question 
+      text="[wanneer is aspireren]" 
+      answer="1">
+      <answer 
+      text="[bij het intramusculair981]" 
+      descr="[heel goed! wanneer]"/>
+      <answer 
+      text="[bij het intramusculair138]" 
+      descr="[helaas niet goed]"/>
+      <answer 
+      text="[bij het intramusculair262]" 
+      descr="[helaas niet goed5]"/>
+    </question>
+    <question 
+      text="[de intramusculaire injectie940]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onuist]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[waar plaats je]" 
+      answer="3">
+      <answer 
+      text="[beide kwadranten zijn]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[de bovenste binnenste]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[de bovenste buitenste]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[bij intramusculair injecteren918]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[onjuist]" 
+      descr="[heel goed!]"/>
+    </question>
+    <question 
+      text="[de opperhuid is]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
+      <answer 
+      text="[01 millimeter]" 
+      descr="[heel goed!]"/>
+      <answer 
+      text="[10 millimeter]" 
+      descr="[helaas dit antwoord323]"/>
+    </question>
+  </step>
+</quiz>

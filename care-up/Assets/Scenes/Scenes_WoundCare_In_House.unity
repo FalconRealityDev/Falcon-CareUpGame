@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplitedGauze
       objectReference: {fileID: 0}
+    - target: {fileID: 5199344253355690057, guid: 5d8798b8348ecc84489a48e640d35db0,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5741369827570839457, guid: 5d8798b8348ecc84489a48e640d35db0,
         type: 3}
       propertyPath: m_RootOrder
@@ -213,6 +218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BedsorePlaster_CutedCoverMiddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620287341094905681, guid: ce475740f0b5c8c46a5eec9cc68b8ce9,
+        type: 3}
+      propertyPath: description
+      value: '[i_middle cover]'
       objectReference: {fileID: 0}
     - target: {fileID: 7947177184259686469, guid: ce475740f0b5c8c46a5eec9cc68b8ce9,
         type: 3}
@@ -350,6 +360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -580,6 +595,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1368734331932370376, guid: 35bdfef54d3de2d43b4079b5a83fb720,
+        type: 3}
+      propertyPath: description
+      value: '[i_bakje met gaasjes]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1545862643805866584, guid: 35bdfef54d3de2d43b4079b5a83fb720,
         type: 3}
       propertyPath: m_RootOrder
@@ -640,6 +660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrayOfGauzes
       objectReference: {fileID: 0}
+    - target: {fileID: 2179690880848892130, guid: 35bdfef54d3de2d43b4079b5a83fb720,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35bdfef54d3de2d43b4079b5a83fb720, type: 3}
 --- !u!1001 &166350754
@@ -696,6 +721,11 @@ PrefabInstance:
     - target: {fileID: 4956606989603916, guid: 162f1c03f1a460c43acae2a0beda33cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114772603672487604, guid: 162f1c03f1a460c43acae2a0beda33cd,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje met ampultop]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 162f1c03f1a460c43acae2a0beda33cd, type: 3}
@@ -848,6 +878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tweezers2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2959067767994549950, guid: e03334af419e97442b1ba829fed3a43d,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 3357997606580463850, guid: e03334af419e97442b1ba829fed3a43d,
         type: 3}
@@ -1457,6 +1492,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
 --- !u!1 &280621612 stripped
@@ -1620,6 +1660,11 @@ PrefabInstance:
     - target: {fileID: 4714921786978560, guid: 4eb9663bf209472498b4bd751e929758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257800862235300, guid: 4eb9663bf209472498b4bd751e929758,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eb9663bf209472498b4bd751e929758, type: 3}
@@ -1807,6 +1852,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 2349094299736989687, guid: 694802e29534e1041915a656fb2f7f9c,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2815613625439008798, guid: 694802e29534e1041915a656fb2f7f9c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2016,6 +2066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannula_Packed
       objectReference: {fileID: 0}
+    - target: {fileID: 6241791133606170699, guid: fae24a01bcdb43042a1c898f184dbb67,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannulapacked]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae24a01bcdb43042a1c898f184dbb67, type: 3}
 --- !u!4 &357956120 stripped
@@ -2187,7 +2242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Plaster
   ObjectID: 0
-  description: Plaster
+  description: '[i_plaster]'
   nameArticle: a
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -2447,6 +2502,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
 --- !u!1 &388815587 stripped
@@ -2509,6 +2569,11 @@ PrefabInstance:
     - target: {fileID: 4121260112949130, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
@@ -2585,6 +2650,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 92.009
       objectReference: {fileID: 0}
+    - target: {fileID: 114509813824253062, guid: 50dcd8b790fb24ee4bc79e0604137a0f,
+        type: 3}
+      propertyPath: description
+      value: '[i_handschoenen]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50dcd8b790fb24ee4bc79e0604137a0f, type: 3}
 --- !u!1 &403579115 stripped
@@ -2653,6 +2723,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114784033200395108, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b,
+        type: 3}
+      propertyPath: description
+      value: '[i_cloth]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b, type: 3}
@@ -2723,6 +2798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359568093526907465, guid: 85c5eaca4f8066047be69132503eadb2,
+        type: 3}
+      propertyPath: description
+      value: '[i_gevouwen gaasje]'
       objectReference: {fileID: 0}
     - target: {fileID: 593376288852502302, guid: 85c5eaca4f8066047be69132503eadb2,
         type: 3}
@@ -2798,6 +2878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.881004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029601234347573802, guid: 43f90acee6b3af644932883f787218be,
+        type: 3}
+      propertyPath: description
+      value: '[i_bakje met gaasjes]'
       objectReference: {fileID: 0}
     - target: {fileID: 5264094973925177088, guid: 43f90acee6b3af644932883f787218be,
         type: 3}
@@ -3000,6 +3085,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 1368734331932370376, guid: 35bdfef54d3de2d43b4079b5a83fb720,
+        type: 3}
+      propertyPath: description
+      value: '[i_bakje met gaasjes]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1545862643805866584, guid: 35bdfef54d3de2d43b4079b5a83fb720,
         type: 3}
       propertyPath: m_RootOrder
@@ -3149,6 +3239,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0730668a555cf7c4fa4121a4382a268d, type: 2}
+    - target: {fileID: 1338215201202347673, guid: 5645a905578a9634b82260509ff72e4e,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1520231917487454583, guid: 5645a905578a9634b82260509ff72e4e,
         type: 3}
       propertyPath: m_RootOrder
@@ -3277,6 +3372,11 @@ PrefabInstance:
     - target: {fileID: 4000013474603844, guid: b69b584f68bf2b647bfa00220d89aa55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 102.690994
+      objectReference: {fileID: 0}
+    - target: {fileID: 114337429439987186, guid: b69b584f68bf2b647bfa00220d89aa55,
+        type: 3}
+      propertyPath: description
+      value: '[i_desinfectans]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69b584f68bf2b647bfa00220d89aa55, type: 3}
@@ -3417,6 +3517,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8898260015176445469, guid: 2c9af6b6285932948ab3f6062ac57c73,
+        type: 3}
+      propertyPath: description
+      value: '[i_wattenstokje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c9af6b6285932948ab3f6062ac57c73, type: 3}
 --- !u!4 &657935284 stripped
@@ -3486,6 +3591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347482261564550237, guid: 79916156293cd424896d3aecf30b62ef,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 7581504178892362032, guid: 79916156293cd424896d3aecf30b62ef,
         type: 3}
@@ -3899,6 +4009,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
 --- !u!1 &748577724 stripped
@@ -3945,6 +4060,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 129834795013707222, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2108381353730885433, guid: 08f9d82480ff5284da043ccd59c5ee63,
         type: 3}
       propertyPath: m_RootOrder
@@ -4004,6 +4124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TrashBucket
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111590038025226922, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_afvalbakje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9d82480ff5284da043ccd59c5ee63, type: 3}
@@ -4184,6 +4309,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1478548998513846151, guid: e9866faf1e6690648a637c25f2adaf66,
+        type: 3}
+      propertyPath: description
+      value: '[i_bedsoreplaster]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1749003776806640338, guid: e9866faf1e6690648a637c25f2adaf66,
         type: 3}
       propertyPath: m_Name
@@ -4260,6 +4390,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
         type: 3}
+      propertyPath: description
+      value: '[i_gaasjes]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
+        type: 3}
       propertyPath: PrefabToAppear
       value: Cloth2
       objectReference: {fileID: 0}
@@ -4276,6 +4411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
       objectReference: {fileID: 0}
     - target: {fileID: 5962217624345325211, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
@@ -4588,6 +4728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 8279873803550438499, guid: 8a27dcb365c40c54a88d31eea92a4e8c,
+        type: 3}
+      propertyPath: description
+      value: '[i_right cover]'
+      objectReference: {fileID: 0}
     - target: {fileID: 8458529923480605578, guid: 8a27dcb365c40c54a88d31eea92a4e8c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5169,6 +5314,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 9c6d23be308844a469ae5f48018dcc8a,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6d23be308844a469ae5f48018dcc8a, type: 3}
 --- !u!4 &920830342 stripped
@@ -5483,6 +5633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedsorePlaster_CutedCoverLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 6503095055450360769, guid: c5d180de02b1cdb49961228856af0c30,
+        type: 3}
+      propertyPath: description
+      value: '[i_left cover]'
+      objectReference: {fileID: 0}
     - target: {fileID: 6752332915977923620, guid: c5d180de02b1cdb49961228856af0c30,
         type: 3}
       propertyPath: m_RootOrder
@@ -5619,6 +5774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -5848,6 +6008,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998149869432618394, guid: 1acb551f54c6f504da975804d4c9bf4c,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 8736621881127117085, guid: 1acb551f54c6f504da975804d4c9bf4c,
         type: 3}
@@ -6360,6 +6525,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 336679082198360413, guid: f505746c4ed338e4fa350d1d0276734e,
+        type: 3}
+      propertyPath: description
+      value: '[i_-]'
+      objectReference: {fileID: 0}
     - target: {fileID: 6738934223356835729, guid: f505746c4ed338e4fa350d1d0276734e,
         type: 3}
       propertyPath: m_Name
@@ -6503,7 +6673,7 @@ PrefabInstance:
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
       propertyPath: description
-      value: werkveld
+      value: '[i_werkveld]'
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
@@ -7021,6 +7191,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8862513804072970853, guid: ef48cede478e6c848b454b9b313bb950,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef48cede478e6c848b454b9b313bb950, type: 3}
 --- !u!4 &1356100917 stripped
@@ -7233,6 +7408,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114337429439987186, guid: b69b584f68bf2b647bfa00220d89aa55,
+        type: 3}
+      propertyPath: description
+      value: '[i_desinfectans]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69b584f68bf2b647bfa00220d89aa55, type: 3}
 --- !u!4 &1449897663 stripped
@@ -7389,6 +7569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -7775,6 +7960,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114593654323161644, guid: 3face7d0743df544f95be60b52514bdb,
+        type: 3}
+      propertyPath: description
+      value: '[i_onderlegger]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3face7d0743df544f95be60b52514bdb, type: 3}
 --- !u!4 &1717338715 stripped
@@ -8076,6 +8266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: scissors_bandaging_woundCare_after1SQ
       objectReference: {fileID: 0}
+    - target: {fileID: 7657028478898690718, guid: cb0a2394998993d469553635aeb66fc5,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
+      objectReference: {fileID: 0}
     - target: {fileID: 7910998979263020361, guid: cb0a2394998993d469553635aeb66fc5,
         type: 3}
       propertyPath: m_RootOrder
@@ -8295,6 +8490,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1478548998513846151, guid: e9866faf1e6690648a637c25f2adaf66,
+        type: 3}
+      propertyPath: description
+      value: '[i_bedsoreplaster]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1749003776806640338, guid: e9866faf1e6690648a637c25f2adaf66,
         type: 3}
       propertyPath: m_Name
@@ -8380,6 +8580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546043676030333171, guid: 6b17204f131676245a62d3ddb68a9257,
+        type: 3}
+      propertyPath: description
+      value: '[i__]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17204f131676245a62d3ddb68a9257, type: 3}
@@ -8471,6 +8676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 17.607853
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702928392773898609, guid: 7e5b2d0953543ed408c08224e9f5bd69,
+        type: 3}
+      propertyPath: description
+      value: '[i_flashlight]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5b2d0953543ed408c08224e9f5bd69, type: 3}
@@ -8765,6 +8975,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 295655149}
     m_Modifications:
+    - target: {fileID: 5962217624345325210, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
+        type: 3}
+      propertyPath: description
+      value: '[i_filter]'
+      objectReference: {fileID: 0}
     - target: {fileID: 6139730286273907058, guid: c9e8ab50a9ba3414eb664c3f6bbf203a,
         type: 3}
       propertyPath: m_RootOrder
@@ -8956,6 +9171,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114784033200395108, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b,
+        type: 3}
+      propertyPath: description
+      value: '[i_cloth]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd2a04261cd0fa4f9f5d9b4eff3ee0b, type: 3}
@@ -9171,6 +9391,11 @@ PrefabInstance:
     - target: {fileID: 4000013295583788, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223224817259274, guid: 12ca867f76990914495a4a6a96f530e3,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12ca867f76990914495a4a6a96f530e3, type: 3}
@@ -9505,7 +9730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Client
   ObjectID: 0
-  description: Client
+  description: '[i_client]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9544,7 +9769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Client
   ObjectID: 0
-  description: Client
+  description: '[i_client]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9583,7 +9808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Client
   ObjectID: 0
-  description: Client
+  description: '[i_client]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9774,6 +9999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StomaPlaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454049722918841628, guid: 8f15f28632648e444bca5beabfa93651,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomaplaster]'
       objectReference: {fileID: 0}
     - target: {fileID: 5492724887616768753, guid: 8f15f28632648e444bca5beabfa93651,
         type: 3}
@@ -10021,7 +10251,7 @@ PrefabInstance:
     - target: {fileID: 7657028478898690718, guid: cb0a2394998993d469553635aeb66fc5,
         type: 3}
       propertyPath: description
-      value: Scissors
+      value: '[i_scissors]'
       objectReference: {fileID: 0}
     - target: {fileID: 7910998979263020361, guid: cb0a2394998993d469553635aeb66fc5,
         type: 3}
@@ -10156,7 +10386,7 @@ PrefabInstance:
     - target: {fileID: 1478548998513846151, guid: e9866faf1e6690648a637c25f2adaf66,
         type: 3}
       propertyPath: description
-      value: wondverband
+      value: '[i_wondverband]'
       objectReference: {fileID: 0}
     - target: {fileID: 1749003776806640338, guid: e9866faf1e6690648a637c25f2adaf66,
         type: 3}
@@ -10186,6 +10416,11 @@ PrefabInstance:
       propertyPath: hidenObjects.Array.data[1]
       value: 
       objectReference: {fileID: 818204179}
+    - target: {fileID: 129834795013707222, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_cannula]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2108381353730885433, guid: 08f9d82480ff5284da043ccd59c5ee63,
         type: 3}
       propertyPath: m_RootOrder
@@ -10251,6 +10486,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2111590038025226922, guid: 08f9d82480ff5284da043ccd59c5ee63,
+        type: 3}
+      propertyPath: description
+      value: '[i_afvalbakje]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9d82480ff5284da043ccd59c5ee63, type: 3}
 --- !u!1 &2725189754358202090 stripped
@@ -10274,7 +10514,7 @@ PrefabInstance:
     - target: {fileID: 2959067767994549950, guid: e03334af419e97442b1ba829fed3a43d,
         type: 3}
       propertyPath: description
-      value: Tweezers
+      value: '[i_tweezers]'
       objectReference: {fileID: 0}
     - target: {fileID: 3357997606580463850, guid: e03334af419e97442b1ba829fed3a43d,
         type: 3}
@@ -10419,7 +10659,7 @@ PrefabInstance:
     - target: {fileID: 5546043676030333171, guid: 6b17204f131676245a62d3ddb68a9257,
         type: 3}
       propertyPath: description
-      value: Tweezers
+      value: '[i_tweezers]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b17204f131676245a62d3ddb68a9257, type: 3}
@@ -10494,7 +10734,7 @@ PrefabInstance:
     - target: {fileID: 7347482261564550237, guid: 79916156293cd424896d3aecf30b62ef,
         type: 3}
       propertyPath: description
-      value: Scissors
+      value: '[i_scissors]'
       objectReference: {fileID: 0}
     - target: {fileID: 7581504178892362032, guid: 79916156293cd424896d3aecf30b62ef,
         type: 3}

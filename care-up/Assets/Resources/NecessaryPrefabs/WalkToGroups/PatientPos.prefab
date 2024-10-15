@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0.0017948002, y: 0.68100625, z: -0.00045347997, w: 0.73227525}
   m_LocalPosition: {x: -0.29470804, y: 1.9815301, z: 0.030191198}
   m_LocalScale: {x: 0.4290312, y: 0.42903176, z: 0.42903218}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4008600462981328}
   m_RootOrder: 1
@@ -42,9 +43,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -56,6 +60,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -105,6 +110,7 @@ Transform:
   m_LocalRotation: {x: 0.028165838, y: 0.7099436, z: -0.019038267, w: 0.7034375}
   m_LocalPosition: {x: -1.3177183, y: 0.6275639, z: 0.2002862}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4008600462981328}
   m_RootOrder: 0
@@ -137,6 +143,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.000000029802322, z: -0.000000044703484, w: 1}
   m_LocalPosition: {x: -0.00008498082, y: -0.0004955791, z: -0.26246974}
   m_LocalScale: {x: 1.1880364, y: 1.1880349, z: 0.73159283}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4135483958209644}
   m_RootOrder: 0
@@ -160,9 +167,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -174,6 +184,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -186,6 +197,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1318054642704170
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +227,7 @@ Transform:
     w: 0.7071068}
   m_LocalPosition: {x: -0.58748454, y: 1.5249232, z: 0.28583628}
   m_LocalScale: {x: 0.85628086, y: 0.8562808, z: 1.2230091}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4260578854028402}
   m_Father: {fileID: 4008600462981328}
@@ -239,9 +252,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -253,6 +269,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -265,6 +282,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1450821395443054
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +311,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.11, y: 0.09, z: 8.686}
   m_LocalScale: {x: 1.1982831, y: 1.1982841, z: 1.1982841}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4168592584641856}
   - {fileID: 4608443789674110}
@@ -327,11 +346,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 9, y: 0.94, z: 9.4}
   rotation: {x: 23, y: 100.5, z: 0}
+  playerCameraFOV: -1
   robotPosition: {x: 0, y: 0, z: 0}
   robotRotation: {x: 0, y: 0, z: 0}
   cone: {fileID: 1318054642704170}
   ButtonHovered: 0
-  description: "de cli\xEBnt"
+  description: "[de_cli\xEBnt]"
   LeftWalkToGroup: {fileID: 0}
   RightWalkToGroup: {fileID: 0}
   ManualNeighborhood: 0

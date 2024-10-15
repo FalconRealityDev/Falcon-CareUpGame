@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: asset-1300591470
   m_Data:
     m_SerializedData: []
-  m_GUID: c6e9bc8656504204b963fc268d68b683
+  m_GUID: 180177ec5e93af54085bd27cd5ec374a
   m_SerializeEntries:
   - m_GUID: 9931d0bd97331e34dac34708d5cb2dbf
     m_Address: assets/resources/models/m1/materials/brown_eye.mat

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Person>
-  <option text="Ik vraag de cliënt of hij een comfortabele houding wil aannemen en ik zorg ervoor dat ik makkelijk bij de stoma kan." topic="LayInHalfPosOnBed" audio="Dialogue/Player/Collega 5"/>
+  <option 
+      text="[ik vraag de960]" 
+      topic="LayInHalfPosOnBed" 
+      audio="Dialogue/Player/Collega 5"/>
 </Person>
-
-
-          
-

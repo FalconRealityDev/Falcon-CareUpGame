@@ -1,0 +1,19 @@
+{
+  "sg_Overig": "Other",
+  "sg_Gratis": "Free",
+  "sg_Katheteriseren": "Catheterization",
+  "sg_Injecteren": "inject",
+  "sg_Medicatie_toedienen": "Administer medication",
+  "sg_Handreiniging": "Hand cleaning",
+  "sg_Stomazorg": "Stomazorg",
+  "sg_Subcutane_infuuscanule": "Subcutaneous infusion cannula",
+  "sg_Bloedglucose": "Blood glucose",
+  "sg_Sondevoeding": "Tube feeding",
+  "sg_BHV": "emergency response",
+  "sg_Wondzorg": "Wound care",
+  "sg_Zwachtelen": "Bandaging",
+  "sg_Niveau_2+": "Level 2+",
+  "sg_Niveau_3": "Level 3",
+  "sg_Niveau_4": "Level 4",
+  "sg_Niveau_5": "Level 5"
+}

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      fullDescription="[begroet de cliënt699]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="[ondanks dat het68]" 
+      optional=""/>
+  <action 
+      comment="(1)Apply handhygiene" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      index="0" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      comment="(2)Create a clean workfield" 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      fullDescription="[klik op het934]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon378]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst tissue handschoenen]"/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      index="2" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens]" 
+      messageTitle="[de client voorbereiden]" 
+      messageContent="[ga na of]"/>
+  <action 
+      comment="Put on gloves" 
+      points="1" 
+      description="[trek handschoenen aan]" 
+      index="3" 
+      type="use" 
+      value="gloveBox" 
+      extra="[trek handschoenen aan]" 
+      blockTitle="Onderlegger" 
+      blockUnlock="GlovesTakenOn" 
+      blockMessage="Leg eerst de onderlegger op de borst van de cliënt."/>
+  <action 
+      comment="(3)Open tube package" 
+      points="1" 
+      description="[open de verpakking381]" 
+      fullDescription="" 
+      index="4" 
+      type="combine" 
+      left="MedicalTube" 
+      blockUnlock="block1" 
+      quiz="2" 
+      right="" 
+      extra="[open de verpakking545]"/>
+  <action 
+      comment="(3)Open syringe" 
+      points="1" 
+      description="[open de verpakking852]" 
+      index="5" 
+      type="combine" 
+      left="Syringe50ml_packed" 
+      right="" 
+      blockUnlock="block2" 
+      extra="[open de verpakking852]"/>
+  <action 
+      comment="Ask the client to take a half sitting position." 
+      points="2" 
+      description="[vraag de cliënt942]" 
+      index="6" 
+      type="talk" 
+      topic="SitInBed" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat het materiaal klaar is voor gebruik door de verpakkingen te openen." 
+      blockUnlock="clienInHalfSitPos" 
+      extra="[vraag de cliënt31]"/>
+  <action 
+      comment="Make a signal with the client when the inserting needs to stop." 
+      points="1" 
+      description="[maak met de]" 
+      index="7" 
+      type="talk" 
+      quiz="2" 
+      left="" 
+      right="" 
+      topic="InstructSign" 
+      extra="[maak met de404]"/>
+  <action 
+      comment="Put the pad on the chest of the client." 
+      points="2" 
+      description="[leg de onderlegger944]" 
+      index="8" 
+      type="useOn" 
+      item="cloth_02_folded" 
+      target="" 
+      buttonText="Onderlegger plaatsen" 
+      blockRequired="clienInHalfSitPos, block1" 
+      extra="[leg de onderlegger276]"/>
+  <action 
+      comment="Inspect the nose." 
+      points="1" 
+      description="[inspecteer de neus]" 
+      index="9" 
+      type="sequenceStep" 
+      value="inspectnose" 
+      extra="[inspecteer de neus913]" 
+      messageTitle="[controle neusgaten op]" 
+      messageContent="[laat de cliënt721]"/>
+  <action 
+      comment="Take the probe out of the package." 
+      points="1" 
+      description="[neem de maagsonde]" 
+      index="10" 
+      type="sequenceStep" 
+      value="TakeProbeOut" 
+      extra="[neem de maagsonde28]"/>
+  <action 
+      comment="Measure the probe at the client from the point of the nose to the earlobe until the end of the breastbone (NEX.)" 
+      points="1" 
+      description="[meet bij de]" 
+      index="11" 
+      type="sequenceStep" 
+      value="nosetoear" 
+      extra="[meet bij de660]" 
+      messageTitle="[nex+10methode]" 
+      messageContent="[bepaal de lengte]"/>
+  <action 
+      comment="Add 10 cm to that." 
+      points="1" 
+      description="[tel hier vervolgens]" 
+      index="12" 
+      type="sequenceStep" 
+      value="add 10 cm" 
+      extra="[tel hier 10]"/>
+  <action 
+      comment="Mark the probe on the measured lenght. ---End Sequence" 
+      points="1" 
+      description="[markeer de maagsonde]" 
+      index="13" 
+      type="sequenceStep" 
+      value="mark the probe" 
+      blockUnlock="clienReadyForProcedure" 
+      extra="[markeer de maagsonde705]"/>
+  <action 
+      comment="Make the probe wet under a tap or to immerse it under water in a bowl." 
+      points="12" 
+      description="[maak de maagsonde]" 
+      index="14" 
+      type="sequenceStep" 
+      value="PutProbeInWater" 
+      extra="[neem de maagsonde]" 
+      messageTitle="[gebruik kraanwater]" 
+      messageContent="[als in een]"/>
+  <action 
+      comment="Ask the client to tilt his head a bit to front." 
+      points="1" 
+      description="[vraag de cliënt426]" 
+      index="15" 
+      type="sequenceStep" 
+      value="headtofront" 
+      extra="[vraag de cliënt175]"/>
+  <action 
+      comment="Shift the probe slowly via the nasal floor until the pharynx." 
+      points="1" 
+      description="[breng de sonde]" 
+      index="16" 
+      type="sequenceStep" 
+      value="shiftprobe" 
+      encounter="1" 
+      extra="[schuif de sonde]"/>
+  <action 
+      comment="Ask the client to swallow maybe with a glass of water." 
+      points="1" 
+      description="[vraag de cliënt804]" 
+      index="17" 
+      type="sequenceStep" 
+      value="askdrink" 
+      extra="[vraag de cliënt98]"/>
+  <action 
+      comment="Shift the probe until the marked lenght while the client swallows a few times" 
+      points="1" 
+      description="[schuif de maagsonde]" 
+      index="18" 
+      type="sequenceStep" 
+      value="shftomark" 
+      extra="[schuif de maagsonde121]"/>
+  <action 
+      comment="Fixate the probe temporarily with a piece of bandaid." 
+      points="1" 
+      description="[fixeer de maagsonde]" 
+      index="19" 
+      type="sequenceStep" 
+      value="fixprobe" 
+      extra="[fixeer de maagsonde524]"/>
+  <action 
+      comment="Remove the guide wire or the sealing cap of the probe and put the cap on the workfield." 
+      points="1" 
+      description="[verwijder de voerdraad]" 
+      index="20" 
+      type="sequenceStep" 
+      value="removecap" 
+      extra="[verwijder de voerdraad618]"/>
+  <action 
+      comment=" Suck 5-10 ml of air into the 50 ml syringe en place the syringe on the probe." 
+      points="1" 
+      description="[zuig in de]" 
+      index="21" 
+      type="sequenceStep" 
+      value="airinto" 
+      extra="[zuig in de990]"/>
+  <action 
+      comment="Squirt the air throught the probe." 
+      points="1" 
+      description="[spuit de lucht]" 
+      index="22" 
+      type="sequenceStep" 
+      value="airtoprobe" 
+      extra="[spuit de lucht439]"/>
+  <action 
+      comment="Suck with the syringe carefully gastric juice up" 
+      points="1" 
+      description="[zuig met de]" 
+      index="23" 
+      type="sequenceStep" 
+      value="takegasjuice" 
+      extra="[zuig met de66]"/>
+  <action 
+      comment="Clamp the probe" 
+      points="1" 
+      description="[klem de maagsonde]" 
+      index="24" 
+      type="sequenceStep" 
+      value="closeprobe" 
+      extra="[klem de maagsonde639]"/>
+  <action 
+      comment="Judge the gastric juice" 
+      points="1" 
+      description="[beoordeel het maagsap]" 
+      index="25" 
+      type="sequenceStep" 
+      value="judgejuice" 
+      extra="[beoordeel het maagsap923]"/>
+  <action 
+      comment="Determine the pH value with the help of the pH indicator. At a pH value lower than or equal to 5.5, the probe is in the stomach." 
+      points="1" 
+      description="[bepaal de phwaarde]" 
+      index="26" 
+      type="sequenceStep" 
+      value="comparejuice" 
+      extra="[bepaal de phwaarde982]" 
+      messageTitle="[geen maagsap]" 
+      messageContent="[als geen maagsap]"/>
+  <action 
+      comment="For a probe without graduation, apply a definitive marker with a water-resistant marker." 
+      points="1" 
+      description="[breng bij een]" 
+      index="27" 
+      type="sequenceStep" 
+      value="usemarker2" 
+      extra="[breng bij een365]"/>
+  <action 
+      comment="Clean the nose and fixate the probe with a bandaid." 
+      points="1" 
+      description="[reinig de neus]" 
+      index="28" 
+      type="sequenceStep" 
+      value="Clean_the_nose" 
+      extra="[maak de neus]" 
+      messageTitle="[maagsonde fixeren]" 
+      messageContent="[fixeer de sonde]"/>
+  <action 
+      comment="Check the probe if its fixated good when swalowing or when the client is turning." 
+      points="1" 
+      description="[controleer of de203]" 
+      index="29" 
+      type="sequenceStep" 
+      value="Check_the_probe_sw" 
+      extra="[controleer of de203]" 
+      messageTitle="[neusvleugel]" 
+      messageContent="[controleer of er764]"/>
+  <action 
+      comment="Check if the bandaid is fixating the bandaid good." 
+      points="1" 
+      description="[controleer of de460]" 
+      index="30" 
+      type="sequenceStep" 
+      value="Check_the_plaster" 
+      extra="[controleer of de293]"/>
+  <action 
+      comment="Lead the probe behind the ear." 
+      points="1" 
+      description="[leid de maagsonde]" 
+      index="31" 
+      type="sequenceStep" 
+      value="ProbeBehEar" 
+      extra="[leid de maagsonde725]"/>
+  <action 
+      comment="If desired, attach the probe to the clothing at a lower position so that the probe can move with head movements." 
+      points="1" 
+      description="[bevestig de sonde]" 
+      index="32" 
+      type="sequenceStep" 
+      value="attachproe" 
+      extra="[bevestig de sonde419]"/>
+  <action 
+      comment="Rinse the 50 ml syringe clean with lukewarm water." 
+      points="1" 
+      description="[spoel de 50ml]" 
+      index="33" 
+      type="sequenceStep" 
+      value="Rinse_syringe" 
+      extra="[spoel de 50]"/>
+  <action 
+      comment="Fill the syringe with 20 ml water." 
+      points="1" 
+      description="[vul de spuit]" 
+      index="34" 
+      type="sequenceStep" 
+      value="Fill_syringe" 
+      extra="[vul de spuit801]"/>
+  <action 
+      comment="Place the syringe on the probe." 
+      points="1" 
+      description="[plaats de spuit659]" 
+      index="35" 
+      type="sequenceStep" 
+      value="placesyringeinprobe" 
+      extra="[plaats de spuit112]"/>
+  <action 
+      comment="Squirt the water through the probe." 
+      points="1" 
+      description="[spuit het water]" 
+      index="36" 
+      type="sequenceStep" 
+      value="Squirt_the_water" 
+      extra="[spuit het water927]"/>
+  <action 
+      comment="Clamp the probe en remove the syringe." 
+      points="1" 
+      description="[klem de maagsonde148]" 
+      index="37" 
+      type="sequenceStep" 
+      value="Clamptheprobe" 
+      extra="[klem de maagsonde745]"/>
+  <action 
+      comment="Close of the probe with a sealing cap." 
+      points="1" 
+      description="[sluit de maagsonde]" 
+      index="38" 
+      type="sequenceStep" 
+      value="Close_of_the_probe" 
+      blockUnlock="SequenceFinished" 
+      extra="[sluit de maagsonde934]"/>
+  <action 
+      comment="Create a clean workfield" 
+      points="1" 
+      description="[ruim de materialen746]" 
+      index="39" 
+      type="use" 
+      quiz="2" 
+      value="WorkField" 
+      extra="[ruim de materialen384]" 
+      blockRequired="SequenceFinished" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen511]"/>
+  <Action 
+      index="40" 
+      description="[trek de handschoenen286]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockRequired="GlovesTakenOn, SequenceFinished"/>
+  <action 
+      comment="Apply hand hygiene." 
+      points="1" 
+      description="[Pas handhygiëne]" 
+      fullDescription="" 
+      index="41" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      comment="Write down the size and length of the inserted probe, pH determination, date of inserting the probe and any findings on the ipad." 
+      index="42" 
+      points="1" 
+      description="[noteer de handeling416]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[noteer de handeling18]"/>
+</ActionList>

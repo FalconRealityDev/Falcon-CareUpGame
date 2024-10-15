@@ -1,65 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ActionList points="22">
- <action
-      index="0"
-      points="1"
-      description="Begroet de cliënt"
-      type="talk"
-      topic="Hello"
-      extra="Het begroeten van de client en je voorstellen is niet in de werkwijze is vermeld. Het is wel netjes en logisch om contact te leggen met de cliënt."
-      optional=""
-></action>
-  
-  <action
-    points="2"
-    description="Controleer de cliëntgegevens"
-    index="1"
-    type="examine"
-    item="PatientRecords"
-    expected="good"
-    extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt. "
-    
-  ></action>
-
-  <action
-    points="2"
-    description="Controleer de toedienlijst"
-    index="2"
-    type="examine"
-    item="PrescriptionForm"
-    expected="good"
-    extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip "
-    messageTitle="5x juist-regel"
-    messageContent="Er zijn 5 controles die je altijd moet doen voordat je medicijnen geeft. Alleen als alle 5 punten juist zijn, mag je het medicijn toedienen.
-    
-    De vijf regels zijn:
-    
-1.  Het juiste medicijn: 
-kijk op de toedienlijst en controleer of de informatie op de medicijnverpakking of het baxterzakje hiermee overeenkomen. Kijk hierbij ook naar de vervaldatum van het medicijn.
-        
-2.  De juiste cliënt: 
-controleer of je de juiste cliënt voor je hebt.
-        
-3.  Het juiste tijdstip: 
-kijk op de toedienlijst voor het tijdstip en vergelijk dit met het tijdstip waarop je de medicijnen geeft.
-        
-4.  De juste manier van toedienen: 
-hanteer de instructies van de toedienlijst. Je moet bekend zijn met de toedieningsvorm. Ben je hier niet mee bekent, dien dan niet toe.
-    
-5.  De juiste dosis: 
-je mag niet afwijken van de de voorgeschreven dosis die vermeld staat op de toedienlijst. De verantwoordelijkheid van de juiste dosering ligt bij de arts en de apotheker."
-    encounter="1"
-  ></action>
-
-  
-  <action
-    points="3"
-    description="Noteer de handeling, de gemeten waarde, de prikstand van de prikpen of vingerprikker. Noteer ook eventuele andere bevindingen"
-    audioHint="Injection/EAS4-2"
-    index="3"
-    type="use"
-    value="PaperAndPen"
-    extra="Noteer de handeling, de gemeten waarde, de prikstand van de prikpen of vingerprikker. Noteer ook eventuele andere bevindingen."
-   ></action>
-
+<ActionList 
+    points="22">
+  <action 
+    index="0" 
+    points="1" 
+    description="[Begroet]" 
+    type="talk" 
+    topic="Hello" 
+    extra="[het begroeten van]" 
+    optional=""/>
+  <action 
+    points="2" 
+    description="[Controleer cliëntgegevens]" 
+    index="1" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good" 
+    extra="[controleer de cliëntgegevens918]"/>
+  <action 
+    points="2" 
+    description="[controleer de toedienlijst]" 
+    index="2" 
+    type="examine" 
+    item="PrescriptionForm" 
+    expected="good" 
+    extra="[controleer de toedienlijst61]" 
+    messageTitle="[5x juistregel]" 
+    messageContent="[er zijn 5677]" 
+    encounter="1"/>
+  <action 
+    points="3" 
+    description="[noteer de handeling]" 
+    audioHint="Injection/EAS4-2" 
+    index="3" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[noteer de handeling669]"/>
 </ActionList>

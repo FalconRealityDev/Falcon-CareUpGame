@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="18">
+  <action 
+      description="[step 1: preform]" 
+      audioHint="BandAid/Step 1" 
+      index="0" 
+      type="use" 
+      value="HandCleaner"/>
+  <action 
+      description="[step 2: cleaning]" 
+      audioHint="BandAid/Step 2" 
+      index="1" 
+      type="use" 
+      value="WorkField"/>
+  <action 
+      description="[step 3: check]" 
+      audioHint="BandAid/Step 3" 
+      index="2" 
+      type="examine" 
+      item="BandAidPackage" 
+      expected="good"/>
+  <action 
+      description="[step 4: check]" 
+      audioHint="BandAid/Step 4.1" 
+      index="3" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good"/>
+  <action 
+      description="[step 4: check530]" 
+      audioHint="BandAid/Step 4.2" 
+      index="3" 
+      type="examine" 
+      item="Schedule" 
+      expected="good"/>
+  <action 
+      description="[step 4: patient]" 
+      audioHint="BandAid/Step 4.3" 
+      index="3" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good"/>
+  <action 
+      description="[step 5: remove]" 
+      audioHint="BandAid/Step 5" 
+      index="4" 
+      type="use" 
+      value="OldBandAid"/>
+  <action 
+      description="[step 6: find]" 
+      audioHint="BandAid/Step 6" 
+      index="5" 
+      type="examine" 
+      item="Hand" 
+      expected="clean"/>
+  <action 
+      description="[step 7: clean]" 
+      audioHint="BandAid/Step 7" 
+      index="6" 
+      type="useOn" 
+      item="Water" 
+      target="Hand"/>
+  <action 
+      description="[step 8: cut]" 
+      audioHint="BandAid/Step 8" 
+      index="7" 
+      type="useOn" 
+      item="Scissors" 
+      target="Hand"/>
+  <action 
+      description="[step 9: open]" 
+      audioHint="BandAid/Step 9" 
+      index="8" 
+      type="combine" 
+      left="BandAidPackage" 
+      right=""/>
+  <action 
+      description="[step 10: remove]" 
+      audioHint="BandAid/Step 10" 
+      index="9" 
+      type="combine" 
+      left="BandAidWithProtectedLayer" 
+      right=""/>
+  <action 
+      description="[step 11: place]" 
+      audioHint="BandAid/Step 11" 
+      index="10" 
+      type="useOn" 
+      item="BandAid" 
+      target="Hand"/>
+  <action 
+      description="[step 13: clean679]" 
+      audioHint="BandAid/Step 13" 
+      index="11" 
+      type="use" 
+      value="Sink"/>
+  <action 
+      description="[step 14: clean]" 
+      audioHint="BandAid/Step 14" 
+      index="12" 
+      type="use" 
+      value="WorkField"/>
+  <action 
+      description="[step 15: preform]" 
+      audioHint="BandAid/Step 15" 
+      index="13" 
+      type="use" 
+      value="HandCleaner"/>
+  <action 
+      description="[step 16: write]" 
+      audioHint="BandAid/Step 16" 
+      index="14" 
+      type="use" 
+      value="PaperAndPen"/>
+</ActionList>

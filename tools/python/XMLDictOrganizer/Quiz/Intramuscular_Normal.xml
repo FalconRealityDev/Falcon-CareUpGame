@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quiz>
+  <step>
+    <question 
+      text="[naalden voor volwassenen]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[25 mm of]" 
+      descr="[uit onderzoek blijkt]"/>
+      <answer 
+      text="[20 mm of]" 
+      descr=""/>
+      <answer 
+      text="[18 mm of]" 
+      descr=""/>
+      <answer 
+      text="[27 mm of]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[de vloeistof bij]" 
+      answer="3">
+      <answer 
+      text="[10 15 minuten]" 
+      descr=""/>
+      <answer 
+      text="[5 10 minuten]" 
+      descr=""/>
+      <answer 
+      text="[15 20 minuten]" 
+      descr="[de vloeistof wordt]"/>
+      <answer 
+      text="[20 30 minuten]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[een van de]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[wat ontstaat er]" 
+      answer="2">
+      <answer 
+      text="[vaatvernauwing]" 
+      descr=""/>
+      <answer 
+      text="[vaatverwijding]" 
+      descr=""/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[de intramusculaire injectie]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[welk antwoord is794]" 
+      answer="3">
+      <answer 
+      text="[medicijn kan niet]" 
+      descr=""/>
+      <answer 
+      text="[medicijn wordt goed]" 
+      descr=""/>
+      <answer 
+      text="[medicijn hoeft niet]" 
+      descr="[het medicijn moet]"/>
+    </question>
+    <question 
+      text="[de opperhuid is414]" 
+      answer="2">
+      <answer 
+      text="[1 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[01 millimeter]" 
+      descr=""/>
+      <answer 
+      text="[10 millimeter]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[intramusculaire injecties kunnen]" 
+      answer="2">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[vermijd intramusculaire injecties]"/>
+    </question>
+    <question 
+      text="[het plaatsen van]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[injecteren in afwijkend]"/>
+    </question>
+    <question 
+      text="[parenterale toediening betekent]" 
+      answer="3">
+      <answer 
+      text="[intraveneus intracutaan en]" 
+      descr=""/>
+      <answer 
+      text="[intramusculair en subcutaan]" 
+      descr=""/>
+      <answer 
+      text="[intraveneus intramusculair intracutaan]" 
+      descr=""/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[het plaatsen van994]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[een injectie is865]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[moet je de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[ui_nee]" 
+      descr="[desinfecteer de huid383]"/>
+      <answer 
+      text="[ui_ja]" 
+      descr="[desinfecteer altijd de]"/>
+    </question>
+    <question 
+      text="[wanneer is aspireren]" 
+      answer="1">
+      <answer 
+      text="[bij het intramusculair]" 
+      descr="[wanneer de injectieplaats]"/>
+      <answer 
+      text="[bij het intramusculair233]" 
+      descr="[het terugtrekken van]"/>
+      <answer 
+      text="[bij het intramusculair831]" 
+      descr="[het terugtrekken van397]"/>
+    </question>
+    <question 
+      text="[bij intramusculair injecteren]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[juist]" 
+      descr=""/>
+      <answer 
+      text="[onjuist]" 
+      descr="[door te snel]"/>
+    </question>
+    <question 
+      text="[het kan pijnlijk]" 
+      answer="1">
+      <answer 
+      text="[juist]" 
+      descr="[verdeel de totale]"/>
+      <answer 
+      text="[onjuist186]" 
+      descr=""/>
+    </question>
+  </step>
+  <random>
+    <question 
+      text="[wat doe je485]" 
+      answer="3">
+      <answer 
+      text="[let of heftige]" 
+      descr=""/>
+      <answer 
+      text="[ga door met]" 
+      descr=""/>
+      <answer 
+      text="[neem een nieuwe953]" 
+      descr="[trek de naald914]"/>
+    </question>
+  </random>
+</quiz>

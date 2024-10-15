@@ -1,523 +1,496 @@
-<?xml version="1.0" encoding="utf-16"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <Action
-    index="0"
-    description="[Begroet]"
-    type="talk"
-    points="1"
-    optional=""
-    topic="Hello" />
-  <Action
-    index="0"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="1. Apply hand hygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner" />
-  <Action
-    index="1"
-    description="Maak een schoon werkveld en zet de benodigdheden binnen bereik"
-    type="use"
-    comment="2. Create a clean work area and put the equipment within reach"
-    points="2"
-    messageTitle="Je het volgende nodig hebt?"
-    messageContent="
-- voorgeschreven steriele katheter
-- voorgeschreven steriele spuit met glijmiddel
-- voorgevulde spuit voor vullen katheterballon óf
-- steriele spuit 10 ml
-- steriele opzuignaald
-- 10 ml steriel water of vloeistof die de fabrikant aanraadt
-- naaldenbeker
-- desinfectans, chloorhexidine alcohol 70%
-- bakje met gaasjes
-- water uit flink stromende kraan (eventueel steriel water)
-- steriele spuit 10 ml
-- steriele doek voor steriel werkveld 
-- onderlegger
-- gaasjes
-- steriel gaasje
-- opvangbak
-- handschoenen + steriele handschoenen
-- overschort
-- urineopvangzak + bevestigingsmateriaal
-- steriel splitgaasje (bij geïrriteerde fistelopening)
-- fixatiemateriaal
-- kocher
-- afvalbak
-    
-Zorg voor een extra katheter, urineopvangzak en materialen voor het inbrengen, voor het geval het inbrengen mislukt.
- "
-    value="WorkField" />
-  <Action
-    index="2"
-    description="Open de katheterset"
-    type="use"
-    points="1"
-    quiz="2"
-    messageTitle="Katheterset"
-    messageContent="Het gebruik van een katheterset verdient aanbeveling. Hierin bevinden zich alle benodigdheden voor het inbrengen van een katheter. Er is echter niet aangetoond dat het werken met een katheterset een meerwaarde heeft boven het verzamelen van de materialen afzonderlijk. Gazen voor het reinigen van de urethraopening hoeven niet steriel te zijn, wel schoon. Reden hiervoor is dat ze niet in aanraking komen met een steriel gebied (meatus)."
-    value="catheterisation"
-    blockUnlock="OpenedCatheterset" />
-  <Action
-    index="3"
-    description="Giet kraanwater uit een flink stromende kraan (of steriel water) over de wattenbollen"
-    type="useOn"
-    comment="4. Pour tap water from a large tap (or sterile water) over the gauze."
-    secondPlace="SinkPos"
-    item="TrayOfGauzes"
-    points="1"
-    buttonText="Gaasjes nat maken"
-    messageTitle="Gebruik kraanwater"
-    messageContent="Als in een werkinstructie kraanwater wordt gebruikt, gebruik dan water uit een flink stromende kraan. Laat de kraan eerst 30 seconden goed doorstromen voordat je het water opvangt voor gebruik. Hiermee voorkom je dat je water gebruikt dat heeft stil gestaan in de leiding, en waar pseudomonas in kan zitten."
-    target="" />
-  <Action
-    index="4"
-    description="Plaats het bakje met gaasjes op het werkveld"
-    type="drop"
-    secondPlace="WorkFieldPos"
-    item="TrayOfWetGauzes"
-    points="1" />
-  <Action
-    index="5"
-    description="[Trek de handschoenen aan]"
-    type="use"
-    comment="Put on gloves."
-    points="1"
-    value="gloveBox" />
-  <Action
-    index="6"
-    description="Open de buitenverpakking van de katheter en laat de katheter in de binnenverpakking op het steriele werkveld vallen, zonder de binnenverpakking aan te raken"
-    type="combine"
-    comment="Open the outer package of the catheter a few centimeters, fold the ends. Leave the inner package in the outer package and hold the outer package with the non-dominant hand on the folded ends."
-    points="1"
-    left="catheter_Supertubular_Preparation_packed_Outer"
-    right="" />
-  <Action
-    index="7"
-    description="Open de binnenverpakking van de katheter. De katheter blijft in de binnenverpakking zitten"
-    type="combine"
-    comment="Remove the end of the inner package from the catheter so that the connection point for the urine collection bag is accessible. The catheter remains in the inner package."
-    points="2"
-    left="catheter_Supertubular_Preparation_opened_Outer"
-    right=""
-    blockUnlock="RemoveInnerEnd" />
-  <Action
-    index="8"
-    description="Verwijder de afsluitdop van de urineopvangzak en bevestig deze aan de katheter. De katheter blijft in binnenverpakking zitten"
-    type="combine"
-    comment="With the dominant hand, grasp the tube of the urine collection bag just behind the connection point and attach it to the catheter. Continue to hold the hose."
-    points="1"
-    messageTitle="Desinfecteren aansluitpunt"
-    messageContent="Voorkom dat het aansluitpunt van de urineopvangzak in aanraking komt met de omgeving. Als dat wel gebeurt, moet het aansluitpunt worden gedesinfecteerd met alcohol 70%."
-    left="catheter_Supertubular_Preparation_opened_Outer"
-    right="disconnected_catheter_Supertubular_"
-    blockRequired="RemoveInnerEnd"
-    blockTitle="Deze handeling is nog niet mogelijk"
-    blockMessage="Communiceer met de cliënt en zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie" />
-  <Action
-    index="9"
-    description="Verwijder met de niet-dominante hand de buitenverpakking van de katheter. Gooi de buitenverpakking in de afvalbak."
-    type="combine"
-    comment="With the non-dominant hand, remove the outer package from the catheter. Dispose of the outer packaging in the waste bin."
-    points="2"
-    left="catheter_Supertubular_InHands"
-    right=""
-    blockUnlock="removeOuterPack" />
-  <Action
-    index="10"
-    description="Scheur met de vrije hand de binnenverpakking langs de perforatie open, zonder het in te brengen deel van de katheter aan te raken."
-    type="combine"
-    comment="Tear open the inner package along the perforation with your free hand, without touching the insert of the catheter."
-    points="2"
-    left="catheter_Supertubular_InHands"
-    right=""
-    blockUnlock="removeInnerPack"
-    blockRequired="removeOuterPack" />
-  <Action
-    index="11"
-    description="Leg het in te brengen deel van de katheter op het steriele werkveld."
-    posID="0"
-    type="drop"
-    comment="Place the insertable part of the catheter on the sterile work field."
-    secondPlace="WorkFieldPos"
-    item="catheter_Supertubular_InHands"
-    points="2"
-    left="catheter_Supertubular_InHands"
-    right=""
-    blockRequired="removeInnerPack" />
-  <Action
-    index="12"
-    description="Open de verpakking van de spuit met 10 ml steriel water. Laat de spuit in de verpakking"
-    type="combine"
-    comment="3. Open package of the syringe with 10 ml of sterile water. Leave the syringe in the package "
-    points="1"
-    left="water_syringe_pack"
-    right=""
-    blockUnlock="liqsyropened" />
-  <Action
-    index="13"
-    description="Open de verpakking van de spuit met glijmiddel. Laat de spuit nog in de verpakking"
-    type="combine"
-    comment="8. Open the packaging of the syringe with lubricant, leave the syringe in the packaging."
-    points="1"
-    quiz="2"
-    left="lube_syringe_pack"
-    right=""
-    blockUnlock="lubsyropened" />
-  <Action
-    index="14"
-    description="Vraag de cliënt het onderlichaam te ontbloten en op de rug te gaan liggen met de benen gespreid en de knieën opgetrokken"
-    type="talk"
-    comment="5. Ask the client to uncover the lower body and lie on the back with the legs spread apart and the knees raised."
-    points="1"
-    messageTitle="Privacy van de cliënt"
-    messageContent="Denk tijdens het zorg verlenen altijd aan de privacy van de cliënt. Zorg ervoor dat de cliënt zich veilig en geborgen voelt door bijvoorbeeld de gordijnen dicht te trekken."
-    topic="LayOnBed"
-    blockUnlock="patient lay down" />
-  <Action
-    index="15"
-    description="Leg een onderlegger onder de billen en dijen van de cliënt"
-    type="useOn"
-    comment="6. Place a pad under the buttocks and thighs of the cliënt."
-    secondPlace="PatientPos"
-    item="cloth_02_folded"
-    points="2"
-    buttonText="Onderlegger plaatsen"
-    target=""
-    blockUnlock="clothPlaced" />
-  <Action
-    index="16"
-    description=" Klem de katheter af met de kocher, op het aansluitpunt voor de urineopvangzak. Zorg dat je het ballonvulkanaal niet afklemt met de kocher."
-    type="general"
-    item=""
-    points="1"
-    buttonText="Klem de katheter"
-    action="CloseCatheter"
-    blockUnlock="kocherClosed"
-    blockRequired="patient lay down,clothPlaced" />
-  <Action
-    index="17"
-    description=" Verwijder het fixatie materiaal"
-    type="general"
-    item=""
-    points="1"
-    buttonText="Koppel de zak los"
-    action="DisconnectBag"
-    blockRequired="kocherClosed" />
-  <Action
-    index="18"
-    description="Verwijder het fixatiemateriaal op de buik"
-    type="sequenceStep"
-    comment="Remove the fixation material on the abdomen"
-    points="1"
-    value="VerwijderHetFixatiemateriaal" />
-  <Action
-    index="19"
-    description="Observeer de insteekplaats van de katheter op roodheid en irritatie"
-    type="sequenceStep"
-    comment="Observe the catheter insertion site for redness and irritation and note the location of the catheter and the angle at which it is inserted."
-    points="1"
-    messageTitle="Ligging katheter"
-    messageContent="Let ook op de ligging van de katheter en de hoek waaronder deze is ingebracht."
-    value="ObserveCatheter" />
-  <Action
-    index="20"
-    description="Plaats de lege spuit op het ventiel van het ballonvulkanaal."
-    type="sequenceStep"
-    comment="Place the empty syringe on the balloon filler channel."
-    points="1"
-    value="PlaceSyringe" />
-  <Action
-    index="21"
-    description="Oefen geen zuigkracht uit maar laat de spuit zichzelf vullen."
-    type="sequenceStep"
-    comment="Do not apply suction but allow the syringe to fill itself."
-    points="1"
-    value="AllowSyringe" />
-  <Action
-    index="22"
-    description="Controleer of de hoeveelheid opgezogen vloeistof overeenkomt met de ingespoten hoeveelheid"
-    type="sequenceStep"
-    comment="Check whether the amount of liquid sucked in corresponds to the amount injected."
-    points="1"
-    value="CheckAmount" />
-  <Action
-    index="23"
-    description="Trek voorzichtig aan de katheter om te zien of deze los zit"
-    type="sequenceStep"
-    comment="Pull the catheter gently to see if it is loose."
-    points="1"
-    value="PullGently" />
-  <Action
-    index="24"
-    description="Verwijder de katheter en dek de insteekopening af"
-    type="sequenceStep"
-    comment="Remove the catheter and cover the insertion opening."
-    points="1"
-    value="RemoveCatheter" />
-  <Action
-    index="25"
-    description="Verwijder de katheter tijdens de uitademing met een draaiende beweging in verticale richting"
-    type="sequenceStep"
-    comment="Ask the client to breathe in and out slowly and remove the catheter during the exhalation with a circular motion in the vertical direction. Leakage from the fistula is normal"
-    points="1"
-    messageTitle="Lekkage"
-    messageContent="Lekkage tijdens het verwijderen van de katheter uit de fistel is normaal"
-    value="AskClient" />
-  <Action
-    index="26"
-    description="Dek de insteekopening af met een gaasje. Enige lekkage is normaal"
-    type="sequenceStep"
-    comment="Cover the insertion opening with a gauze. Some leakage is normal."
-    points="1"
-    messageTitle="Sluiting fistel"
-    messageContent="Na het verwijderen van een suprapubische katheter moet er zo snel mogelijk een nieuwe worden ingebracht. Dit moet omdat de fistel sluit binnen 1 tot 6 uur na het verwijderen van de katheter. Uit praktijkervaring blijkt dat bij sommige clïënten de fistel binnen enkele minuten niet meer toegankelijk is. 
-   De cliënt moet thuis een reservekather hebben en moet weten hoe te handelen bij het uitvallen van de katheter."
-    value="CoverInsertion" />
-  <Action
-    index="27"
-    description="Controleer de katheterpunt op aanslag/korstvorming"
-    type="sequenceStep"
-    comment="Check the catheter tip for deposits / crusting."
-    points="1"
-    value="CheckCatheter" />
-  <Action
-    index="28"
-    description="Gooi de katheter in de afvalbak"
-    type="sequenceStep"
-    comment="Discard the catheter in the waste bin"
-    points="1"
-    value="DiscardCatheter" />
-  <Action
-    index="29"
-    description="Reinig de insteekplaats en de omgeving met uitgeknepen gaasjes. Droog de huid met een gaasje."
-    type="sequenceStep"
-    comment="Clean the insertion area and the area with squeezed gauze pads. Dry the skin with gauze."
-    points="1"
-    value="CleanInsertation" />
-  <Action
-    index="30"
-    description="Knijp ieder gaasje eerst uit boven het bakje"
-    type="sequenceStep"
-    comment="First squeeze each gauze above the tray."
-    points="1"
-    value="SqueezeGauze" />
-  <Action
-    index="31"
-    description="Reinig vanaf het midden (de fistelopening) naar buiten. Maak steeds één streek per gaasje:"
-    type="sequenceStep"
-    comment="Clean from the center (the fistula opening) to the outside. Always make one stroke per gauze."
-    points="1"
-    value="CleanBody" />
-  <Action
-    index="32"
-    description="Droog de huid met een nieuw, droog gaasje"
-    type="sequenceStep"
-    comment="Dry the skin with a new, dry gauze."
-    points="1"
-    value="DryTheSkin" />
-  <Action
-    index="33"
-    description="Gooi de gebruikte gaasjes in de afvalbak."
-    type="sequenceStep"
-    comment="Throw the used gauzes in the waste bin."
-    points="1"
-    value="ThrowGauzes" />
-  <Action
-    index="34"
-    description="Neem de spuit met glijmiddel uit de geopende verpakking, spuit 5-10 ml glijmiddel in de fistelopening. Dek de fistelopnening af met een steriel gaasje."
-    type="sequenceStep"
-    comment="Remove the lubricant syringe from the opened package, spray 5-10 ml of lubricant into the fistula opening. Cover the fistula opening with a sterile gauze"
-    points="1"
-    value="RemoveLubSyringe" />
-  <Action
-    index="35"
-    description="Trek handschoenen uit en gooi ze in de afvalbak."
-    type="sequenceStep"
-    comment="Take gloves off and throw them in the waste bin."
-    points="1"
-    value="TakeOffGloves"
-    blockUnlock="AllowPutOnSterileGloves" />
-  <Action
-    index="36"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="Apply hand hygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner"
-    blockUnlock="WashHands2Time" />
-  <Action
-    index="37"
-    description="Trek de steriele handschoenen aan"
-    type="use"
-    comment="Put on sterile gloves."
-    points="3"
-    messageTitle="Aantrekken steriele handschoenen"
-    messageContent="Het aantrekken van steriele handschoenen vereist enige handigheid. Voorkom tijdens het aantrekken dat de handschoenen besmet raken. In deze werkinstructie wordt de verblijfskatheter met steriele handschoenen ingebracht. Het gebruik van een steriele pincet of de binnen verpakking van de katheter is ook mogelijk."
-    value="SterileGloves"
-    blockRequired="WashHands2Time,AllowPutOnSterileGloves" />
-  <Action
-    index="38"
-    description="Breng de katheter in."
-    type="sequenceStep"
-    comment="Insert the catheter. (Extra info ipad: Make sure that the part to be inserted remains sterile. Insert the catheter sufficiently far so that the balloon is not in the fistula. Continue to hold the catheter.):"
-    points="1"
-    value="InserttheCatheter" />
-  <Action
-    index="39"
-    description="Pak de katheter vast, ongeveer 5 cm van de top. Houd de rest van de kathter als een lus in de katheteriserende hand."
-    type="sequenceStep"
-    comment=""
-    points="1"
-    value="GraspTheCatheter" />
-  <Action
-    index="40"
-    description="Breng de katheter verticaal in"
-    type="sequenceStep"
-    comment="Insert the catheter vertically:"
-    points="1"
-    value="InsertVertically" />
-  <Action
-    index="41"
-    description="Schuif de katheter op tot je urine ziet aflopen."
-    type="sequenceStep"
-    comment="Move the catheter up until you see urine running out."
-    points="1"
-    value="MCU" />
-  <Action
-    index="42"
-    description="Breng de katheter nog ongeveer 5cm verder in de blaas als de urine begint te lopen, om zeker te zijn dat de ballon niet in het fistelkanaal zit"
-    type="sequenceStep"
-    comment="When the urine starts running, move the catheter about 5 cm further into the bladder to ensure that the balloon is not in the fistula channal."
-    points="1"
-    value="UrineStartsRunning" />
-  <Action
-    index="43"
-    description="Vul de katheterballon langzaam met de voorgeschreven hoeveelheid vloeistof uit de spuit."
-    type="sequenceStep"
-    comment="Slowly fill the catheter balloon with the prescribed amount of fluid from the syringe."
-    points="1"
-    value="FillLiquid" />
-  <Action
-    index="44"
-    description="Plaats de spuit met voorgeschreven vloeistof op het ballonvulkanaal."
-    type="sequenceStep"
-    comment="Place the syringe of prescribed fluid on the balloon filling channel"
-    points="1"
-    value="PlaceLiquidSyringe" />
-  <Action
-    index="45"
-    description="Spuit de voorgeschreven hoeveelheid in de katheterballon"
-    type="sequenceStep"
-    comment="Inject the prescribed amount into the catheter balloon"
-    points="1"
-    encounter="1"
-    value="InjectLiquid" />
-  <Action
-    index="46"
-    description="Verwijder de spuit"
-    type="sequenceStep"
-    comment="Remove the syringe"
-    points="1"
-    value="RemoveLiqSyringe" />
-  <Action
-    index="47"
-    description="Trek de katheter voorzichtig iets terug tot weerstand gevoeld wordt"
-    type="sequenceStep"
-    comment="Carefully pull the catheter back slightly until resistance is felt"
-    points="1"
-    value="PullCat" />
-  <Action
-    index="48"
-    description="Fixeer de katheter met fixatiemateriaal op de buik en dijbeen en zorg dat deze niet onder spanning staat of kan knikken."
-    type="sequenceStep"
-    comment="Fix the catheter with fixation material on the abdomen and thigh and ensure that it is not under tension or can buckle"
-    points="1"
-    value="FixGeneral" />
-  <Action
-    index="49"
-    description="Leg de katheter in een boogje"
-    type="sequenceStep"
-    comment="Arrange the catheter in a slight curve"
-    points="1"
-    value="Arrange1" />
-  <Action
-    index="50"
-    description="Fixeer de katheter met een pleister/tape op de buik"
-    type="sequenceStep"
-    comment="Fix the catheter on the abdomen with a plaster / tape"
-    points="1"
-    value="FixCathTrue" />
-  <Action
-    index="51"
-    description="Breng de katheter met een licht boogje richting dijbeen"
-    type="sequenceStep"
-    comment="Bring the catheter towards the femur with a slight curve"
-    points="1"
-    value="BCTF" />
-  <Action
-    index="52"
-    description="Fixeer de katheter met het fixatiemateriaal op het dijbeen. Zorg dat de katheter en de afvoorslang nergens kunnen knikken"
-    type="sequenceStep"
-    comment="Fix the catheter with the fixation material on the thigh. Ensure that the catheter and the delivery tube cannot pinch anywhere."
-    points="1"
-    value="FixCathToLeg" />
-  <Action
-    index="53"
-    description="Controleer of de katheter niet onder spanning staat of dat er bij beweging geen trekkracht wordt uitgeoefend"
-    type="sequenceStep"
-    comment="Check that the catheter is not under tension or that no pulling force is applied during movement"
-    points="1"
-    value="CheckCath" />
-  <Action
-    index="54"
-    description="Bevestig de urineopvangzak aan het been of het ophangrekje."
-    type="sequenceStep"
-    comment="Attach the urine collection bag to the leg or suspension rack"
-    points="1"
-    value="AttachBag" />
-  <Action
-    index="55"
-    description="Controleer of de urineopvangzak onder het niveau van de blaas hangt en de grond of voeten van de zorgverleners niet raakt."
-    type="sequenceStep"
-    comment="Check that the urine collection bag is below the level of the bladder and does not touch the floor of the caregivers' feet"
-    points="1"
-    value="CheckBag" />
-  <Action
-    index="56"
-    description="Trek handschoenen uit en gooi ze in de afvalbak"
-    type="sequenceStep"
-    comment="Take gloves off and throw them in the waste bin."
-    points="1"
-    value="TakeOffSterileGloves"
-    blockUnlock="AllowToCleanWorkfield" />
-  <Action
-    index="57"
-    description="[Pas handhygiëne]"
-    type="use"
-    comment="Apply hand hygiene"
-    points="3"
-    messageTitle="Handhygiëne"
-    messageContent="Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    value="HandCleaner" />
-  <Action
-    index="58"
-    description="Ruim de materialen op. "
-    type="use"
-    comment="Create a clean workfield"
-    points="1"
-    value="WorkField"
-    blockRequired="AllowToCleanWorkfield" />
-  <Action
-    index="59"
-    description="Teken de toedienlijst af of noteer tijdstip, soort, concentratie, hoeveelheid, wijze van de toedining en noteer bevindingen"
-    type="use"
-    comment="Sight administration list or write down time, kind, concentration, amount, method of administration and write down findings"
-    points="1"
-    value="PaperAndPen" />
+  <Action 
+    index="0" 
+    description="[Begroet]" 
+    type="talk" 
+    points="1" 
+    optional="" 
+    topic="Hello"/>
+  <Action 
+    index="0" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="1. Apply hand hygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]" 
+    value="HandCleaner"/>
+  <Action 
+    index="1" 
+    description="[maak een schoon386]" 
+    type="use" 
+    comment="2. Create a clean work area and put the equipment within reach" 
+    points="2" 
+    messageTitle="[je het volgende]" 
+    messageContent="[voorgeschreven steriele katheter454]" 
+    value="WorkField"/>
+  <Action 
+    index="2" 
+    description="[open de katheterset]" 
+    type="use" 
+    points="1" 
+    quiz="2" 
+    messageTitle="[katheterset]" 
+    messageContent="[het gebruik van]" 
+    value="catheterisation" 
+    blockUnlock="OpenedCatheterset"/>
+  <Action 
+    index="3" 
+    description="[giet kraanwater uit50]" 
+    type="useOn" 
+    comment="4. Pour tap water from a large tap (or sterile water) over the gauze." 
+    secondPlace="SinkPos" 
+    item="TrayOfGauzes" 
+    points="1" 
+    buttonText="Gaasjes nat maken" 
+    messageTitle="[gebruik kraanwater]" 
+    messageContent="[als in een]" 
+    target=""/>
+  <Action 
+    index="4" 
+    description="[plaats het bakje]" 
+    type="drop" 
+    secondPlace="WorkFieldPos" 
+    item="TrayOfWetGauzes" 
+    points="1"/>
+  <Action 
+    index="5" 
+    description="[Trek de handschoenen aan]" 
+    type="use" 
+    comment="Put on gloves." 
+    points="1" 
+    value="gloveBox"/>
+  <Action 
+    index="6" 
+    description="[open de buitenverpakking16]" 
+    type="combine" 
+    comment="Open the outer package of the catheter a few centimeters, fold the ends. Leave the inner package in the outer package and hold the outer package with the non-dominant hand on the folded ends." 
+    points="1" 
+    left="catheter_Supertubular_Preparation_packed_Outer" 
+    right=""/>
+  <Action 
+    index="7" 
+    description="[open de binnenverpakking815]" 
+    type="combine" 
+    comment="Remove the end of the inner package from the catheter so that the connection point for the urine collection bag is accessible. The catheter remains in the inner package." 
+    points="2" 
+    left="catheter_Supertubular_Preparation_opened_Outer" 
+    right="" 
+    blockUnlock="RemoveInnerEnd"/>
+  <Action 
+    index="8" 
+    description="[verwijder de afsluitdop295]" 
+    type="combine" 
+    comment="With the dominant hand, grasp the tube of the urine collection bag just behind the connection point and attach it to the catheter. Continue to hold the hose." 
+    points="1" 
+    messageTitle="[desinfecteren aansluitpunt]" 
+    messageContent="[voorkom dat het]" 
+    left="catheter_Supertubular_Preparation_opened_Outer" 
+    right="disconnected_catheter_Supertubular_" 
+    blockRequired="RemoveInnerEnd" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[communiceer met de]"/>
+  <Action 
+    index="9" 
+    description="[verwijder met de136]" 
+    type="combine" 
+    comment="With the non-dominant hand, remove the outer package from the catheter. Dispose of the outer packaging in the waste bin." 
+    points="2" 
+    left="catheter_Supertubular_InHands" 
+    right="" 
+    blockUnlock="removeOuterPack"/>
+  <Action 
+    index="10" 
+    description="[scheur met de]" 
+    type="combine" 
+    comment="Tear open the inner package along the perforation with your free hand, without touching the insert of the catheter." 
+    points="2" 
+    left="catheter_Supertubular_InHands" 
+    right="" 
+    blockUnlock="removeInnerPack" 
+    blockRequired="removeOuterPack"/>
+  <Action 
+    index="11" 
+    description="[leg het in]" 
+    posID="0" 
+    type="drop" 
+    comment="Place the insertable part of the catheter on the sterile work field." 
+    secondPlace="WorkFieldPos" 
+    item="catheter_Supertubular_InHands" 
+    points="2" 
+    left="catheter_Supertubular_InHands" 
+    right="" 
+    blockRequired="removeInnerPack"/>
+  <Action 
+    index="12" 
+    description="[open de verpakking585]" 
+    type="combine" 
+    comment="3. Open package of the syringe with 10 ml of sterile water. Leave the syringe in the package " 
+    points="1" 
+    left="water_syringe_pack" 
+    right="" 
+    blockUnlock="liqsyropened"/>
+  <Action 
+    index="13" 
+    description="[open de verpakking]" 
+    type="combine" 
+    comment="8. Open the packaging of the syringe with lubricant, leave the syringe in the packaging." 
+    points="1" 
+    quiz="2" 
+    left="lube_syringe_pack" 
+    right="" 
+    blockUnlock="lubsyropened"/>
+  <Action 
+    index="14" 
+    description="[vraag de cliënt183]" 
+    type="talk" 
+    comment="5. Ask the client to uncover the lower body and lie on the back with the legs spread apart and the knees raised." 
+    points="1" 
+    messageTitle="[privacy van de]" 
+    messageContent="[denk tijdens het]" 
+    topic="LayOnBed" 
+    blockUnlock="patient lay down"/>
+  <Action 
+    index="15" 
+    description="[leg een onderlegger]" 
+    type="useOn" 
+    comment="6. Place a pad under the buttocks and thighs of the cliënt." 
+    secondPlace="PatientPos" 
+    item="cloth_02_folded" 
+    points="2" 
+    buttonText="Onderlegger plaatsen" 
+    target="" 
+    blockUnlock="clothPlaced"/>
+  <Action 
+    index="16" 
+    description="[klem de katheter]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Klem de katheter" 
+    action="CloseCatheter" 
+    blockUnlock="kocherClosed" 
+    blockRequired="patient lay down,clothPlaced"/>
+  <Action 
+    index="17" 
+    description="[verwijder het fixatie]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Koppel de zak los" 
+    action="DisconnectBag" 
+    blockRequired="kocherClosed"/>
+  <Action 
+    index="18" 
+    description="[verwijder het fixatiemateriaal]" 
+    type="sequenceStep" 
+    comment="Remove the fixation material on the abdomen" 
+    points="1" 
+    value="VerwijderHetFixatiemateriaal"/>
+  <Action 
+    index="19" 
+    description="[observeer de insteekplaats]" 
+    type="sequenceStep" 
+    comment="Observe the catheter insertion site for redness and irritation and note the location of the catheter and the angle at which it is inserted." 
+    points="1" 
+    messageTitle="[ligging katheter]" 
+    messageContent="[let ook op]" 
+    value="ObserveCatheter"/>
+  <Action 
+    index="20" 
+    description="[plaats de lege]" 
+    type="sequenceStep" 
+    comment="Place the empty syringe on the balloon filler channel." 
+    points="1" 
+    value="PlaceSyringe"/>
+  <Action 
+    index="21" 
+    description="[oefen geen zuigkracht]" 
+    type="sequenceStep" 
+    comment="Do not apply suction but allow the syringe to fill itself." 
+    points="1" 
+    value="AllowSyringe"/>
+  <Action 
+    index="22" 
+    description="[controleer of de896]" 
+    type="sequenceStep" 
+    comment="Check whether the amount of liquid sucked in corresponds to the amount injected." 
+    points="1" 
+    value="CheckAmount"/>
+  <Action 
+    index="23" 
+    description="[trek voorzichtig aan]" 
+    type="sequenceStep" 
+    comment="Pull the catheter gently to see if it is loose." 
+    points="1" 
+    value="PullGently"/>
+  <Action 
+    index="24" 
+    description="[verwijder de katheter]" 
+    type="sequenceStep" 
+    comment="Remove the catheter and cover the insertion opening." 
+    points="1" 
+    value="RemoveCatheter"/>
+  <Action 
+    index="25" 
+    description="[verwijder de katheter815]" 
+    type="sequenceStep" 
+    comment="Ask the client to breathe in and out slowly and remove the catheter during the exhalation with a circular motion in the vertical direction. Leakage from the fistula is normal" 
+    points="1" 
+    messageTitle="[lekkage]" 
+    messageContent="[lekkage tijdens het]" 
+    value="AskClient"/>
+  <Action 
+    index="26" 
+    description="[dek de insteekopening]" 
+    type="sequenceStep" 
+    comment="Cover the insertion opening with a gauze. Some leakage is normal." 
+    points="1" 
+    messageTitle="[sluiting fistel]" 
+    messageContent="[na het verwijderen]" 
+    value="CoverInsertion"/>
+  <Action 
+    index="27" 
+    description="[controleer de katheterpunt]" 
+    type="sequenceStep" 
+    comment="Check the catheter tip for deposits / crusting." 
+    points="1" 
+    value="CheckCatheter"/>
+  <Action 
+    index="28" 
+    description="[gooi de katheter]" 
+    type="sequenceStep" 
+    comment="Discard the catheter in the waste bin" 
+    points="1" 
+    value="DiscardCatheter"/>
+  <Action 
+    index="29" 
+    description="[reinig de insteekplaats]" 
+    type="sequenceStep" 
+    comment="Clean the insertion area and the area with squeezed gauze pads. Dry the skin with gauze." 
+    points="1" 
+    value="CleanInsertation"/>
+  <Action 
+    index="30" 
+    description="[knijp ieder gaasje]" 
+    type="sequenceStep" 
+    comment="First squeeze each gauze above the tray." 
+    points="1" 
+    value="SqueezeGauze"/>
+  <Action 
+    index="31" 
+    description="[reinig vanaf het]" 
+    type="sequenceStep" 
+    comment="Clean from the center (the fistula opening) to the outside. Always make one stroke per gauze." 
+    points="1" 
+    value="CleanBody"/>
+  <Action 
+    index="32" 
+    description="[droog de huid61]" 
+    type="sequenceStep" 
+    comment="Dry the skin with a new, dry gauze." 
+    points="1" 
+    value="DryTheSkin"/>
+  <Action 
+    index="33" 
+    description="[gooi de gebruikte491]" 
+    type="sequenceStep" 
+    comment="Throw the used gauzes in the waste bin." 
+    points="1" 
+    value="ThrowGauzes"/>
+  <Action 
+    index="34" 
+    description="[neem de spuit322]" 
+    type="sequenceStep" 
+    comment="Remove the lubricant syringe from the opened package, spray 5-10 ml of lubricant into the fistula opening. Cover the fistula opening with a sterile gauze" 
+    points="1" 
+    value="RemoveLubSyringe"/>
+  <Action 
+    index="35" 
+    description="[trek handschoenen uit]" 
+    type="sequenceStep" 
+    comment="Take gloves off and throw them in the waste bin." 
+    points="1" 
+    value="TakeOffGloves" 
+    blockUnlock="AllowPutOnSterileGloves"/>
+  <Action 
+    index="36" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="Apply hand hygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[handhygiëne is het]" 
+    value="HandCleaner" 
+    blockUnlock="WashHands2Time"/>
+  <Action 
+    index="37" 
+    description="[trek de steriele]" 
+    type="use" 
+    comment="Put on sterile gloves." 
+    points="3" 
+    messageTitle="[aantrekken steriele handschoenen]" 
+    messageContent="[het aantrekken van650]" 
+    value="SterileGloves" 
+    blockRequired="WashHands2Time,AllowPutOnSterileGloves"/>
+  <Action 
+    index="38" 
+    description="[breng de katheter]" 
+    type="sequenceStep" 
+    comment="Insert the catheter. (Extra info ipad: Make sure that the part to be inserted remains sterile. Insert the catheter sufficiently far so that the balloon is not in the fistula. Continue to hold the catheter.):" 
+    points="1" 
+    value="InserttheCatheter"/>
+  <Action 
+    index="39" 
+    description="[pak de katheter]" 
+    type="sequenceStep" 
+    comment="" 
+    points="1" 
+    value="GraspTheCatheter"/>
+  <Action 
+    index="40" 
+    description="[breng de katheter67]" 
+    type="sequenceStep" 
+    comment="Insert the catheter vertically:" 
+    points="1" 
+    value="InsertVertically"/>
+  <Action 
+    index="41" 
+    description="[schuif de katheter672]" 
+    type="sequenceStep" 
+    comment="Move the catheter up until you see urine running out." 
+    points="1" 
+    value="MCU"/>
+  <Action 
+    index="42" 
+    description="[breng de katheter790]" 
+    type="sequenceStep" 
+    comment="When the urine starts running, move the catheter about 5 cm further into the bladder to ensure that the balloon is not in the fistula channal." 
+    points="1" 
+    value="UrineStartsRunning"/>
+  <Action 
+    index="43" 
+    description="[vul de katheterballon]" 
+    type="sequenceStep" 
+    comment="Slowly fill the catheter balloon with the prescribed amount of fluid from the syringe." 
+    points="1" 
+    value="FillLiquid"/>
+  <Action 
+    index="44" 
+    description="[plaats de spuit577]" 
+    type="sequenceStep" 
+    comment="Place the syringe of prescribed fluid on the balloon filling channel" 
+    points="1" 
+    value="PlaceLiquidSyringe"/>
+  <Action 
+    index="45" 
+    description="[spuit de voorgeschreven38]" 
+    type="sequenceStep" 
+    comment="Inject the prescribed amount into the catheter balloon" 
+    points="1" 
+    encounter="1" 
+    value="InjectLiquid"/>
+  <Action 
+    index="46" 
+    description="[verwijder de spuit]" 
+    type="sequenceStep" 
+    comment="Remove the syringe" 
+    points="1" 
+    value="RemoveLiqSyringe"/>
+  <Action 
+    index="47" 
+    description="[trek de katheter13]" 
+    type="sequenceStep" 
+    comment="Carefully pull the catheter back slightly until resistance is felt" 
+    points="1" 
+    value="PullCat"/>
+  <Action 
+    index="48" 
+    description="[fixeer de katheter804]" 
+    type="sequenceStep" 
+    comment="Fix the catheter with fixation material on the abdomen and thigh and ensure that it is not under tension or can buckle" 
+    points="1" 
+    value="FixGeneral"/>
+  <Action 
+    index="49" 
+    description="[leg de katheter]" 
+    type="sequenceStep" 
+    comment="Arrange the catheter in a slight curve" 
+    points="1" 
+    value="Arrange1"/>
+  <Action 
+    index="50" 
+    description="[fixeer de katheter589]" 
+    type="sequenceStep" 
+    comment="Fix the catheter on the abdomen with a plaster / tape" 
+    points="1" 
+    value="FixCathTrue"/>
+  <Action 
+    index="51" 
+    description="[breng de katheter818]" 
+    type="sequenceStep" 
+    comment="Bring the catheter towards the femur with a slight curve" 
+    points="1" 
+    value="BCTF"/>
+  <Action 
+    index="52" 
+    description="[fixeer de katheter801]" 
+    type="sequenceStep" 
+    comment="Fix the catheter with the fixation material on the thigh. Ensure that the catheter and the delivery tube cannot pinch anywhere." 
+    points="1" 
+    value="FixCathToLeg"/>
+  <Action 
+    index="53" 
+    description="[controleer of de223]" 
+    type="sequenceStep" 
+    comment="Check that the catheter is not under tension or that no pulling force is applied during movement" 
+    points="1" 
+    value="CheckCath"/>
+  <Action 
+    index="54" 
+    description="[bevestig de urineopvangzak594]" 
+    type="sequenceStep" 
+    comment="Attach the urine collection bag to the leg or suspension rack" 
+    points="1" 
+    value="AttachBag"/>
+  <Action 
+    index="55" 
+    description="[controleer of de311]" 
+    type="sequenceStep" 
+    comment="Check that the urine collection bag is below the level of the bladder and does not touch the floor of the caregivers' feet" 
+    points="1" 
+    value="CheckBag"/>
+  <Action 
+    index="56" 
+    description="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+    type="sequenceStep" 
+    comment="Take gloves off and throw them in the waste bin." 
+    points="1" 
+    value="TakeOffSterileGloves" 
+    blockUnlock="AllowToCleanWorkfield"/>
+  <Action 
+    index="57" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    comment="Apply hand hygiene" 
+    points="3" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[handhygiëne is het]" 
+    value="HandCleaner"/>
+  <Action 
+    index="58" 
+    description="[ruim de materialen946]" 
+    type="use" 
+    comment="Create a clean workfield" 
+    points="1" 
+    value="WorkField" 
+    blockRequired="AllowToCleanWorkfield"/>
+  <Action 
+    index="59" 
+    description="[teken de toedienlijst393]" 
+    type="use" 
+    comment="Sight administration list or write down time, kind, concentration, amount, method of administration and write down findings" 
+    points="1" 
+    value="PaperAndPen"/>
 </ActionList>

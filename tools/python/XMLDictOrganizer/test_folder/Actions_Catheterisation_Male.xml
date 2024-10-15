@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="Handhygiëne" 
+      messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne. " 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="Maak een schoon werkveld en zet de benodigdheden binnen bereik" 
+      type="use" 
+      comment="2. Create a clean work area and put the equipment within reach" 
+      points="2" 
+      messageTitle="Je het volgende nodig hebt?" 
+      messageContent="&#13;!!!NEWLINE!!!- voorgeschreven steriele katheter&#13;!!!NEWLINE!!!- voorgeschreven steriele spuit met glijmiddel&#13;!!!NEWLINE!!!- steriele spuit met ballonvulling&#13;!!!NEWLINE!!!- 2 onderleggers&#13;!!!NEWLINE!!!- gaasje&#13;!!!NEWLINE!!!- bakje met 4 gaasjes&#13;!!!NEWLINE!!!- water uit flink stromende kraan (of steriel water)&#13;!!!NEWLINE!!!- steriele handschoenen&#13;!!!NEWLINE!!!- steriel gaasje&#13;!!!NEWLINE!!!- handschoenen&#13;!!!NEWLINE!!!- steriele doek&#13;!!!NEWLINE!!!- materiaal om genitale gebied na katheterisatie mee te reinigen (vochtige washand, handdoek)&#13;!!!NEWLINE!!!- steriele urineopvangzak (met kraantje)&#13;!!!NEWLINE!!!- ophangrekje, fixatiemateriaal&#13;!!!NEWLINE!!!- zo nodig: penisklem&#13;!!!NEWLINE!!!- afvalbak&#13;!!!NEWLINE!!!&#13;!!!NEWLINE!!!Zorg voor een extra katheter, urineopvangzak en materialen voor het inbrengen, voor het geval het inbrengen mislukt.&#13;!!!NEWLINE!!! " 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="Controleer cliëntgegevens" 
+      type="examine" 
+      item="PatientRecords" 
+      points="2" 
+      expected="good"/>
+  <Action 
+      index="3" 
+      description="Open de katheterset" 
+      type="use" 
+      points="1" 
+      messageTitle="Katheterset" 
+      messageContent="[Katheterset]" 
+      value="catheterisation"/>
+  <Action 
+      index="4" 
+      description="Giet kraanwater uit een flink stromende kraan (of steriel water) over de gaasjes" 
+      type="useOn" 
+      comment="4. Pour tap water from a large tap (or sterile water) over the gauze." 
+      secondPlace="SinkPos" 
+      item="TrayOfGauzes" 
+      points="1" 
+      buttonText="Gaasjes nat maken" 
+      messageTitle="Gebruik kraanwater" 
+      messageContent="[TapWaterTheory]" 
+      target=""/>
+  <Action 
+      index="5" 
+      description="Open de verpakking van de spuit met 10 ml steriel water. Laat de spuit in de verpakking" 
+      type="combine" 
+      comment="3. Open package of the syringe with 10 ml of sterile water. Leave the syringe in the package " 
+      points="1" 
+      left="water_syringe_pack" 
+      right="" 
+      blockUnlock="WaterUnpacked"/>
+  <Action 
+      index="6" 
+      description="Open de verpakking van de spuit met glijmiddel. Laat de spuit nog in de verpakking" 
+      type="combine" 
+      comment="8. Open the packaging of the syringe with lubricant, leave the syringe in the packaging." 
+      points="1" 
+      left="lube_syringe_pack" 
+      right="" 
+      blockUnlock="LubUnpacked"/>
+  <Action 
+      index="7" 
+      description="Trek handschoenen aan" 
+      type="use" 
+      comment="9. Put on gloves." 
+      points="2" 
+      quiz="2" 
+      messageTitle="Gebruik handschoenen" 
+      messageContent="Gebruik handschoenen eenmalig en bij steeds dezelfde cliënt. Vermijd tijdens het dragen van handschoenen contact met deurknopen, telefoon, apparatuur, toetsenborden, enzovoort. Trek ze na gebruik direct uit. Bij het uittrekken van de handschoenen kunnen je handen besmet zijn geraakt. Was of desinfecteer daarom je handen altijd na het uittrekken van de handschoenen." 
+      value="gloveBox"/>
+  <Action 
+      index="8" 
+      description="Vraag de cliënt het onderlichaam te ontbloten en op de rug te gaan liggen met de benen gespreid en de knieën opgetrokken" 
+      type="talk" 
+      comment="5. Ask the client to uncover the lower body and lie on the back with the legs spread apart and the knees raised." 
+      points="1" 
+      topic="LayOnBed" 
+      blockUnlock="patient lay down"/>
+  <Action 
+      index="9" 
+      description="Leg een onderlegger onder de billen en dijen van de cliënt" 
+      type="useOn" 
+      comment="6. Place a pad under the buttocks and thighs of the cliënt." 
+      secondPlace="PatientPos" 
+      item="cloth_02_folded" 
+      points="2" 
+      buttonText="Onderlegger plaatsen" 
+      blockUnlock="FirstPadPlaced" 
+      messageTitle="Privacy van de cliënt" 
+      messageContent="Denk tijdens het zorg verlenen altijd aan de privacy van de cliënt. Zorg ervoor dat de cliënt zich veilig en geborgen voelt door bijvoorbeeld de gordijnen dicht te trekken." 
+      target=""/>
+  <Action 
+      index="10" 
+      description="Leg een onderlegger over de dijbenen en onder de penis van de cliënt" 
+      type="useOn" 
+      comment="Place a pad over the client's thighs and under the client's penis" 
+      secondPlace="PatientPos" 
+      item="cloth_02_folded_ForPatient" 
+      points="2" 
+      blockRequired="FirstPadPlaced" 
+      buttonText="Onderlegger plaatsen" 
+      target=""/>
+  <Action 
+      index="11" 
+      description="Zet het bakje met gaasjes op de onderlegger" 
+      posID="2" 
+      type="drop" 
+      comment="7. Place the tray with gauze on the underpad." 
+      secondPlace="PatientPos" 
+      item="TrayOfWetGauzes" 
+      points="1"/>
+  <Action 
+      index="12" 
+      description="Leg het plastic afvalbakje op de onderlegger" 
+      posID="2" 
+      type="drop" 
+      comment="" 
+      secondPlace="PatientPos" 
+      item="PlasticTrashbucket" 
+      points="1" 
+      blockUnlock="tray placed" 
+      blockRequired="LubUnpacked, WaterUnpacked"/>
+  <Action 
+      index="13" 
+      description="Reinig de glanspenis met een vochtige gaasje, plaats een steriel gaasje onder de penis en leg de penis hierop" 
+      type="general" 
+      comment="Clean the glans penis with the moist gauze, place the sterile gauze under the penis and place the penis on it." 
+      place="PatientPos" 
+      item="" 
+      points="3" 
+      action="StartMaleCathSQ1" 
+      buttonText="Reinig de glanspenis" 
+      messageTitle="Reiniging genitaliën" 
+      messageContent="Voordat je een katheter inbrengt, reinig je de genitaliën van de cliënt. Bij het inbrengen van verblijfskatheters wordt glijmiddel in de urethra aangebracht. (Bij een suprapubische katheter wordt glijmiddel in de fistel aangebracht).&#13;!!!NEWLINE!!!&#13;!!!NEWLINE!!!Communiceer met de client en zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie." 
+      target="" 
+      blockRequired="patient lay down, tray placed" 
+      blockTitle="Handeling niet mogelijk." 
+      blockMessage="Zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie."/>
+  <Action 
+      index="14" 
+      description="Omvat met één hand de penis en schuif de voorhuid (wanneer aanwezig) terug met een gaasje" 
+      type="sequenceStep" 
+      points="1" 
+      value="shift foreskin"/>
+  <Action 
+      index="15" 
+      description="Neem een nieuw en schoon uitgeknepen gaasje en reinig de rand van de glanspenis" 
+      type="sequenceStep" 
+      points="2" 
+      value="clean sides gloss penis"/>
+  <Action 
+      index="16" 
+      description="Neem een nieuw en schoon uitgeknepen gaasje en reinig de glanspenis" 
+      type="sequenceStep" 
+      points="2" 
+      value="clean gloss penis"/>
+  <Action 
+      index="17" 
+      description="Neem een nieuw en schoon uitgeknepen gaasje en reinig de meatus" 
+      type="sequenceStep" 
+      points="2" 
+      value="clean meatus"/>
+  <Action 
+      index="18" 
+      description="Plaats een gaasje onder de penis en leg de penis hier op" 
+      type="sequenceStep" 
+      points="1" 
+      value="lay sterile gauze"/>
+  <Action 
+      index="19" 
+      description="Spuit het glijmiddel langzaam in de urethra (10-15 ml). Houd daarbij de penis stevig vast onder de glans met de duim en wijsvinger" 
+      type="sequenceStep" 
+      points="3" 
+      value="insert lube"/>
+  <Action 
+      index="20" 
+      description="Haal de conus van de spuit uit de urethra en houd de urethra dicht." 
+      type="sequenceStep" 
+      points="2" 
+      messageTitle="Verdovend glijmiddel" 
+      messageContent="Als het glijmiddel een verdovend middel bevat: laat voor een verdovend effect het glijmiddel inwerken gedurende de in de bijsluiter vermelde tijd (minimaal 5 minuten). Gebruik eventueel een penisklem. Gooi de spuit in de afvalbak." 
+      value="remove syringe"/>
+  <Action 
+      index="21" 
+      description="Gooi de spuit in het afvalbakje" 
+      type="sequenceStep" 
+      comment="Throw the syringe into the waste bin" 
+      points="1" 
+      value="trash syringe"/>
+  <Action 
+      index="22" 
+      description="Trek de handschoenen uit en gooi ze in het afvalbakje" 
+      type="sequenceStep" 
+      comment="Take off gloves" 
+      points="1" 
+      value="remove gloves" 
+      blockUnlock="GenitalsCleaned"/>
+  <Action 
+      index="23" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      value="HandCleaner"/>
+  <Action 
+      index="24" 
+      description="Open de verpakking van de urineopvangzak. Laat de steriele urineopvangzak op het steriele werkveld vallen, raak de urineopvangzak niet aan. Gooi de verpakking in de afvalbak." 
+      type="combine" 
+      comment="??" 
+      points="1" 
+      messageTitle="Dubbelverpakte katheter" 
+      messageContent="In deze geprotocolleerde werkinstructie wordt uitgegaan van een dubbelverpakte katheter." 
+      left="catheter_bag_packed" 
+      right=""/>
+  <Action 
+      index="25" 
+      description="Open de buitenverpakking van de katheter en laat de katheter in de binnenverpakking op het steriele werkveld vallen, zonder de binnenverpakking aan te raken" 
+      type="combine" 
+      comment="Open the outer package of the catheter a few centimeters, fold the ends. Leave the inner package in the outer package and hold the outer package with the non-dominant hand on the folded ends." 
+      points="1" 
+      left="catheter_x" 
+      right=""/>
+  <Action 
+      index="26" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="29. Apply hand hygiene." 
+      points="3" 
+      value="HandCleaner"/>
+  <Action 
+      index="27" 
+      description="Trek de steriele handschoenen aan" 
+      type="use" 
+      comment="30. Put on sterile gloves." 
+      points="3" 
+      quiz="2" 
+      messageTitle="Aantrekken steriele handschoenen" 
+      messageContent="Het aantrekken van steriele handschoenen vereist enige handigheid. Voorkom tijdens het aantrekken dat de handschoenen besmet raken. In deze werkinstructie wordt de verblijfskatheter met steriele handschoenen ingebracht. Het gebruik van een steriele pincet of de binnenverpakking van de katheter is ook mogelijk." 
+      value="SterileGloves"/>
+  <Action 
+      index="28" 
+      description="Open de binnenverpakking van de katheter. Haal de katheter uit de binnenverpakking" 
+      type="combine" 
+      comment="24. Remove the end of the inner package from the catheter so that the connection point for the urine collection bag is accessible. The catheter remains in the inner package." 
+      points="2" 
+      left="catheter_inner" 
+      blockUnlock="InnerBagRemoved" 
+      right=""/>
+  <Action 
+      comment="Check catheter for flaws" 
+      index="29" 
+      description="Controleer de katheter op gebreken" 
+      type="examine" 
+      item="CWB_open" 
+      points="2" 
+      blockRequired="InnerBagRemoved" 
+      expected="good"/>
+  <Action 
+      index="30" 
+      description="Verwijder de afsluitdop van de urineopvangzak. Bevestig deze aan de katheter" 
+      type="combine" 
+      comment="24. With the dominant hand, grasp the tube of the urine collection bag just behind the connection point and attach it to the catheter. Continue to hold the hose." 
+      points="1" 
+      messageTitle="Desinfecteren aansluitpunt" 
+      messageContent="Voorkom dat het aansluitpunt van de urineopvangzak in aanraking komt met de omgeving. Als dat wel gebeurt, moet het aansluitpunt worden gedesinfecteerd met alcohol 70%." 
+      left="" 
+      right="catheter_bag_twisted" 
+      blockRequired="patient lay down, GenitalsCleaned" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Communiceer met de cliënt en zorg ervoor dat de cliënt klaar is voor blaaskatheterisatie"/>
+  <Action 
+      index="31" 
+      description="Houd de katheter ongeveer 5 cm van de top vast. Houd de rest van de katheter als een lus in de katheteriserende hand" 
+      type="sequenceStep" 
+      points="1" 
+      value="hold catheter"/>
+  <Action 
+      index="32" 
+      description="Breng de penis loodrecht omhoog met de vrije hand" 
+      type="sequenceStep" 
+      points="1" 
+      value="bring penis up"/>
+  <Action 
+      index="33" 
+      description="Breng de katheterpunt voorzichtig in." 
+      type="sequenceStep" 
+      points="3" 
+      messageTitle="Voorzichtig inbrengen" 
+      messageContent="Een katheter moet voorzichtig worden ingebracht. Forceer niet, omdat er een ‘fausse route’ kan ontstaan, waarbij de katheter zich door de wand van de urethra boort." 
+      value="insert catheter"/>
+  <Action 
+      index="34" 
+      description="Schuif de katheter op tot je urine ziet aflopen." 
+      type="sequenceStep" 
+      points="3" 
+      messageTitle="Weerstand" 
+      messageContent="Als je weerstand voelt: buig de penis naar voren (richting de voeten), schuif de katheter op tot je urine ziet aflopen. Het kan soms even duren voor de urine begint te lopen. Oefen lichte druk uit op het gebied van symfyse en schaambeen als er geen urine wordt afgevoerd." 
+      value="insert till urine"/>
+  <Action 
+      index="35" 
+      description="Schuif de katheter op tot de vertakking" 
+      type="sequenceStep" 
+      points="3" 
+      value="shift till bifurcation"/>
+  <Action 
+      index="36" 
+      description="Houd de katheter vast, zodat deze niet uit de blaas glijdt" 
+      type="sequenceStep" 
+      points="2" 
+      value="hold catheter bladder"/>
+  <Action 
+      index="37" 
+      description="Plaats de spuit met de voorgeschreven vloeistof op het katheterballonkanaal" 
+      type="sequenceStep" 
+      points="2" 
+      messageTitle="Spuit plaatsen op katheterballonkanaal" 
+      value="place syringe"/>
+  <Action 
+      index="38" 
+      description="Spuit de voorgeschreven hoeveelheid vloeistof langzaam in de katheterballon" 
+      type="sequenceStep" 
+      points="3" 
+      messageTitle="Ballon vullen" 
+      messageContent="Als er minder vloeistof in de katheterballon moet dan de fabrikant adviseert: vul de ballon helemaal en zuig daarna wat niet nodig is terug." 
+      encounter="1" 
+      value="insert liquid"/>
+  <Action 
+      index="39" 
+      description="Verwijder de spuit" 
+      type="sequenceStep" 
+      points="1" 
+      value="remove syringe"/>
+  <Action 
+      index="40" 
+      description="Trek de katheter iets terug totdat je weerstand voelt" 
+      type="sequenceStep" 
+      points="2" 
+      value="pull catheter"/>
+  <Action 
+      index="41" 
+      description="Reinig en droog de penis en schuif de voorhuid weer op zijn plaats" 
+      type="sequenceStep" 
+      points="1" 
+      value="clean penis"/>
+  <Action 
+      index="42" 
+      description="Trek de steriele handschoenen uit" 
+      type="sequenceStep" 
+      points="1" 
+      value="remove gloves" 
+      blockUnlock="pull off gloves"/>
+  <Action 
+      index="43" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="Apply hand hygiene." 
+      points="3" 
+      messageTitle="Handhygiëne" 
+      messageContent="Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne." 
+      value="HandCleaner"/>
+  <Action 
+      index="44" 
+      description="Fixeer de katheter op het bovenbeen met een strook katheter fixatieband. Zorg dat de katheter en de afvoerslang nergens knikken" 
+      type="useOn" 
+      comment="" 
+      secondPlace="PatientPos" 
+      item="fixator_folded" 
+      points="3" 
+      buttonText="Fixeer de katheter" 
+      target="" 
+      blockUnlock="fixate catheter" 
+      blockRequired="pull off gloves" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt"/>
+  <action 
+      comment="help patient to get up" 
+      index="45" 
+      point="1" 
+      description="[help de cliënt]" 
+      type="talk" 
+      topic="HelpGetUp" 
+      extra="Help de cliënt in een comfortabele houding" 
+      blockRequired="fixate catheter" 
+      blockUnlock="patient get up" 
+      blockLock="patient lay down" 
+      blockTitle="Deze handeling is niet mogelijk" 
+      blockMessage="De katheter is ingebracht bij de cliënt!!!NEWLINE!!!!!!NEWLINE!!!De cliënt hoeft niet opnieuw te gaan liggen"/>
+  <action 
+      comment="Check the cloth pad" 
+      index="46" 
+      points="1" 
+      description="[controleer of de]" 
+      type="use" 
+      value="cloth_02" 
+      extra="Controleer of de cliënt en het bed droog zijn gebleven" 
+      blockRequired="patient get up" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Help eerst de cliënt in een comfortabele positie zodat je goed het bed kunt controleren"/>
+  <action 
+      index="47" 
+      comment="" 
+      points="3" 
+      description="[fixeer de katheter909]" 
+      type="useOn" 
+      item="fixation_folded_buttons" 
+      target="" 
+      secondPlace="PatientPos" 
+      buttonText="Bevestig urineopvangzak" 
+      blockUnlock="catheter fixed" 
+      extra="Fixeer de katheter op het bovenbeen met nog een een strook fixatiemateriaal. Zorg dat de katheter en de afvoerslang nergens kunnen knikken" 
+      blockRequired="patient get up" 
+      blockTitle="Handeling niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt en help de cliënt in een comfortabele positie"/>
+  <action 
+      comment="Check the catheter bag" 
+      index="48" 
+      points="3" 
+      description="[controleer of de729]" 
+      fullDescription="[klik op de699]" 
+      type="use" 
+      value="CWB_inner_open_in2" 
+      extra="Controleer of de urineopvangzak onder het niveau van de blaas hangt en de grond of voeten van de cliënt niet raakt"/>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="49" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="50" 
+      type="use" 
+      value="WorkField" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      blockRequired="catheter fixed" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Zorg ervoor dat de katheter is ingebracht bij de cliënt en bevestig de urineopvangzak aan het been of ophangrekje" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen446]"/>
+  <action 
+      comment="last step" 
+      index="51" 
+      points="1" 
+      description="[noteer datum en]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Noteer datum en tijdstip, reden voor katheterisatie, soort, maat en merk katheter, hoeveelheid ingebrachte vloeistof in ballon en andere bevindingen"/>
+</ActionList>

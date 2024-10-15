@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="22">
+  <action 
+      index="0" 
+      points="1" 
+      description="[Begroet]" 
+      type="talk" 
+      topic="Hello" 
+      extra="[het begroeten van]" 
+      optional=""/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      index="1" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="[controleer de cliëntgegevens918]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      index="2" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="[controleer de toedienlijst61]" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5677]" 
+      encounter="1"/>
+  <action 
+      points="3" 
+      description="[noteer de handeling]" 
+      audioHint="Injection/EAS4-2" 
+      index="3" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[noteer de handeling669]"/>
+</ActionList>

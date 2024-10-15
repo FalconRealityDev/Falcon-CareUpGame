@@ -1,0 +1,19 @@
+{
+        "SafeEnv": "Zorg voor een veilige omgeving voor de cli\u00ebnt, jezelf en andere aanwezigen",
+        "graspShoulders": "Pak met je handen de cli\u00ebnt voorzichtig bij de schouders",
+        "ShakeShoulders": "Schud rustig aan de schouders en controleer of de cli\u00ebnt reageert. Vraag bijvoorbeeld luid: Gaat het?",
+        "Call112": "Vraag hulp van een collega of een omstander. Laat 112 of (wanneer van toepassing) het reanimatieteam bellen. Als je alleen bent, bel dan zelf",
+        "CheckBreathing": "Open de luchtweg",
+        "CheckBreathingByEar": "Controleer de ademhaling van de cli\u00ebnt maximaal 10 seconden",
+        "StartCPR": "Start reanimatie wanneer er geen of geen normale ademhaling is",
+        "TurnOnAED": "Zet de AED aan en ontbloot de borstkas van de cli\u00ebnt",
+        "RemoveElectrodes": "Volg de instructies van de AED. Haal de elektroden uit de verpakking",
+        "AttachElectrodes": "Kijk naar de afbeelding op de elektroden en bevestig ze op de juiste plaats op de borstkas",
+        "NoOneTouch": "Zorg dat niemand de cli\u00ebnt aanraakt als de AED het hartritme analyseert",
+        "PressShockButton": "Druk op de schokknop als de AED dit zegt. De AED geeft een schok",
+        "StartAgainCompressions": "Start met 30 borstcompressies, direct gevolgd door 2 beademingen. Blijf de instructies van de AED volgen",
+        "KeepDoing": "Blijf reanimeren totdat er hulp komt",
+        "Ruim de materialen op": "Ruim de materialen op",
+        "Pas handhygiene toe": "Pas handhygiene toe",
+        "recordActions": "Noteer de handelingen, tijdstip, duur en bevindingen"
+}

@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-  <action description="Volg de tips op je scherm." audioHint="" fullDescription="Volg de tips op je scherm."
-		index="0" type="talk" topic="Hello" extra="Volg de tips om verder te gaan."></action>
-
-  <action description="Volg de tips op je scherm." audioHint="" fullDescription="Volg de tips op je scherm."
-    index="1" type="use" value="HandCleaner" extra="Volg de tips om verder te gaan."></action>
-
-  <action description="Volg de tips op je scherm." fullDescription="Volg de tips op je scherm."
-  index="2" type="use" value="WorkField" extra="Volg de tips om verder te gaan."></action>
-  
-  <action description="Volg de tips op je scherm." fullDescription="" audioHint=""
-		index="3" type="use" value="__tutorialEnd" />
+  <action 
+    description="[volg de tips]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="0" 
+    type="talk" 
+    topic="Hello" 
+    extra="[volg de tips996]"/>
+  <action 
+    description="[volg de tips]" 
+    audioHint="" 
+    fullDescription="[volg de tips]" 
+    index="1" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[volg de tips996]"/>
+  <action 
+    description="[volg de tips]" 
+    fullDescription="[volg de tips]" 
+    index="2" 
+    type="use" 
+    value="WorkField" 
+    extra="[volg de tips996]"/>
+  <action 
+    description="[volg de tips]" 
+    fullDescription="" 
+    audioHint="" 
+    index="3" 
+    type="use" 
+    value="__tutorialEnd"/>
 </ActionList>

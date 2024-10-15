@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: asset-1119032584
   m_Data:
     m_SerializedData: []
-  m_GUID: 2356f056075b9724ca87e400e1b92d36
+  m_GUID: 5d5d6387a6e306d43bd16127a72c5123
   m_SerializeEntries:
   - m_GUID: 780e5392be99e3e47982f3a0be6cc6b8
     m_Address: assets/resources/models/m1/materials/old_lightskinned_male_diffuse.mat

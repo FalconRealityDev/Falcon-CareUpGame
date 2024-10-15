@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="2" 
+      description="[maak de handen]" 
+      fullDescription="" 
+      type="use" 
+      value="Sink_active" 
+      extra=""/>
+  <action 
+      index="1" 
+      points="3" 
+      description="[gebruik genoeg zeep]" 
+      fullDescription="" 
+      type="use" 
+      extra="" 
+      value="SoapDispenser"/>
+  <action 
+      index="2" 
+      points="3" 
+      description="[wrijf de handpalmen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      value="rub hand palms" 
+      extra=""/>
+  <action 
+      index="3" 
+      points="3" 
+      description="[wrijf de rechter]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms back"/>
+  <action 
+      index="4" 
+      points="" 
+      description="[wrijf de handpalmen870]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms entwined"/>
+  <action 
+      index="5" 
+      points="" 
+      description="[wrijf met ineen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hands crocheted"/>
+  <action 
+      index="6" 
+      points="" 
+      description="[draai met de]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms thumbs"/>
+  <action 
+      index="7" 
+      points="" 
+      description="[wrijf en draai]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms pinched together"/>
+  <action 
+      index="8" 
+      points="" 
+      description="[spoel de handen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rinse sink cabinet"/>
+  <action 
+      index="9" 
+      points="" 
+      description="[droog de handen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="cloth box drying"/>
+  <action 
+      index="10" 
+      points="" 
+      description="[gebruik het wegwerpdoekje]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="sink off"/>
+  <action 
+      index="11" 
+      points="" 
+      description="[breng handalcohol aan]" 
+      fullDescription="" 
+      type="use" 
+      extra="" 
+      value="AlcoholHandCleaner"/>
+  <action 
+      index="12" 
+      points="" 
+      description="[wrijf de handpalmen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms alcohol"/>
+  <action 
+      index="13" 
+      points="" 
+      description="[wrijf rechter handpalm]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms back alcohol"/>
+  <action 
+      index="14" 
+      points="" 
+      description="[wrijf de handpalmen870]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms entwined alcohol"/>
+  <action 
+      index="15" 
+      points="" 
+      description="[wrijf met ineen]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hands crocheted alcohol"/>
+  <action 
+      index="16" 
+      points="" 
+      description="[draai met de]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms thumbs alcohol"/>
+  <action 
+      index="17" 
+      points="" 
+      description="[wrijf en draai]" 
+      fullDescription="" 
+      type="sequenceStep" 
+      extra="" 
+      value="rub hand palms pinched together alcohol"/>
+</ActionList>

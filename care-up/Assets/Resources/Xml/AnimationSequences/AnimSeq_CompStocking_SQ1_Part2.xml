@@ -1,95 +1,160 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
-	<step>
-		<option text="Plaats de cone met zuignap op een vlakke en stevige ondergrond" animation="PlaceCone"/>
-		<option text="Schuif de steunkous over de cone en zorg dat de steunkous glad is. De binnenkant van de steunkous gaat over de cone heen. De buitenkant van de steunkous is te zien. Bij een open teenstuk schuif je de teenboord tot net onder de bovenste ronding van de cone."/>
-		<option text="Druk de cone iets naar beneden met je ene hand op de bovenkant."/>
-		<option text="Bevestig de cone aan het oppervlak door met je andere hand de hendel van rechts naar links te draaien."/>
-	</step>
-	​
-	<step>
-		<option text="Druk de cone iets naar beneden met je ene hand op de bovenkant." animation="PressTheCone"/>
-		<option text="Schuif de steunkous over de cone en zorg dat de steunkous glad is. De binnenkant van de steunkous gaat over de cone heen. De buitenkant van de steunkous is te zien. Bij een open teenstuk schuif je de teenboord tot net onder de bovenste ronding van de cone."/>
-		<option text="Plaats de cone met zuignap op een vlakke en stevige ondergrond"/>
-		<option text="Bevestig de cone aan het oppervlak door met je andere hand de hendel van rechts naar links te draaien."/>
-	</step>
-	​
-	<step>
-		<option text="Bevestig de cone aan het oppervlak door met je andere hand de hendel van rechts naar links te draaien." animation="TurnHandle"/>
-		<option text="Plaats de cone met zuignap op een vlakke en stevige ondergrond"/>
-		<option text="Druk de cone iets naar beneden met je ene hand op de bovenkant."/>
-		<option text="Schuif de steunkous over de cone en zorg dat de steunkous glad is. De binnenkant van de steunkous gaat over de cone heen. De buitenkant van de steunkous is te zien. Bij een open teenstuk schuif je de teenboord tot net onder de bovenste ronding van de cone."/>
-	</step>
-	​
-	<step>
-		<option text="Schuif de steunkous over de cone en zorg dat de steunkous glad is. De binnenkant van de steunkous gaat over de cone heen. De buitenkant van de steunkous is te zien. Bij een open teenstuk schuif je de teenboord tot net onder de bovenste ronding van de cone. " animation="SlideStockingOverCone"/>
-		<option text="Druk de cone iets naar beneden met je ene hand op de bovenkant."/>
-		<option text="Bevestig de cone aan het oppervlak door met je andere hand de hendel van rechts naar links te draaien."/>
-		<option text="Plaats de cone met zuignap op een vlakke en stevige ondergrond"/>
-	</step>
-	​
-	<step>
-		<option text="Pak de cuff met beide handen vast." animation="GrabCuff"/>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone."/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Ontbloot het been en de voet van de cliënt"/>
-	</step>
-	​
-	<step>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone." animation="RollCuffOver"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Pak de cuff met beide handen vast."/>
-		<option text="Schud de cuff lichtjes"/>
-	</step>
-	​
-	<step>
-		<option text="Pak de steunkous met beide handen vast aan de onderrand" animation="GrabStocking"/>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone."/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Pak de cuff met beide handen vast."/>
-	</step>
-	​
-	<step>
-		<option text="Sla de steunkous om over de onderkant van de cuff" animation="FoldStocking"/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Pak de cuff met beide handen vast."/>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone."/>
-	</step>
-	​
-	<step>
-		<option text="Rol de steunkous naar boven tot de cuff helemaal bedekt is. Laat de Doff N’ Donner cuff het werk doen en ‘vouw’ de steunkous niet om de cuff" animation="RollCuffUp1"/>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone."/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Pak de cuff met beide handen vast."/>
-	</step>
-	​
-	<step>
-		<option text="Schud de cuff lichtjes" animation="ShakeCuff"/>
-		<option text="Rol de cuff over de steunkous, tot de onderkant van de cone."/>
-		<option text="Pak de cuff met beide handen vast."/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-	</step>
-	​
-	<step>
-		<option text="Plaats beide handen om de cuff" animation="PlaceHandsAroundCuff"/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Rol de cuff met de steunkous naar boven van de cone af. Niet trekken"/>
-	</step>
-	​
-	<step>
-		<option text="Rol de cuff met de steunkous naar boven van de cone af. Niet trekken" animation="RollCuffMoreUp"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Bij een open teenstuk zit de teenboord ongeveer 2 cm onder de rand van de cuff"/>
-		<option text="Schud de cuff lichtjes"/>
-	</step>
-	​
-	<step>
-		<option text="Controleer of de teenboord ongeveer 2 cm onder de rand van de cuff zit" animation="CheckEdge"/>
-		<option text="Rol de cuff met de steunkous naar boven van de cone af. Niet trekken"/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-	</step>
+  <step>
+    <option 
+      text="[plaats de cone355]" 
+      animation="PlaceCone"/>
+    <option 
+      text="[schuif de steunkous83]"/>
+    <option 
+      text="[druk de cone484]"/>
+    <option 
+      text="[bevestig de cone]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[druk de cone484]" 
+      animation="PressTheCone"/>
+    <option 
+      text="[schuif de steunkous83]"/>
+    <option 
+      text="[plaats de cone355]"/>
+    <option 
+      text="[bevestig de cone]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[bevestig de cone]" 
+      animation="TurnHandle"/>
+    <option 
+      text="[plaats de cone355]"/>
+    <option 
+      text="[druk de cone484]"/>
+    <option 
+      text="[schuif de steunkous83]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[schuif de steunkous]" 
+      animation="SlideStockingOverCone"/>
+    <option 
+      text="[druk de cone484]"/>
+    <option 
+      text="[bevestig de cone]"/>
+    <option 
+      text="[plaats de cone355]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[pak de cuff991]" 
+      animation="GrabCuff"/>
+    <option 
+      text="[rol de cuff]"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[ontbloot het been16]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[rol de cuff]" 
+      animation="RollCuffOver"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[pak de cuff991]"/>
+    <option 
+      text="[schud de cuff]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[pak de steunkous]" 
+      animation="GrabStocking"/>
+    <option 
+      text="[rol de cuff]"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[pak de cuff991]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[sla de steunkous]" 
+      animation="FoldStocking"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[pak de cuff991]"/>
+    <option 
+      text="[rol de cuff]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[rol de steunkous]" 
+      animation="RollCuffUp1"/>
+    <option 
+      text="[rol de cuff]"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[pak de cuff991]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[schud de cuff]" 
+      animation="ShakeCuff"/>
+    <option 
+      text="[rol de cuff]"/>
+    <option 
+      text="[pak de cuff991]"/>
+    <option 
+      text="[sla de steunkous]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[plaats beide handen]" 
+      animation="PlaceHandsAroundCuff"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[rol de cuff519]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[rol de cuff519]" 
+      animation="RollCuffMoreUp"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[bij een open138]"/>
+    <option 
+      text="[schud de cuff]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[controleer of de266]" 
+      animation="CheckEdge"/>
+    <option 
+      text="[rol de cuff519]"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[sla de steunkous]"/>
+  </step>
 
-	​
+  ​
 </AnimationSequence>

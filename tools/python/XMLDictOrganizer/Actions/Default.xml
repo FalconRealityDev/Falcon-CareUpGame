@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      description="[step 1: combine]" 
+      audioHint="" 
+      index="0" 
+      type="combine" 
+      left="Cube" 
+      right="Cube"/>
+  <action 
+      description="[step 2: use]" 
+      audioHint="" 
+      index="0" 
+      type="use" 
+      value="Switch"/>
+  <action 
+      description="[step 3: ask]" 
+      audioHint="" 
+      index="1" 
+      type="talk" 
+      topic="RollUpSleeves"/>
+  <action 
+      description="[step 4: examine]" 
+      audioHint="" 
+      index="2" 
+      type="examine" 
+      item="Hand" 
+      expected="clean"/>
+  <action 
+      description="[step 5: use]" 
+      audioHint="" 
+      index="3" 
+      type="useOn" 
+      item="Rectangle" 
+      target="Hand"/>
+  <action 
+      description="[step 6: combine]" 
+      audioHint="" 
+      index="4" 
+      type="combine" 
+      left="Cube" 
+      right="Sphere"/>
+  <action 
+      description="[step 7: combine]" 
+      audioHint="" 
+      index="4" 
+      type="combine" 
+      left="Rectangle" 
+      right="FlatSphere"/>
+</ActionList>

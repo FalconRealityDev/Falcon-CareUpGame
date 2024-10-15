@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="1" 
+      description="[Begroet]" 
+      type="talk" 
+      topic="Hello" 
+      extra="Het begroeten van de client en je voorstellen is niet in de werkwijze is vermeld. Het is wel netjes en logisch om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      comment="(2)Create a clean workfield" 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik." 
+      messageTitle="[je het volgende]" 
+      messageContent="[1 paar handschoenen]"/>
+  <action 
+      comment="(3)Open package of fixationplaster" 
+      points="1" 
+      description="[leg de infuuspleister]" 
+      index="2" 
+      type="combine" 
+      left="BandAidPackage" 
+      right="" 
+      extra="Leg de fixatiepleister klaar in een geopende verpakking." 
+      blockUnlock="block1"/>
+  <action 
+      comment="(4)Open package of insuflonneedle" 
+      points="1" 
+      description="[leg de saftintima]" 
+      index="2" 
+      type="combine" 
+      left="insulfonPackage" 
+      right="" 
+      extra="Leg de Saf-T-Intima klaar in een geopende verpakking" 
+      blockUnlock="block2" 
+      messageTitle="[stel je op]" 
+      messageContent="[de saftintima is]"/>
+  <action 
+      comment="(4)Open package of OmniflushSyringeBag" 
+      points="1" 
+      description="[leg de spuit]" 
+      index="2" 
+      type="combine" 
+      quiz="2" 
+      left="OmniflushSyringeBag" 
+      right="" 
+      extra="Leg de spuit Omniflush NaCl 0,9% klaar in een geopende verpakking" 
+      blockUnlock="block3" 
+      messageTitle="[voorverpakte omniflush nacl]" 
+      messageContent="[wanneer er geen]"/>
+  <action 
+      comment="(4)Open package of connector" 
+      points="1" 
+      description="[leg de naaldloze]" 
+      index="2" 
+      type="combine" 
+      left="MicroClavePackage" 
+      right="" 
+      extra="Leg de naaldloze connector klaar in een geopende verpakking." 
+      blockUnlock="block4"/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      index="3" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt." 
+      messageTitle="[controle cliëntgegevens993]" 
+      messageContent="[controleer de naam551]" 
+      quiz="2.0"/>
+  <action 
+      comment="(6)Combine gauze with alcohol" 
+      points="1" 
+      description="[overgiet een gaasje446]" 
+      index="4" 
+      type="combine" 
+      left="Cloth2" 
+      right="Alcohol2" 
+      blockRequired="block1,block2,block3,block4" 
+      extra="Overgiet een gaasje met desinfectans. De desinfectans wordt aangebracht op een gaasje. Het is eveneens mogelijk om gebruik te maken van alcohol swabs. Alcohol 70% heeft een totaal spectrum en werkt slechts tijdelijk. Omdat bij het inbrengen van een infuus de desinfectie langer moet aanhouden, wordt gedesinfecteerd met alcohol 70% bewaard in opgelost chloorhexidine 0,5%."/>
+  <action 
+      comment="Remove cap from refillpunt." 
+      points="1" 
+      description="[verwijder het dopje]" 
+      index="5" 
+      type="sequenceStep" 
+      value="remove cap" 
+      extra="Verwijder het dopje van het bijspuitpunt." 
+      messageTitle="[saftintima versies]" 
+      messageContent="[de saftintima bestaat]"/>
+  <action 
+      comment="Place needleless connector." 
+      points="1" 
+      description="[plaats een naaldloze]" 
+      index="6" 
+      type="sequenceStep" 
+      value="place connector" 
+      extra="Plaats een naaldloze connector." 
+      messageTitle="[ontluchten met nacl]" 
+      messageContent="[in deze werkinstructie]"/>
+  <action 
+      comment="Grab the syringe with omniflush and connect it to the refillpoint." 
+      points="1" 
+      description="[pak de spuit]" 
+      index="7" 
+      type="sequenceStep" 
+      value="attach syringe" 
+      extra="Pak de spuit met Omniflush NaCl 0,9% en koppel op het bijspuitpunt."/>
+  <action 
+      comment="Remove the disconnection from the canule" 
+      points="1" 
+      description="[hef de afklemming]" 
+      index="8" 
+      type="sequenceStep" 
+      value="open canule" 
+      extra="Hef de afklemming van de canule op."/>
+  <action 
+      comment="Inject the NaCL 0,9% into the tube untill some drips come out of the needle" 
+      points="1" 
+      description="[spuit de nacl]" 
+      index="9" 
+      type="sequenceStep" 
+      value="vent needle" 
+      extra="Spuit de NaCl 0,9% in de verlengslang tot er enkele druppels uit de opvoernaald van de subcutane canule komen. Laat de huls op de naald zitten." 
+      messageTitle="[inbrengen subcutane canule]" 
+      messageContent="[breng een subcutane]"/>
+  <action 
+      comment="Close the canule" 
+      points="1" 
+      description="[klem de canule]" 
+      index="10" 
+      type="sequenceStep" 
+      value="close canule" 
+      extra="Klem de canule af."/>
+  <action 
+      comment="Remove syringe(?)" 
+      points="1" 
+      description="[verwijder de spuit]" 
+      index="11" 
+      type="sequenceStep" 
+      value="remove syringe" 
+      extra="Verwijder de spuit."/>
+  <action 
+      comment="Throw away the syringe" 
+      points="1" 
+      description="[gooi de spuit]" 
+      index="12" 
+      type="sequenceStep" 
+      value="throw away syringe" 
+      extra="Gooi de spuit in de afvalbak."/>
+  <action 
+      comment="Place the subcutaneous canule back in package" 
+      points="1" 
+      description="[leg de subcutane]" 
+      index="13" 
+      type="sequenceStep" 
+      value="back in package" 
+      extra="Leg de subcutane canule met voernaald terug in de verpakking." 
+      messageTitle="[notouchmethode]" 
+      messageContent="[gebruik de notouchmethode]"/>
+  <action 
+      comment="(5)Ask client to show injection spot." 
+      points="2" 
+      description="[vraag de cliënt51]" 
+      index="14" 
+      type="talk" 
+      topic="show injection spot" 
+      extra="Vraag de cliënt de insteekplaats te ontbloten of maak de insteekplaats bereikbaar." 
+      blockUnlock="show injection spot"/>
+  <action 
+      comment="(7)Desinfect the insertion spot with the alcohol gauze and allow to dry. --Start sequence2" 
+      points="1" 
+      description="[desinfecteer de insteekplaats]" 
+      index="15" 
+      type="useOn" 
+      item="DesinfectionCloth2" 
+      target="" 
+      buttonText="Insteekplaats desinfecteren" 
+      extra="Desinfecteer de insteekplaats met het alcoholgaasje en laat het drogen." 
+      messageTitle="[overmatig haargroei]" 
+      messageContent="[verwijder zo nodig]"/>
+  <action 
+      comment="(1) Remove the protection cap from needle ." 
+      points="1" 
+      description="[verwijder de beschermhuls316]" 
+      index="16" 
+      type="sequenceStep" 
+      value="remove cap" 
+      extra="Verwijder de beschermhuls van de infuuscanule."/>
+  <action 
+      comment="(2) Rotate the white safety cilinder to expose needle" 
+      points="1" 
+      description="[draai aan de]" 
+      index="17" 
+      type="sequenceStep" 
+      value="rotate cilinder" 
+      extra="Draai aan de witte veiligheidscilinder totdat de naald vrijkomt voorbij de canule."/>
+  <action 
+      comment="(3) Grab a big skin fold with non injection hand. In our case right." 
+      points="1" 
+      description="[pak met de]" 
+      index="18" 
+      type="sequenceStep" 
+      value="grab skin fold" 
+      extra="Pak met de niet-injecterende hand een brede huidplooi op."/>
+  <action 
+      comment="(4) Grab the wings of needle and push them together with the rough side towards the skin of patient." 
+      points="1" 
+      description="[pak met de255]" 
+      index="19" 
+      type="sequenceStep" 
+      value="push wings" 
+      extra="Pak met de andere hand de subcutane canule bij de vleugels vast en knijp deze samen. De ruwe zijde van de vleugels op de huid van de client."/>
+  <action 
+      comment="(5) Insert needle in skin crease below a angle of 30 to 45 degrees needle should be pointing up towards the face of the patient" 
+      points="1" 
+      description="[breng de canule]" 
+      index="20" 
+      type="sequenceStep" 
+      value="insert canule" 
+      encounter="1" 
+      extra="Breng de canule halverwege de huidplooi onder een hoek van 30-45° subcutaan in. Laat de huidplooi los."/>
+  <action 
+      comment="(5) Unclamp cannule" 
+      points="1" 
+      description="[unclamp cannule]" 
+      index="21" 
+      type="sequenceStep" 
+      value="UnclampCannule" 
+      extra=""/>
+  <action 
+      comment="(6) Fix the wings of the Insuflon with one hand. " 
+      points="1" 
+      description="[fixeer de vleugels]" 
+      index="22" 
+      type="sequenceStep" 
+      value="fixate needle" 
+      extra="Fixeer de vleugels van de canule met de ene hand."/>
+  <action 
+      comment="(7) Press the wings of the infusion needle against the skin." 
+      points="1" 
+      description="[trek met de329]" 
+      index="23" 
+      type="sequenceStep" 
+      value="remove cilinder" 
+      extra="Trek met de andere hand aan de witte veiligheidscilinder. Deze komt los van de canule, een beschermkoker omsluit vervolgens de voernaald"/>
+  <action 
+      comment="(8) Throw the cannula in the NeedleTrashcan." 
+      points="1" 
+      description="[gooi de opvoernaald]" 
+      index="24" 
+      type="sequenceStep" 
+      value="throw away cilinder" 
+      extra="Gooi de opvoernaald in de naaldenbeker."/>
+  <action 
+      comment="(9) Close off cannula with a sterile cap." 
+      points="1" 
+      description="[sluit de infuuscanule]" 
+      index="25" 
+      type="sequenceStep" 
+      value="close canule with cap" 
+      extra="Sluit de infuuscanule af met een connector (naaldloos afsluitdopje) of steriel afsluitdopje." 
+      messageTitle="[afsluiten canule]" 
+      messageContent="[sluit de canule]"/>
+  <action 
+      comment="(10) Fix the Insuflon with the corresponding fixation plaster." 
+      points="1" 
+      description="[fixeer de saftintimacanule]" 
+      index="26" 
+      type="sequenceStep" 
+      value="fixate with bandaid" 
+      extra="Fixeer de Saf-T-Intima-canule met de transparante infuuspleister, de verlengslang eventueel met huidpleister." 
+      messageTitle="[verwisselen subcutane infuuscanule]" 
+      messageContent="[verwissel de subcutane]" 
+      blockUnlock="FixWithPlaster"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="27" 
+      type="use" 
+      value="WorkField" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen560]" 
+      blockRequired="FixWithPlaster" 
+      blockTitle="Handeling is niet mogelijk" 
+      blockmessage="Zorg ervoor dat de Sat-T-Intima is ingebracht voordat je het materiaal opruimt."/>
+  <action 
+      comment="46. Apply hand hygiene." 
+      index="28" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      comment="last step" 
+      index="29" 
+      points="1" 
+      description="[noteer datum tijdstip]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Noteer datum, tijdstip en bevindingen"/>
+</ActionList>

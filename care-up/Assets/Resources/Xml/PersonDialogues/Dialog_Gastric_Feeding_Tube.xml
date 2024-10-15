@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Person>
-  <option text="Zou u voor mij een halfzittende houding aan willen nemen?" topic="SitInBed" audio="Dialogue/Player/Collega 5"/>
+  <option 
+      text="[zou u voor]" 
+      topic="SitInBed" 
+      audio="Dialogue/Player/Collega 5"/>
 </Person>
-
-
-          
-

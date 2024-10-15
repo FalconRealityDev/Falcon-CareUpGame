@@ -61,12 +61,12 @@ public class PlayerPrefsManager : MonoBehaviour
     public static StoreManager storeManager = new StoreManager();
 
     public HatsPositioningDB hatsPositioning = new HatsPositioningDB();
-    //private LocalizationManager localizationManager; // = new LocalizationManager();
     public static bool plusCoins = false;
     public static bool plusDiamonds = false;
     public static bool resetPurchases = false;
     public static string TestBundleIPAddr = "";
     public static bool UseDevBundleServer = false;
+    public static bool toShowLocalMarkers = false;
     public static bool editCharacterOnStart = false;
     public static bool tutorialOnStart = false;
     public static bool simulatePlayerActions = false;
@@ -609,6 +609,13 @@ public class PlayerPrefsManager : MonoBehaviour
         get { return PlayerPrefs.HasKey("Volume") ? PlayerPrefs.GetFloat("Volume") : 1.0f; }
         set { PlayerPrefs.SetFloat("Volume", value); }
     }
+
+    public static int Lang
+    {
+        get { return PlayerPrefs.HasKey("Lang") ? PlayerPrefs.GetInt("Lang") : 0; }
+        set { PlayerPrefs.SetInt("Lang", value); }
+    }
+
 
     public int BundleVersion
     {

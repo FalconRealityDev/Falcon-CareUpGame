@@ -5,6 +5,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.PostProcessing;
+using CareUp.Localize;
 public class PlayerScript : MonoBehaviour
 {
     [HideInInspector]
@@ -416,10 +417,12 @@ public class PlayerScript : MonoBehaviour
             usingOnText.GetComponent<Text>().text = "Selecteer een object waarmee je " +
                 (usingOnHand ?
                     (handsInv.LeftHandObject.GetComponent<InteractableObject>().description == ""
-                    ? handsInv.LeftHandObject.name : handsInv.LeftHandObject.GetComponent<InteractableObject>().description)
+                    ? handsInv.LeftHandObject.name : LocalizationManager.GetValueIfKey(
+                        handsInv.LeftHandObject.GetComponent<InteractableObject>().description))
                 :
                     (handsInv.RightHandObject.GetComponent<InteractableObject>().description == ""
-                    ? handsInv.RightHandObject.name : handsInv.RightHandObject.GetComponent<InteractableObject>().description)
+                    ? handsInv.RightHandObject.name : LocalizationManager.GetValueIfKey(
+                        handsInv.RightHandObject.GetComponent<InteractableObject>().description))
                 )
                 + " wilt gebruiken.";
         }

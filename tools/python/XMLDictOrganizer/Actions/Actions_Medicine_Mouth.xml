@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[toedienlijst medicijn (spray]" 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="[neem een medicijn]" 
+      type="use" 
+      points="1" 
+      value="BaxterRoll"/>
+  <Action 
+      index="3" 
+      description="[controleer het medicijn]" 
+      type="examine" 
+      item="MedicineBag" 
+      points="2" 
+      messageTitle="[dubbele controle van]" 
+      messageContent="[dubbele controle is494]" 
+      expected="good"/>
+  <Action 
+      index="4" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      item="PatientRecords" 
+      points="2" 
+      expected="good"/>
+  <Action 
+      index="5" 
+      description="[controleer de toedienlijst]" 
+      type="examine" 
+      item="PrescriptionForm" 
+      points="2" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]" 
+      expected="good"/>
+  <Action 
+      index="6" 
+      description="[Trek de handschoenen aan]" 
+      type="use" 
+      comment="Put on gloves." 
+      points="1" 
+      value="gloveBox" 
+      blockUnlock="GlovesTakenOn"/>
+  <Action 
+      index="7" 
+      description="[maak het medicijn770]" 
+      type="combine" 
+      comment="Open MedicineBag" 
+      points="1" 
+      messageTitle="[tabletvorm of spray]" 
+      messageContent="[medicijnen voor onder]" 
+      left="MedicineBag" 
+      right=""/>
+  <Action 
+      index="8" 
+      description="[vraag de cliënt878]" 
+      type="talk" 
+      comment="Asking patient to sit up straight" 
+      points="1" 
+      topic="Sitstraight" 
+      blockUnlock="patient sit"/>
+  <Action 
+      index="9" 
+      description="[instrueer de cliënt]" 
+      type="talk" 
+      comment="Asking patient not to directly swallow memdicine" 
+      points="1" 
+      topic="NoSwallow"/>
+  <Action 
+      index="10" 
+      description="[neem het medicijn]" 
+      type="useOn" 
+      comment="Start sequence by using the pill on the patient" 
+      secondPlace="PatientPos" 
+      item="TabletRound1" 
+      points="1" 
+      buttonText="Medicijn toedienen" 
+      target="" 
+      blockRequired="patient sit" 
+      blockTitle="Handeling nog niet mogelijk" 
+      blockMessage="Vraag de cliënt eerst om rechtop te gaan zitten."/>
+  <Action 
+      index="11" 
+      description="[vraag de cliënt8]" 
+      type="sequenceStep" 
+      comment="Patient opens mouth and bring the tip of the tongue against the palate" 
+      points="2" 
+      value="open mouth"/>
+  <Action 
+      index="12" 
+      description="[leg het medicijn]" 
+      type="sequenceStep" 
+      comment="Player places the pill under the tongue of the patient" 
+      points="2" 
+      value="place pill under tongue"/>
+  <Action 
+      index="13" 
+      description="[vraag de cliënt282]" 
+      type="sequenceStep" 
+      comment="Client closes his mouth to swallow pill" 
+      points="2" 
+      messageTitle="[controleren verkeerd of]" 
+      messageContent="[maak melding van]" 
+      value="close mouth" 
+      blockUnlock="SequenceFinished"/>
+  <Action 
+      index="14" 
+      description="[ruim de materialen]" 
+      type="use" 
+      points="1" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen527]" 
+      value="WorkField" 
+      blockRequired="SequenceFinished"/>
+  <Action 
+      index="15" 
+      description="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockRequired="GlovesTakenOn, SequenceFinished"/>
+  <Action 
+      index="16" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[voorraad checken]" 
+      messageContent="[controleer de voorraad]" 
+      value="HandCleaner"/>
+  <Action 
+      index="17" 
+      description="[teken de toedienlijst]" 
+      type="use" 
+      points="3" 
+      value="PaperAndPen"/>
+</ActionList>

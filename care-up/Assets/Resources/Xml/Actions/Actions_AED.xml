@@ -1,194 +1,138 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-
-  <action
-    index="0"
-    points="1"
-    description="Help de cliënt"
-    type="general"
-    item=""
-    action="Start_AED_SQ1"
-    buttonText="Help de cliënt"
-  ></action>
-
-  <action
-     comment="Provide a safe environment for the client, yourself and other people present."
-     index="1"
-     value="SafeEnv"
-     points="1"
-     description="[SafeEnv]"
-     type="sequenceStep"
-  ></action>
-
-  <action
-  comment="Gently grasp the client's shoulders with your hands:"
-  index="2"
-  value="graspShoulders"
-  description="[graspShoulders]"
-  points="1"
-  type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Gently shake the shoulders and check if the client responds. For example, ask loudly: Are you okay?"
-   index="3"
-   value="ShakeShoulders"
-   description="[ShakeShoulders]"
-   points="1"
-   type="sequenceStep"
-   messageTitle="Situatie"
-   messageContent="De cliënt reageert niet. Wat is de volgende stap?"
-  ></action>
-
-  <action
-   comment="Ask for help from a colleague or bystander. Let someone call 112 or (if applicable) call the CPR team. If you are alone, call yourself"
-   index="4"
-   value="Call112"
-   description="[Call112]"
-   points="1"
-   type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Check breathing. Open the airway, place one hand on the client`s forehead, lift the client's chin with the index and middle fingers of your other hand, tilt the head back slightly"
-   index="5"
-   value="CheckBreathing"
-   description="[CheckBreathing]"
-   points="1"
-   messageTitle="Openen van de luchtweg"
-   messageContent="Open de luchtweg met de hoofdkantel-kinliftmethode. Leg je ene hand op het voorhoofd van de cliënt. Kantel het hoofd voorzichtig wat achterover. Plaats twee vingertoppen onder de punt van de kin en til de kin op."
-   type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Check the client`s breathing for a maximum of 10 seconds. Listen with your ear above the client`s mouth and nose for a breath. At the same time, see if you see the client's chest rises and falls. Feel with your cheek in front of the client's mouth or nose whether an exhalation is taking place."
-   index="6"
-   value="CheckBreathingByEar"
-   description="[CheckBreathingByEar]"
-   points="1"
-   type="sequenceStep"
-   messageTitle="Controleren ademhaling"
-   messageContent="Luister met je oor boven de mond en neus van de cliënt naar een ademhaling. Kijk tegelijkertijd of je de borstkas van de cliënt omhoog en omlaag ziet gaan. Voel met je wang voor de mond of neus van de cliënt of er een uitademing plaatsvindt. In deze situatie heeft de cliënt geen of geen normale ademhalding. Wat is de volgende stap?"
-  ></action>
-
-
-  <action
-   comment="Once the AED is within your reach: Turn on the AED and expose the client`s chest."
-   index="7"
-   value="TurnOnAED"
-   description="[TurnOnAED]"
-   points="1"
-   messageTitle="Materialen AED"
-   messageContent="De volgende materialen horen bij de AED in de tas te zitten:
-   
-   - reserve elektrodestickers
-   - beademingsmasker
-   - handdoekje
-   - kledingschaar
-   - scheermesjes
-   - handleiding"
-   type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Follow the instructions of the AED. Remove the electrodes from the package."
-   index="8"
-   value="RemoveElectrodes"
-   description="[RemoveElectrodes]"
-   points="1"
-   type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Look at the image on the elecktrodes and attach them in the right place on the chest."
-   index="9"
-   value="AttachElectrodes"
-   description="[AttachElectrodes]"
-   points="1"
-   quiz="4"
-   type="sequenceStep"
-  ></action>
-
-  <action
-  comment="Make sure no one touches the client when the AED is analyzing the heart rhythm"
-  index="10"
-  value="NoOneTouch"
-  description="[NoOneTouch]"
-  points="1"
-  type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Press the shock button when the AED says so. The AED gives a shock."
-   index="11"
-   value="PressShockButton"
-   description="[PressShockButton]"
-   points="1"
-   type="sequenceStep"
-   messageTitle="Borstcompressies en mond-op-mondbeademing"
-   messageContent="Borstcompressies:
-     - Kniel naast de cliënt ter hoogte van de borstkas
-     - Plaats de hiel van je ene hand met gespreide vingers op het midden      van het borstbeen
-     - Leg de hiel van je andere hand bovenop de eerste. Vouw de vingers     van beide handen in elkaar. Zorg dat je armen loodrecht boven het borstbeen van de cliënt zijn.
-     - Duw het borstbeen met je hanen, vingers blijven in elkaar gevouwen,     recht naar beneden. Het borstbeen moet tussen de vijf en zes cm worden ingeduwd. Laat na elke borstcompressie de borstkas geheel omhoog komen zonder het contact met de borstkas te verliezen. Het indrukken en omhoog komen van de borstkas moet even lang duren. Herhaal dit 30 keer. Houd een snelheid an avan 100 tot 120 compresies per minuut. Tel zo nodig hardop.
-     
-     Onderbreek borstcompressies uitsluitend om in maximaal 10 seconden twee beademingen te geven.
-     
-     Mond-op-mondbeademing:
-     - Open de luchtweg
-     - Sluit met je duim en wijsvinger de neus van de cliënt
-     - Plaats je mond over de lippen van de cliënt, zorg voor een luchtdichte afsluiting
-     - Blaas je adem rustig, gedurende 1 seconde, in de mond van de cliënt. Als de borstkas omhoog komt heb je een effectieve ademhaling gegeven.
-     - Controleer na het inblazen van je adem of je de borstkas van de cliënt omlaag ziet zakken
-     - Herhaal de beademing nog een keer, ga verder met de borstcompressies"
-  ></action>
-
-  <action
-     comment="Start (again) with 30 chest compressions, immediately followed by 2 respirations. Continue to follow the instructions of the AED"
-     index="12"
-     value="StartAgainCompressions"
-     description="[StartAgainCompressions]"
-     points="1"
-     type="sequenceStep"
-  ></action>
-
-  <action
-   comment="Keep doing CPR untill help comes"
-   index="13"
-   value="KeepDoing"
-   description="[KeepDoing]"
-   points="1"
-   expected="good"
-   extra="Controleer het medicijn."
-   messageTitle="Reanimeren"
-   messageContent="Het reanimeren stopt nu in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je blijft reanimeren totdat er hulp komt. Stop de reanimatie als je uitgeput raakt, of op aanwijzing van het ambulanceteam, de arts of het reanimatieteam."
-   type="sequenceStep"
-   blockUnlock="AbleToCleanHands"
-  ></action>
-
-  <action
-     comment="1. Apply hand hygiene"
-     index="14"
-     points="3"
-     description="[Pas handhygiëne]"
-     type="use"
-     value="hygiene_pump2"
-     extra="[Pas handhygiëne]"
-     blockRequired="AbleToCleanHands"
-     messageTitle="Handhygiëne"
-     messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-     blockTitle=""
-     blockMessage=""
-     
-  ></action>
-
-  <action
-   points="3"
-   description="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen."
-   index="15"
-   type="use"
-   value="PaperAndPen"
-   extra="Teken de toedienlijst af en noteer tijdstip, soort medicijn, concentratie, hoeveelheid, wijze van toediening. Noteer tot slot je bevindingen."
-  ></action>
-
+  <action 
+    index="0" 
+    points="1" 
+    description="[help de cliënt48]" 
+    type="general" 
+    item="" 
+    action="Start_AED_SQ1" 
+    buttonText="Help de cliënt"/>
+  <action 
+    comment="Provide a safe environment for the client, yourself and other people present." 
+    index="1" 
+    value="SafeEnv" 
+    points="1" 
+    description="[SafeEnv]" 
+    type="sequenceStep"/>
+  <action 
+    comment="Gently grasp the client's shoulders with your hands:" 
+    index="2" 
+    value="graspShoulders" 
+    description="[graspShoulders]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Gently shake the shoulders and check if the client responds. For example, ask loudly: Are you okay?" 
+    index="3" 
+    value="ShakeShoulders" 
+    description="[ShakeShoulders]" 
+    points="1" 
+    type="sequenceStep" 
+    messageTitle="[situatie]" 
+    messageContent="[de cliënt reageert]"/>
+  <action 
+    comment="Ask for help from a colleague or bystander. Let someone call 112 or (if applicable) call the CPR team. If you are alone, call yourself" 
+    index="4" 
+    value="Call112" 
+    description="[Call112]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Check breathing. Open the airway, place one hand on the client`s forehead, lift the client's chin with the index and middle fingers of your other hand, tilt the head back slightly" 
+    index="5" 
+    value="CheckBreathing" 
+    description="[CheckBreathing]" 
+    points="1" 
+    messageTitle="[openen van de]" 
+    messageContent="[open de luchtweg]" 
+    type="sequenceStep"/>
+  <action 
+    comment="Check the client`s breathing for a maximum of 10 seconds. Listen with your ear above the client`s mouth and nose for a breath. At the same time, see if you see the client's chest rises and falls. Feel with your cheek in front of the client's mouth or nose whether an exhalation is taking place." 
+    index="6" 
+    value="CheckBreathingByEar" 
+    description="[CheckBreathingByEar]" 
+    points="1" 
+    type="sequenceStep" 
+    messageTitle="[controleren ademhaling]" 
+    messageContent="[luister met je]"/>
+  <action 
+    comment="Once the AED is within your reach: Turn on the AED and expose the client`s chest." 
+    index="7" 
+    value="TurnOnAED" 
+    description="[TurnOnAED]" 
+    points="1" 
+    messageTitle="[materialen aed]" 
+    messageContent="[de volgende materialen]" 
+    type="sequenceStep"/>
+  <action 
+    comment="Follow the instructions of the AED. Remove the electrodes from the package." 
+    index="8" 
+    value="RemoveElectrodes" 
+    description="[RemoveElectrodes]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Look at the image on the elecktrodes and attach them in the right place on the chest." 
+    index="9" 
+    value="AttachElectrodes" 
+    description="[AttachElectrodes]" 
+    points="1" 
+    quiz="4" 
+    type="sequenceStep"/>
+  <action 
+    comment="Make sure no one touches the client when the AED is analyzing the heart rhythm" 
+    index="10" 
+    value="NoOneTouch" 
+    description="[NoOneTouch]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Press the shock button when the AED says so. The AED gives a shock." 
+    index="11" 
+    value="PressShockButton" 
+    description="[PressShockButton]" 
+    points="1" 
+    type="sequenceStep" 
+    messageTitle="[borstcompressies en mondopmondbeademing]" 
+    messageContent="[borstcompressies: kniel naast]"/>
+  <action 
+    comment="Start (again) with 30 chest compressions, immediately followed by 2 respirations. Continue to follow the instructions of the AED" 
+    index="12" 
+    value="StartAgainCompressions" 
+    description="[StartAgainCompressions]" 
+    points="1" 
+    type="sequenceStep"/>
+  <action 
+    comment="Keep doing CPR untill help comes" 
+    index="13" 
+    value="KeepDoing" 
+    description="[KeepDoing]" 
+    points="1" 
+    expected="good" 
+    extra="[controleer het medicijn727]" 
+    messageTitle="[reanimeren]" 
+    messageContent="[het reanimeren stopt]" 
+    type="sequenceStep" 
+    blockUnlock="AbleToCleanHands"/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="14" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="hygiene_pump2" 
+    extra="[Pas handhygiëne]" 
+    blockRequired="AbleToCleanHands" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]" 
+    blockTitle="" 
+    blockMessage=""/>
+  <action 
+    points="3" 
+    description="[teken de toedienlijst]" 
+    index="15" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[teken de toedienlijst357]"/>
 </ActionList>

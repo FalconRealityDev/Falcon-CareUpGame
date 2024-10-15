@@ -867,6 +867,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patient_male_v3_Injection
       objectReference: {fileID: 0}
+    - target: {fileID: 3138010224484504390, guid: 3cd70b35b67dfa3409193f4b639c8115,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
+      objectReference: {fileID: 0}
     - target: {fileID: 3172445987151819947, guid: 3cd70b35b67dfa3409193f4b639c8115,
         type: 3}
       propertyPath: m_RootOrder
@@ -1702,7 +1707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinNeedlePackage
   ObjectID: 0
-  description: BD autoshield duo naald
+  description: '[i_bd autoshield duo]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1996,7 +2001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth2
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -2268,6 +2273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
@@ -3384,6 +3394,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 114206268842994740, guid: 8e2b1c5e26dee0443a64cbbe1cb475bc,
+        type: 3}
+      propertyPath: description
+      value: '[i_insulinepen]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114964470170809484, guid: 8e2b1c5e26dee0443a64cbbe1cb475bc,
+        type: 3}
+      propertyPath: description
+      value: '[i_insulinepen]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e2b1c5e26dee0443a64cbbe1cb475bc, type: 3}
 --- !u!4 &408473442 stripped
@@ -3941,7 +3961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4722,7 +4742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithNeedle
   ObjectID: 0
-  description: Insulinepen
+  description: '[i_insulinepen747]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4762,7 +4782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithNeedle
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6440,7 +6460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPen
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6470,7 +6490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPen
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6750,6 +6770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InjectionsInterior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699936055927183272, guid: 0ca7e8d6a4352de4a8dea12d5a6cfbe7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2057053142181283339, guid: 0ca7e8d6a4352de4a8dea12d5a6cfbe7,
         type: 3}
@@ -7678,7 +7703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinOpenedNeedlePackage
   ObjectID: 0
-  description: BD autoshield duo naald
+  description: '[i_bd autoshield duo]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -8177,6 +8202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 716859352767194114, guid: 086f676d83f05594fbec05018ceda576,
+        type: 3}
+      propertyPath: description
+      value: '[i_insulinepen]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5514797407495474970, guid: 086f676d83f05594fbec05018ceda576,
         type: 3}
       propertyPath: m_RootOrder
@@ -8678,7 +8708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: "Cli\xEBnt"
+  description: "[i_cli\xEBnt859]"
   nameArticle: 
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0.5, z: 0}
@@ -11643,6 +11673,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114772603672487604, guid: 1f527b25c20bd6048830857647fd7791,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasje met ampultop]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f527b25c20bd6048830857647fd7791, type: 3}
 --- !u!4 &1629949834 stripped
@@ -11854,7 +11889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenCap
   ObjectID: 0
-  description: beschermdop
+  description: '[i_beschermdop]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12475,7 +12510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenContainer
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13733,7 +13768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithNeedlePackage
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13773,7 +13808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithNeedlePackage
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13907,6 +13942,11 @@ PrefabInstance:
     - target: {fileID: 4784595800337344, guid: 75d0c341348a783429b4f8b2f79e57f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.66801
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867582691264952, guid: 75d0c341348a783429b4f8b2f79e57f5,
+        type: 3}
+      propertyPath: description
+      value: '[i_bd autoshield duo]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d0c341348a783429b4f8b2f79e57f5, type: 3}
@@ -14120,7 +14160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithCap
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14160,7 +14200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinPenWithCap
   ObjectID: 0
-  description: insulinepen
+  description: '[i_insulinepen]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14437,7 +14477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InsulinNeedle
   ObjectID: 0
-  description: BD autoshield duo naald
+  description: '[i_bd autoshield duo]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14918,7 +14958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectionCloth
   ObjectID: 0
-  description: gedesinfecteerd gaasje
+  description: '[i_gedesinfecteerd gaasje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}

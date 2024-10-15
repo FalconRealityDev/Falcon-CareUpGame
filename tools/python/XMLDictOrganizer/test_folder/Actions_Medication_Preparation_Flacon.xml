@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      commentUA="Очистити та приготувати робочий стіл" 
+      audioHint="Injection/H2-2" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik." 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst spuit80]"/>
+  <action 
+      points="1" 
+      description="[overgiet een gaasje]" 
+      commentUA="Нанести спирт на гарчірку" 
+      audioHint="Injection/H4-2" 
+      index="2" 
+      type="combine" 
+      left="Cloth" 
+      right="Alcohol" 
+      extra="Overgiet een gaasje met alcohol. De desinfectans wordt aangebracht op een gaasje. Het is eveneens mogelijk om gebruik te maken van alcohol swabs. Alcohol 70% heeft een totaal spectrum en werkt slechts tijdelijk. Omdat bij het inbrengen van een infuus de desinfectie langer moet aanhouden, wordt gedesinfecteerd met alcohol 70% bewaard in opgelost chloorhexidine 0,5%."/>
+  <action 
+      points="2" 
+      description="[controleer cliëntgegevens]" 
+      commentUA="Перевірити медичні записи пацієнта" 
+      audioHint="Injection/H3-2" 
+      index="3" 
+      quiz="2" 
+      type="examine" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt."/>
+  <action 
+      points="2" 
+      description="[controleer het medicijn]" 
+      commentUA="Перевірити назначене лікування" 
+      audioHint="Injection/H3-2" 
+      index="3" 
+      type="examine" 
+      item="Medicine" 
+      expected="good" 
+      extra="Controleer het medicijn. Controleer altijd het medicijn op vervaldatum, toedienwijze, kleur en substantie om er zeker van te zijn dat je het juiste medicijn hebt. Vergelijk de informatie van het medicijn met die van de toedienlijst." 
+      messageTitle="[kennis en veiligheid]" 
+      messageContent="[neem kennis van983]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      commentUA="Перевірити відповідність медикаментів" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      index="3" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip." 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="3" 
+      description="[vraag aan je394]" 
+      commentUA="Запитати лікара про додадкову перевірку" 
+      audioHint="" 
+      index="4" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="Voer een dubbele controle uit. Het verkeerd toedienen van medicijnen brengt risico’s met zich mee. Het risico op blijvend letsel bij verkeerde dosering of toediening verschilt, afhankelijk van het medicijn. Ook is de ene toedieningsweg risicovoller dan een andere. Dubbele controle van de medicatie is belangrijk voor de veiligheid, met name bij risicovolle medicatie. Laat ook je berekeningen die je hebt gemaakt checken." 
+      messageTitle="[vul het toedieningsetiket]" 
+      messageContent="[vul onderstaande punten]"/>
+  <action 
+      comment="Put on gloves." 
+      points="1" 
+      description="[Trek de handschoenen aan]" 
+      index="5" 
+      type="use" 
+      value="gloveBox" 
+      extra="Trek de handschoenen aan." 
+      blockUnlock="GlovesTakenOn"/>
+  <action 
+      points="1" 
+      description="[neem de opzuignaald]" 
+      commentUA="Дістаньте голку для набирання з пакета" 
+      audioHint="Injection/H4-2" 
+      index="6" 
+      quiz="2" 
+      type="combine" 
+      left="" 
+      right="AbsorptionNeedlePacked" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[neem de injectienaald]" 
+      commentUA="Дістаньте голку для ін'єкції з пакета" 
+      audioHint="Injection/H4-2" 
+      index="7" 
+      quiz="2" 
+      type="combine" 
+      left="" 
+      right="InjectionNeedlePacked" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[haal de spuit]" 
+      commentUA="Дістаньте шприц з пакета" 
+      audioHint="Injection/H4-2" 
+      index="8" 
+      type="combine" 
+      left="" 
+      right="syringe_packed" 
+      extra="">
+  </action>
+  <action 
+      points="3" 
+      description="[desinfecteer het rubber]" 
+      commentUA="Провести дизінфекцію кришки баночки з медикаментами" 
+      audioHint="Injection/H5-3" 
+      index="9" 
+      type="combine" 
+      left="DesinfectionCloth" 
+      right="Medicine" 
+      extra="Desinfecteer de rubberen dop van het medicijn. De rubberen dopjes van flesjes of penvullingen met insuline moeten ontsmet worden met alcohol als de kans bestaat dat ze met de vingers aangeraakt zijn of kunnen worden. Door aanraking wordt het dopje “besmet” met huidflora van een ander."/>
+  <action 
+      points="1" 
+      description="[zet de opzuignaald]" 
+      commentUA="Встановити на шприц голку для набирання" 
+      audioHint="Injection/H6-3" 
+      index="10" 
+      type="combine" 
+      left="Syringe" 
+      right="AbsorptionNeedle" 
+      extra="Zet de opzuignaald op de spuit zodat je er later een vloeistof mee kunt absorberen. Niet alle medicijnen worden geleverd in een kant-en-klare spuit. Het medicijn moet dan nog worden opgezogen met een (opzuig)naald. Uit hygiënisch oogpunt is de WIP niet voor het gebruik van een opzuignaald én een injectienaald. Het overzetten van de naald is een extra risico op besmetting."/>
+  <action 
+      comment="Draw an amount of air into the syringe that corresponds to the prescribed dose" 
+      points="1" 
+      description="[zuig een hoeveelheid]" 
+      index="11" 
+      type="sequenceStep" 
+      value="DrawAirFirst" 
+      extra="Sluit de maagsonde af met het afsluitdopje."/>
+  <action 
+      points="1" 
+      description="[verwijder de beschermhuls]" 
+      index="12" 
+      type="sequenceStep" 
+      value="RemoveCap" 
+      extra="De opzuignaald dop zit nog op de naald. Deze dien je te verwijderen om gebruik te maken van de spuit. Concentreer je tijdens het verwijderen van de dop om prikaccidenten te voorkomen."/>
+  <action 
+      comment="Insert the needle into the vial and inject air" 
+      points="1" 
+      description="[steek de naald8]" 
+      index="13" 
+      type="sequenceStep" 
+      value="InsertNeedle" 
+      extra=""/>
+  <action 
+      comment="Turn the vial upside down and draw the prescribed amount of medicine into the syringe" 
+      points="1" 
+      description="[keer de flacon]" 
+      index="14" 
+      type="sequenceStep" 
+      value="TurnUpside" 
+      extra=""/>
+  <action 
+      comment="Draw some additional air into the syringe and remove the withdrawal needle and syringe from the vial. Aspirating some extra air prevents tampering with the drug" 
+      points="1" 
+      description="[zuig nog wat]" 
+      index="15" 
+      type="sequenceStep" 
+      value="DrawMoreAir" 
+      extra="" 
+      messageTitle="[extra lucht]" 
+      messageContect="Wat extra lucht opzuigen voorkomt knoeien met het medicijn"/>
+  <action 
+      comment="Unair the syringe and check if you have the right amount" 
+      points="1" 
+      description="[ontlucht de spuit]" 
+      index="16" 
+      type="sequenceStep" 
+      value="Unair" 
+      extra="" 
+      blockUnlock="EndOfSQ"/>
+  <action 
+      points="1" 
+      description="[verwijder de naald]" 
+      commentUA="Зняти голку" 
+      audioHint="" 
+      index="17" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="" 
+      blockRequired="EndOfSQ" 
+      blockUnlock="PlaceInjectionNeedle" 
+      extra="Klik het beschermkapje met een duimbeweging over de opzuignaald, verwijder de naald van de spuit (bij naald zonder veiligheidsysteem met een naaldverwijderaar)"/>
+  <action 
+      points="2" 
+      description="[doe de opzuignaald]" 
+      commentUA="Помістити голку в контейнер" 
+      audioHint="Injection/H10-2" 
+      index="18" 
+      type="useOn" 
+      item="AbsorptionNeedleNoCap" 
+      target="" 
+      buttonText="Opzuignaald weggooien" 
+      extra="Verwijder de opzuignaald en doe de naald in de naaldencontainer. Gebruik voor het injecteren spuiten en naalden voor eenmalig gebruik (dit worden ook wel eens disposables genoemd). Plaats een naald na gebruik nooit in de plastic beschermhuls terug. Werk met veilige opzuignaalden. Gebruik de inkepingen op de deksel om de naald en spuit te verwijderen of gebruik een naaldverwijderaar"/>
+  <action 
+      points="1" 
+      description="[plaats de injectienaald]" 
+      commentUA="Встановити на шприц голку для інєкцій" 
+      audioHint="Injection/H11-2" 
+      index="19" 
+      type="combine" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="InjectionNeedle" 
+      blockRequired="PlaceInjectionNeedle" 
+      extra="Plaats de injectienaald op de spuit. Gebruik voor intramusculaire injecties een iets dikkere en langere naald, bijvoorbeeld: 0,8 x 38 - 40 mm (diameter x lengte)." 
+      messageTitle="[handschoenen]" 
+      messageContent="[als tijdens de420]" 
+      blockUnlock="AllowTakeOffGloves"/>
+  <action 
+      index="20" 
+      points="1" 
+      description="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      type="general" 
+      item="" 
+      action="TakeOffGloves" 
+      buttonText="Trek handschoenen uit " 
+      blockRequired="AllowTakeOffGloves, GlovesTakenOn" 
+      blockUnlock="CleanWorkfield" 
+      messageTitle="[toedieningsetiket]" 
+      messageContent="[plak het ingevulde]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="21" 
+      type="use" 
+      value="WorkField" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      blockRequired="CleanWorkfield" 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen."/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="22" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst913]" 
+      commentUA="Зробити запис про проведену процедуру" 
+      audioHint="Injection/EAS4-2" 
+      index="23" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"/>
+</ActionList>

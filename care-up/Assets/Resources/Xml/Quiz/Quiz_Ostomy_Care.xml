@@ -1,63 +1,142 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quiz>
-	<step>
-		<question text="Wat is een voordeel van een eendelig systeem? " answer="1" points="10">
-			<answer text="Materiaal is dunner waardoor het makkelijk meebuigt in de plooien en minder zichtbaar is" descr=""/>
-			<answer text="Minder kans op huidbeschadiging" descr=""/>
-			<answer text="De huidplaat hoeft minder vaak te worden verwisseld" descr=""/>
-			<answer text="Materiaal is dikker, kan langer blijven zitten, zeker bij dunne ontlasting" descr=""/>
-		</question>
-		<question text="Welke uitspraak over een eendelig stomasysteem met huidplaat is correct " answer="3">
-			<answer text="De huidplaat en het opvangzakje zijn aparte onderdelen die aan elkaar bevestigd moeten worden" descr=""/>
-			<answer text="De huidplaat kan zonder het opvangzakje worden vervangen, waardoor het systeem flexibeler in gebruik is" descr=""/>
-			<answer text="De huidplaat en het opvangzakje vormen een samengevoegd geheel, wat het vervangen eenvoudiger maakt" descr=""/>
-			<answer text="Eendelige systemen zijn voornamelijk geschikt voor tijdelijk gebruik en worden niet aanbevolen voor langdurige toepassingen" descr=""/>
-		</question>
-		<question text="Is het verstandig om materialen van verschillende merken stoma's door elkaar gebruiken? " answer="1">
-			<answer text="Nee dat is niet verstandig" descr="Verschillende materialen verhogen de kans op lekkage door het niet goed op elkaar passen van onderdelen."/>
-			<answer text="Ja dat kan wel" descr="Verschillende materialen verhogen de kans op lekkage door het niet goed op elkaar passen van onderdelen."/>
-		</question>
-		<question text="Een huidplaat wordt rond de stoma geplakt en moet nauwkeurig aansluiten. Welke afstand van de stoma moet de huidplaat worden geplakt?" answer="1">
-			<answer text="1 à 2 mm afstand van de stoma." descr="Als de afstand te klein is kan de huidplaat in aanraking komen met de stoma, en zo een ontsteking veroorzaken. Mocht de afstand te groot zijn is er een grotere kans op lekkage en kan er vocht onder de huidplaat komen."/>
-			<answer text="3 à 4 mm afstand van de stoma." descr="Als de afstand te klein is kan de huidplaat in aanraking komen met de stoma, en zo een ontsteking veroorzaken. Mocht de afstand te groot zijn is er een grotere kans op lekkage en kan er vocht onder de huidplaat komen."/>
-			<answer text="5 à 7 mm afstand van de stoma." descr="Als de afstand te klein is kan de huidplaat in aanraking komen met de stoma, en zo een ontsteking veroorzaken. Mocht de afstand te groot zijn is er een grotere kans op lekkage en kan er vocht onder de huidplaat komen."/>
-			<answer text="10 à 12 mm afstand van de stoma." descr="Als de afstand te klein is kan de huidplaat in aanraking komen met de stoma, en zo een ontsteking veroorzaken. Mocht de afstand te groot zijn is er een grotere kans op lekkage en kan er vocht onder de huidplaat komen."/>
-		</question>
-	</step>
-	<step>
-		<question text="Wat is de meest voorkomende complicatie bij een stoma?" answer="2" points="10">
-			<answer text="Bloeding" descr="Er kunnen gemakkelijk wondjes ontstaan met enig bloedverlies. Dit komt omdat het darmslijmvlies heel broos is. Het verlies van kleine hoeveelheden bloed levert geen gevaar op. Dit is echter niet de meest voorkomende complicatie."/>
-			<answer text="Parastomale hernia" descr="Door een defect in het bindweefsel stulpt de darm uit naast de stoma onder de huid. Dit laat dan een lichte tot forse zwelling zien van de huid. Als gevolg hiervan kunnen verschillende problemen ontstaan, zoals lekkages, pijn, risico op darmobstructie, moeilijkheden met de ontlasting, psychosociale problemen. De hernia kan verholpen worden met behulp van het dragen van een breukband, maar soms is een operatie nodig."/>
-			<answer text="Wratjes en zweertjes" descr="Op of rond de stoma kunnen wratjes of zweertjes ontstaan. Meestal verdwijnen ze vanzelf. Zweertjes kunnen duiden op een ontstekingsziekte, maar het is ook mogelijk dat het stomamateriaal niet goed past. Een te kleine opening kan leiden tot insnijding, waarna de wondjes gaan zweren. Dit is echter niet de meest voorkomende complicatie."/>
-			<answer text="Fistel" descr="Een stomafistel is een onnatuurlijke opening tussen de rand van de stoma en de stoma zelf. Zo lijkt het of de stoma twee openingen heeft, waaruit ontlasting komt. Hoe dunner de ontlasting is, des te meer last kan iemand ervan hebben. Het stomazakje zal dan ook vaker los kunnen laten. Gevaarlijk voor de stoma is dit niet, maar het bemoeilijkt de verzorging ervan wel aanzienlijk. Soms kan afgewacht worden of de fistel vanzelf verdwijnt. In andere gevallen is het nodig deze operatief te verwijderen. Dit is echter niet de meest voorkomende complicatie."/>
-		</question>
-		<question text="Hoe lang duurt het voordat een huidplaat goed is bevestigd? " answer="3">
-			<answer text="5 minuten" descr=""/>
-			<answer text="10 minuten" descr=""/>
-			<answer text="15 minuten" descr="Het is belangrijk om in die tijd geen zeer bewegelijke activiteiten te ondernemen."/>
-			<answer text="30 minuten" descr=""/>
-		</question>
-		<question text="Wat moet je doen wanneer het bloeden van een stoma niet vanzelf ophoud?" answer="1">
-			<answer text="Een gaasje gedrenkt in koud water tegen de plek drukken" descr="Hierdoor houdt de bloeding eerder op."/>
-			<answer text="Een steriel gaasje op de stoma drukken" descr=""/>
-			<answer text="Je hand op de stoma leggen om het bloeden te stoppen" descr=""/>
-		</question>
-	</step>
-
-	<encounter>
-		<question text="Wat doe je als het in gebruik zijnde systeem niet los van de huid komt?" answer="1">
-			<answer text="Raadpleeg de gebruiksaanwijzing van het systeem" descr=""/>
-			<answer text="Week de huidplaat los met lauw water" descr=""/>
-			<answer text="Neem contact op met de arts" descr=""/>
-		</question>
-	</encounter>
-
-	<random>
-		<question text="Wat doe je als er irritatie plaatsvind op de huid?" answer="3">
-			<answer text="Controleer of de huid droog is" descr=""/>
-			<answer text="Gebruik zeep om de huid te reinigen" descr=""/>
-			<answer text="Breng een huidbeschermingsmiddel aan" descr=""/>
-		</question>
-	</random>
-
+  <step>
+    <question 
+      text="[wat is een657]" 
+      answer="1" 
+      points="10">
+      <answer 
+      text="[materiaal is dunner]" 
+      descr=""/>
+      <answer 
+      text="[minder kans op]" 
+      descr=""/>
+      <answer 
+      text="[de huidplaat hoeft]" 
+      descr=""/>
+      <answer 
+      text="[materiaal is dikker]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[welke uitspraak over]" 
+      answer="3">
+      <answer 
+      text="[de huidplaat en]" 
+      descr=""/>
+      <answer 
+      text="[de huidplaat kan]" 
+      descr=""/>
+      <answer 
+      text="[de huidplaat en772]" 
+      descr=""/>
+      <answer 
+      text="[eendelige systemen zijn]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[is het verstandig]" 
+      answer="1">
+      <answer 
+      text="[nee dat is]" 
+      descr="[verschillende materialen verhogen]"/>
+      <answer 
+      text="[ja dat kan]" 
+      descr="[verschillende materialen verhogen]"/>
+    </question>
+    <question 
+      text="[een huidplaat wordt]" 
+      answer="1">
+      <answer 
+      text="[ui_1 à 2]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_3 à 4]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_5 à 7]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_10 à 12]" 
+      descr="[als de afstand]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[wat is de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[bloeding]" 
+      descr="[er kunnen gemakkelijk]"/>
+      <answer 
+      text="[parastomale hernia]" 
+      descr="[door een defect]"/>
+      <answer 
+      text="[wratjes en zweertjes]" 
+      descr="[op of rond]"/>
+      <answer 
+      text="[fistel]" 
+      descr="[een stomafistel is]"/>
+    </question>
+    <question 
+      text="[hoe lang duurt]" 
+      answer="3">
+      <answer 
+      text="[5 minuten]" 
+      descr=""/>
+      <answer 
+      text="[10 minuten]" 
+      descr=""/>
+      <answer 
+      text="[15 minuten]" 
+      descr="[het is belangrijk641]"/>
+      <answer 
+      text="[30 minuten]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[wat moet je]" 
+      answer="1">
+      <answer 
+      text="[een gaasje gedrenkt]" 
+      descr="[hierdoor houdt de]"/>
+      <answer 
+      text="[een steriel gaasje]" 
+      descr=""/>
+      <answer 
+      text="[je hand op]" 
+      descr=""/>
+    </question>
+  </step>
+  <encounter>
+    <question 
+      text="[wat doe je234]" 
+      answer="1">
+      <answer 
+      text="[raadpleeg de gebruiksaanwijzing]" 
+      descr=""/>
+      <answer 
+      text="[week de huidplaat]" 
+      descr=""/>
+      <answer 
+      text="[neem contact op]" 
+      descr=""/>
+    </question>
+  </encounter>
+  <random>
+    <question 
+      text="[wat doe je694]" 
+      answer="3">
+      <answer 
+      text="[controleer of de564]" 
+      descr=""/>
+      <answer 
+      text="[gebruik zeep om]" 
+      descr=""/>
+      <answer 
+      text="[breng een huidbeschermingsmiddel]" 
+      descr=""/>
+    </question>
+  </random>
 </quiz>

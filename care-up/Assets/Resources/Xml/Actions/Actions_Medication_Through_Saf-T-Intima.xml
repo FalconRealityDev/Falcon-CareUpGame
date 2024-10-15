@@ -1,316 +1,238 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ActionList>
-
-    <action
-        points="1"
-        description="[Begroet]"
-        index="0"
-        type="talk"
-        topic="Hello"
-        extra="Ondanks dat het begroeten niet in de werkwijze is vermeld, is het wel netjes om contact te leggen met de cliënt."
-        optional=""
-    />
-
-    <action
-        comment="1. Apply hand hygiene"
-        index="0"
-        points="3"
-        description="[Pas handhygiëne]"
-        type="use"
-        value="HandCleaner"
-        extra="[Pas handhygiëne]"
-        messageTitle="Handhygiëne"
-        messageContent="De handeling voor de handhygiëne is versneld in verband met de gebruiksvriendelijkheid van CareUp. Zorg er in het echt voor dat je alle stappen van de handhygiëne doet. Selecteer het protocol, Techniek handdesinfectie met handalcohol, in het hoofdmenu om deze te oefenen en te toetsen. Handhygiëne is het meest belangrijk om besmetting met ziektekiemen te voorkomen. Reinig je handen altijd op de juiste manier en op het juiste moment. Begin een handeling altijd met handhygiëne."
-    />
-
-    <action
-        comment="Create a clean workfield"
-        points="1"
-        description="Maak een schoon werkveld en zet de benodigdheden binnen handbereik"
-        index="1"
-        type="use"
-        value="WorkField"
-        extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik."
-        messageTitle="Je het volgende nodig hebt?"
-        messageContent="
-- 1 paar handschoenen
-- Desinfectans, chloorhexidine 0,5% in alcohol 70%
-- Gaasjes
-- Luerlockspuit met medicijn
-- Steriele luerlock 2 ml-spuit (Wanneer er geen voorgevulde Omniflush NaCl 0,9%  spuit aanwezig is.)
-- Steriele opzuignaald (Wanneer er geen voorgevulde Omniflush NaCl 0,9%  spuit aanwezig is.)
-- Ampul NaCl 0,9% (fysiologisch zout) (Wanneer er geen voorgevulde Omniflush NaCl 0,9%  spuit aanwezig is.)
-- Onderlegger
-- Naaldenbeker
-- Afvalbak
-- Medicijnsticker"
-    />
-
-    <action
-        comment="(6)Combine gauze with alcohol"
-        points="2"
-        description="Overgiet een gaasje met desinfectans"
-        index="2"
-        quiz="3"
-        type="combine"
-        left="Cloth2"
-        right="Alcohol2"
-        extra="Overgiet een gaasje met desinfectans. De desinfectans wordt aangebracht op een gaasje. Het is eveneens mogelijk om gebruik te maken van alcohol swabs. Alcohol 70% heeft een totaal spectrum en werkt slechts tijdelijk. Omdat bij het inbrengen van een infuus de desinfectie langer moet aanhouden, wordt gedesinfecteerd met alcohol 70% bewaard in opgelost chloorhexidine 0,5%."
-        blockUnlock="desinfect cloth"
-    ></action>
-
-    <action
-        points="2"
-        description="Controleer het medicijn"
-        audioHint="Injection/H3-2"
-        index="3"
-        type="examine"
-        item="OmniflushSyringeBag2"
-        quiz="2"
-        expected="good"
-        extra="Controleer het medicijn. Controleer altijd het medicijn op vervaldatum, toedienwijze, kleur en substantie om er zeker van te zijn dat je het juiste medicijn hebt. Vergelijk de informatie van het medicijn met die van de toedienlijst."
-        messageTitle="Kennis over het medicijn"
-        messageContent="Lees de bijsluiter van het medicijn. Stel je op de hoogte van de werking, concentratie, toedieningssnelheid en mogelijke bijwerkingen. Let op de werkingsduur."
-    ></action>
-
-
-    <action
-        points="2"
-        description="Controleer cliëntgegevens"
-        audioHint="Injection/H3-2"
-        index="3"
-        type="examine"
-        item="PatientRecords"
-        expected="good"
-        extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt."
-        messageTitle="5x juist-regel"
-        messageContent="Er zijn 5 controles die je altijd moet doen voordat je medicijnen geeft. Alleen als alle 5 punten juist zijn, mag je het medicijn toedienen.
-    
-    De vijf regels zijn:
-    
-1.  Het juiste medicijn: 
-kijk op de toedienlijst en controleer of de informatie op de medicijnverpakking of het baxterzakje hiermee overeenkomen. Kijk hierbij ook naar de vervaldatum van het medicijn.
-        
-2.  De juiste cliënt: 
-controleer of je de juiste cliënt voor je hebt.
-        
-3.  Het juiste tijdstip: 
-kijk op de toedienlijst voor het tijdstip en vergelijk dit met het tijdstip waarop je de medicijnen geeft.
-        
-4.  De juiste manier van toedienen: 
-hanteer de instructies van de toedienlijst. Je moet bekend zijn met de toedieningsvorm. Ben je hier niet mee bekent, dien dan niet toe.
-    
-5.  De juiste dosis: 
-je mag niet afwijken van de de voorgeschreven dosis die vermeld staat op de toedienlijst. De verantwoordelijkheid van de juiste dosering ligt bij de arts en de apotheker."
-    ></action>
-
-
-    <action
-        points="3"
-        description="Controleer de toedienlijst"
-        audioHint="InjectionSubcutaneous/Step 5"
-        index="3"
-        type="examine"
-        item="PrescriptionForm"
-        expected="good"
-        extra="Controleer de toedienlijst. Controleer de toedienlijst op soort, dosering en toedientijdstip."
-        messageTitle="Stel je op de hoogte"
-        messageContent="De Saf-T-Intima is een veilige subcutane kunststof canule met verlengslang. Lees de gebruiksaanwijzing en stel je op de hoogte van de werking. Laat daarnaast de spuit met medicijn zoveel mogelijk door de apotheek bereiden en kant-en-klaar leveren."
-    ></action>
-
-    <action
-        points="3"
-        description="Vraag je collega om dubbele controle"
-        audioHint=""
-        index="4"
-        type="talk"
-        topic="DoubleCheck"
-        extra="Voer een dubbele controle uit. Het verkeerd toedienen van medicijnen brengt risico’s met zich mee. Het risico op blijvend letsel bij verkeerde dosering of toediening verschilt, afhankelijk van het medicijn. Ook is de ene toedieningsweg risicovoller dan een andere. Dubbele controle van de medicatie is belangrijk voor de veiligheid, met name bij risicovolle medicatie. Laat ook je berekeningen die je hebt gemaakt checken."
-    ></action>
-
-    <action
-        comment="(4)Open package of OmniflushSyringeBag"
-        points="1"
-        description="Open de verpakking van de Omniflush NaCl 0,9% spuit"
-        index="5"
-        type="combine"
-        left="OmniflushSyringeBag"
-        right=""
-        extra="Leg de spuit Omniflush NaCl 0,9% klaar in een geopende verpakking."
-        messageTitle="Voorverpakte Omniflush NaCl 0,9% niet aanwezig."
-        messageContent="Wanneer er geen Omniflush NaCl 0,9% aanwezig is. Maak je een spuit met NaCl 0,9% uit een ampul klaar, ontlucht je de spuit en leg de spuit terug in de geopende verpakking."
-    />
-
-    <action
-        comment="Open de verpakking van de spuit met het medicijn."
-        points="1"
-        description="Open de verpakking van de luerlockspuit met medicijn"
-        index="6"
-        type="combine"
-        left="OmniflushSyringeBag2"
-        right=""
-        extra="Open de verpakking van de luerlockspuit met medicijn."
-        messageTitle="Medicijnstickers."
-        messageContent="Houd de spuiten met het medicijn en NaCl 0,9% goed uit elkaar, plak een medicijnsticker op de spuiten."
-    />
-
-    <action
-        comment="Put on gloves."
-        points="3"
-        description="[Trek de handschoenen aan]"
-        index="7"
-        type="use"
-        value="gloveBox"
-        extra="Trek de handschoenen aan."
-        blockUnlock="GlovesTakenOn"
-        messageTitle="Gebruik handschoenen"
-        messageContent="Gebruik handschoenen eenmalig en bij dezelfde cliënt. Trek ze na gebruik direct uit. Vermijd tijdens het dragen van handschoenen contact met deurknoppen, telefoon, apparatuur, toetsenborden, enzovoort. Was of desinfecteer de handen na het uittrekken van de handschoenen altijd. Bij het uittrekken van de handschoenen kunnen de handen namelijk besmet zijn geraakt."
-    ></action>
-
-    <action
-        comment="(5)Ask client to show injection spot."
-        points="2"
-        description="Vraag de cliënt de toedieningsplaats te ontbloten of maak de toedieningsplaats bereikbaar"
-        index="8"
-        type="talk"
-        topic="show injection spot"
-        extra="Vraag de cliënt de toedieningsplaats te ontbloten of maak de toedieningsplaats bereikbaar."
-        blockRequired="desinfect cloth"
-        blockTitle="Deze handeling is nog niet mogelijk"
-        blockMessage="Treft de juiste voorbereidingen. Zorg voor een gedesinfecteerd gaasje."
-        blockUnlock="patient spot"
-    ></action>
-
-    <action
-        comment="Leg de onderlegger onder de plaats van de subcutane canule. ------ start sequence"
-        points="2"
-        description="Leg de onderlegger onder de subcutane canule"
-        index="9"
-        type="useOn"
-        item="cloth_02_folded"
-        target=""
-        buttonText="Onderlegger plaatsen"
-        extra="Leg de onderlegger onder de subcutane canule. "
-        blockRequired="patient spot"
-        blockTitle="Deze handeling is nog niet mogelijk"
-        blockMessage="Treft de juiste voorbereidingen en vraag de cliënt om de injectieplaats te ontbloten."
-    ></action>
-
-    <action
-        points="3"
-        description="Desinfecteer met een desinfectansgaasje de connector (naaldloos afsluitdopje). Laat drogen"
-        index="10"
-        type="sequenceStep"
-        value="desinfect connector"
-        extra="Desinfecteer met een desinfectansgaasje de connector (naaldloos afsluitdopje). Laat het drogen."
-        messageTitle="No-touchmethode"
-        messageContent="Gebruik de no-touchmethode, voorkom dat de aansluitpunten van de gebruikte infuusmaterialen (infuuskatheter, infuusslang, lumina, afsluitdopje) contact maken met niet steriele huid of niet steriele materialen."
-    />
-
-    <action
-        points="1"
-        description="Fixeer het aansluitpunt, van de canule met de verlengslang, met je ene hand. Draai met de andere hand de spuit met het medicijn op de connector (naadloos afsluitdopje)"
-        index="11"
-        type="sequenceStep"
-        value="rotate medicine"
-        extra="Fixeer het aansluitpunt, van de canule met de verlengslang, met je ene hand. Draai met de andere hand de spuit met het medicijn op de connector (naadloos afsluitdopje)."
-        messageTitle="Vervangen afsluitdopje"
-        messageContent="Sluit de verlengslang van de subcutane canule zo nodig af met een connector (naaldloos afsluitdopje) of een steriel afsluitdopje. Vervang een steriel afsluitdopje, nadat het van de canule afgehaald is, steeds met een nieuw steriel afsluitdopje."
-    />
-
-    <action
-        points="2"
-        description="Spuit het medicijn langzaam in. Dit is afhankelijk van het medicatievoorschrift"
-        index="12"
-        type="sequenceStep"
-        value="inject medicine"
-        extra="Spuit het medicijn langzaam in. Dit is afhankelijk van het medicatievoorschrift."
-    />
-
-    <action
-        points="1"
-        description="Verwijder de spuit en gooi hem in de afvalbak"
-        index="13"
-        type="sequenceStep"
-        value="take off medicine"
-        extra="Verwijder de spuit en gooi hem in de afvalbak."
-    />
-
-    <action
-        points="1"
-        description="Pak de gevulde spuit met NaCl 0,9% en draai hem op de connector"
-        index="14"
-        type="sequenceStep"
-        value="rotate omniflush"
-        extra="Pak de gevulde spuit met NaCl 0,9% en draai hem op de connector (naaldloos afsluitdopje)."
-        messageTitle="Spoelen subcutane infuuscanule"
-        messageContent="Spoel de verlengslang van de subcutane infuuscanule na toediening van het medicijn door met NaCl 0,9%. Gebruik voor het spoelen minimaal het volume van de verlengslang, 0,5 ml."
-    />
-
-    <action
-        points="2"
-        description="Spuit NaCl 0,9% langzaam in"
-        index="15"
-        type="sequenceStep"
-        value="inject omniflush"
-        extra="Spuit NaCl 0,9% langzaam in."
-        messageTitle="Verschillende medicijnen toedienen"
-        messageContent="Bij het toedienen van verschillende medicijnen wordt er tussen de verschillende injecties doorgespoten met NaCl 0,9%. Ga met arts of apotheker na of dit nodig is. Houd de spuiten met het medicijn en NaCl 0,9% goed uit elkaar, plak een medicijnsticker op de spuiten."
-    />
-
-    <action
-        points="1"
-        description="Verwijder de spuit en gooi hem in de afvalbak"
-        index="16"
-        type="sequenceStep"
-        value="take off omniflush"
-        extra="Verwijder de spuit en gooi hem in de afvalbak."
-        blockUnlock="EndofSQ"
-        messageTitle="Verkeerde of niet toegediende injectie"
-        messageContent="Maak van een verkeerd toegediend en/of een niet gegeven injectie melding volgens de procedure van de organisatie."
-    />
-
-    <action
-        points="1"
-        description="Ruim de materialen op door met lege handen op het werkveld te klikken"
-        index="17"
-        type="use"
-        value="WorkField"
-        extra="Ruim de materialen op door met lege handen op het werkveld te klikken"
-        messegeTitle="Materialen opruimen"
-        blockRequired="EndofSQ"
-        blockUnlock="AllowedToTakeOffGloves"
-        MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"
-    ></action>
-
-    <Action
-        index="18"
-        description="Trek de handschoenen uit."
-        type="general"
-        item=""
-        points="1"
-        buttonText="Trek handschoenen uit"
-        action="TakeOffGlovesWithoutThrowing"
-        blockRequired="GlovesTakenOn, AllowedToTakeOffGloves" />
-
-    <action
-        comment="1. Apply hand hygiene"
-        index="19"
-        points="3"
-        description="[Pas handhygiëne]"
-        type="use"
-        value="HandCleaner"
-        extra="[Pas handhygiëne]"
-    />
-
-
-    <action
-        comment="last step"
-        index="20"
-        points="3"
-        description="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid, de wijze van toediening en de toedieningsplaats. Noteer tot slot je bevindingen"
-        type="use"
-        value="PaperAndPen"
-        extra="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid, de wijze van toediening en toedieningsplaats. Noteer tot slot je bevindingen"
-    ></action>
+  <action 
+    points="1" 
+    description="[Begroet]" 
+    index="0" 
+    type="talk" 
+    topic="Hello" 
+    extra="[ondanks dat het68]" 
+    optional=""/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="0" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]" 
+    messageTitle="[handhygiëne]" 
+    messageContent="[Handhygiene]"/>
+  <action 
+    comment="Create a clean workfield" 
+    points="1" 
+    description="[Maak een schoon werkveld]" 
+    index="1" 
+    type="use" 
+    value="WorkField" 
+    extra="[maak een schoon]" 
+    messageTitle="[je het volgende]" 
+    messageContent="[1 paar handschoenen925]"/>
+  <action 
+    comment="(6)Combine gauze with alcohol" 
+    points="2" 
+    description="[overgiet een gaasje647]" 
+    index="2" 
+    quiz="3" 
+    type="combine" 
+    left="Cloth2" 
+    right="Alcohol2" 
+    extra="[overgiet een gaasje33]" 
+    blockUnlock="desinfect cloth"/>
+  <action 
+    points="2" 
+    description="[controleer het medicijn]" 
+    audioHint="Injection/H3-2" 
+    index="3" 
+    type="examine" 
+    item="OmniflushSyringeBag2" 
+    quiz="2" 
+    expected="good" 
+    extra="[controleer het medicijn751]" 
+    messageTitle="[kennis over het]" 
+    messageContent="[lees de bijsluiter]"/>
+  <action 
+    points="2" 
+    description="[controleer cliëntgegevens]" 
+    audioHint="Injection/H3-2" 
+    index="3" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good" 
+    extra="[controleer de cliëntgegevens]" 
+    messageTitle="[5x juistregel]" 
+    messageContent="[er zijn 5]"/>
+  <action 
+    points="3" 
+    description="[controleer de toedienlijst]" 
+    audioHint="InjectionSubcutaneous/Step 5" 
+    index="3" 
+    type="examine" 
+    item="PrescriptionForm" 
+    expected="good" 
+    extra="[controleer de toedienlijst13]" 
+    messageTitle="[stel je op710]" 
+    messageContent="[de saftintima is618]"/>
+  <action 
+    points="3" 
+    description="[vraag je collega299]" 
+    audioHint="" 
+    index="4" 
+    type="talk" 
+    topic="DoubleCheck" 
+    extra="[voer een dubbele]"/>
+  <action 
+    comment="(4)Open package of OmniflushSyringeBag" 
+    points="1" 
+    description="[open de verpakking207]" 
+    index="5" 
+    type="combine" 
+    left="OmniflushSyringeBag" 
+    right="" 
+    extra="[leg de spuit821]" 
+    messageTitle="[voorverpakte omniflush nacl720]" 
+    messageContent="[wanneer er geen]"/>
+  <action 
+    comment="Open de verpakking van de spuit met het medicijn." 
+    points="1" 
+    description="[open de verpakking938]" 
+    index="6" 
+    type="combine" 
+    left="OmniflushSyringeBag2" 
+    right="" 
+    extra="[open de verpakking399]" 
+    messageTitle="[medicijnstickers]" 
+    messageContent="[houd de spuiten]"/>
+  <action 
+    comment="Put on gloves." 
+    points="3" 
+    description="[Trek de handschoenen aan]" 
+    index="7" 
+    type="use" 
+    value="gloveBox" 
+    extra="[trek de handschoenen216]" 
+    blockUnlock="GlovesTakenOn" 
+    messageTitle="[gebruik handschoenen]" 
+    messageContent="[gebruik handschoenen eenmalig571]"/>
+  <action 
+    comment="(5)Ask client to show injection spot." 
+    points="2" 
+    description="[vraag de cliënt679]" 
+    index="8" 
+    type="talk" 
+    topic="show injection spot" 
+    extra="[vraag de cliënt414]" 
+    blockRequired="desinfect cloth" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[treft de juiste]" 
+    blockUnlock="patient spot"/>
+  <action 
+    comment="Leg de onderlegger onder de plaats van de subcutane canule. ------ start sequence" 
+    points="2" 
+    description="[leg de onderlegger753]" 
+    index="9" 
+    type="useOn" 
+    item="cloth_02_folded" 
+    target="" 
+    buttonText="Onderlegger plaatsen" 
+    extra="[leg de onderlegger782]" 
+    blockRequired="patient spot" 
+    blockTitle="Deze handeling is nog niet mogelijk" 
+    blockMessage="[treft de juiste888]"/>
+  <action 
+    points="3" 
+    description="[desinfecteer met een]" 
+    index="10" 
+    type="sequenceStep" 
+    value="desinfect connector" 
+    extra="[desinfecteer met een184]" 
+    messageTitle="[notouchmethode]" 
+    messageContent="[gebruik de notouchmethode]"/>
+  <action 
+    points="1" 
+    description="[fixeer het aansluitpunt]" 
+    index="11" 
+    type="sequenceStep" 
+    value="rotate medicine" 
+    extra="[fixeer het aansluitpunt816]" 
+    messageTitle="[vervangen afsluitdopje]" 
+    messageContent="[sluit de verlengslang]"/>
+  <action 
+    points="2" 
+    description="[spuit het medicijn21]" 
+    index="12" 
+    type="sequenceStep" 
+    value="inject medicine" 
+    extra="[spuit het medicijn860]"/>
+  <action 
+    points="1" 
+    description="[verwijder de spuit229]" 
+    index="13" 
+    type="sequenceStep" 
+    value="take off medicine" 
+    extra="[verwijder de spuit564]"/>
+  <action 
+    points="1" 
+    description="[pak de gevulde100]" 
+    index="14" 
+    type="sequenceStep" 
+    value="rotate omniflush" 
+    extra="[pak de gevulde475]" 
+    messageTitle="[spoelen subcutane infuuscanule]" 
+    messageContent="[spoel de verlengslang]"/>
+  <action 
+    points="2" 
+    description="[spuit nacl 09%764]" 
+    index="15" 
+    type="sequenceStep" 
+    value="inject omniflush" 
+    extra="[spuit nacl 09%467]" 
+    messageTitle="[verschillende medicijnen toedienen]" 
+    messageContent="[bij het toedienen]"/>
+  <action 
+    points="1" 
+    description="[verwijder de spuit229]" 
+    index="16" 
+    type="sequenceStep" 
+    value="take off omniflush" 
+    extra="[verwijder de spuit564]" 
+    blockUnlock="EndofSQ" 
+    messageTitle="[verkeerde of niet]" 
+    messageContent="[maak van een]"/>
+  <action 
+    points="1" 
+    description="[ruim de materialen]" 
+    index="17" 
+    type="use" 
+    value="WorkField" 
+    extra="[ruim de materialen]" 
+    messegeTitle="Materialen opruimen" 
+    blockRequired="EndofSQ" 
+    blockUnlock="AllowedToTakeOffGloves" 
+    messageContent="[ruim de materialen527]"/>
+  <Action 
+    index="18" 
+    description="[trek de handschoenen384]" 
+    type="general" 
+    item="" 
+    points="1" 
+    buttonText="Trek handschoenen uit" 
+    action="TakeOffGlovesWithoutThrowing" 
+    blockRequired="GlovesTakenOn, AllowedToTakeOffGloves"/>
+  <action 
+    comment="1. Apply hand hygiene" 
+    index="19" 
+    points="3" 
+    description="[Pas handhygiëne]" 
+    type="use" 
+    value="HandCleaner" 
+    extra="[Pas handhygiëne]"/>
+  <action 
+    comment="last step" 
+    index="20" 
+    points="3" 
+    description="[teken de toedienlijst258]" 
+    type="use" 
+    value="PaperAndPen" 
+    extra="[teken de toedienlijst899]"/>
 </ActionList>

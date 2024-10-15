@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      fullDescription="[begroet de cliënt]" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Ondanks dat het begroeten niet in de werkwijze is vermeld, is het wel netjes om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      comment="(1)Apply handhygiene" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      fullDescription="[klik op het]" 
+      index="0" 
+      type="use" 
+      value="HandCleaner" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[de handeling voor163]" 
+      extra="Pas handhygiëne toe. "/>
+  <action 
+      comment="(2)Create a clean workfield" 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      fullDescription="[klik op het796]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld. " 
+      messageTitle="[je het volgende184]" 
+      messageContent="[reservebinnencanule gaasjes bakje]"/>
+  <action 
+      comment="Put on gloves." 
+      points="1" 
+      description="[Trek de handschoenen aan]" 
+      index="2" 
+      type="use" 
+      value="gloveBox" 
+      extra="Trek de handschoenen aan." 
+      blockUnlock="GlovesTakenOn" 
+      messageTitle="[gebruik handschoenen en]" 
+      messageContent="[draag tijdens de]"/>
+  <action 
+      comment="Ask the client to assume a semi-sitting position with the head tilted back slightly." 
+      points="3" 
+      description="[vraag de cliënt865]" 
+      index="3" 
+      type="talk" 
+      topic="LayInHalfPosOnBed" 
+      blockUnlock="PatientIsLaying" 
+      extra="" 
+      ui_timeout="5"/>
+  <Action 
+      index="4" 
+      description="Verwijder het filter, het spreekdopje of spreekklepje. Doe ze in het wegwerpbakje." 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Verwijder het filter" 
+      blockRequired="PatientIsLaying" 
+      blockUnlock="FilterRemoved" 
+      action="RemoveFilter"/>
+  <action 
+      comment="Place the underpad on the patient's chest, just below the cannula." 
+      points="1" 
+      description="[leg de onderlegger]" 
+      index="5" 
+      type="useOn" 
+      item="cloth_02_folded" 
+      blockRequired="FilterRemoved" 
+      target="" 
+      buttonText="Onderlegger plaatsen"/>
+  <action 
+      comment="Fixate the outer cannula with one hand" 
+      points="1" 
+      description="[fixeer de buitencanule]" 
+      index="6" 
+      type="sequenceStep" 
+      value="FixCannula" 
+      extra=""/>
+  <action 
+      comment="Turn the inner cannula a quarter turn counterclockwise" 
+      points="1" 
+      description="[draai de binnencanule]" 
+      index="7" 
+      type="sequenceStep" 
+      value="TurnCannula" 
+      extra=""/>
+  <action 
+      comment="Remove the inner cannula in one smooth motion" 
+      points="1" 
+      description="[verwijder de binnencanule]" 
+      index="8" 
+      type="sequenceStep" 
+      value="RemoveCannula" 
+      extra="" 
+      messageTitle="[beademing cliënt]" 
+      messageContent="[bij een cliënt828]"/>
+  <action 
+      comment="Place the inner cannula in the disposable container" 
+      points="1" 
+      description="[leg de binnencanule]" 
+      index="9" 
+      type="sequenceStep" 
+      value="PlaceToContainer" 
+      extra=""/>
+  <action 
+      comment="Remove cut gauze" 
+      points="1" 
+      description="[verwijder het splitgaas]" 
+      index="10" 
+      type="sequenceStep" 
+      value="RemoveSplitGauze" 
+      extra=""/>
+  <action 
+      comment="With the size of the inner cannula, bend the cannula brush according to the bend of the inner cannula" 
+      points="1" 
+      description="[buig de canuleborstel]" 
+      index="11" 
+      type="sequenceStep" 
+      value="BendBigBrush" 
+      extra=""/>
+  <action 
+      comment="Hold the inner cannula and seal the opening at one end with your finger." 
+      points="1" 
+      description="[houd de binnencanule]" 
+      index="12" 
+      type="sequenceStep" 
+      value="HoldCannuleFirstTime" 
+      extra=""/>
+  <action 
+      comment="Insert the brush at the other end and clean the inner cannula." 
+      points="1" 
+      description="[breng het borsteltje]" 
+      index="13" 
+      type="sequenceStep" 
+      value="CleanCannuleBigBrush" 
+      extra=""/>
+  <action 
+      comment="Perform the previous 3 steps with the smaller size cannula brush" 
+      points="1" 
+      description="[voer de vorige]" 
+      index="14" 
+      type="sequenceStep" 
+      value="Perfom3PrevSteps" 
+      extra=""/>
+  <action 
+      comment="Bend the smaller size cannula brush, with the size of the inner cannula, according to the bend of the inner cannula" 
+      points="1" 
+      description="[buig de kleinere]" 
+      index="15" 
+      type="sequenceStep" 
+      value="BendSmallBush" 
+      extra=""/>
+  <action 
+      comment="Hold the inner cannula and seal the opening at one end with your finger" 
+      points="1" 
+      description="[houd de binnencanule683]" 
+      index="16" 
+      type="sequenceStep" 
+      value="HoldCannuleSecondTime" 
+      extra=""/>
+  <action 
+      comment="Insert the brush at the other end and clean the inner cannula" 
+      points="1" 
+      description="[breng het borsteltje]" 
+      index="17" 
+      type="sequenceStep" 
+      value="InsertSmallBrush" 
+      extra=""/>
+  <action 
+      comment="Repeat the previous steps of cleaning" 
+      points="1" 
+      description="[draai de canule]" 
+      index="18" 
+      type="sequenceStep" 
+      value="RepeatPrevSteps" 
+      extra="" 
+      messageTitle="[tijd]" 
+      messageContent="[het schoonmaken vanaf]"/>
+  <action 
+      comment="Dry the cannula with gauze and place it in the clean disposible tray" 
+      points="1" 
+      description="[droog de canule]" 
+      index="19" 
+      type="sequenceStep" 
+      value="DryCannule" 
+      blockUnlock="CannulaDried" 
+      extra=""/>
+  <action 
+      comment="Clean the neck plate with the cotton swabs" 
+      points="1" 
+      description="[reinig het halsplaatje]" 
+      index="20" 
+      type="useOn" 
+      place="WorkFieldPos" 
+      item="CottonSwabStick" 
+      target="" 
+      blockRequired="CannulaDried" 
+      buttonText="Reinig het halsplaatje"/>
+  <action 
+      comment="Clean the filter with a damp gauze. Place the filter in the clean cardboard tray" 
+      points="1" 
+      description="[reinig het filter]" 
+      index="21" 
+      type="useOn" 
+      item="Cloth2" 
+      target="" 
+      blockRequired="FilterRemoved" 
+      buttonText="Reinig het filter"/>
+  <Action 
+      index="22" 
+      description="Trek de handschoenen uit" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockUnlock="GlovesTakenOff" 
+      blockRequired="GlovesTakenOn, CannulaDried"/>
+  <action 
+      comment="Apply hand hygiene." 
+      points="1" 
+      description="[Pas handhygiëne]" 
+      fullDescription="" 
+      index="23" 
+      type="use" 
+      value="HandCleaner" 
+      quiz="2" 
+      extra="Pas handhygiëne toe"/>
+  <action 
+      comment="Put on gloves second time" 
+      points="1" 
+      description="[trek het tweede]" 
+      index="24" 
+      type="use" 
+      value="gloveBox" 
+      blockRequired="GlovesTakenOff" 
+      extra="Trek de handschoenen aan" 
+      messageTitle="[gebruik handschoenen en]" 
+      messageContent="[draag tijdens de]"/>
+  <action 
+      comment="Fix the outer cannula with one hand and replace the inner cannula with the other hand in one smooth movement." 
+      points="1" 
+      description="[fixeer de buitencanule827]" 
+      index="25" 
+      type="sequenceStep" 
+      value="3SQ_FixOuterCannula" 
+      extra=""/>
+  <action 
+      comment="Tighten the inner cannula (1/4 turn clockwise) while the outer cannula remains fixed" 
+      points="1" 
+      description="[draai de binnencanule968]" 
+      index="26" 
+      type="sequenceStep" 
+      value="3SQ_TightenInnerCannule" 
+      extra="" 
+      messageTitle="[inbregen binnencanule]" 
+      messageContent="[gebruik zo nodig]"/>
+  <action 
+      comment="Check the position of the inner cannula" 
+      points="1" 
+      description="[controleer of de118]" 
+      index="27" 
+      type="sequenceStep" 
+      value="3SQ_CheckCannulaPos" 
+      extra=""/>
+  <action 
+      comment="Inspect the stoma and surrounding skin for irritation, damage and signs of inflammation" 
+      points="1" 
+      description="[inspecteer de stoma]" 
+      index="28" 
+      type="sequenceStep" 
+      value="3SQ_InspectSkin" 
+      extra="" 
+      encounter="1"/>
+  <action 
+      comment="Moisten the gauze with water, pull the gauze apart slightly so that it fits easily under the outer cannula plate" 
+      points="1" 
+      description="[bevochtig het gaasje]" 
+      index="29" 
+      type="sequenceStep" 
+      value="MakeGauzeWet" 
+      extra="" 
+      messageTitle="[gebruik kraanwater]" 
+      messageContent="[als in een]"/>
+  <action 
+      comment="Fix the outer cannula with one hand" 
+      points="1" 
+      description="[fixeer de buitencanule]" 
+      index="30" 
+      type="sequenceStep" 
+      value="FixCannuleSQ4" 
+      extra=""/>
+  <action 
+      comment="Use the moist gauze to clean the skin around the opening in which the cannula is in the neck. Work from the inside out" 
+      points="1" 
+      description="[reinig met het]" 
+      index="31" 
+      type="sequenceStep" 
+      value="CleanNeck" 
+      extra=""/>
+  <action 
+      comment="Dry the skin carefully with a gauze" 
+      points="1" 
+      description="[droog de huid]" 
+      index="32" 
+      type="sequenceStep" 
+      value="DryNeck" 
+      extra="" 
+      MessageTitle="Vervang zo nodig het canule bandje" 
+      MessageContent="!!!NEWLINE!!!   Vervang het canulebandje één keer per week of als het vochtig en/of zichtbaar vervuild is.!!!NEWLINE!!!   !!!NEWLINE!!!- Fixeer de buitencanule met één hand.!!!NEWLINE!!!- Haal het ene uiteinde van het schone canulebandje door de linkerkant van het plaatje van de buitencanule. Het andere uiteinde door de rechterkant.!!!NEWLINE!!!- Maak de uiteinden vast met een platte knoop aan de zijkant van de nek, zodat de cliënt niet op de knoop ligt. Of sluit het klittenband.!!!NEWLINE!!!- Zorg voor ruimte van één vingerdikte tussen canulebandje en hals.!!!NEWLINE!!!- Verwijder het oude canulebandje."/>
+  <action 
+      comment="Place the split gauze with the split upwards behind the cannula plate" 
+      points="1" 
+      description="[plaats het splitgaas]" 
+      index="33" 
+      type="sequenceStep" 
+      value="PlaceSplitGauze" 
+      extra=""/>
+  <action 
+      comment="Place the filter, mouthpiece or speaking valve on the cannula" 
+      points="1" 
+      description="[plaats het filter]" 
+      index="34" 
+      type="sequenceStep" 
+      value="PlaceFilter" 
+      extra=""/>
+  <action 
+      comment="Take off gloves" 
+      points="1" 
+      description="[trek de handschoenen764]" 
+      index="35" 
+      type="sequenceStep" 
+      value="RemoveGloves" 
+      blockUnlock="EndOfSq4" 
+      extra="" 
+      quiz="3"/>
+  <action 
+      comment="Create a clean workfield" 
+      points="1" 
+      description="[Maak een schoon werkveld end]" 
+      index="36" 
+      type="use" 
+      value="WorkField" 
+      blockRequired="EndOfSq4" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken." 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"/>
+  <action 
+      comment="(1)Apply handhygiene" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      fullDescription="[klik op het]" 
+      index="37" 
+      type="use" 
+      value="HandCleaner">
+  </action>
+  <action 
+      comment="Write down the size and length of the inserted probe, pH determination, date of inserting the probe and any findings on the ipad." 
+      index="38" 
+      points="1" 
+      description="[Noteer de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra=""/>
+</ActionList>

@@ -421,9 +421,9 @@ namespace CareUp.ActionEditor
         string TextEditorValue = "";
         Vector2 TextEditorScroll = new Vector2();
 
-        List<string> dictNames = new List<string>();
-        List<Dictionary<string, string>> setOfDictionaries = new List<Dictionary<string, string>>();
-        string dictListFile = "dicts";
+        // List<string> dictNames = new List<string>();
+        // List<Dictionary<string, string>> setOfDictionaries = new List<Dictionary<string, string>>();
+        // string dictListFile = "dicts";
 
         [MenuItem("Tools/Actions Editor")]
         static void Init()
@@ -442,11 +442,8 @@ namespace CareUp.ActionEditor
                 if (dictToEdit != -1)
                 {
                     string key = TextEditorValue.Substring(1, TextEditorValue.Length - 2);
-                    if (setOfDictionaries[dictToEdit].ContainsKey(key))
-                    {
-                        setOfDictionaries[dictToEdit][key] = dictValueToEdit;
-                        SaveDictChanges(dictToEdit);
-                    }
+                    DictionaryEditor.UpdateDictionaryValue(dictToEdit, key, dictValueToEdit);
+                    DictionaryEditor.SaveChanges(dictToEdit);
                 }
                 else
                 {
@@ -458,22 +455,22 @@ namespace CareUp.ActionEditor
             dictValueToEdit = "";
         }
 
-        void LoadDictionary(string fileName)
-        {
-            Dictionary<string, string> currentDict = new Dictionary<string, string>();
-            TextAsset _data = (TextAsset)Resources.Load("Dictionaries/" + fileName);
-            if (_data != null)
-            {
-                string jsonString = _data.text;
-                JSONNode data = JSON.Parse(jsonString);
-                foreach (string key in data.Keys)
-                {
-                    if (!currentDict.ContainsKey(key))
-                        currentDict.Add(key, data[key].ToString().Replace("<br>", "\n").Replace("\"",""));
-                }
-            }
-            setOfDictionaries.Add(currentDict);
-        }
+        // void LoadDictionary(string fileName)
+        // {
+        //     Dictionary<string, string> currentDict = new Dictionary<string, string>();
+        //     TextAsset _data = (TextAsset)Resources.Load("Dictionaries/" + fileName);
+        //     if (_data != null)
+        //     {
+        //         string jsonString = _data.text;
+        //         JSONNode data = JSON.Parse(jsonString);
+        //         foreach (string key in data.Keys)
+        //         {
+        //             if (!currentDict.ContainsKey(key))
+        //                 currentDict.Add(key, data[key].ToString().Replace("<br>", "\n").Replace("\"",""));
+        //         }
+        //     }
+        //     setOfDictionaries.Add(currentDict);
+        // }
 
         public void CopyToClipboard(string _value)
         {
@@ -483,32 +480,32 @@ namespace CareUp.ActionEditor
             te.Copy();
         }
 
-        string FindInDictByKey(string _key, out int dictID, bool toRemoveBrackets = true)
-        {
-            dictID = -1;
+        // string FindInDictByKey(string _key, out int dictID, bool toRemoveBrackets = true)
+        // {
+        //     dictID = -1;
             
-            if (_key.Length < 3)
-                return _key;
-            if (_key[0] != '[' || _key[_key.Length - 1] != ']')
-                return _key;
-            string key = _key;
-            if (toRemoveBrackets)
-            {
-                key = key.Substring(1, key.Length - 2);
-            }
-            if (dictNames.Count != 0)
-            {
-                for(int i = 0; i < dictNames.Count; i++)
-                {
-                    if (setOfDictionaries[i].ContainsKey(key))
-                    {
-                        dictID = i;
-                        return(setOfDictionaries[i][key]);
-                    }
-                }
-            }
-            return _key;
-        } 
+        //     if (_key.Length < 3)
+        //         return _key;
+        //     if (_key[0] != '[' || _key[_key.Length - 1] != ']')
+        //         return _key;
+        //     string key = _key;
+        //     if (toRemoveBrackets)
+        //     {
+        //         key = key.Substring(1, key.Length - 2);
+        //     }
+        //     if (dictNames.Count != 0)
+        //     {
+        //         for(int i = 0; i < dictNames.Count; i++)
+        //         {
+        //             if (setOfDictionaries[i].ContainsKey(key))
+        //             {
+        //                 dictID = i;
+        //                 return(setOfDictionaries[i][key]);
+        //             }
+        //         }
+        //     }
+        //     return _key;
+        // } 
 
 /// <summary>
 /// Loading all the data from action file
@@ -517,15 +514,16 @@ namespace CareUp.ActionEditor
 /// <param name="toReload">If true, reload will be forced</param>
         void LoadActionsData(string actionFilePath, bool toReload = false)
         {
-            dictNames.Clear();
-            setOfDictionaries.Clear();
-            TextAsset dictListData = (TextAsset)Resources.Load("Dictionaries/" + dictListFile);
-            foreach(string dictName in dictListData.text.Split('\n'))
-                if (!string.IsNullOrEmpty(dictName))
-                {
-                    dictNames.Add(dictName);
-                    LoadDictionary(dictName);
-                }
+            DictionaryEditor.ReloadDictionaries();
+            // dictNames.Clear();
+            // setOfDictionaries.Clear();
+            // TextAsset dictListData = (TextAsset)Resources.Load("Dictionaries/" + dictListFile);
+            // foreach(string dictName in dictListData.text.Split('\n'))
+            //     if (!string.IsNullOrEmpty(dictName))
+            //     {
+            //         dictNames.Add(dictName);
+            //         LoadDictionary(dictName);
+            //     }
 
             actionToEditInTE = null;
             if (actionFilePath == loadedActionFilePath && !toReload)
@@ -868,23 +866,23 @@ namespace CareUp.ActionEditor
         }
 
 
-        void SaveDictChanges(int _dictID = -1)
-        {
-            string dictName = dictNames[_dictID];
-            string actionFilePath = "Assets/Resources/Dictionaries/"+ dictName + ".json";
+        // void SaveDictChanges(int _dictID = -1)
+        // {
+        //     string dictName = dictNames[_dictID];
+        //     string actionFilePath = "Assets/Resources/Dictionaries/"+ dictName + ".json";
 
-            var stringBuilder = new StringBuilder();
-            stringBuilder.Append("{\n");
-            foreach(string key in setOfDictionaries[_dictID].Keys)
-            {
-                stringBuilder.Append("  \"" + key + "\": \"" + setOfDictionaries[_dictID][key].Replace("\n", "<br>\n") + "\",\n");
-            }
-            stringBuilder.Append("}");
+        //     var stringBuilder = new StringBuilder();
+        //     stringBuilder.Append("{\n");
+        //     foreach(string key in setOfDictionaries[_dictID].Keys)
+        //     {
+        //         stringBuilder.Append("  \"" + key + "\": \"" + setOfDictionaries[_dictID][key].Replace("\n", "<br>") + "\",\n");
+        //     }
+        //     stringBuilder.Append("}");
 
-            using (StreamWriter swriter = new StreamWriter(actionFilePath))
-                swriter.Write(stringBuilder.ToString());
+        //     using (StreamWriter swriter = new StreamWriter(actionFilePath))
+        //         swriter.Write(stringBuilder.ToString());
             
-        }
+        // }
 
         //string testText = "";
         void OnGUI()
@@ -917,12 +915,12 @@ namespace CareUp.ActionEditor
                     if (dictToEdit != -1)
                     {
                         EditorGUILayout.LabelField("Editing value for key " + TextEditorValue + 
-                        "From dictionary [" + dictNames[dictToEdit] + " ]\n!! Your changes might affect multiple files !!"
+                        "From dictionary [" + DictionaryEditor.GetDictName(dictToEdit) + " ]\n!! Your changes might affect multiple files !!"
                         ,warningStyle ,GUILayout.Height(50));
                         
                         EditorGUILayout.BeginHorizontal();
                         EditorGUILayout.LabelField("Dictionary :", warningStyle ,GUILayout.Width(90));
-                        EditorGUILayout.LabelField(dictNames[dictToEdit], warningStyle);
+                        EditorGUILayout.LabelField(DictionaryEditor.GetDictName(dictToEdit), warningStyle);
                         EditorGUILayout.EndHorizontal();
                         EditorGUILayout.BeginHorizontal();
                         EditorGUILayout.LabelField("Key :", warningStyle ,GUILayout.Width(90));
@@ -1143,12 +1141,14 @@ namespace CareUp.ActionEditor
                         if (!a.unfold)
                         {
                             int descDictID = -1;
-                            string descToShow = FindInDictByKey(a.description.Split('\n')[0], out descDictID);
+                            string descToShow = DictionaryEditor.FindInDictByKey(a.description.Split('\n')[0], out descDictID);
                             if (descDictID != -1)
                             {
                                 EditorGUILayout.BeginHorizontal();
                                 EditorGUILayout.LabelField("", GUILayout.Width(30));
-                                EditorGUILayout.LabelField("From [ " + dictNames[descDictID] + " ] With Key " + a.description, greenStyle);
+                                EditorGUILayout.LabelField("1From [ " + 
+                                    DictionaryEditor.GetDictName(descDictID) + " ] With Key " + 
+                                    a.description, greenStyle);
                                 EditorGUILayout.EndHorizontal();
                             }
                             EditorGUILayout.BeginHorizontal();
@@ -1164,12 +1164,12 @@ namespace CareUp.ActionEditor
                             descRect.y += 24;
                             descRect.height = 50;
                             int descDictID = -1;
-                            string descToShow = FindInDictByKey(a.description, out descDictID);
+                            string descToShow = DictionaryEditor.FindInDictByKey(a.description, out descDictID);
                             if (descDictID != -1)
                             {
                                 EditorGUILayout.BeginHorizontal();
                                 EditorGUILayout.LabelField("", GUILayout.Width(30));
-                                EditorGUILayout.LabelField("From [ " + dictNames[descDictID] + " ] With Key " + a.description, greenStyle);
+                                EditorGUILayout.LabelField("2From [ " + DictionaryEditor.GetDictName(descDictID) + " ] With Key " + a.description, greenStyle);
                                 EditorGUILayout.EndHorizontal();
 
                                 EditorGUILayout.BeginHorizontal();
@@ -1221,10 +1221,10 @@ namespace CareUp.ActionEditor
                                     //icon
                                     EditorGUILayout.LabelField(ico, GUILayout.Width(22));
                                     int _descDictID = -1;
-                                    string textToShow = FindInDictByKey(currentAttr, out _descDictID);
+                                    string textToShow = DictionaryEditor.FindInDictByKey(currentAttr, out _descDictID);
                                     if (_descDictID != -1)
                                     {
-                                        EditorGUILayout.LabelField("From [ " + dictNames[_descDictID] + " ] With Key " + currentAttr, greenStyle);
+                                        EditorGUILayout.LabelField("3From [ " + DictionaryEditor.GetDictName(_descDictID) + " ] With Key " + currentAttr, greenStyle);
                                         if (GUILayout.Button("C", GUILayout.Width(22)))
                                         {
                                             CopyToClipboard(currentAttr.Substring(1, currentAttr.Length - 2));

@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AnimationSequence>
-	<step>
-		<option text="Ontbloot het been en de voet van de cliënt" animation="ExposeLeg"/>
-		<option text="Controleer het been en de voet"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Schud de cuff lichtjes"/>
-	</step>
-	​
-	<step>
-		<option text="Controleer het been en de voet" animation="CheckLeg"/>
-		<option text="Schud de cuff lichtjes"/>
-		<option text="Sla de steunkous om over de onderkant van de cuff"/>
-		<option text="Ontbloot het been en de voet van de cliënt"/>
-	</step>
-	​
+  <step>
+    <option 
+      text="[ontbloot het been16]" 
+      animation="ExposeLeg"/>
+    <option 
+      text="[controleer het been734]"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[schud de cuff]"/>
+  </step>
+  ​
+  <step>
+    <option 
+      text="[controleer het been734]" 
+      animation="CheckLeg"/>
+    <option 
+      text="[schud de cuff]"/>
+    <option 
+      text="[sla de steunkous]"/>
+    <option 
+      text="[ontbloot het been16]"/>
+  </step>
+  ​
 </AnimationSequence>

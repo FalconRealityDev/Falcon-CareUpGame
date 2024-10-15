@@ -2227,7 +2227,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &302214651
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2244,7 +2244,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &306584444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3414,7 +3415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: "Cli\xEBnt"
   ObjectID: 0
-  description: "Cli\xEBnt"
+  description: "[i_cli\xEBnt859]"
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5997,7 +5998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 107
-  description: Cloth
+  description: '[i_cloth]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6049,7 +6050,7 @@ BoxCollider:
   m_Center: {x: 0.0000000021438988, y: 0.017582113, z: -0.000000004448966}
 --- !u!95 &896123852
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6066,7 +6067,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &896123853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6971,6 +6973,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114140540663913466, guid: 4917273406bb6b548aa8e7e0bbe9fce5,
+        type: 3}
+      propertyPath: description
+      value: '[i_handdoekdispenser672]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4917273406bb6b548aa8e7e0bbe9fce5, type: 3}
 --- !u!1 &1062812502
@@ -7137,7 +7144,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &1062812509
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7154,7 +7161,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1076118950
 GameObject:
   m_ObjectHideFlags: 0
@@ -8409,7 +8417,7 @@ MonoBehaviour:
   ControlSpeedWithParameter: 0
 --- !u!95 &1242496345
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8426,7 +8434,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1249635852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10042,7 +10051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: PaperTowelInHand_Folded
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -10094,7 +10103,7 @@ BoxCollider:
   m_Center: {x: -0.00020484722, y: -0.00631465, z: 0.02364917}
 --- !u!95 &1427171831
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10111,7 +10120,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &1427171832
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13044,7 +13054,7 @@ PrefabInstance:
     - target: {fileID: 398252276671243276, guid: 385092222568add4e81d3841a3fa43ba,
         type: 3}
       propertyPath: description
-      value: _
+      value: '[i__]'
       objectReference: {fileID: 0}
     - target: {fileID: 398252276671243276, guid: 385092222568add4e81d3841a3fa43ba,
         type: 3}
@@ -13507,7 +13517,7 @@ PrefabInstance:
     - target: {fileID: 6426765641892815152, guid: abce16fb7a14a584b93d0c0f3961ecf5,
         type: 3}
       propertyPath: description
-      value: hygiene pomp
+      value: '[i_hygiene pomp]'
       objectReference: {fileID: 0}
     - target: {fileID: 7041406528538997705, guid: abce16fb7a14a584b93d0c0f3961ecf5,
         type: 3}
@@ -13607,6 +13617,11 @@ PrefabInstance:
       propertyPath: m_UpdateWhenOffscreen
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2484177860642763068, guid: 35626c1d9b846e8439b7af8b142a0d5d,
+        type: 3}
+      propertyPath: description
+      value: '[i_kraan]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2484177860934809939, guid: 35626c1d9b846e8439b7af8b142a0d5d,
         type: 3}
       propertyPath: m_Name
@@ -13671,6 +13686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullingMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484177861490798248, guid: 35626c1d9b846e8439b7af8b142a0d5d,
+        type: 3}
+      propertyPath: description
+      value: '[i_kraan]'
       objectReference: {fileID: 0}
     - target: {fileID: 2484177861490798253, guid: 35626c1d9b846e8439b7af8b142a0d5d,
         type: 3}
@@ -13940,6 +13960,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 938532983}
     m_Modifications:
+    - target: {fileID: 5461663792866708659, guid: 826017e0caae6144286e9cb70801653b,
+        type: 3}
+      propertyPath: description
+      value: '[i_werkveld]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5461663793355064157, guid: 826017e0caae6144286e9cb70801653b,
         type: 3}
       propertyPath: m_RootOrder

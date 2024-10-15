@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="2" 
+      description="[maak de handen193]" 
+      type="use" 
+      value="Sink_active" 
+      extra="Maak de handen nat met water uit een flink stromende kraan." 
+      messageTitle="[handen wassen met]" 
+      messageContent="[in de volgende]"/>
+  <action 
+      index="1" 
+      points="3" 
+      description="[gebruik genoeg zeep148]" 
+      type="use" 
+      extra="Gebruik genoeg zeep voor het totale handoppervlak. Raak het tuitje van de dispenser niet aan." 
+      value="SoapDispenser"/>
+  <action 
+      index="2" 
+      points="3" 
+      description="[wrijf de handpalmen123]" 
+      type="sequenceStep" 
+      value="rub hand palms" 
+      extra="Wrijf de handpalmen op elkaar."/>
+  <action 
+      index="3" 
+      points="3" 
+      description="[wrijf de rechter706]" 
+      type="sequenceStep" 
+      extra="Wrijf de rechter handpalm over de linker handrug met verstrengelde vingers en vice versa." 
+      value="rub hand palms back"/>
+  <action 
+      index="4" 
+      points="3" 
+      description="[wrijf de handpalmen828]" 
+      type="sequenceStep" 
+      extra="Wrijf de handpalmen tegen elkaar met verstrengelde vingers." 
+      value="rub hand palms entwined"/>
+  <action 
+      index="5" 
+      points="3" 
+      description="[wrijf met ineen458]" 
+      type="sequenceStep" 
+      extra="Wrijf met ineen gehaakte vingers tegen de andere handpalm." 
+      value="rub hands crocheted"/>
+  <action 
+      index="6" 
+      points="3" 
+      description="[draai met de571]" 
+      type="sequenceStep" 
+      extra="Draai met de duim van de linkerhand in de rechter handpalm en vice versa." 
+      value="rub hand palms thumbs"/>
+  <action 
+      index="7" 
+      points="3" 
+      description="[wrijf en draai562]" 
+      type="sequenceStep" 
+      extra="Wrijf en draai met de samengeknepen vingers van de rechterhand in de linker handpalm en vice versa." 
+      value="rub hand palms pinched together"/>
+  <action 
+      index="8" 
+      points="3" 
+      description="[reinig de pols]" 
+      type="sequenceStep" 
+      extra="Reinig de pols met de tegenovergestelde hand en visa versa." 
+      value="cleaning wrists"/>
+  <action 
+      index="9" 
+      points="2" 
+      description="[spoel de handen346]" 
+      extra="Spoel de handen goed af met water." 
+      type="use" 
+      value="Sink_active2" 
+      blockUnlock="Papertowel"/>
+  <action 
+      index="10" 
+      points="2" 
+      description="[droog de handen483]" 
+      type="use" 
+      extra="Droog de handen goed af met een wegwerpdoekje" 
+      value="PaperTowelDispenser" 
+      blockRequired="Papertowel" 
+      blockTitle="Handeling niet mogelijk." 
+      blockMessage="Deze handeling is nog niet mogelijk. Pas eerst handreiniging toe."/>
+  <action 
+      index="11" 
+      points="2" 
+      description="[gebruik het wegwerpdoekje886]" 
+      extra="Gebruik het wegwerpdoekje om de kraan dicht te draaien." 
+      type="useOn" 
+      item="PaperTowelInHand" 
+      target="" 
+      buttonText="Kraan dichtdraaien" 
+      messageTitle="[contact met cliënten]" 
+      messageContent="[handreiniging óf handdesinfectie]"/>
+  <action 
+      comment="last step" 
+      index="12" 
+      points="1" 
+      description="[sluit de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Sluit de handeling door de tablet te openen en op het afteken/afsluit icoon te drukken."/>
+</ActionList>

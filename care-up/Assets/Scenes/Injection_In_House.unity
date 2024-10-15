@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeAbsorptionCap
   ObjectID: 0
-  description: beschermhuls opzuignaald
+  description: '[i_beschermhuls opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -598,6 +598,11 @@ PrefabInstance:
     - target: {fileID: 4544961388968374, guid: cdb6524090b2ff049a29ca7c4b7b0037, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.005098682
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739825900955076, guid: cdb6524090b2ff049a29ca7c4b7b0037,
+        type: 3}
+      propertyPath: description
+      value: "[i_cli\xEBnt]"
       objectReference: {fileID: 0}
     - target: {fileID: 114739825900955076, guid: cdb6524090b2ff049a29ca7c4b7b0037,
         type: 3}
@@ -1009,7 +1014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InjectionNeedle
   ObjectID: 0
-  description: injectienaald
+  description: '[i_injectienaald]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1553,6 +1558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
       propertyPath: objects.Array.data[0]
       value: 
       objectReference: {fileID: 1491262229}
@@ -1728,6 +1738,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1913436599}
     m_Modifications:
+    - target: {fileID: 1678463290, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
+      propertyPath: description
+      value: '[i_spuit met injectienaald]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678463291, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
+      propertyPath: description
+      value: '[i_spuit met injectienaald]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1000010468456350, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
       propertyPath: m_Name
       value: SyringeWithInjectionNeedleCap
@@ -1914,7 +1932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedleCap
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -2357,7 +2375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InjectionNeedleNoCap
   ObjectID: 0
-  description: injectienaald
+  description: '[i_injectienaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -3926,6 +3944,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1726138621}
     m_Modifications:
+    - target: {fileID: 1678463290, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
+      propertyPath: description
+      value: '[i_spuit met injectienaald]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678463291, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
+      propertyPath: description
+      value: '[i_spuit met injectienaald]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1000010468456350, guid: 1c94a408d12a7d34aa0438d0a8d5578b, type: 3}
       propertyPath: m_Name
       value: SyringeWithInjectionNeedleCap
@@ -4099,7 +4125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth2
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4287,7 +4313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: AbsorptionNeedle
   ObjectID: 0
-  description: opzuignaald + beschermdop
+  description: '[i_opzuignaald + beschermdop]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4770,6 +4796,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3138010224484504390, guid: 3cd70b35b67dfa3409193f4b639c8115,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
+      objectReference: {fileID: 0}
     - target: {fileID: 3172445987151819947, guid: 3cd70b35b67dfa3409193f4b639c8115,
         type: 3}
       propertyPath: m_RootOrder
@@ -5031,7 +5062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedle
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5561,7 +5592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Syringe
   ObjectID: 0
-  description: spuit
+  description: '[i_spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5760,7 +5791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectedAmpoule
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5790,7 +5821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5928,7 +5959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectionCloth
   ObjectID: 0
-  description: gedesinfecteerd gaasje
+  description: '[i_gedesinfecteerd gaasje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6085,7 +6116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithSolvent
   ObjectID: 0
-  description: spuit met oplosmiddel
+  description: '[i_spuit met oplosmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6239,7 +6270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6743,7 +6774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: ClothWithAmpouleTop
   ObjectID: 0
-  description: gaasje met ampultop
+  description: '[i_gaasje met ampultop]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6908,7 +6939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: OpenedAmpoule
   ObjectID: 0
-  description: geopende ampul
+  description: '[i_geopende ampul]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7563,6 +7594,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1292178076896252, guid: 880e60984a1ed4140b38191f37c8a277, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4067369505319520, guid: 880e60984a1ed4140b38191f37c8a277, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -8258,7 +8293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeInjectionCap
   ObjectID: 0
-  description: beschermhuls injectienaald
+  description: '[i_beschermhuls injectienaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -8941,7 +8976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: AbsorptionNeedleNoCap
   ObjectID: 0
-  description: opzuignaald
+  description: '[i_opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      index="0" 
+      points="1" 
+      description="[breng handalcohol aan584]" 
+      type="use" 
+      extra=" Breng handalcohol aan op de droge hand, zonder daarbij het tuitje van de dispenser aan te raken. Neem zoveel handalcohol dat het kuiltje van één hand met alcohol is gevuld." 
+      value="AlcoholHandCleaner" 
+      messageTitle="[handreiniging]" 
+      messageContent="[handreiniging met water]"/>
+  <action 
+      index="1" 
+      points="3" 
+      description="[wrijf de handpalmen123]" 
+      type="sequenceStep" 
+      extra="Wrijf de handpalmen op elkaar." 
+      value="rub hand palms alcohol"/>
+  <action 
+      index="2" 
+      points="3" 
+      description="[wrijf de rechter706]" 
+      type="sequenceStep" 
+      extra="Wrijf de rechter handpalm over de linker handrug met verstrengelde vingers en vice versa." 
+      value="rub hand palms back alcohol"/>
+  <action 
+      index="3" 
+      points="3" 
+      description="[wrijf de handpalmen828]" 
+      type="sequenceStep" 
+      extra="Wrijf de handpalmen tegen elkaar met verstrengelde vingers." 
+      value="rub hand palms entwined alcohol"/>
+  <action 
+      index="4" 
+      points="3" 
+      description="[wrijf met ineen458]" 
+      type="sequenceStep" 
+      extra="Wrijf met ineen gehaakte vingers tegen de andere handpalm." 
+      value="rub hands crocheted alcohol"/>
+  <action 
+      index="5" 
+      points="3" 
+      description="[draai met de571]" 
+      type="sequenceStep" 
+      extra="Draai met de duim van de linkerhand in de rechter handpalm en vice versa." 
+      value="rub hand palms thumbs alcohol"/>
+  <action 
+      index="6" 
+      points="3" 
+      description="[wrijf en draai562]" 
+      type="sequenceStep" 
+      extra="Wrijf en draai met de samengeknepen vingers van de rechterhand in de linker handpalm en vice versa." 
+      value="rub hand palms pinched together alcohol"/>
+  <action 
+      index="7" 
+      points="3" 
+      description="[reinig de linkerpols]" 
+      type="sequenceStep" 
+      extra="Reinig de linkerpols met de rechterhand en visa versa." 
+      value="cleaning wrists" 
+      messageTitle="[contact met cliënten]" 
+      messageContent="[handreiniging óf handdesinfectie83]"/>
+  <action 
+      comment="last step" 
+      index="8" 
+      points="1" 
+      description="[sluit de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Sluit de handeling door de tablet te openen en op het afteken/afsluit icoon te drukken."/>
+</ActionList>

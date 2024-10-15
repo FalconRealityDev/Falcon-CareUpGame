@@ -706,6 +706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InjectionsInteriorLightSet_v.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6583142972655442282, guid: 92bf53fddf7c4324ab41f66588786109,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8773796861443802921, guid: 92bf53fddf7c4324ab41f66588786109,
         type: 3}
       propertyPath: m_IsActive
@@ -1613,6 +1618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946785870869749581, guid: 17b4c8766b79e8441920228d342abb7f,
+        type: 3}
+      propertyPath: description
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 8946785870869749582, guid: 17b4c8766b79e8441920228d342abb7f,
         type: 3}

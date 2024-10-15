@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using CareUp.Localize;
 
 /// <summary>
 /// General class for objects.
@@ -32,6 +33,8 @@ public class InteractableObject : MonoBehaviour
     private static Transform descriptionPanelPosition;
     private static bool selectedIsInteractable;
     private static Text descriptionText;
+
+
 
     //private bool hasHighlight = false;
     private Vector3 descriptionPanelOffset = new Vector3(50.0f, 25.0f);
@@ -114,18 +117,22 @@ public class InteractableObject : MonoBehaviour
                 descriptionPanelPosition = itemDescription.transform.GetChild(0).transform;
                 descriptionText = itemDescription.GetComponentInChildren<Text>();
                 itemDescription.name = "ItemDescription";
-                itemDescription.SetActive(false);
+                if (PlayerPrefsManager.GetDevMode() && !Input.GetKey(KeyCode.LeftControl))
+                    itemDescription.SetActive(false);
             }
         }
     }
 
     public void SetDescription()
     {
+        if (PlayerPrefsManager.GetDevMode() && Input.GetKey(KeyCode.LeftControl))
+            return;
         if (cameraMode.CurrentMode == CameraMode.Mode.Free)
         {
             if (!player.away && !player.robotUIopened && !cameraMode.animating)
             {
-                if (description == "Werkveld")
+
+                if (LocalizationManager.GetValueIfKey(description) == "Werkveld")
                 {
                     if (!actionManager.CompareUseObject("WorkField"))
                     {
@@ -145,7 +152,18 @@ public class InteractableObject : MonoBehaviour
                 if (!string.IsNullOrEmpty(description) && notSihlouette)
                 {
                     itemDescription.SetActive(true);
-                    descriptionText.text = (description == "") ? name : description;
+                    //@
+                    descriptionText.text = (description == "") ? name : LocalizationManager.GetValueIfKey(description);
+                
+                    InGameLocalEditTool inGameLocalEditTool = PlayerPrefsManager.GetDevMode() ? GameObject.FindObjectOfType<InGameLocalEditTool>() : null;  
+
+                    if (inGameLocalEditTool != null)
+                    {
+                        //!
+                        inGameLocalEditTool.AddUILocalizationComponentToGO(
+                            descriptionText.gameObject, description);
+
+                    }
                 }
             }
         }
@@ -162,13 +180,15 @@ public class InteractableObject : MonoBehaviour
         {
             gameUI.RemoveHighlight("hl", transform.name);
             //hasHighlight = false;
-            itemDescription.SetActive(false);
+            if (PlayerPrefsManager.GetDevMode() && !Input.GetKey(KeyCode.LeftControl))
+                itemDescription.SetActive(false);
         }
     }
 
     public static void ResetDescription()
     {
-        itemDescription.SetActive(false);
+        if (PlayerPrefsManager.GetDevMode() && !Input.GetKey(KeyCode.LeftControl))
+            itemDescription.SetActive(false);
     }
 
     protected bool ViewModeActive()

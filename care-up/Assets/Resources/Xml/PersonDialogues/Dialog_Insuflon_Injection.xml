@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Person>
-  <option text="Ik vraag de cliënt om de insteekplaats te ontbloten" topic="show injection spot" audio="Dialogue/Player/Collega 26"/>
+  <option 
+      text="[ik vraag de424]" 
+      topic="show injection spot" 
+      audio="Dialogue/Player/Collega 26"/>
 </Person>

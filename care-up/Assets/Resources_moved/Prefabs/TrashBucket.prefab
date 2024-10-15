@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.036}
   m_LocalScale: {x: 2.379329, y: 1.143706, z: 0.5356155}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4405023099832756}
   m_RootOrder: 1
@@ -74,6 +75,7 @@ Transform:
   m_LocalRotation: {x: -0.59518796, y: -0.3817739, z: -0.3817739, w: 0.59518796}
   m_LocalPosition: {x: 9.48, y: 1.11, z: 11.337}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4773384060687494}
   - {fileID: 4503807270759074}
@@ -99,9 +101,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -113,6 +118,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -125,6 +131,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &114810860968754204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,11 +146,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: TrashBucket
   ObjectID: 0
-  description: afvalbakje
+  description: '[i_afvalbakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
-  assetSource: 0
+  assetSource: 1
   transparencyFix: 0
 --- !u!65 &65707648979265048
 BoxCollider:
@@ -184,6 +191,7 @@ Transform:
   m_LocalRotation: {x: -0.0073057413, y: 0.70706904, z: 0.70706904, w: 0.0073057413}
   m_LocalPosition: {x: 0, y: -0.59, z: -0.28}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4405023099832756}
   m_RootOrder: 0

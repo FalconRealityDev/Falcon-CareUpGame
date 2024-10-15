@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList 
+      points="22">
+  <action 
+      index="0" 
+      points="1" 
+      description="[Begroet]" 
+      type="talk" 
+      topic="Hello" 
+      extra="[het begroeten van]" 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="[maak een schoon]" 
+      messageTitle="[je het volgende]" 
+      messageContent="[zeep en schone]"/>
+  <action 
+      comment="(3)Ask client to wash his hand with soap." 
+      points="3" 
+      description="[laat je cliënt]" 
+      index="2" 
+      type="talk" 
+      topic="WashHands" 
+      extra="[laat je cliënt205]" 
+      messageTitle="[gebruiksinstructie]" 
+      messageContent="[lees altijd de64]"/>
+  <action 
+      comment="Step 4: Check expiration date of the teststrips." 
+      points="3" 
+      description="[controleer de vervaldatum]" 
+      index="3" 
+      type="examine" 
+      item="TeststripsPackage" 
+      expected="good" 
+      extra="[controleer de vervaldatum533]" 
+      messageTitle="[nieuwe koker openen]" 
+      messageContent="[open je een]"/>
+  <action 
+      comment="Step 4: Remove cap from the lancet." 
+      points="3" 
+      description="[maak de prikpen]" 
+      index="4" 
+      type="combine" 
+      left="Scarifier" 
+      right="" 
+      extra="[maak de prikpen189]" 
+      blockUnlock="toolsReady" 
+      messageTitle="[prikpennen en vingerprikkers]" 
+      messageContent="[gebruik een veilige]"/>
+  <action 
+      points="2" 
+      description="[zet de bloedglucosemeter]" 
+      index="5" 
+      type="useOn" 
+      item="BloodGlucoseMeter" 
+      target="" 
+      extra="" 
+      buttonText="Aanzetten" 
+      messageTitle="[automatisch inschakelen]" 
+      messegeContent="De meeste meters gaan bij het plaatsen van de teststrip vanzelf aan. Zet de bloedglucose meter aan volgens de gebruiksaanwijzing wanneer dit niet het geval is. "/>
+  <action 
+      comment="Step 5: Take test strip from pack." 
+      points="3" 
+      description="[pak een teststrip]" 
+      index="6" 
+      type="combine" 
+      left="TeststripsPackage" 
+      right="" 
+      extra="[pak een teststrip990]" 
+      messageTitle="[testmateriaal]" 
+      messageContent="[gebruik het bij]"/>
+  <action 
+      comment="Step 7: Place teststrip in the blood glucose meter" 
+      points="3" 
+      description="[plaats de teststrip]" 
+      index="7" 
+      quiz="2" 
+      type="combine" 
+      left="BloodGlucoseMeter" 
+      right="Teststrip" 
+      extra="[plaats de teststrip973]" 
+      blockUnlock="prepare meter"/>
+  <action 
+      comment="Put on gloves." 
+      points="3" 
+      description="[trek handschoenen aan]" 
+      index="8" 
+      type="use" 
+      value="gloveBox" 
+      extra="[trek handschoenen aan296]" 
+      blockRequired="prepare meter,toolsReady" 
+      blockUnlock="GlovesTakenOn" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Maak eerst de vingerprikker en bloedglucosemeter klaar voor gebruik. Zet de meter aan en plaats een teststrip."/>
+  <action 
+      points="1" 
+      description="[plaats de prikpen]" 
+      index="9" 
+      type="sequenceStep" 
+      value="place finger" 
+      extra="[plaats de prikpen925]" 
+      messageTitle="[geschikte prik plaatsen]" 
+      messageContent="[geschikte plaatsen om]"/>
+  <action 
+      points="1" 
+      description="[prik in de]" 
+      index="10" 
+      type="sequenceStep" 
+      value="puncture" 
+      extra="[prik in de277]"/>
+  <action 
+      points="1" 
+      description="[veeg de eerste]" 
+      index="11" 
+      type="sequenceStep" 
+      value="whipe blood" 
+      extra="[veeg de eerste847]" 
+      messageTitle="[wegvegen van eerste]" 
+      messageContent="[als jij als]"/>
+  <action 
+      points="1" 
+      description="[vul het testveld]" 
+      index="12" 
+      type="sequenceStep" 
+      value="fill in teststrip" 
+      encounter="1" 
+      extra="[vul het testveld701]"/>
+  <action 
+      points="1" 
+      description="[breng een gaasje]" 
+      index="13" 
+      type="sequenceStep" 
+      value="apply gauze" 
+      extra="[breng een gaasje805]"/>
+  <action 
+      points="1" 
+      description="[lees en noteer]" 
+      index="14" 
+      type="sequenceStep" 
+      value="read values" 
+      extra="[lees en noteer858]"/>
+  <action 
+      points="1" 
+      description="[verwijder de teststrip]" 
+      index="15" 
+      type="sequenceStep" 
+      value="remove strip" 
+      extra="[verwijder de teststrip671]"/>
+  <action 
+      points="1" 
+      description="[schakel de bloedglucosemeter]" 
+      index="16" 
+      type="sequenceStep" 
+      value="turn off" 
+      extra="[schakel de bloedglucosemeter206]"/>
+  <action 
+      points="1" 
+      description="[gooi de vingerprikker]" 
+      index="17" 
+      type="sequenceStep" 
+      value="throw finger pin" 
+      blockUnlock="SequenceFinished" 
+      extra="[gooi de vingerprikker363]"/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="18" 
+      type="use" 
+      value="WorkField" 
+      blockRequired="SequenceFinished" 
+      blockUnlock="AllowedToTakeOffGloves" 
+      extra="[ruim de materialen]" 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"/>
+  <Action 
+      index="19" 
+      description="[trek de handschoenen384]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockRequired="GlovesTakenOn, AllowedToTakeOffGloves"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="20" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[handhygiëne is het]"/>
+  <action 
+      points="3" 
+      description="[noteer de handeling]" 
+      audioHint="Injection/EAS4-2" 
+      index="21" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="[noteer de handeling669]"/>
+</ActionList>

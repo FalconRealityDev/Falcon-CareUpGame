@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimationSequence>
+  <step>
+    <option 
+      text="[gebruik een gaasje]" 
+      animation="cleanMStraight"/>
+    <option 
+      text="[maak de labia]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw624]" 
+      animation=""/>
+    <option 
+      text="[spreid met één]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[maak de labia131]" 
+      animation="clean majora" 
+      audio="Dialogue/Catheterisation Woman/Cleaning and woman response"/>
+    <option 
+      text="[spreid met één]" 
+      animation=""/>
+    <option 
+      text="[pak een nieuw167]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[spreid met één]" 
+      animation="spread majora"/>
+    <option 
+      text="[maak de labia486]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[maak de labia486]" 
+      animation="clean minora"/>
+    <option 
+      text="[neem een nieuw917]" 
+      animation=""/>
+    <option 
+      text="[houd de labia939]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[spreid met één145]" 
+      animation="spread minora"/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[maak de labia131]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[neem een nieuw310]" 
+      animation="clean meatus"/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+    <option 
+      text="[maak de labia153]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[houd de labia903]" 
+      animation="LubInfo"/>
+    <option 
+      text="[spuit glijmiddel op]" 
+      animation=""/>
+    <option 
+      text="[breng de conus]" 
+      animation=""/>
+    <option 
+      text="[spuit ongeveer 6]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[breng de conus317]" 
+      animation="apply lube" 
+      audio="Dialogue/Catheterisation Woman/Lube and woman response"/>
+    <option 
+      text="[spuit ongeveer 8]" 
+      animation=""/>
+    <option 
+      text="[gooi de spuit]" 
+      animation=""/>
+    <option 
+      text="[houd de labia93]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[gooi de spuit]" 
+      animation="DiscardSyringe"/>
+    <option 
+      text="[houd de labia93]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[houd de labia93]" 
+      animation="place gauze in labia"/>
+    <option 
+      text="[maak de labia489]" 
+      animation=""/>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation=""/>
+    <option 
+      text="[gooi de gebruikte966]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[trek de handschoenen788]" 
+      animation="take off gloves"/>
+    <option 
+      text="[maak de labia489]" 
+      animation=""/>
+    <option 
+      text="[neem een nieuw522]" 
+      animation=""/>
+    <option 
+      text="[houd de labia247]" 
+      animation=""/>
+  </step>
+</AnimationSequence>

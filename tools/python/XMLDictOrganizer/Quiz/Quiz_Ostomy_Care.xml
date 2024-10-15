@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quiz>
+  <step>
+    <question 
+      text="[wat is een320]" 
+      answer="4" 
+      points="10">
+      <answer 
+      text="[het zakje is]" 
+      descr=""/>
+      <answer 
+      text="[buigt gemakkelijk mee]" 
+      descr=""/>
+      <answer 
+      text="[het geeft sommige]" 
+      descr=""/>
+      <answer 
+      text="[materiaal is dikker]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[hoe lang kan]" 
+      answer="2">
+      <answer 
+      text="[gemiddeld 1 dag]" 
+      descr=""/>
+      <answer 
+      text="[gemiddeld 2 dagen]" 
+      descr=""/>
+      <answer 
+      text="[gemiddeld 5 dagen]" 
+      descr=""/>
+      <answer 
+      text="[gemiddeld 10 dagen]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[is het verstandig]" 
+      answer="1">
+      <answer 
+      text="[nee dat is]" 
+      descr="[verschillende materialen verhogen]"/>
+      <answer 
+      text="[ja dat kan]" 
+      descr="[verschillende materialen verhogen]"/>
+    </question>
+    <question 
+      text="[een huidplaat wordt]" 
+      answer="1">
+      <answer 
+      text="[ui_1 à 2]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_3 à 4]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_5 à 7]" 
+      descr="[als de afstand]"/>
+      <answer 
+      text="[ui_10 à 12]" 
+      descr="[als de afstand]"/>
+    </question>
+  </step>
+  <step>
+    <question 
+      text="[wat is de]" 
+      answer="2" 
+      points="10">
+      <answer 
+      text="[bloeding]" 
+      descr="[er kunnen gemakkelijk]"/>
+      <answer 
+      text="[parastomale hernia]" 
+      descr="[door een defect]"/>
+      <answer 
+      text="[wratjes en zweertjes]" 
+      descr="[op of rond]"/>
+      <answer 
+      text="[fistel]" 
+      descr="[een stomafistel is]"/>
+    </question>
+    <question 
+      text="[hoe lang duurt]" 
+      answer="3">
+      <answer 
+      text="[5 minuten]" 
+      descr=""/>
+      <answer 
+      text="[10 minuten]" 
+      descr=""/>
+      <answer 
+      text="[15 minuten]" 
+      descr="[het is belangrijk641]"/>
+      <answer 
+      text="[30 minuten]" 
+      descr=""/>
+    </question>
+    <question 
+      text="[wat moet je]" 
+      answer="1">
+      <answer 
+      text="[een gaasje gedrenkt]" 
+      descr="[hierdoor houdt de]"/>
+      <answer 
+      text="[een steriel gaasje]" 
+      descr=""/>
+      <answer 
+      text="[je hand op]" 
+      descr=""/>
+    </question>
+  </step>
+  <encounter>
+    <question 
+      text="[wat doe je234]" 
+      answer="1">
+      <answer 
+      text="[raadpleeg de gebruiksaanwijzing]" 
+      descr=""/>
+      <answer 
+      text="[week de huidplaat]" 
+      descr=""/>
+      <answer 
+      text="[neem contact op]" 
+      descr=""/>
+    </question>
+  </encounter>
+  <random>
+    <question 
+      text="[wat doe je694]" 
+      answer="3">
+      <answer 
+      text="[controleer of de564]" 
+      descr=""/>
+      <answer 
+      text="[gebruik zeep om]" 
+      descr=""/>
+      <answer 
+      text="[breng een huidbeschermingsmiddel]" 
+      descr=""/>
+    </question>
+  </random>
+</quiz>

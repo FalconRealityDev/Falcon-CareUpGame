@@ -464,7 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: AbsorptionNeedleNoCap
   ObjectID: 0
-  description: opzuignaald
+  description: '[i_opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: cloth_02_folded
   ObjectID: 0
-  description: onderlegger
+  description: '[i_onderlegger]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: water_syringe_pack_cover
   ObjectID: 0
-  description: verpakking
+  description: '[i_verpakking]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithSolvent
   ObjectID: 0
-  description: spuit met oplosmiddel
+  description: '[i_spuit met oplosmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -3078,7 +3078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_cover
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_inner
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -4943,7 +4943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: PlasticTrashbucket
   ObjectID: 0
-  description: plastic afvalbakje
+  description: '[i_plastic afvalbakje008]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5365,7 +5365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -5926,11 +5926,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -86.81901
       objectReference: {fileID: 0}
-    - target: {fileID: 114421078494463674, guid: 6462f97e2d19a4405a9533e1fda36570,
-        type: 3}
-      propertyPath: description
-      value: Fixatiemateriaal
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6462f97e2d19a4405a9533e1fda36570, type: 3}
 --- !u!1 &518823735
@@ -6217,7 +6212,7 @@ PrefabInstance:
     - target: {fileID: 114198876628776258, guid: c6c9e55f6b6240746b051557bf97cf6a,
         type: 3}
       propertyPath: description
-      value: Spuit met steriel water
+      value: '[i_spuit met steriel]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c9e55f6b6240746b051557bf97cf6a, type: 3}
@@ -6414,7 +6409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: water_syringe_pack
   ObjectID: 3500
-  description: spuit met steriel water
+  description: '[i_spuit met steriel956]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7031,11 +7026,6 @@ PrefabInstance:
       propertyPath: PrefabName
       value: Bakje met gaasjes
       objectReference: {fileID: 0}
-    - target: {fileID: 114171657328145432, guid: d29edf788964150498c0ed2b22b54b26,
-        type: 3}
-      propertyPath: description
-      value: Bakje met gaasjes
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d29edf788964150498c0ed2b22b54b26, type: 3}
 --- !u!4 &588373181 stripped
@@ -7385,7 +7375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag_packed
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7602,7 +7592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: Onderlegger
+  description: '[i_onderlegger582]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7707,7 +7697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: spoelzakje
+  description: '[i_spoelzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7780,7 +7770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BladderSpoolBag
   ObjectID: 0
-  description: spoelzakje
+  description: '[i_spoelzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7975,7 +7965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fixation_folded_buttons
   ObjectID: 0
-  description: Fixatiemateriaal
+  description: '[i_fixatiemateriaal]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -10836,7 +10826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: water_syringe_pack_no_cover
   ObjectID: 3501
-  description: spuit met steriel water
+  description: '[i_spuit met steriel956]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -11251,7 +11241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Bakje met gaasjes
   ObjectID: 0
-  description: Bakje met gaasjes
+  description: '[i_bakje met gaasjes]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12210,11 +12200,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.188
       objectReference: {fileID: 0}
-    - target: {fileID: 114253563054574522, guid: 9376b0af20e36534e8dad7c6712f61b4,
-        type: 3}
-      propertyPath: description
-      value: Urineopvangzak
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9376b0af20e36534e8dad7c6712f61b4, type: 3}
 --- !u!4 &888511146 stripped
@@ -12374,7 +12359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectedAmpoule
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12404,7 +12389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12589,7 +12574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedle
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13177,6 +13162,11 @@ PrefabInstance:
     - target: {fileID: 4606305549552930, guid: a3f9a7d7550187143b7e7788958eaf5a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644129231424936, guid: a3f9a7d7550187143b7e7788958eaf5a,
+        type: 3}
+      propertyPath: description
+      value: '[i_kraan]'
       objectReference: {fileID: 0}
     - target: {fileID: 137267707624543618, guid: a3f9a7d7550187143b7e7788958eaf5a,
         type: 3}
@@ -14272,7 +14262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: lube_syringe_noCup
   ObjectID: 3700
-  description: spuit met glijmiddel
+  description: '[i_spuit met glijmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14458,7 +14448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InjectionNeedleNoCap
   ObjectID: 0
-  description: injectienaald
+  description: '[i_injectienaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14832,7 +14822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag_packed_opened
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16264,6 +16254,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -6.891
       objectReference: {fileID: 0}
+    - target: {fileID: 8936432486606857521, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_gootsteen]'
+      objectReference: {fileID: 0}
     - target: {fileID: 9048832941134129944, guid: d9e3ef7d15292c440b23edfa0c285f67,
         type: 3}
       propertyPath: m_Name
@@ -16704,7 +16699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: Kraan
+  description: '[i_kraan]'
   nameArticle: 
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16977,7 +16972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: MedicineBag
   ObjectID: 0
-  description: medicijnzakje
+  description: '[i_medicijnzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -17020,7 +17015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: MedicineBag
   ObjectID: 0
-  description: medicijnzakje
+  description: '[i_medicijnzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -17251,7 +17246,7 @@ PrefabInstance:
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
       propertyPath: description
-      value: Werkveld
+      value: '[i_werkveld049]'
       objectReference: {fileID: 0}
     - target: {fileID: 114050206014620304, guid: 160c0d1fbef191045a350915d5992d54,
         type: 3}
@@ -18021,6 +18016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 563313051}
     m_Modifications:
+    - target: {fileID: 2051592057, guid: 4e9d940c142e2924b89a6490ff560002, type: 3}
+      propertyPath: description
+      value: '[i_katheter]'
+      objectReference: {fileID: 0}
     - target: {fileID: 1632359134185039433, guid: 4e9d940c142e2924b89a6490ff560002,
         type: 3}
       propertyPath: m_Name
@@ -18080,6 +18079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672416343484030485, guid: 4e9d940c142e2924b89a6490ff560002,
+        type: 3}
+      propertyPath: description
+      value: '[i_katheter]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e9d940c142e2924b89a6490ff560002, type: 3}
@@ -18262,7 +18266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: cotton_ball
   ObjectID: 0
-  description: wattenbol
+  description: '[i_wattenbol]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -20062,7 +20066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_outer
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -20337,7 +20341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: lube_syringe_pack
   ObjectID: 4800
-  description: spuit met glijmiddel
+  description: '[i_spuit met glijmiddel]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -20739,7 +20743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_noCover
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -21071,11 +21075,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.4999165
       objectReference: {fileID: 0}
-    - target: {fileID: 114131229700381600, guid: 37598b2fc395ed242b3226a942abf5eb,
-        type: 3}
-      propertyPath: description
-      value: Plastic afvalbakje
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37598b2fc395ed242b3226a942abf5eb, type: 3}
 --- !u!4 &1545003063 stripped
@@ -21140,7 +21139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag_packed_empty
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -21599,11 +21598,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -88.092
       objectReference: {fileID: 0}
-    - target: {fileID: 114986793431437408, guid: 6c448bb86b0e2436ab9d695a5ea70269,
-        type: 3}
-      propertyPath: description
-      value: Katheter fixatieband
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c448bb86b0e2436ab9d695a5ea70269, type: 3}
 --- !u!1001 &1582720998
@@ -21721,7 +21715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Frexi_with_needle_cap2
   ObjectID: 0
-  description: fraxiparine spuit
+  description: '[i_fraxiparine spuit]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -21963,7 +21957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: ClothWithAmpouleTop
   ObjectID: 0
-  description: gaasje met ampultop
+  description: '[i_gaasje met ampultop]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -22156,7 +22150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -23255,7 +23249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -23762,7 +23756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: GauzeTrayFull
   ObjectID: 0
-  description: bakje met wattenbollen
+  description: '[i_bakje met wattenbollen]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -24027,7 +24021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: fixator_folded
   ObjectID: 0
-  description: Katheter fixatieband
+  description: '[i_katheter fixatieband]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -24310,7 +24304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedleCap
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -25651,7 +25645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: lube_syringe_pack_cover
   ObjectID: 0
-  description: spuit met glijmiddel
+  description: '[i_spuit met glijmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -26080,7 +26074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: CWB_inner_open
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -26414,7 +26408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth2
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -26783,7 +26777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: lube_syringe_pack_noCover
   ObjectID: 3501
-  description: spuit met glijmiddel
+  description: '[i_spuit met glijmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -27606,7 +27600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: water_syringe
   ObjectID: 3700
-  description: spuit met steriel water
+  description: '[i_spuit met steriel956]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -28499,7 +28493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectionCloth
   ObjectID: 0
-  description: gedesinfecteerd gaasje
+  description: '[i_gedesinfecteerd gaasje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <action 
+      points="1" 
+      description="[Begroet]" 
+      audioHint="" 
+      index="0" 
+      type="talk" 
+      topic="Hello" 
+      extra="Ondanks dat het begroeten niet in de werkwijze is vermeld. Is het wel netjes om contact te leggen met de cliënt." 
+      optional=""/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="0" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]"/>
+  <action 
+      points="1" 
+      description="[Maak een schoon werkveld]" 
+      audioHint="Injection/H2-2" 
+      index="1" 
+      type="use" 
+      value="WorkField" 
+      extra="Maak een schoon werkveld en zet de benodigdheden binnen handbereik." 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst spuit125]"/>
+  <action 
+      points="2" 
+      description="[Controleer cliëntgegevens]" 
+      audioHint="Injection/H3-2" 
+      index="2" 
+      type="examine" 
+      quiz="2" 
+      item="PatientRecords" 
+      expected="good" 
+      extra="Controleer de cliëntgegevens. Het is belangrijk dat je de juiste persoon voor je hebt. " 
+      messageTitle="[controle cliëntgegevens]" 
+      messageContent="[controleer de naam]"/>
+  <action 
+      points="2" 
+      description="[controleer de spuit]" 
+      audioHint="Injection/H3-2" 
+      index="2" 
+      type="examine" 
+      item="SyringeWithInjectionNeedleCap" 
+      expected="good" 
+      extra="Controleer de spuit met medicijn" 
+      messageTitle="[controle medicijn]" 
+      messageContent="[controleer het medicijn655]"/>
+  <action 
+      points="2" 
+      description="[controleer de toedienlijst]" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      index="2" 
+      type="examine" 
+      item="PrescriptionForm" 
+      expected="good" 
+      extra="Controleer de toedienlijst" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]"/>
+  <action 
+      points="4" 
+      description="[vraag aan je394]" 
+      audioHint="" 
+      index="3" 
+      type="talk" 
+      topic="DoubleCheck" 
+      extra="Vraag aan je collega of ze een dubbele controle wil doen" 
+      messageTitle="[dubbele controle bij]" 
+      messageContent="[het verkeerd toedienen]"/>
+  <action 
+      points="1" 
+      description="[vraag de cliënt369]" 
+      audioHint="Injection/H12-2" 
+      index="4" 
+      type="talk" 
+      topic="ShowBellyForInsulin" 
+      extra="Vraag de cliënt de injectieplaats te ontbloten en te ontspannen zodat je makkelijk bij de injectieplaats kunt." 
+      blockUnlock="patient show spot" 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[geschikte injectiegebieden voor]"/>
+  <action 
+      points="1" 
+      description="[start injecteren]" 
+      audioHint="Injection/H13-2" 
+      index="5" 
+      type="useOn" 
+      item="SyringeWithInjectionNeedleCap" 
+      target="" 
+      buttonText="Start injecteren" 
+      quiz="3" 
+      secondPlace="PatientPos" 
+      extra="Start injecteren" 
+      blockRequired="patient show spot" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten."/>
+  <action 
+      points="1" 
+      description="[palpeer de injectieplaats]" 
+      audioHint="Injection/AS1-2" 
+      index="6" 
+      type="sequenceStep" 
+      value="Check" 
+      extra="Controleer of de injectieplaats schoon en droog is om besmetting van ziektekiemen te voorkomen."/>
+  <action 
+      points="1" 
+      description="[neem de spuit]" 
+      audioHint="Injection/AS1-2" 
+      index="7" 
+      type="sequenceStep" 
+      value="Remove Cap" 
+      extra="De beschermdop zit nog op de naald. Deze dien je te verwijderen om gebruik te maken van de spuit. Concentreer je tijdens het verwijderen van de dop om prikincidenten te voorkomen."/>
+  <action 
+      points="2" 
+      description="[pak met de]" 
+      audioHint="Injection/AS1-2" 
+      index="8" 
+      type="sequenceStep" 
+      value="Grab crease" 
+      extra="" 
+      messageTitle="[huidplooi vastpakken]" 
+      messageContent="[pak met de581]"/>
+  <action 
+      points="3" 
+      description="[steek de naald43]" 
+      audioHint="Injection/AS1-2" 
+      index="9" 
+      type="sequenceStep" 
+      value="Stick needle in arm" 
+      extra="De naald wordt onder een hoek van 45⁰ à 60⁰ halverwege tussen het hoogste en laagste punt van de huidplooi ingebracht. Door dit te doen, wordt de vloeistof ingespoten in het onderhuidse bindweefsel; de subcutis."/>
+  <action 
+      points="1" 
+      description="[laat de huidplooi]" 
+      audioHint="Injection/AS1-2" 
+      index="10" 
+      type="sequenceStep" 
+      value="Release crease" 
+      extra="Laat de huidplooi los. Volgens protocollen wordt de huidplooi eerst losgelaten; vervolgens wordt de medicatie toegediend." 
+      encounter="1"/>
+  <action 
+      points="1" 
+      description="[fixeer de spuit81]" 
+      audioHint="Injection/AS5-2" 
+      index="11" 
+      type="sequenceStep" 
+      value="Fixate needle" 
+      extra="Fixeer de spuit en naald met de niet injecterende hand om onverwachte bewegingen op te vangen." 
+      messageTitle="[fixeren van de]" 
+      messageContent="[bij een cliënt]"/>
+  <action 
+      points="2" 
+      description="[spuit de vloeistof]" 
+      audioHint="Injection/AS7-2" 
+      index="12" 
+      type="sequenceStep" 
+      value="Inject medicine slow and steady" 
+      extra="Spuit het medicijn langzaam in (ongeveer 10 sec/ml)."/>
+  <action 
+      points="1" 
+      description="[trek de naald453]" 
+      audioHint="Injection/AS8-2" 
+      index="13" 
+      type="sequenceStep" 
+      value="Pull needle" 
+      extra="Trek de naald uit de huid (houd een gaasje gereed voor de opvang van een eventuele bloeddruppel)."/>
+  <action 
+      points="1" 
+      description="[verwijder de naald]" 
+      audioHint="" 
+      index="14" 
+      type="combine" 
+      left="Syringe10ml_InjectionSQs" 
+      secondPlace="WorkFieldPos" 
+      ignorePosition="true" 
+      right="" 
+      extra="Klik het beschermkapje met een duimbeweging over de opzuignaald, verwijder de naald van de spuit (bij naald zonder veiligheidssysteem met een naaldverwijderaar)."/>
+  <action 
+      points="2" 
+      description="[doe de injectienaald]" 
+      audioHint="Injection/EAS2-2" 
+      index="15" 
+      type="useOn" 
+      item="InjectionNeedleNoCap" 
+      target="" 
+      ignorePosition="true" 
+      buttonText="Injectienaald weggooien" 
+      extra="Verwijder de opzuignaald en doe de naald in de naaldencontainer. Gebruik voor het injecteren spuiten en naalden voor eenmalig gebruik (dit worden ook wel eens disposables genoemd). Plaats een naald na gebruik nooit in de plastic beschermhuls terug. Werk met veilige opzuignaalden. Gebruik de inkepingen op de deksel om de naald en spuit te scheiden of gebruik een naaldverwijderaar."/>
+  <action 
+      points="1" 
+      description="[ruim de materialen]" 
+      index="17" 
+      type="use" 
+      value="WorkField" 
+      extra="Ruim de materialen op door met lege handen op het werkveld te klikken" 
+      messegeTitle="Materialen opruimen" 
+      MessegeContent="Ruim de materialen op. Hygiënisch werken is niet alleen een kwestie van goede persoonlijke hygiëne, handen wassen en gebruik van handschoenen, maar ook van goede schoonmaak van ruimtes en materialen. Zorg dus voor een schoon werkveld om besmetting van ziektekiemen te voorkomen"/>
+  <action 
+      comment="1. Apply hand hygiene" 
+      index="18" 
+      points="3" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      points="3" 
+      description="[teken de toedienlijst913]" 
+      audioHint="Injection/EAS4-2" 
+      index="19" 
+      type="use" 
+      value="PaperAndPen" 
+      extra="Teken de toedienlijst af of noteer het tijdstip, het soort medicijn, de concentratie, de hoeveelheid en de wijze van toediening. Noteer tot slot je bevindingen"/>
+</ActionList>

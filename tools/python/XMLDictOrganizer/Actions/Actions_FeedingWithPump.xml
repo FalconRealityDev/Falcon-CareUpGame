@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="(1)Apply handhygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      comment="(2)Create a clean workfield" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[voorgeschreven sondevoeding op]" 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      item="PatientRecords" 
+      points="3" 
+      blockUnlock="RecordsChecked" 
+      expected="good"/>
+  <Action 
+      index="3" 
+      description="[controleer de voedingspomp]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Controleer voedingspomp" 
+      blockRequired="RecordsChecked" 
+      action="CheckPump"/>
+  <action 
+      comment="(3)Open syringe" 
+      points="1" 
+      description="[open de verpakking852]" 
+      index="4" 
+      type="combine" 
+      left="Syringe50ml_packed" 
+      right="" 
+      blockUnlock="SyringeUnpacked" 
+      extra="[open de verpakking852]"/>
+  <Action 
+      index="5" 
+      description="[controleer de sondevoeding]" 
+      type="examine" 
+      item="FoodPackBase" 
+      points="1" 
+      audioHint="" 
+      expected="good" 
+      messageTitle="[controleren sondevoeding]" 
+      messageContent="[controleer de volgende]"/>
+  <Action 
+      index="6" 
+      description="[zwenk het pack]" 
+      type="useOn" 
+      item="FoodPackBase" 
+      points="1" 
+      buttonText="Zwenk pack" 
+      target=""/>
+  <action 
+      comment="Open tube pack" 
+      points="1" 
+      description="[open de verpakking577]" 
+      index="7" 
+      type="combine" 
+      left="MedicalTubeToPump" 
+      right="" 
+      blockUnlock="TubeUnpacked" 
+      extra=""/>
+  <Action 
+      comment="Remove the blue protective cap from the pack" 
+      index="8" 
+      description="[verwijder het blauwe]" 
+      type="useOn" 
+      item="FoodPackBase" 
+      points="1" 
+      buttonText="Verwijder beschermdopje" 
+      blockRequired="TubeUnpacked" 
+      target=""/>
+  <action 
+      comment="Push the spike of the feeding tube through the sealing foil" 
+      points="1" 
+      description="[druk de spike]" 
+      index="9" 
+      type="sequenceStep" 
+      value="Pushspike" 
+      extra=""/>
+  <action 
+      comment="Twist the screw cap of the spike onto the pack" 
+      points="1" 
+      description="[draai de schroefdop]" 
+      index="10" 
+      type="sequenceStep" 
+      value="TightenCap" 
+      blockUnlock="TubeAttachedToBag" 
+      extra=""/>
+  <action 
+      comment="Hang the pack on the IV pole." 
+      points="1" 
+      description="[hang het pack]" 
+      index="11" 
+      type="sequenceStep" 
+      value="HangPack" 
+      blockUnlock="PackIsHanged" 
+      extra=""/>
+  <action 
+      comment="Insert the feeding tube into the pump according to the pump's instructions for use" 
+      points="1" 
+      description="[plaats de voedingsslang]" 
+      index="12" 
+      type="sequenceStep" 
+      value="PutProbeInsidePump" 
+      extra=""/>
+  <action 
+      comment="Check that the roller clamp is open and remove the sealing cap from the feeding tube" 
+      points="1" 
+      description="[controleer of de662]" 
+      index="13" 
+      type="sequenceStep" 
+      value="CheckTubeCap" 
+      extra=""/>
+  <action 
+      comment="Start the pump according to the instruction manual" 
+      points="1" 
+      description="[start de pomp]" 
+      index="14" 
+      type="sequenceStep" 
+      value="PushFillButton" 
+      extra=""/>
+  <action 
+      comment="Run the pump until drops run out of the feeding tube" 
+      points="1" 
+      description="[laat de pomp]" 
+      index="15" 
+      type="sequenceStep" 
+      value="LetDropsFall" 
+      extra=""/>
+  <action 
+      comment="Close the roller clamp and replace the sealing cap on the feeding tube with feeding" 
+      points="1" 
+      description="[sluit de rolklem]" 
+      index="16" 
+      type="sequenceStep" 
+      value="CloseCapAndKocher" 
+      blockUnlock="TubeInsertedToPump" 
+      extra=""/>
+  <Action 
+      index="17" 
+      description="[help de cliënt854]" 
+      type="talk" 
+      comment="Assist the client in a sitting or semi-sitting position" 
+      points="2" 
+      blockUnlock="PatIsLyingDown" 
+      topic="SitInBed"/>
+  <Action 
+      index="18" 
+      description="[leg de onderlegger944]" 
+      type="useOn" 
+      comment="Put the pad on the chest of the client." 
+      item="cloth_02_folded" 
+      points="2" 
+      buttonText="Onderlegger plaatsen" 
+      blockRequired="PatIsLyingDown" 
+      blockUnlock="PadOnPatient" 
+      target=""/>
+  <Action 
+      index="19" 
+      description="[maak het gaasje]" 
+      type="useOn" 
+      item="Cloth" 
+      points="1" 
+      buttonText="Maak nat" 
+      target="" 
+      messageTitle="[gebruik kraanwater]" 
+      messageContent="[als in een]"/>
+  <Action 
+      index="20" 
+      description="[verzorg de mond]" 
+      type="useOn" 
+      item="WetGauze" 
+      points="1" 
+      buttonText="Verzorg cliënt" 
+      blockRequired="PatIsLyingDown" 
+      target=""/>
+  <Action 
+      index="21" 
+      description="[droog de neusgaten]" 
+      type="useOn" 
+      item="Cloth" 
+      points="1" 
+      buttonText="Droog de neus" 
+      blockRequired="PatIsLyingDown, TubeInsertedToPump, PadOnPatient" 
+      target=""/>
+  <action 
+      points="1" 
+      description="[maak de sonde]" 
+      index="22" 
+      type="sequenceStep" 
+      value="MaakDeSonde" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[ga na of811]" 
+      index="23" 
+      type="sequenceStep" 
+      value="ChechProbeOnPatient" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[controleer de positie]" 
+      index="24" 
+      type="sequenceStep" 
+      value="CheckMarker" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[inspecteer zo mogelijk]" 
+      index="25" 
+      type="sequenceStep" 
+      value="InspectMouth" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[klem de sonde268]" 
+      index="26" 
+      type="sequenceStep" 
+      value="ClampProbeOnPat" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[verwijder het afsluitdopje444]" 
+      index="27" 
+      type="sequenceStep" 
+      value="RemCap" 
+      blockUnlock="SondeChecked" 
+      extra=""/>
+  <Action 
+      index="28" 
+      description="[spoel de sonde]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Spuit de sonde" 
+      blockRequired="SondeChecked" 
+      action="SQ28-36"/>
+  <action 
+      points="1" 
+      description="[vul de spuit753]" 
+      index="29" 
+      type="sequenceStep" 
+      value="FillWith2030Ml" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[plaats de spuit883]" 
+      index="30" 
+      type="sequenceStep" 
+      value="PlaceSyringeToProbe" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[verwijder de kocher455]" 
+      index="31" 
+      type="sequenceStep" 
+      value="OpenKocher" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[klem de sonde895]" 
+      index="32" 
+      type="sequenceStep" 
+      value="CloseKocherRemoveSyringe" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[sluit de voedingsslang]" 
+      index="33" 
+      type="sequenceStep" 
+      value="AttachTubeToProbe" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[open de rolklem]" 
+      index="34" 
+      type="sequenceStep" 
+      value="OpenRollerClamp" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[start de toediening]" 
+      index="35" 
+      type="sequenceStep" 
+      value="StartFeeding" 
+      extra="" 
+      messageTitle="[wijze van toediening]" 
+      messageContent="[sondevoeding kan op]"/>
+  <action 
+      points="1" 
+      description="[bevestig indien gewenst]" 
+      index="36" 
+      type="sequenceStep" 
+      value="PinProbeA" 
+      extra=""/>
+  <action 
+      points="1" 
+      description="[controleer of de93]" 
+      index="37" 
+      type="sequenceStep" 
+      value="CheckProbe" 
+      extra="" 
+      blockUnlock="EndOfSeqeunces"/>
+  <action 
+      comment="Create a clean workfield" 
+      points="1" 
+      description="[ruim de materialen746]" 
+      index="38" 
+      type="use" 
+      quiz="2" 
+      value="WorkField" 
+      blockRequired="EndOfSeqeunces" 
+      extra="[ruim de materialen384]" 
+      messageTitle="[materialen opruimen]" 
+      messageContent="[ruim de materialen511]"/>
+  <action 
+      comment="Apply hand hygiene." 
+      points="1" 
+      description="[Pas handhygiëne]" 
+      fullDescription="" 
+      index="39" 
+      type="use" 
+      value="HandCleaner" 
+      extra="[Pas handhygiëne]"/>
+  <action 
+      index="40" 
+      points="1" 
+      description="[Noteer de handeling]" 
+      type="use" 
+      value="PaperAndPen" 
+      extra=""/>
+</ActionList>

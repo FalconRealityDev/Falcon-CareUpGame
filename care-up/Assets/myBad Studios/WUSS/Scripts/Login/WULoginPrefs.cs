@@ -33,6 +33,7 @@ namespace MBS
         [SerializeField] bool fetch_roles = false;
         [SerializeField] bool fetch_gravatar = true; 
 
+
         [SerializeField] string[]   fetch_meta_info = new string[]{"nickname"};
         [SerializeField] int avatar_size = 128;
         [SerializeField] WULGravatarTypes gravatar_type = WULGravatarTypes.Wavatar;

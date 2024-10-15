@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimationSequence>
+  <step>
+    <option 
+      text="[verwijder het fixatiemateriaal]" 
+      animation="VerwijderHetFixatiemateriaal"/>
+    <option 
+      text="[plaats de lege791]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
+    <option 
+      text="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[observeer de insteekplaats]" 
+      animation="ObserveCatheter"/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[plaats de lege791]" 
+      animation=""/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[plaats de lege791]" 
+      animation="PlaceSyringe"/>
+    <option 
+      text="[verwijder de katheter815]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[oefen geen zuigkracht517]" 
+      animation="AllowSyringe"/>
+    <option 
+      text="[zuig de ingespoten]" 
+      animation=""/>
+    <option 
+      text="[spuit de voorgeschreven114]" 
+      animation=""/>
+    <option 
+      text="[zuig de ingespoten107]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[controleer of de896]" 
+      animation="CheckAmount"/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation=""/>
+    <option 
+      text="[gooi de spuit815]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[trek voorzichtig aan]" 
+      animation="PullGently"/>
+    <option 
+      text="[verwijder de katheter]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats789]" 
+      animation=""/>
+    <option 
+      text="[duw voorzichtig aan]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[verwijder de katheter]" 
+      animation="RemoveCatheter"/>
+    <option 
+      text="[trek handschoenen uit151]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats789]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[verwijder de katheter815]" 
+      animation="AskClient"/>
+    <option 
+      text="[verwijder de katheter971]" 
+      animation=""/>
+    <option 
+      text="[verwijder de katheter636]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[dek de insteekopening]" 
+      animation="CoverInsertion"/>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation=""/>
+    <option 
+      text="[gooi de katheter]" 
+      animation=""/>
+    <option 
+      text="[controleer de katheterpunt]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[controleer de katheterpunt]" 
+      animation="CheckCatheter"/>
+    <option 
+      text="[gooi de katheter]" 
+      animation=""/>
+    <option 
+      text="[breng nieuwe katheter]" 
+      animation=""/>
+    <option 
+      text="[controleer de katheterballon]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[gooi de katheter]" 
+      animation="DiscardCatheter"/>
+    <option 
+      text="[trek handschoenen uit391]" 
+      animation=""/>
+    <option 
+      text="[leg de katheter253]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats937]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[reinig de insteekplaats290]" 
+      animation="CleanInsertation"/>
+    <option 
+      text="[ga naar het]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats905]" 
+      animation=""/>
+    <option 
+      text="[reinig de insteekplaats765]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[knijp ieder gaasje]" 
+      animation="SqueezeGauze"/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
+    <option 
+      text="[knijp de gaasjes]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid551]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[reinig vanaf het530]" 
+      animation="CleanBody"/>
+    <option 
+      text="[reinig vanaf het847]" 
+      animation=""/>
+    <option 
+      text="[reinig vanaf buiten]" 
+      animation=""/>
+    <option 
+      text="[reinig vanaf buiten634]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[droog de huid61]" 
+      animation="DryTheSkin"/>
+    <option 
+      text="[droog de huid740]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid412]" 
+      animation=""/>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[gooi de gebruikte745]" 
+      animation="ThrowGauzes"/>
+    <option 
+      text="[trek handschoenen uit151]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit368]" 
+      animation=""/>
+    <option 
+      text="[dek de insteekopening280]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[desinfecteer de huid406]" 
+      animation="DisinfectSkin"/>
+    <option 
+      text="[desinfecteer de huid865]" 
+      animation=""/>
+    <option 
+      text="[dek de insteekopening280]" 
+      animation=""/>
+    <option 
+      text="[ga naar het]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[pak de spuit728]" 
+      animation="RemoveLubSyringe"/>
+    <option 
+      text="[pak de spuit68]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit244]" 
+      animation=""/>
+    <option 
+      text="[pak de spuit57]" 
+      animation=""/>
+  </step>
+  <step>
+    <option 
+      text="[Trek handschoenen uit en gooi ze in de afvalbak]" 
+      animation="TakeOffGloves"/>
+    <option 
+      text="[begin met het318]" 
+      animation=""/>
+    <option 
+      text="[droog de huid396]" 
+      animation=""/>
+    <option 
+      text="[droog de huid952]" 
+      animation=""/>
+  </step>
+</AnimationSequence>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      audioHint="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[handschoenen desinfectans chloorhexidine]" 
+      blockUnlock="CleanedWorkfield" 
+      value="WorkField"/>
+  <Action 
+      index="2" 
+      description="[overgiet een gaasje]" 
+      type="combine" 
+      points="1" 
+      left="Cloth" 
+      right="Alcohol" 
+      audioHint="Injection/H4-2"/>
+  <Action 
+      index="3" 
+      description="[controleer het medicijn]" 
+      type="examine" 
+      item="Ampoule" 
+      points="2" 
+      messageTitle="[flexibele kunstof canule]" 
+      messageContent="[er bevindt zich]" 
+      audioHint="Injection/H3-2" 
+      expected="good"/>
+  <Action 
+      index="4" 
+      description="[controleer de toedienlijst]" 
+      type="examine" 
+      item="PrescriptionForm" 
+      points="2" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]" 
+      audioHint="InjectionSubcutaneous/Step 5" 
+      expected="good"/>
+  <Action 
+      index="5" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      item="PatientRecords" 
+      points="2" 
+      quiz="2" 
+      audioHint="Injection/H3-2" 
+      expected="good"/>
+  <Action 
+      index="6" 
+      description="[neem de opzuignaald]" 
+      type="combine" 
+      commentUA="Дістаньте голку для набирання з пакета" 
+      points="1" 
+      left="" 
+      right="AbsorptionNeedlePacked" 
+      audioHint="Injection/H4-2"/>
+  <Action 
+      index="7" 
+      description="[haal de spuit5]" 
+      type="combine" 
+      commentUA="Дістаньте шприц з пакета" 
+      points="1" 
+      left="" 
+      right="syringe_packed" 
+      audioHint="Injection/H4-2" 
+      messageTitle="[perifeer veneus infuus]" 
+      messageContent="[een perifeer infuus]"/>
+  <Action 
+      index="8" 
+      description="[desinfecteer de hals]" 
+      type="combine" 
+      points="3" 
+      left="DesinfectionCloth" 
+      right="Ampoule" 
+      audioHint="Injection/H4-2"/>
+  <Action 
+      index="9" 
+      description="[zet de opzuignaald739]" 
+      type="combine" 
+      points="1" 
+      left="Syringe" 
+      right="AbsorptionNeedle" 
+      audioHint="Injection/H6-3"/>
+  <Action 
+      index="10" 
+      description="[breek het ampul]" 
+      type="combine" 
+      points="2" 
+      left="DesinfectedAmpoule" 
+      right="Cloth" 
+      audioHint="InjectionSubcutaneous/Step 6.1"/>
+  <Action 
+      index="11" 
+      description="[doe het gaasje603]" 
+      type="useOn" 
+      item="ClothWithAmpouleTop" 
+      points="2" 
+      buttonText="Gebroken ampul weggooien" 
+      audioHint="" 
+      target=""/>
+  <Action 
+      index="12" 
+      description="[verwijder de beschermhuls]" 
+      type="combine" 
+      points="1" 
+      left="SyringeWithAbsorptionNeedleCap" 
+      right="" 
+      audioHint="Injection/H6-3"/>
+  <Action 
+      index="13" 
+      description="[zuig de voorgeschreven]" 
+      type="combine" 
+      points="3" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="OpenedAmpoule" 
+      audioHint="Injection/H7-2" 
+      blockUnlock="UnAirSyringe, MedsInSyringe"/>
+  <Action 
+      index="14" 
+      description="[ontlucht de spuit501]" 
+      type="useOn" 
+      item="SyringeWithAbsorptionNeedle" 
+      points="2" 
+      buttonText="Ontluchten" 
+      audioHint="Injection/H8-2" 
+      target="" 
+      quiz="3" 
+      blockUnlock="UnAirSyringeDone" 
+      blockRequired="UnAirSyringe"/>
+  <Action 
+      index="15" 
+      description="[verwijder de naald]" 
+      type="combine" 
+      points="1" 
+      left="SyringeWithAbsorptionNeedle" 
+      right="" 
+      audioHint="" 
+      blockRequired="MedsInSyringe"/>
+  <Action 
+      index="16" 
+      description="[doe de opzuignaald]" 
+      type="useOn" 
+      item="AbsorptionNeedleNoCap" 
+      points="1" 
+      buttonText="Opzuignaald weggooien" 
+      audioHint="Injection/H10-2" 
+      target=""/>
+  <Action 
+      index="17" 
+      description="[leg de spuit]" 
+      posID="0" 
+      type="drop" 
+      item="SyringeWithAbsorptionNeedle" 
+      points="1" 
+      blockUnlock="PreparationsDone"/>
+  <Action 
+      index="18" 
+      description="[vraag de cliënt551]" 
+      type="talk" 
+      comment="Ask the client to lie or sit on the bed on his back." 
+      points="2" 
+      topic="SitOnBed" 
+      blockRequired="CleanedWorkfield, PreparationsDone" 
+      blockUnlock="PatIsLyingDown"/>
+  <Action 
+      index="19" 
+      description="[leg de onderlegger6]" 
+      type="sequenceStep" 
+      points="1" 
+      value="PlacePad"/>
+  <Action 
+      index="20" 
+      description="[verwijder zo nodig]" 
+      type="sequenceStep" 
+      points="1" 
+      value="RemoveHair"/>
+  <Action 
+      index="21" 
+      description="[breng de stuwband]" 
+      type="sequenceStep" 
+      points="1" 
+      value="ApplyTourniquet" 
+      messageTitle="[stuwband]" 
+      messageContent="[gebruik de stuwband]"/>
+  <Action 
+      index="22" 
+      description="[palpeer het aan]" 
+      type="sequenceStep" 
+      points="1" 
+      value="PalpetVessel"/>
+  <Action 
+      index="23" 
+      description="[desinfecteer de huid]" 
+      type="sequenceStep" 
+      points="1" 
+      value="DisSkin"/>
+  <Action 
+      comment="Put on gloves." 
+      index="24" 
+      description="[Trek de handschoenen aan]" 
+      type="sequenceStep" 
+      points="1" 
+      value="TakeOnGloves" 
+      blockUnlock="GlovesTakenOn"/>
+  <Action 
+      index="25" 
+      description="[neem de canule]" 
+      type="sequenceStep" 
+      points="1" 
+      value="TakeCannula" 
+      messageTitle="[indicaties perifeer infuus]" 
+      messageContent="[een perifeer infuus704]"/>
+  <Action 
+      comment="Place the thumb of the other hand about 5 cm below the puncture site and pull the skin taut" 
+      index="26" 
+      description="[plaats de duim]" 
+      type="sequenceStep" 
+      points="1" 
+      value="PlaceThumb"/>
+  <Action 
+      comment="Insert the cannula a few mm into the vein at an angle of 15-30° to the skin" 
+      index="27" 
+      description="[steek de canule]" 
+      type="sequenceStep" 
+      points="1" 
+      value="InsertCannula"/>
+  <Action 
+      comment="Slightly retract the advance needle (the tip of the needle is still through the skin)" 
+      index="28" 
+      description="[trek de opvoernaald]" 
+      type="sequenceStep" 
+      points="1" 
+      value="RetractNeedle"/>
+  <Action 
+      comment="Hold the advancement needle and with the other hand slide the cannula completely into the vessel" 
+      index="29" 
+      description="[houd de opvoernaald]" 
+      type="sequenceStep" 
+      points="1" 
+      value="HoldBackPart"/>
+  <Action 
+      comment="Loosen the strap and ask the client to relax the hand (no more fist)" 
+      index="30" 
+      description="[maak de stuwband]" 
+      type="sequenceStep" 
+      points="1" 
+      quiz="2" 
+      value="ReleaseTourniquet"/>
+  <Action 
+      comment="Impress the vessel behind the cannula" 
+      index="31" 
+      description="[druk het bloedvat]" 
+      type="sequenceStep" 
+      points="1" 
+      value="DepressVessel"/>
+  <Action 
+      comment="Remove the raising needle and throw it into the needle cup." 
+      index="32" 
+      description="[verwijder de opvoernaald]" 
+      type="sequenceStep" 
+      points="1" 
+      value="RemoveAdvNeedle"/>
+  <Action 
+      comment="Take the filled syringe with NaCl 0.9% and connect it to the infusion cannula" 
+      index="33" 
+      description="[pak de gevulde]" 
+      type="sequenceStep" 
+      points="1" 
+      value="ConnectSyringe"/>
+  <Action 
+      comment="Stop pressing/holding the blood vessel." 
+      index="34" 
+      description="[stop met het]" 
+      type="sequenceStep" 
+      points="1" 
+      value="PullBack"/>
+  <Action 
+      comment="Inject NaCl 0.9%" 
+      index="35" 
+      description="[spuit nacl 09%]" 
+      type="sequenceStep" 
+      points="1" 
+      value="InjectNaCl"/>
+  <Action 
+      comment="Impress the vessel behind the cannula" 
+      index="36" 
+      description="[druk het bloedvat]" 
+      type="sequenceStep" 
+      points="1" 
+      value="DepressVessel2"/>
+  <Action 
+      comment="If present, clamp off the cannula and remove the syringe." 
+      index="37" 
+      description="[verwijder de spuit221]" 
+      type="sequenceStep" 
+      blockUnlock="CleanWorkfield" 
+      points="1" 
+      value="RemoveSyringe"/>
+  <Action 
+      comment="Attach the wings of the IV cannula to the skin with the adhesive strips supplied with the IV cannula" 
+      index="38" 
+      description="[bevestig de vleugels]" 
+      type="sequenceStep" 
+      points="1" 
+      value="AttachSPlaster"/>
+  <Action 
+      comment="Fix the infusion cannula with the transparent infusion plaster." 
+      index="39" 
+      description="[fixeer de infuuscanule]" 
+      type="sequenceStep" 
+      points="1" 
+      blockUnlock="SequenceFinished" 
+      value="FixBPlaster" 
+      messageTitle="[infuuspleisters]" 
+      messageContent="[een transparante infuuspleister]"/>
+  <Action 
+      index="40" 
+      description="[trek de handschoenen384]" 
+      type="general" 
+      item="" 
+      points="1" 
+      buttonText="Trek handschoenen uit" 
+      action="TakeOffGlovesWithoutThrowing" 
+      blockRequired="GlovesTakenOn, SequenceFinished"/>
+  <Action 
+      index="41" 
+      description="[ruim de materialen]" 
+      type="use" 
+      points="1" 
+      value="WorkField" 
+      blockRequired="CleanWorkfield"/>
+  <Action 
+      index="42" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      value="HandCleaner"/>
+  <Action 
+      index="43" 
+      description="[teken de toedienlijst610]" 
+      type="use" 
+      points="3" 
+      value="PaperAndPen" 
+      audioHint="Injection/EAS4-2"/>
+</ActionList>

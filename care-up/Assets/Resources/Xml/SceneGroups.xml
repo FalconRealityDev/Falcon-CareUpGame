@@ -3,104 +3,104 @@
   <group
     id="o"
     icon="other"
-    name="Overig"
+    name="[sg_Overig]"
     >
   </group>
   
   <group
     id="f"
     icon="free"
-    name="Gratis"
+    name="[sg_Gratis]"
     >
   </group>
   <group
     id="kath"
-    name="Katheteriseren"
+    name="[sg_Katheteriseren]"
     icon="cat"
     >
   </group>
   <group
     id="inj"
     icon="inj"
-    name="Injecteren"
+    name="[sg_Injecteren]"
     >
   </group>
   <group
     id="medtoe"
     icon="medtoe"
-    name="Medicatie toedienen"
+    name="[sg_Medicatie_toedienen]"
     >
   </group>
   <group
     id="hand"
     icon="hand"
-    name="Handreiniging"
+    name="[sg_Handreiniging]"
     >
   </group>
   <group
     id="stomazorg"
     icon="stomazorg"
-    name="Stomazorg"
+    name="[sg_Stomazorg]"
     >
   </group>
   <group
     id="subcut"
     icon="subcut"
-    name="Subcutane infuuscanule"
+    name="[sg_Subcutane_infuuscanule]"
     >
   </group>
   <group
     id="bloed"
     icon="bloed"
-    name="Bloedglucose"
+    name="[sg_Bloedglucose]"
     >
   </group>
   <group
     id="sondev"
     icon="sondev"
-    name="Sondevoeding"
+    name="[sg_Sondevoeding]"
     >
   </group>
   <group
     id="Wond"
     icon="wound"
-    name="Wondzorg"
+    name="[sg_Wondzorg]"
     >
   </group>
   <group
     id="BHV"
     icon="AED"
-    name="BHV"
+    name="[sg_BHV]"
     >
   </group>
   <group
   id="zwacht"
   icon="Zwacht"
-  name="Zwachtelen en Steunkousen"
+  name="[sg_Zwachtelen]"
     >
   </group>
   <group
 id="2"
 icon="ingame_level2"
-name="Niveau 2+"
+name="[sg_Niveau_2+]"
     >
   </group>
   <group
 id="3"
 icon="ingame_level3"
-name="Niveau 3"
+name="[sg_Niveau_3]"
     >
   </group>
   <group
 id="4"
 icon="ingame_level4"
-name="Niveau 4"
+name="[sg_Niveau_4]"
     >
   </group>
   <group
 id="5"
 icon="ingame_level5"
-name="Niveau 5"
+name="[sg_Niveau_5]"
     >
   </group>
 </groups>

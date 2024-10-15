@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ActionList>
+  <Action 
+      index="0" 
+      description="[Begroet]" 
+      type="talk" 
+      points="1" 
+      optional="" 
+      audioHint="" 
+      topic="Hello"/>
+  <Action 
+      index="0" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      messageTitle="[handhygiëne]" 
+      messageContent="[Handhygiene]" 
+      value="HandCleaner"/>
+  <Action 
+      index="1" 
+      description="[Maak een schoon werkveld]" 
+      type="use" 
+      points="1" 
+      messageTitle="[je het volgende]" 
+      messageContent="[bijsluiter toedieningslijst injectiespuit]" 
+      value="WorkField" 
+      audioHint="Injection/H2-2"/>
+  <Action 
+      index="2" 
+      description="[controleer cliëntgegevens]" 
+      type="examine" 
+      item="PatientRecords" 
+      points="2" 
+      messageTitle="[controle cliëntgegevens]" 
+      messageContent="[controleer de naam]" 
+      expected="good"/>
+  <Action 
+      index="2" 
+      description="[controleer het medicijn]" 
+      type="examine" 
+      item="fraxi_pakage" 
+      points="2" 
+      messageTitle="[controle medicijn]" 
+      messageContent="[controleer het medicijn615]" 
+      expected="good"/>
+  <Action 
+      index="2" 
+      description="[controleer de toedienlijst]" 
+      type="examine" 
+      item="PrescriptionForm" 
+      points="2" 
+      messageTitle="[5x juistregel]" 
+      messageContent="[er zijn 5]" 
+      expected="good"/>
+  <Action 
+      index="3" 
+      description="[vraag je collega]" 
+      type="talk" 
+      points="3" 
+      messageTitle="[dubbele controle bij]" 
+      messageContent="[het verkeerd toedienen]" 
+      topic="DoubleCheck"/>
+  <Action 
+      index="4" 
+      description="[verwijder de verpakking]" 
+      type="combine" 
+      points="1" 
+      quiz="2" 
+      left="fraxi_pakage" 
+      right=""/>
+  <Action 
+      index="5" 
+      description="[zorg dat de]" 
+      type="useOn" 
+      item="Frexi_with_needle_cap" 
+      points="2" 
+      buttonText="Controleer luchtbel" 
+      messageTitle="[luchtbel]" 
+      target=""/>
+  <Action 
+      index="6" 
+      description="[vraag de cliënt129]" 
+      type="talk" 
+      points="1" 
+      messageTitle="[geschikte injectiegebieden]" 
+      messageContent="[geschikte injectiegebieden voor]" 
+      topic="ShowBellyForInsulin" 
+      blockUnlock="patient show spot"/>
+  <Action 
+      index="7" 
+      description="[start injecteren]" 
+      type="useOn" 
+      secondPlace="PatientPos" 
+      item="Frexi_with_needle_cap" 
+      points="1" 
+      buttonText="Start injecteren" 
+      target="" 
+      blockRequired="patient show spot" 
+      blockTitle="Deze handeling is nog niet mogelijk" 
+      blockMessage="Treft de juiste voorbereidingen en vraag de cliënt de injectieplaats te ontbloten."/>
+  <Action 
+      index="8" 
+      description="[palpeer de injectieplaats]" 
+      type="sequenceStep" 
+      points="1" 
+      value="Check" 
+      audioHint="Injection/AS1-2"/>
+  <Action 
+      index="9" 
+      description="[neem de spuit]" 
+      type="sequenceStep" 
+      points="1" 
+      value="RemoveCap" 
+      audioHint="Injection/H5-3"/>
+  <Action 
+      index="10" 
+      description="[steek de naald]" 
+      type="sequenceStep" 
+      points="1" 
+      encounter="1" 
+      value="Stick needle in arm" 
+      audioHint=""/>
+  <Action 
+      index="11" 
+      description="[fixeer de spuit]" 
+      type="sequenceStep" 
+      points="1" 
+      value="Fixate needle" 
+      audioHint="Injection/AS5-2"/>
+  <Action 
+      index="12" 
+      description="[spuit de vloeistof]" 
+      type="sequenceStep" 
+      points="1" 
+      value="Inject medicine slow and steady"/>
+  <Action 
+      index="13" 
+      description="[trek de naald]" 
+      type="sequenceStep" 
+      points="1" 
+      value="Pull needle"/>
+  <Action 
+      index="14" 
+      description="[doe de fraxiparine]" 
+      type="useOn" 
+      secondPlace="WorkFieldPos" 
+      item="FraxiperineSyringe_Rigged" 
+      points="2" 
+      buttonText="Spuit weggooien" 
+      audioHint="Injection/EAS2-2" 
+      target="" 
+      ignorePosition=""/>
+  <Action 
+      index="15" 
+      description="[ruim de materialen]" 
+      type="use" 
+      points="1" 
+      value="WorkField"/>
+  <Action 
+      index="16" 
+      description="[Pas handhygiëne]" 
+      type="use" 
+      comment="1. Apply hand hygiene" 
+      points="3" 
+      value="HandCleaner"/>
+  <Action 
+      index="17" 
+      description="[teken de toedienlijst610]" 
+      type="use" 
+      points="2" 
+      value="PaperAndPen"/>
+</ActionList>

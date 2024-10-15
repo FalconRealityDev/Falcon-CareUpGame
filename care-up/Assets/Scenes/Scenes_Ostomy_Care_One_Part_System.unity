@@ -345,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: InjectionNeedleNoCap
   ObjectID: 0
-  description: injectienaald
+  description: '[i_injectienaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: CWB_inner_open
   ObjectID: 0
-  description: katheter
+  description: '[i_katheter]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedle
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: OstomyBagSingleSystemForGivingAnim
   ObjectID: 0
-  description: '-'
+  description: '[i_-]'
   nameArticle: '-'
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -1803,6 +1803,11 @@ PrefabInstance:
       propertyPath: m_LightmapParameters
       value: 
       objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8936432486606857521, guid: d9e3ef7d15292c440b23edfa0c285f67,
+        type: 3}
+      propertyPath: description
+      value: '[i_gootsteen]'
+      objectReference: {fileID: 0}
     - target: {fileID: 9048832941134129944, guid: d9e3ef7d15292c440b23edfa0c285f67,
         type: 3}
       propertyPath: m_Name
@@ -3143,7 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithAbsorptionNeedleCap
   ObjectID: 0
-  description: spuit met opzuignaald
+  description: '[i_spuit met opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -3910,7 +3915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6067,7 +6072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: Client
+  description: '[i_client]'
   nameArticle: 
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6569,7 +6574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: ClothInHandOstomyCare
   ObjectID: 0
-  description: '-'
+  description: '[i_-]'
   nameArticle: '-'
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -6985,7 +6990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Ostomy_Bag_OPS_CoverSeparate
   ObjectID: 0
-  description: '-'
+  description: '[i_-]'
   nameArticle: '-'
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7124,7 +7129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7587,7 +7592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: catheter_bag_twisted
   ObjectID: 0
-  description: urineopvangzak
+  description: '[i_urineopvangzak]'
   nameArticle: de
   muplipleMesh: 1
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7784,7 +7789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: OstomyBagSingleSystemSQ_3
   ObjectID: 0
-  description: '-'
+  description: '[i_-]'
   nameArticle: '-'
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7950,7 +7955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: MedicineBag
   ObjectID: 0
-  description: medicijnzakje
+  description: '[i_medicijnzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -7993,7 +7998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: MedicineBag
   ObjectID: 0
-  description: medicijnzakje
+  description: '[i_medicijnzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -8130,6 +8135,11 @@ PrefabInstance:
     - target: {fileID: 4049654515715358, guid: b83bada7c5d054e8f9a000fbdd800747, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.60520464
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
+        type: 3}
+      propertyPath: description
+      value: '[i_gaasjes]'
       objectReference: {fileID: 0}
     - target: {fileID: 114045968854326932, guid: b83bada7c5d054e8f9a000fbdd800747,
         type: 3}
@@ -8669,6 +8679,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9037373699131080166, guid: 2fee96ff89558a4488b8d8eef2407208,
+        type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fee96ff89558a4488b8d8eef2407208, type: 3}
 --- !u!1 &856909221
@@ -8860,7 +8875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: ToiletPaper
   ObjectID: 0
-  description: toiletpapier
+  description: '[i_toiletpapier]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9616,7 +9631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: AbsorptionNeedleNoCap
   ObjectID: 0
-  description: opzuignaald
+  description: '[i_opzuignaald]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -9817,7 +9832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: GauzeOnStoma
   ObjectID: 0
-  description: '-'
+  description: '[i_-]'
   nameArticle: '-'
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -10872,6 +10887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9037373699131080166, guid: 2fee96ff89558a4488b8d8eef2407208,
         type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037373699131080166, guid: 2fee96ff89558a4488b8d8eef2407208,
+        type: 3}
       propertyPath: holdAnimationID
       value: 90
       objectReference: {fileID: 0}
@@ -11387,6 +11407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037373699131080166, guid: 2fee96ff89558a4488b8d8eef2407208,
+        type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
       objectReference: {fileID: 0}
     - target: {fileID: 9037373699131080166, guid: 2fee96ff89558a4488b8d8eef2407208,
         type: 3}
@@ -11955,7 +11980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: cloth_02_folded
   ObjectID: 0
-  description: onderlegger
+  description: '[i_onderlegger]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12311,7 +12336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SkinPlate
   ObjectID: 0
-  description: huidplaat
+  description: '[i_huidplaat]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -12823,7 +12848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: Cloth2
   ObjectID: 0
-  description: gaasje
+  description: '[i_gaasje]'
   nameArticle: een
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13013,7 +13038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: SyringeWithSolvent
   ObjectID: 0
-  description: spuit met oplosmiddel
+  description: '[i_spuit met oplosmiddel]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -13615,7 +13640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectionCloth
   ObjectID: 0
-  description: gedesinfecteerd gaasje
+  description: '[i_gedesinfecteerd gaasje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -14107,6 +14132,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2422667792032658226, guid: 307d6cb0824453d469ff32fd1d9fd4a9,
+        type: 3}
+      propertyPath: description
+      value: '[i_-]'
+      objectReference: {fileID: 0}
     - target: {fileID: 4364984106692351590, guid: 307d6cb0824453d469ff32fd1d9fd4a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14481,6 +14511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628244415973673492, guid: f17dff60c9567a74b847a7087557be0b,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomazakje]'
       objectReference: {fileID: 0}
     - target: {fileID: 3628244415973673493, guid: f17dff60c9567a74b847a7087557be0b,
         type: 3}
@@ -15691,7 +15726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: DesinfectedAmpoule
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -15721,7 +15756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: ampul met medicijn
+  description: '[i_ampul met medicijn]'
   nameArticle: de
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16336,7 +16371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: ClothWithAmpouleTop
   ObjectID: 0
-  description: gaasje met ampultop
+  description: '[i_gaasje met ampultop]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16499,7 +16534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: 
   ObjectID: 0
-  description: spoelzakje
+  description: '[i_spoelzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16572,7 +16607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: BladderSpoolBag
   ObjectID: 0
-  description: spoelzakje
+  description: '[i_spoelzakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -16984,7 +17019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: OstomyBag
   ObjectID: 0
-  description: stomazakje
+  description: '[i_stomazakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -18791,7 +18826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabName: OstomyBagSingleSystem
   ObjectID: 0
-  description: stomazakje
+  description: '[i_stomazakje]'
   nameArticle: het
   muplipleMesh: 0
   descriptionOffset: {x: 0, y: 0, z: 0}
@@ -19042,6 +19077,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2517788780961799703, guid: ac514afaff65fa94fae57fe88209862e,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomazakje]'
+      objectReference: {fileID: 0}
     - target: {fileID: 5895518229744207645, guid: ac514afaff65fa94fae57fe88209862e,
         type: 3}
       propertyPath: m_Name
@@ -19174,7 +19214,7 @@ PrefabInstance:
     - target: {fileID: 5921492346744261467, guid: 57c503d03cab2e8439ea50bc474fb268,
         type: 3}
       propertyPath: description
-      value: toilet papier
+      value: '[i_toilet papier]'
       objectReference: {fileID: 0}
     - target: {fileID: 5921492346744261467, guid: 57c503d03cab2e8439ea50bc474fb268,
         type: 3}
@@ -19214,6 +19254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158971535999239107, guid: 6b8fd32438ef70343ab7f62f58bc2d3c,
+        type: 3}
+      propertyPath: description
+      value: '[i_-]'
       objectReference: {fileID: 0}
     - target: {fileID: 4158971535999239116, guid: 6b8fd32438ef70343ab7f62f58bc2d3c,
         type: 3}
@@ -19368,10 +19413,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 640436880217872707, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 640436880253951673, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 640436882058114632, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_huidplaat]'
+      objectReference: {fileID: 0}
     - target: {fileID: 2607409045680646515, guid: 9af65969625d29b48afd005a3ac11701,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175312853643423864, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomazakje]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273107050144739449, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_stomazakje]'
       objectReference: {fileID: 0}
     - target: {fileID: 8215344112186097054, guid: 9af65969625d29b48afd005a3ac11701,
         type: 3}
@@ -19430,8 +19500,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8469153841064942189, guid: 9af65969625d29b48afd005a3ac11701,
         type: 3}
+      propertyPath: description
+      value: '[i_client]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469153841064942189, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
       propertyPath: dialogueXmls.Array.data[0]
       value: Greeting Janssen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469153841064942195, guid: 9af65969625d29b48afd005a3ac11701,
+        type: 3}
+      propertyPath: description
+      value: '[i_client]'
       objectReference: {fileID: 0}
     - target: {fileID: 8739537845812897572, guid: 9af65969625d29b48afd005a3ac11701,
         type: 3}

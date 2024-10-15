@@ -1,33 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ActionList points="13">
-	<action description="Step 1: Preform hand hygiene" audioHint="GivingMedicine/Step 1"
-		index="0" type="use" value="HandCleaner"></action>
-	<action description="Step 2: Cleaning work field" audioHint="GivingMedicine/Step 2"
-		index="1" type="use" value="WorkField"></action>
-	<action description="Step 3: Checking patient records" audioHint="GivingMedicine/Step 3"
-		index="2" type="examine" item="PatientRecords" expected="good"></action>
-	<action description="Step 4: Checking medicine prescriptions" audioHint="GivingMedicine/Step 4"
-		index="2" type="examine" item="PackageWithSachet" expected="good"></action>
-	
-	<action description="Step 5: Take the sachet out of the package" audioHint="GivingMedicine/Step 5"
-		index="3" type="combine" left="PackageWithSachet" right=""></action>
-	<action description="Step 6: Open the sachet of the medicine" audioHint="GivingMedicine/Step 6"
-		index="4" type="combine" left="Sachet" right=""></action>
-	<action description="Step 7: Put medicine in a glass with fluid (water, soda etc.)" audioHint="GivingMedicine/Step 7"
-		index="5" type="combine" left="OpenedSachet" right="Glass"></action>
-	<action description="Step 8: Stir the medicine with spoon." audioHint="GivingMedicine/Step 8"
-		index="6" type="combine" left="GlassWithMedicine" right="Spoon"></action>
-	
-	<action description="Step 9: Ask client to sit up straight" audioHint="GivingMedicine/Step 9"
-		index="7" type="talk" topic="SitUpStraight"></action>
-	<action description="Step 10: Give glass with medicine to patient" audioHint="GivingMedicine/Step 10"
-		index="8" type="useOn" item="GlassWithMedicine" target="Person"></action>
-	
-	<action description="Step 12: Write down what you did" audioHint="GivingMedicine/Step 12"
-		index="9" type="use" value="PaperAndPen"></action>
-	
-	<action description="Step 13: Clean up the materials you used."  audioHint="GivingMedicine/Step 13"
-		index="10" type="use" value="WorkField"></action>
-	<action description="Step 14: Preform hand hygiene" audioHint="GivingMedicine/Step 14"
-		index="11" type="use" value="HandCleaner"></action>
+<ActionList 
+    points="13">
+  <action 
+    description="[step 1: preform]" 
+    audioHint="GivingMedicine/Step 1" 
+    index="0" 
+    type="use" 
+    value="HandCleaner"/>
+  <action 
+    description="[step 2: cleaning]" 
+    audioHint="GivingMedicine/Step 2" 
+    index="1" 
+    type="use" 
+    value="WorkField"/>
+  <action 
+    description="[step 3: checking]" 
+    audioHint="GivingMedicine/Step 3" 
+    index="2" 
+    type="examine" 
+    item="PatientRecords" 
+    expected="good"/>
+  <action 
+    description="[step 4: checking]" 
+    audioHint="GivingMedicine/Step 4" 
+    index="2" 
+    type="examine" 
+    item="PackageWithSachet" 
+    expected="good"/>
+  <action 
+    description="[step 5: take]" 
+    audioHint="GivingMedicine/Step 5" 
+    index="3" 
+    type="combine" 
+    left="PackageWithSachet" 
+    right=""/>
+  <action 
+    description="[step 6: open]" 
+    audioHint="GivingMedicine/Step 6" 
+    index="4" 
+    type="combine" 
+    left="Sachet" 
+    right=""/>
+  <action 
+    description="[step 7: put]" 
+    audioHint="GivingMedicine/Step 7" 
+    index="5" 
+    type="combine" 
+    left="OpenedSachet" 
+    right="Glass"/>
+  <action 
+    description="[step 8: stir]" 
+    audioHint="GivingMedicine/Step 8" 
+    index="6" 
+    type="combine" 
+    left="GlassWithMedicine" 
+    right="Spoon"/>
+  <action 
+    description="[step 9: ask]" 
+    audioHint="GivingMedicine/Step 9" 
+    index="7" 
+    type="talk" 
+    topic="SitUpStraight"/>
+  <action 
+    description="[step 10: give]" 
+    audioHint="GivingMedicine/Step 10" 
+    index="8" 
+    type="useOn" 
+    item="GlassWithMedicine" 
+    target="Person"/>
+  <action 
+    description="[step 12: write]" 
+    audioHint="GivingMedicine/Step 12" 
+    index="9" 
+    type="use" 
+    value="PaperAndPen"/>
+  <action 
+    description="[step 13: clean]" 
+    audioHint="GivingMedicine/Step 13" 
+    index="10" 
+    type="use" 
+    value="WorkField"/>
+  <action 
+    description="[step 14: preform]" 
+    audioHint="GivingMedicine/Step 14" 
+    index="11" 
+    type="use" 
+    value="HandCleaner"/>
 </ActionList>

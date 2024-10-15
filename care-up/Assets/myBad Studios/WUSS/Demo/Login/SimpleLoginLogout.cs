@@ -47,7 +47,10 @@ namespace MBS
             login_credentials.Set( "password", password );
 
             //and let's see if we can login immediately...
+#if !UNITY_EDITOR
+
             WULogin.AttemptAutoLogin();
+#endif
         }
 
         //upon login or logout, change the text on the button to show what will happen when you click it
