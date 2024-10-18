@@ -1,8 +1,0 @@
-_Textures
-_Materials
-_Models
-_PlayerAnimartion
-_Animators
-_Sprites/TutorialImages
-Resources/Prefabs
-Resources/Sprites/Prefab_Icons
