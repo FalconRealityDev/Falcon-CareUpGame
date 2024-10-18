@@ -2,7 +2,7 @@
 <Scenes>
   <group name="basic">
     <scene id="PFBIO"
-      isInProducts="PFBIO|Covid|Full|subscriptionmonthly|fullyearly"
+      isInProducts="PFBIO|Covid|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_covid"
       name="Covid-19-vaccin van Pfizer-BioNtech injecteren"
       description=""
@@ -17,7 +17,7 @@
       totalPoints="0"
       xPoints="11" />
     <scene id="VACMOD"
-      isInProducts="VACMOD|Covmod|Full|subscriptionmonthly|fullyearly"
+      isInProducts="VACMOD|Covmod|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_covid_moderna"
       name="Covid-19-vaccin van Moderna injecteren"
       description=""
@@ -32,7 +32,7 @@
       xPoints="11" />
     <scene id="BCTCR"
       courseID="525747"
-      isInProducts="Full|subscriptionmonthly|fullyearly"
+      isInProducts="Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_cleaningtracheainnercannula"
       name="Binnencanule van tracheacanule reinigen"
       nameForDatabase="Binnencanule van tracheacanule reinigen"
@@ -52,7 +52,7 @@
       type="in_house" />
     <scene id="BMVS"
       courseID="525741"
-      isInProducts="BMVS|CathM|Katheter|Full|subscriptionmonthly|fullyearly"
+      isInProducts="BMVS|CathM|Katheter|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_catherisation_male"
       name="Blaaskatheterisatie man verblijfskatheter"
       nameForDatabase="Blaaskatheterisatie bij een man, verblijfskatheter"
@@ -72,7 +72,7 @@
       type="in_house" />
     <scene id="VVSO"
       courseID="525741"
-      isInProducts="VVSO|CathW|Katheter|Full|subscriptionmonthly|fullyearly"
+      isInProducts="VVSO|CathW|Katheter|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_catherisation_women"
       name="Blaaskatheterisatie vrouw verblijfskatheter"
       nameForDatabase="Blaaskatheterisatie bij een vrouw, verblijfskatheter"
@@ -92,7 +92,7 @@
       type="in_house" />
     <scene id="CATMSO"
       courseID="525741"
-      isInProducts="CATMSO|Spoel|Katheter|Full|subscriptionmonthly|fullyearly"
+      isInProducts="CATMSO|Spoel|Katheter|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_bladder_irrigation_through_catheter"
       name="Blaasspoelen met spoelzakje via verblijfskatheter"
       nameForDatabase="Blaasspoelen met spoelzakje via verblijfskatheter"
@@ -112,7 +112,7 @@
       type="in_house" />
     <scene id="BGM"
       courseID="525751"
-      isInProducts="BGM|Blood|Full|Suiker|subscriptionmonthly|fullyearly"
+      isInProducts="BGM|Blood|Full|Suiker|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_bloodglucose_measurement"
       name="Bloedglucosewaarde meten via vingerprik"
       nameForDatabase="Bloedglucosewaarde meten via vingerprik"
@@ -133,7 +133,7 @@
     <scene id="INSIG"
       demo="true"
       courseID="519871"
-      isInProducts="INSIG|Insul|Full|Suiker|subscriptionmonthly|fullyearly"
+      isInProducts="INSIG|Insul|Full|Suiker|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/insulin_injection"
       name="Insuline injecteren"
       nameForDatabase="Subcutaan injecteren met insulinepen"
@@ -153,7 +153,7 @@
     <scene id="IILTGF"
       demo="true"
       courseID="519871"
-      isInProducts="IILTGF|IntraL|Inject|Full|subscriptionmonthly|fullyearly"
+      isInProducts="IILTGF|IntraL|Inject|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/injection"
       name="Intramusculair injecteren (stretchtechniek)"
       nameForDatabase="Injecteren intramusculair (loodrechttechniek)"
@@ -167,7 +167,7 @@
       xPoints="11" />
     <scene id="OSTMOPS"
       courseID="525747"
-      isInProducts="OSTMOPS|StoEen|Stoma|Full|fullyearly|subscriptionmonthly"
+      isInProducts="OSTMOPS|StoEen|Stoma|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scenes_ostomy_care_one_part_system"
       name="Huidplaat en stomazakje verwisselen eendelig systeem"
       nameForDatabase="Verwisselen huidplaat en stomazakje eendelig systeem"
@@ -187,7 +187,7 @@
       type="in_house" />
     <scene id="SOC"
       courseID="525747"
-      isInProducts="SOC|StoTwee|Stoma|Full|subscriptionmonthly|fullyearly"
+      isInProducts="SOC|StoTwee|Stoma|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_ostomy_care"
       name="Huidplaat en stomazakje verwisselen tweedelig systeem"
       nameForDatabase="Verwisselen huidplaat en stomazakje tweedelig systeem"
@@ -207,7 +207,7 @@
       type="in_house" />
     <scene id="AMVP"
       courseID="525758"
-      isInProducts="AMVP|Peg|SondePakket|Full|fullyearly|subscriptionmonthly"
+      isInProducts="AMVP|Peg|SondePakket|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scenes/AdministerMedicineViaPEG"
       name="Medicijnen toedienen door PEG-sonde"
       nameForDatabase="Toedienen medicijnen via PEG-sonde"
@@ -227,7 +227,7 @@
       type="in_house" />
     <scene id="TMMW"
       courseID="525758"
-      isInProducts="TMMW|Wang|Mond|Full|fullyearly|subscriptionmonthly"
+      isInProducts="TMMW|Wang|Mond|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scenes_medicine_cheek_pouch"
       name="Medicijnen toedienen in wangzak"
       nameForDatabase="Toedienen medicijnen in wangzak"
@@ -247,7 +247,7 @@
       type="in_house" />
     <scene id="TMOT"
       courseID="525758"
-      isInProducts="TMOT|Tong|Mond|Full|fullyearly|subscriptionmonthly"
+      isInProducts="TMOT|Tong|Mond|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scenes_medicine_mouth"
       name="Medicijnen toedienen onder tong"
       nameForDatabase="Toedienen medicijnen onder tong"
@@ -267,7 +267,7 @@
       type="in_house" />
     <scene id="MSSI"
       courseID="525758"
-      isInProducts="MSSI|ToeSaf|Canule|Full|fullyearly|subscriptionmonthly"
+      isInProducts="MSSI|ToeSaf|Canule|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scenes_medication_saf-t-intima"
       name="Medicijnen toedienen via subcutane canule - bolus"
       nameForDatabase="Toedienen medicijnen via subcutane infuuscanule bolusinjectie"
@@ -287,7 +287,7 @@
       type="in_house" />
     <scene id="SMPA"
       courseID="409087"
-      isInProducts="SMPA|Amp|Inject|Full|fullyearly|subscriptionmonthly"
+      isInProducts="SMPA|Amp|Inject|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scene_medication_preparation_ampoule"
       name="Medicijnspuit klaarmaken (ampul)"
       nameForDatabase="Voorbereiden medicijn injecteren ampul"
@@ -306,7 +306,7 @@
       type="in_house" />
     <scene id="SMPF"
       courseID="409087"
-      isInProducts="SMPF|Fla|Inject|Full|subscriptionmonthly|fullyearly"
+      isInProducts="SMPF|Fla|Inject|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scene_medication_preparation_flacon"
       name="Medicijnspuit klaarmaken (flacon)"
       nameForDatabase="Voorbereiden medicijn injecteren flacon"
@@ -325,7 +325,7 @@
       type="in_house" />
     <scene id="SMPD"
       courseID="409087"
-      isInProducts="SMPD|Opl|Inject|Full|subscriptionmonthly|fullyearly"
+      isInProducts="SMPD|Opl|Inject|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scene_medication_preparation_dissolve"
       name="Medicijnspuit klaarmaken (oplossing)"
       nameForDatabase="Voorbereiden medicijn injecteren oplossing"
@@ -344,7 +344,7 @@
       type="in_house" />
     <scene id="GFTP"
       courseID="525765"
-      isInProducts="GFTP|Sonde|Full|SondePakket|subscriptionmonthly|fullyearly"
+      isInProducts="GFTP|Sonde|Full|SondePakket|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_gastric_feeding_tube"
       name="Neus-maagsonde inbrengen"
       nameForDatabase="Inbrengen neusmaagsonde"
@@ -369,7 +369,7 @@
       type="in_house" />
     <scene id="SCII"
       courseID="525763"
-      isInProducts="SCII|Infuus|Full|subscriptionmonthly|fullyearly"
+      isInProducts="SCII|Infuus|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/Scene_Insert_Infusion"
       name="Perifere infuuscanule inbrengen"
       nameForDatabase="Inbrengen canule perifeer infuus"
@@ -389,7 +389,7 @@
     <scene id="SCAED"
       courseID="451003"
       bundleName="scene/scenes_aed"
-      isInProducts="SCAED|AED|Full|subscriptionmonthly|fullyearly"
+      isInProducts="SCAED|AED|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       name="Reanimeren met AED"
       nameForDatabase="Reanimatie met AED (1 persoon)"
       description=""
@@ -402,7 +402,7 @@
       url="https://careup.online/cursussen-zorg/reanimatie-met-aed-1-persoon/" />
     <scene id="ISSI"
       courseID="525763"
-      isInProducts="ISSI|InbrSaf|Canule|Full|subscriptionmonthly|fullyearly"
+      isInProducts="ISSI|InbrSaf|Canule|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_saf-t-intima_insertion"
       name="Saf-T-Intima inbrengen"
       description="Inbrengen Saf-T-Intima subcutane infuuscanule."
@@ -422,7 +422,7 @@
       type="in_house" />
     <scene id="TVNM"
       courseID="525765"
-      isInProducts="TVNM|Pump|SondePakket|Full|fullyearly|subscriptionmonthly"
+      isInProducts="TVNM|Pump|SondePakket|Full|fullyearly|subscriptionmonthly|Fullyearstudent"
       bundleName="scene/scenes_feedingwithpump"
       name="Sondevoeding met pomp via neus-maagsonde"
       nameForDatabase="Toedienen voeding via neus-maagsonde met pomp"
@@ -442,7 +442,7 @@
       type="in_house" />
     <scene id="ISHTGF"
       courseID="519871"
-      isInProducts="ISHTGF|SubH|Inject|Full|subscriptionmonthly|fullyearly"
+      isInProducts="ISHTGF|SubH|Inject|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/injection_subcutaneous"
       name="Subcutaan injecteren (huidplooitechniek)"
       nameForDatabase="Injecteren subcutaan (huidplooitechniek)"
@@ -462,7 +462,7 @@
       type="in_house" />
     <scene id="FRAXI"
       courseID="519871"
-      isInProducts="FRAXI|SubL|Inject|Full|subscriptionmonthly|fullyearly"
+      isInProducts="FRAXI|SubL|Inject|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/fraxiparine_injecteren"
       name="Subcutaan injecteren (loodrechttechniek)"
       nameForDatabase="Injecteren subcutaan (loodrechttechniek - Fraxiparine)"
@@ -482,7 +482,7 @@
       type="in_house" />
     <scene id="VSV"
       courseID="525741"
-      isInProducts="VSV|CathSup|Katheter|Full|subscriptionmonthly|fullyearly"
+      isInProducts="VSV|CathSup|Katheter|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_catherisation_supertubular"
       name="Suprapubische verblijfskatheter verwisselen"
       nameForDatabase="Verwisselen suprapubische verblijfskatheter"
@@ -502,7 +502,7 @@
       type="in_house" />
     <scene id="THD"
       courseID="426062"
-      isInProducts="THD|HandAlc|Full|HandClean|subscriptionmonthly|fullyearly"
+      isInProducts="THD|HandAlc|Full|HandClean|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_handhygiene_alcohol"
       name="Techniek handdesinfectie met handalcohol"
       description="Techniek handdesinfectie"
@@ -522,7 +522,7 @@
       type="in_house" />
     <scene id="THR"
       courseID="426062"
-      isInProducts="THR|Hand|Full|HandClean|subscriptionmonthly|fullyearly"
+      isInProducts="THR|Hand|Full|HandClean|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_handhygiene_soap"
       name="Techniek handen wassen met water en zeep"
       description="Techniek handreiniging met zeep"
@@ -537,7 +537,7 @@
       url="https://careup.online/cursussen-zorg/techniek-handreiniging/" />
     <scene id="ZOKR"
       courseID="485312"
-      isInProducts="ZOKR|Zwacht|Full|subscriptionmonthly|fullyearly"
+      isInProducts="ZOKR|Zwacht|Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_bandaging"
       name="Zwachtelen onderbeen met korte rek zwachtels"
       nameForDatabase="Zwachtelen onderbeen met korte rek zwachtels"
@@ -556,7 +556,7 @@
       sceneName="Scenes_Bandaging_In_House"
       type="in_house" />
     <scene id="IDTEST"
-      isInProducts="Full|subscriptionmonthly|fullyearly"
+      isInProducts="Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_woundcare"
       hasVideoMode="true"
       name="Wondverzorging (Gele wond, vochtig)"
@@ -575,7 +575,7 @@
       type="in_house" />
 
     <scene id="IDTEST2"
-      isInProducts="Full|subscriptionmonthly|fullyearly"
+      isInProducts="Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_puttingcompressionstocking"
       name="Steunkous aantrekken met Doff N' Donner"
       nameForDatabase="PuttingCompressionStocking"
@@ -595,7 +595,7 @@
       type="in_house" />
 
     <scene id="IDTEST2"
-      isInProducts="Full|subscriptionmonthly|fullyearly"
+      isInProducts="Full|subscriptionmonthly|fullyearly|Fullyearstudent"
       bundleName="scene/scenes_oxygenthroughcannula"
       name="Zuurstof toedienen via zuurstofbril"
       nameForDatabase="Zuurstof toedienen via zuurstofbril"
