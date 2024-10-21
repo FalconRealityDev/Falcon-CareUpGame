@@ -144,6 +144,15 @@ public class MainMenu : MonoBehaviour
 
                     GameObject layoutGroup = GameObject.Find("/UMenuProManager/MenuCanvas/LayoutPanel/Tabs/Account_Scores/ContentPanel/Scenes/Account_Panel_UI/Panel/ProtocolList/ProtocolsHolder/Protocols/content");
                     GameObject scoreObject = Instantiate(Resources.Load<GameObject>("NecessaryPrefabs/UI/TestHighscore"), layoutGroup.transform);
+
+                    if(sceneName == "Injecteren intramusculair (loodrechttechniek)")
+                    {
+                        sceneName = "Intramusculair injecteren (stretchtechniek)";
+                    }
+
+#if UNITY_EDITOR
+                    Debug.Log($"Certificate is available for {sceneName}");
+#endif
                     scoreObject.transform.Find("SceneName").GetComponent<Text>().text = sceneName;
 
                     scoreObject.transform.Find("Percent").GetComponent<Text>().text = percent.ToString() + "%";
